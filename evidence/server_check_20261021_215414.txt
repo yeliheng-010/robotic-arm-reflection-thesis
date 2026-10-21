@@ -1,0 +1,12 @@
+date -Is; squeue -a -o "%.12i %.15u %.24j %.10T %.24b"; nvidia-smi --query-gpu=index,memory.used,utilization.gpu --format=csv
+2026-10-21T21:54:14+08:00
+       JOBID            USER                     NAME      STATE            TRES_PER_NODE
+        3738              ci             wm-web-probe    PENDING          gres/gpu:v100:1
+        3753              ci          wm-manual-shots    RUNNING               gres/gpu:1
+        3718        yeliheng          expert_recovery    RUNNING          gres/gpu:v100:2
+index, memory.used [MiB], utilization.gpu [%]
+0, 480 MiB, 2 %
+1, 0 MiB, 0 %
+2, 1917 MiB, 0 %
+3, 1917 MiB, 0 %
+[yeliheng@gpu code]$

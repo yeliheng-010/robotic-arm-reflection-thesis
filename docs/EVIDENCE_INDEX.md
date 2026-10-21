@@ -4,8 +4,12 @@
 
 ## 1. 当前状态
 
-- [采集状态快照](../evidence/status_snapshot.json)：包含采集时间、来源路径和原始status字段。
-- [服务器只读检查](../evidence/server_check.txt)：GPU、Slurm队列及3712/3714/3717/3718状态；记录运行中作业的0:0不等于最终成功。
+- [2026-10-21 21:54采集快照](../evidence/status_20261021_215414.json)：README本轮更新采用的1099任务、474/139/110样本记录。
+- [21:54服务器检查](../evidence/server_check_20261021_215414.txt)：3718双卡运行状态与当时队列、显存。
+- [README实现检查清单](../evidence/implementation_review.json)：本轮只读核对的本地模块及hash，不等于重新验证所有远端运行源码。
+
+- [首版19:49采集状态快照](../evidence/status_snapshot.json)：保留当时采集时间、来源路径和原始status字段。
+- [首版服务器只读检查](../evidence/server_check.txt)：GPU、Slurm队列及3712/3714/3717/3718状态；记录运行中作业的0:0不等于最终成功。
 
 ## 2. 初步训练与生成
 

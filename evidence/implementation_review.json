@@ -1,0 +1,70 @@
+{
+  "review_date": "2026-10-21",
+  "purpose": "README architecture and technology claims checked against local experiment source",
+  "scope": "Read-only source inspection; source files are not included in this progress repository",
+  "not_claimed": "This review did not rerun training or revalidate all remote deployed source hashes",
+  "files": [
+    {
+      "workspace_relative_path": "stability/runtime.py",
+      "sha256": "3d8c67d87bc5f93b721c334750de2157b2d3aaa318ff61848da0e567247f1ec5"
+    },
+    {
+      "workspace_relative_path": "stability/detector.py",
+      "sha256": "171e6066336d34453ff027fd16c972bb89740439422ae624fd02deb45e417a38"
+    },
+    {
+      "workspace_relative_path": "stability/monitor.py",
+      "sha256": "54992665a409bb725e0fb6bccb5fbb72b7f3d07ca2409790ce19c73c2b381e3d"
+    },
+    {
+      "workspace_relative_path": "geometry/runtime.py",
+      "sha256": "91c5e4b9e3254f0a2e1a28791675102618fe035f82d891177a946482fdeefb7f"
+    },
+    {
+      "workspace_relative_path": "stability/prompt.py",
+      "sha256": "4fa31273f4fbc1a33fdc42578e11ea2219b8972bbb61ec78a79eaf8db2ef48ce"
+    },
+    {
+      "workspace_relative_path": "stability/expert_dataset.py",
+      "sha256": "99cede64fc0200ec05dcef55448adcd78edee111bf70591fdebd6b652637d0e3"
+    },
+    {
+      "workspace_relative_path": "stability/expert_config.py",
+      "sha256": "6769aed94b977e528c8d61d3c55c48ddad24ebba0006768a20436348da89dc6e"
+    },
+    {
+      "workspace_relative_path": "stability/parallel_lane.py",
+      "sha256": "3d0a075ea2f70e14fc6d1089c8d4a343810f40ba489b3e96cf1c42adf523ff91"
+    },
+    {
+      "workspace_relative_path": "stability/parallel_state.py",
+      "sha256": "7d58dc62fe170c0a07c43954289f061a89075477f5718f52468aeb500d3dac81"
+    },
+    {
+      "workspace_relative_path": "stability/sft_model.py",
+      "sha256": "5a254367208bf83e827adc6901ad00903dbd7055c413c9fdb827ccf26663bf89"
+    },
+    {
+      "workspace_relative_path": "stability/sft_train.py",
+      "sha256": "76260afc20cd0408f011e7698ea04a157df1dc47737d621c84cae982a4200c02"
+    },
+    {
+      "workspace_relative_path": "stability/loop_client.py",
+      "sha256": "6e771782dabfd0ae2b393d7b3e6aa3fb7c62592121081fb827b32ca43f30f32a"
+    },
+    {
+      "workspace_relative_path": "stability/loop_service.py",
+      "sha256": "fdf9eb86f37d59a4e1dac9a55eb82e8fe71caac2ec1b62ac6e71c9dad64634d5"
+    },
+    {
+      "workspace_relative_path": "stability/loop_protocol.py",
+      "sha256": "e4c6a991531339ff90770dbc5d5ce022b5e5b61d27d01726bbcff12efd8a3575"
+    }
+  ],
+  "training_environment_source": "evidence/pilot/result.json",
+  "historical_reports": [
+    "refinement/REPORT.md",
+    "geometry/REPORT.md",
+    "stability/REPORT.md"
+  ]
+}
