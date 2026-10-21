@@ -4,10 +4,11 @@
   "timezone": "Asia/Shanghai",
   "scope": "research execution plan and evidence-backed progress repository",
   "status": "content_verified_ready_for_upload",
-  "formal_title_confirmed": false,
+  "formal_title_confirmed": true,
+  "title_as_provided": "基于机械臂的错误反馈于智能反思系统",
   "independent_expert_review": false,
   "technical_debts": [
-    "Confirm formal thesis title and advisor requirements",
+    "Confirm advisor requirements; preserve author-provided title wording",
     "Verify related work before novelty claims",
     "Freeze executable independent task families and sample-size analysis",
     "Complete dataset audit and formal evaluation"
