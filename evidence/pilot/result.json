@@ -1,0 +1,382 @@
+{
+  "status": "completed",
+  "started_at": 1792567292.5284655,
+  "purpose": "preliminary_rule_expert_qlora_not_final_experiment",
+  "environment": {
+    "job": "3712",
+    "cuda_visible_devices": "0",
+    "device": "Tesla V100-SXM2-16GB",
+    "versions": {
+      "torch": "2.6.0+cu124",
+      "transformers": "5.20.1",
+      "peft": "0.21.2",
+      "accelerate": "1.12.0",
+      "bitsandbytes": "0.49.2"
+    },
+    "delta_precision": "fp32_reference_without_autocast"
+  },
+  "trainable_parameters": 16232448,
+  "validation_before": {
+    "loss": 0.47345161269692815,
+    "supervised_tokens": 2975,
+    "samples": 48
+  },
+  "previews_before": [
+    {
+      "validation_index": 0,
+      "task_id": "00006",
+      "fault": "calibration",
+      "raw_output": "{\"cause\":\"抓取残差 Y 轴较大（-0.042m），表明机器人未对准物体中心，导致手指未同时接触物体表面；调整 grasp_offset 的 Y 分量可修正抓取位置。\",\"changes\":{\"grasp_offset\":[0.0,0.04235180583316217,0.0]}}\n",
+      "expected": {
+        "cause": "Target is not held by both finger pads",
+        "changes": {
+          "grasp_offset": [
+            0.004392922312753456,
+            0.04235180583316217,
+            0.0
+          ]
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": false
+    },
+    {
+      "validation_index": 1,
+      "task_id": "00007",
+      "fault": "collision",
+      "raw_output": "{\"cause\":\"在搬运阶段（transport）发生碰撞，证据显示红色方块与分隔板（SafetyDivider）接触。由于抓取残差极小（约0.004），说明抓取位置准确，问题在于搬运路径规划未避开障碍物。通过增加 time_scale 降低运动速度，有助于在动态环境中更精确地避障或等待环境变化。\",\"changes\":{\"time_scale\":2.0}}\n",
+      "expected": {
+        "cause": "Unexpected contact while carrying target",
+        "changes": {
+          "lift_height": 0.45
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": false
+    },
+    {
+      "validation_index": 2,
+      "task_id": "00008",
+      "fault": "placement",
+      "raw_output": "{\"cause\":\"物体未进入容器（inside_xy: false），且残差显示抓取位置与目标中心偏差较大（-0.16m），需调整释放位置以对准容器中心。\",\"changes\":{\"place_offset\":[-0.16,0.0,0.0]}}\n",
+      "expected": {
+        "cause": "Final object does not satisfy physical containment and stability",
+        "changes": {
+          "place_offset": [
+            0.16049951393892925,
+            0.0009934929064095432,
+            0.0
+          ]
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": false
+    }
+  ],
+  "updates": [
+    {
+      "loss": 0.5116754313385103,
+      "gradient_norm": 2.964134693145752,
+      "samples": 8,
+      "supervised_tokens": 529,
+      "step": 1,
+      "total_steps": 21,
+      "elapsed_s": 12.997647630982101,
+      "peak_allocated_bytes": 10447404544,
+      "peak_reserved_bytes": 12538871808
+    },
+    {
+      "loss": 0.23032780027835167,
+      "gradient_norm": 1.6158225536346436,
+      "samples": 8,
+      "supervised_tokens": 535,
+      "step": 2,
+      "total_steps": 21,
+      "elapsed_s": 24.861846761079505,
+      "peak_allocated_bytes": 10447404544,
+      "peak_reserved_bytes": 12538871808
+    },
+    {
+      "loss": 0.34772778020592665,
+      "gradient_norm": 3.8017308712005615,
+      "samples": 8,
+      "supervised_tokens": 534,
+      "step": 3,
+      "total_steps": 21,
+      "elapsed_s": 38.16489229397848,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13872660480
+    },
+    {
+      "loss": 0.09517705305825827,
+      "gradient_norm": 0.8832844495773315,
+      "samples": 8,
+      "supervised_tokens": 484,
+      "step": 4,
+      "total_steps": 21,
+      "elapsed_s": 50.00669489009306,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.1225586044486643,
+      "gradient_norm": 1.2680591344833374,
+      "samples": 8,
+      "supervised_tokens": 484,
+      "step": 5,
+      "total_steps": 21,
+      "elapsed_s": 62.58858833392151,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.05992210334771272,
+      "gradient_norm": 4.631356239318848,
+      "samples": 8,
+      "supervised_tokens": 527,
+      "step": 6,
+      "total_steps": 21,
+      "elapsed_s": 75.79090453195386,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.03630183089331215,
+      "gradient_norm": 0.6824559569358826,
+      "samples": 8,
+      "supervised_tokens": 530,
+      "step": 7,
+      "total_steps": 21,
+      "elapsed_s": 88.13370788702741,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.030570610977318013,
+      "gradient_norm": 1.8447355031967163,
+      "samples": 8,
+      "supervised_tokens": 576,
+      "step": 8,
+      "total_steps": 21,
+      "elapsed_s": 100.43344740010798,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.00984368085700724,
+      "gradient_norm": 0.25579461455345154,
+      "samples": 8,
+      "supervised_tokens": 531,
+      "step": 9,
+      "total_steps": 21,
+      "elapsed_s": 112.17514015897177,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.05708061997932006,
+      "gradient_norm": 1.407719373703003,
+      "samples": 8,
+      "supervised_tokens": 483,
+      "step": 10,
+      "total_steps": 21,
+      "elapsed_s": 125.13240740797482,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.007833428595587826,
+      "gradient_norm": 0.1703387051820755,
+      "samples": 8,
+      "supervised_tokens": 436,
+      "step": 11,
+      "total_steps": 21,
+      "elapsed_s": 137.8470312829595,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.004606097854268389,
+      "gradient_norm": 0.18294690549373627,
+      "samples": 8,
+      "supervised_tokens": 441,
+      "step": 12,
+      "total_steps": 21,
+      "elapsed_s": 150.10724971909076,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.001950394239632937,
+      "gradient_norm": 0.10474945604801178,
+      "samples": 8,
+      "supervised_tokens": 438,
+      "step": 13,
+      "total_steps": 21,
+      "elapsed_s": 162.13454085798003,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.016315174445925194,
+      "gradient_norm": 0.9516503810882568,
+      "samples": 8,
+      "supervised_tokens": 483,
+      "step": 14,
+      "total_steps": 21,
+      "elapsed_s": 174.70689529390074,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.0001456990469742993,
+      "gradient_norm": 0.017324401065707207,
+      "samples": 8,
+      "supervised_tokens": 388,
+      "step": 15,
+      "total_steps": 21,
+      "elapsed_s": 187.2953041670844,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.02422043618821392,
+      "gradient_norm": 0.5259000658988953,
+      "samples": 8,
+      "supervised_tokens": 575,
+      "step": 16,
+      "total_steps": 21,
+      "elapsed_s": 200.87093628710136,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 13874757632
+    },
+    {
+      "loss": 0.13483499835887175,
+      "gradient_norm": 3.652395486831665,
+      "samples": 8,
+      "supervised_tokens": 533,
+      "step": 17,
+      "total_steps": 21,
+      "elapsed_s": 215.49026548606344,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 15210643456
+    },
+    {
+      "loss": 0.008592870557726829,
+      "gradient_norm": 0.8335765600204468,
+      "samples": 8,
+      "supervised_tokens": 339,
+      "step": 18,
+      "total_steps": 21,
+      "elapsed_s": 228.6827731640078,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 15210643456
+    },
+    {
+      "loss": 1.3759196911516113e-05,
+      "gradient_norm": 0.0010264426236972213,
+      "samples": 8,
+      "supervised_tokens": 433,
+      "step": 19,
+      "total_steps": 21,
+      "elapsed_s": 241.09926139004529,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 15210643456
+    },
+    {
+      "loss": 0.02168054172276599,
+      "gradient_norm": 0.6849688291549683,
+      "samples": 8,
+      "supervised_tokens": 485,
+      "step": 20,
+      "total_steps": 21,
+      "elapsed_s": 253.87265094788745,
+      "peak_allocated_bytes": 10590537216,
+      "peak_reserved_bytes": 15210643456
+    },
+    {
+      "loss": 0.0332769406982394,
+      "gradient_norm": 0.9625273942947388,
+      "samples": 3,
+      "supervised_tokens": 169,
+      "step": 21,
+      "total_steps": 21,
+      "elapsed_s": 259.7103456999175,
+      "peak_allocated_bytes": 10602340864,
+      "peak_reserved_bytes": 15210643456
+    }
+  ],
+  "changed_adapter_tensors": 496,
+  "validation_after": {
+    "loss": 1.612646544092685e-05,
+    "supervised_tokens": 2975,
+    "samples": 48
+  },
+  "peak_allocated_bytes": 10602340864,
+  "adapter_reload_max_logit_error": 0.0,
+  "previews_after": [
+    {
+      "validation_index": 0,
+      "task_id": "00006",
+      "fault": "calibration",
+      "raw_output": "{\"cause\": \"Target is not held by both finger pads\", \"changes\": {\"grasp_offset\": [0.004392922312753456, 0.04235180583316217, 0.0]}}\n",
+      "expected": {
+        "cause": "Target is not held by both finger pads",
+        "changes": {
+          "grasp_offset": [
+            0.004392922312753456,
+            0.04235180583316217,
+            0.0
+          ]
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": true
+    },
+    {
+      "validation_index": 1,
+      "task_id": "00007",
+      "fault": "collision",
+      "raw_output": "{\"cause\": \"Unexpected contact while carrying target\", \"changes\": {\"lift_height\": 0.45}}\n",
+      "expected": {
+        "cause": "Unexpected contact while carrying target",
+        "changes": {
+          "lift_height": 0.45
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": true
+    },
+    {
+      "validation_index": 2,
+      "task_id": "00008",
+      "fault": "placement",
+      "raw_output": "{\"cause\": \"Final object does not satisfy physical containment and stability\", \"changes\": {\"place_offset\": [0.16049951393892925, 0.0009934929064095432, 0.0]}}\n",
+      "expected": {
+        "cause": "Final object does not satisfy physical containment and stability",
+        "changes": {
+          "place_offset": [
+            0.16049951393892925,
+            0.0009934929064095432,
+            0.0
+          ]
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": true
+    }
+  ],
+  "adapter_files": {
+    "README.md": "153aed7a2ecf55fdc9feadf96bf9ee0042a8e9f2554e69814cd133cd8497d809",
+    "adapter_model.safetensors": "804c1bacb661098c2a9b38bc1d921193d972209e4186cb8daf3d8388d7a7a2e7",
+    "adapter_config.json": "1b4a41416f2a20f4bd0e358ceebee1d748e847024e40ead3676f4ab64ed6eb96",
+    "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "tokenizer_config.json": "6fc30221b0ec773811dfa2a04ebf0eec1a7e36a3bb1698888e28b38eabc1126c",
+    "tokenizer.json": "a5cd9732badce41de57e6efce8302930ded1c1188c5f81feb2bd6c24c4a1941f"
+  },
+  "test_used": false,
+  "physics_evaluated": false,
+  "adapter": "/home/yeliheng/grasp_server/stability_20261019/pilot_sft_v1/adapter",
+  "train_samples_seen": 163,
+  "ended_at": 1792567650.6731372
+}

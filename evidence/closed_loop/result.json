@@ -1,0 +1,442 @@
+{
+  "status": "completed",
+  "metrics": {
+    "retry": {
+      "tasks": 6,
+      "successes": 1,
+      "success_rate": 0.16666666666666666,
+      "mean_attempts": 2.6666666666666665,
+      "calls": 0,
+      "invalid": 0,
+      "invalid_output_rate": null,
+      "service_errors": 0
+    },
+    "rule": {
+      "tasks": 6,
+      "successes": 6,
+      "success_rate": 1.0,
+      "mean_attempts": 1.8333333333333333,
+      "calls": 5,
+      "invalid": 0,
+      "invalid_output_rate": 0.0,
+      "service_errors": 0
+    },
+    "base": {
+      "tasks": 6,
+      "successes": 3,
+      "success_rate": 0.5,
+      "mean_attempts": 2.1666666666666665,
+      "calls": 8,
+      "invalid": 1,
+      "invalid_output_rate": 0.125,
+      "service_errors": 0
+    },
+    "adapted": {
+      "tasks": 6,
+      "successes": 6,
+      "success_rate": 1.0,
+      "mean_attempts": 1.8333333333333333,
+      "calls": 5,
+      "invalid": 0,
+      "invalid_output_rate": 0.0,
+      "service_errors": 0
+    }
+  },
+  "verification": {
+    "passed": true,
+    "paired_cases": 6,
+    "tasks": 24,
+    "model_calls": 13,
+    "all_tasks_in_denominator": true,
+    "parameter_execution_verified": true,
+    "test_used": false
+  },
+  "rows": [
+    {
+      "case": 0,
+      "arm": "retry",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "calibration",
+        "seed": 40000
+      },
+      "success": false,
+      "attempts": 3,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/00/retry/result.json"
+    },
+    {
+      "case": 0,
+      "arm": "rule",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "calibration",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/00/rule/result.json"
+    },
+    {
+      "case": 0,
+      "arm": "base",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "calibration",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/00/base/result.json"
+    },
+    {
+      "case": 0,
+      "arm": "adapted",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "calibration",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/00/adapted/result.json"
+    },
+    {
+      "case": 1,
+      "arm": "retry",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "collision",
+        "seed": 40000
+      },
+      "success": false,
+      "attempts": 3,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/01/retry/result.json"
+    },
+    {
+      "case": 1,
+      "arm": "rule",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "collision",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/01/rule/result.json"
+    },
+    {
+      "case": 1,
+      "arm": "base",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "collision",
+        "seed": 40000
+      },
+      "success": false,
+      "attempts": 3,
+      "calls": 2,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/01/base/result.json"
+    },
+    {
+      "case": 1,
+      "arm": "adapted",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "collision",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/01/adapted/result.json"
+    },
+    {
+      "case": 2,
+      "arm": "retry",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "placement",
+        "seed": 40000
+      },
+      "success": false,
+      "attempts": 3,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/02/retry/result.json"
+    },
+    {
+      "case": 2,
+      "arm": "rule",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "placement",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/02/rule/result.json"
+    },
+    {
+      "case": 2,
+      "arm": "base",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "placement",
+        "seed": 40000
+      },
+      "success": false,
+      "attempts": 2,
+      "calls": 2,
+      "invalid": 1,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/02/base/result.json"
+    },
+    {
+      "case": 2,
+      "arm": "adapted",
+      "task": {
+        "source": "RedBlock",
+        "destination": "SortingTray",
+        "fault": "placement",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/02/adapted/result.json"
+    },
+    {
+      "case": 3,
+      "arm": "retry",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "calibration",
+        "seed": 40000
+      },
+      "success": false,
+      "attempts": 3,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/03/retry/result.json"
+    },
+    {
+      "case": 3,
+      "arm": "rule",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "calibration",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/03/rule/result.json"
+    },
+    {
+      "case": 3,
+      "arm": "base",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "calibration",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/03/base/result.json"
+    },
+    {
+      "case": 3,
+      "arm": "adapted",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "calibration",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/03/adapted/result.json"
+    },
+    {
+      "case": 4,
+      "arm": "retry",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "collision",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 1,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/04/retry/result.json"
+    },
+    {
+      "case": 4,
+      "arm": "rule",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "collision",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 1,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/04/rule/result.json"
+    },
+    {
+      "case": 4,
+      "arm": "base",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "collision",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 1,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/04/base/result.json"
+    },
+    {
+      "case": 4,
+      "arm": "adapted",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "collision",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 1,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/04/adapted/result.json"
+    },
+    {
+      "case": 5,
+      "arm": "retry",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "placement",
+        "seed": 40000
+      },
+      "success": false,
+      "attempts": 3,
+      "calls": 0,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/05/retry/result.json"
+    },
+    {
+      "case": 5,
+      "arm": "rule",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "placement",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/05/rule/result.json"
+    },
+    {
+      "case": 5,
+      "arm": "base",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "placement",
+        "seed": 40000
+      },
+      "success": false,
+      "attempts": 3,
+      "calls": 2,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/05/base/result.json"
+    },
+    {
+      "case": 5,
+      "arm": "adapted",
+      "task": {
+        "source": "GreenCylinder",
+        "destination": "RedBin",
+        "fault": "placement",
+        "seed": 40000
+      },
+      "success": true,
+      "attempts": 2,
+      "calls": 1,
+      "invalid": 0,
+      "service_errors": 0,
+      "result": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/tasks/05/adapted/result.json"
+    }
+  ],
+  "test_used": false,
+  "finalization": "audited_metadata_recovery_after_job_error"
+}

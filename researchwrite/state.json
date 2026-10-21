@@ -1,0 +1,15 @@
+{
+  "mode": "compose",
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "scope": "research execution plan and evidence-backed progress repository",
+  "status": "content_verified_ready_for_upload",
+  "formal_title_confirmed": false,
+  "independent_expert_review": false,
+  "technical_debts": [
+    "Confirm formal thesis title and advisor requirements",
+    "Verify related work before novelty claims",
+    "Freeze executable independent task families and sample-size analysis",
+    "Complete dataset audit and formal evaluation"
+  ]
+}

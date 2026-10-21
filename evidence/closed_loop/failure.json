@@ -1,0 +1,3 @@
+{
+  "error": "CalledProcessError(1, ['/home/yeliheng/grasp_server/env_sim/bin/python', '-m', 'stability.loop_worker', '--case', '4', '--arm', 'base'])"
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "optimizer_steps": 21,
+  "unique_training_samples": 163,
+  "adapter_reload_error": 0,
+  "test_used": false
+}

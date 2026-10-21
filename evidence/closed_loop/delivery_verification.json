@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "verification": {
+    "passed": true,
+    "paired_cases": 6,
+    "tasks": 24,
+    "model_calls": 13,
+    "all_tasks_in_denominator": true,
+    "parameter_execution_verified": true,
+    "test_used": false
+  },
+  "raw_hashes_unchanged": true,
+  "trained_adapter_unchanged": true,
+  "metadata_recovery_record": "/home/yeliheng/grasp_server/stability_20261019/closed_loop_v1/completion_recovery.json"
+}

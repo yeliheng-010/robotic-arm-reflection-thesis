@@ -1,0 +1,26 @@
+date -Is; squeue -a -o "%.12i %.15u %.24j %.10T %.24b"; nvidia-smi --query-gpu=index,name,memory.used,memory.total,utilization.gpu --format=csv; sacct -j 3712,3714,3717,3718 --format=JobID,State,ExitCode,Elapsed -P
+2026-10-21T19:49:58+08:00
+       JOBID            USER                     NAME      STATE            TRES_PER_NODE
+        3720              ci                wm-ci-gpu    PENDING               gres/gpu:1
+        3723              ci             wm-web-probe    PENDING          gres/gpu:v100:1
+        3725              ci blastgpt-e2e-39560102897    PENDING               gres/gpu:1
+        3718        yeliheng          expert_recovery    RUNNING          gres/gpu:v100:2
+        3630            root                 llm-hold    RUNNING           gres/gpu:svc:1
+        3414            root                 llm-hold    RUNNING           gres/gpu:svc:1
+index, name, memory.used [MiB], memory.total [MiB], utilization.gpu [%]
+0, Tesla V100-SXM2-16GB, 0 MiB, 16384 MiB, 0 %
+1, Tesla V100-SXM2-16GB, 0 MiB, 16384 MiB, 0 %
+2, Tesla V100-SXM2-16GB, 1917 MiB, 16384 MiB, 0 %
+3, Tesla V100-SXM2-16GB, 1470 MiB, 16384 MiB, 2 %
+JobID|State|ExitCode|Elapsed
+3712|COMPLETED|0:0|00:06:05
+3712.batch|COMPLETED|0:0|00:06:05
+3714|COMPLETED|0:0|00:06:40
+3714.batch|COMPLETED|0:0|00:06:40
+3717|FAILED|1:0|00:14:30
+3717.batch|FAILED|1:0|00:14:30
+3718|RUNNING|0:0|03:35:05
+3718.batch|RUNNING|0:0|03:35:05
+3718.0|RUNNING|0:0|03:35:00
+3718.1|RUNNING|0:0|03:35:00
+[yeliheng@gpu code]$

@@ -1,0 +1,39 @@
+{
+  "captured_at": "2026-10-21T11:49:58.552Z",
+  "timezone": "Asia/Shanghai",
+  "source_path": "grasp_server/stability_20261019/expert_batch_v1/status.json",
+  "status": {
+    "supervision_source": "rule_expert",
+    "planned_tasks": 5700,
+    "completed_tasks": 854,
+    "successful_expert_tasks": 655,
+    "samples": {
+      "train": 364,
+      "validation": 109,
+      "test": 83
+    },
+    "by_fault": {
+      "train": {
+        "calibration": 122,
+        "collision": 89,
+        "placement": 153
+      },
+      "validation": {
+        "calibration": 48,
+        "collision": 24,
+        "placement": 37
+      },
+      "test": {
+        "collision": 21,
+        "placement": 46,
+        "calibration": 16
+      }
+    },
+    "duplicate_inputs_excluded": 0,
+    "invalid": 5,
+    "calls": 998,
+    "sample_count_gate": false,
+    "training_started": false,
+    "note": "Programmatic expert labels; not pure LLM or human reasoning; final audit required"
+  }
+}

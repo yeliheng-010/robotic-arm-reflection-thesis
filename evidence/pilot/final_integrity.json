@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "frozen_training_code_unchanged": true,
+  "frozen_data_hashes_unchanged": {
+    "train": true,
+    "validation": true,
+    "test": true
+  },
+  "test_content_used_for_model": false
+}

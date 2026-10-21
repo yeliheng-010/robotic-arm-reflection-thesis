@@ -1,0 +1,10 @@
+.env
+.env.*
+*.pem
+*.key
+*.safetensors
+*.pt
+*.pth
+__pycache__/
+.venv/
+node_modules/

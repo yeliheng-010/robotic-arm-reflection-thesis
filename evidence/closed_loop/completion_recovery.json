@@ -1,0 +1,45 @@
+{
+  "reason": "first_attempt_success_requires_no_model_request_log",
+  "repaired": [
+    {
+      "case": 4,
+      "arm": "base"
+    },
+    {
+      "case": 4,
+      "arm": "adapted"
+    }
+  ],
+  "raw_files_unchanged": {
+    "tasks/00/adapted/result.json": "edf0b3b9d25385a75fb65829ebb65bf086896af1f660c9871f5b7739f0302c87",
+    "tasks/00/base/result.json": "0360b2c24c1e92a7375e9518611c8d32f5ae7367fa2288b0758e421dd9e13d4c",
+    "tasks/00/retry/result.json": "9dc4ef6b2091da0756b135ce0091b12c6f8c91cd7e0a2a6179c92590fb7a991e",
+    "tasks/00/rule/result.json": "d60dd4face42b6a2f62c50c9f553fad63dac7fb9e027c6417c2b33b8ae9861d7",
+    "tasks/01/adapted/result.json": "f4e41a934e475d2237c2dd09979248bcd44b1624c16c98be66f558cc12dbf4d1",
+    "tasks/01/base/result.json": "dc58cd9b53f29123bcdacbf756e43064e91060e5aa75f0a6f85bda541e684ed3",
+    "tasks/01/retry/result.json": "64cdd92a7a54b21864306019f377c0fda42953145d3fe0b918c9c51bc2bc4220",
+    "tasks/01/rule/result.json": "c34dbae5224e55b395b094395d77ec1f48e6a58904812dfafb6b8a1087ea040c",
+    "tasks/02/adapted/result.json": "c8be08c12d5094631cf01f35e0bd68668d85e0888f14401eac7d0eba7548d9af",
+    "tasks/02/base/result.json": "dba2df4212a24f1c61740ca206fbec3366ddcc98ff57a09128f79292836df051",
+    "tasks/02/retry/result.json": "afabb5d52067151ef890affc266c2ebcac8e74beb430abee2ed07738ae830f20",
+    "tasks/02/rule/result.json": "ef5882057902c816996b8b04275b138dc5e628b5c7fa66fb75cfdfef3837eb1a",
+    "tasks/03/adapted/result.json": "c37a1e8b58bf81b6843c96c77cb7acfe9777825bdcfd8e8d83b10fbf7c6216ea",
+    "tasks/03/base/result.json": "a10abf2151eb1c2309128a9ae97a247d6509597aab9b64880ec8a9c92c2fce26",
+    "tasks/03/retry/result.json": "e5412f49942a6d3b287b7be69dad15bf9ab5367ce83af687e88a30aa4c93039b",
+    "tasks/03/rule/result.json": "dd4d1ad92dd4cda5a6043476dde17fa1a0eec2f00ae8bdc4ffe0e144eb6c2bb0",
+    "tasks/04/adapted/result.json": "83c17feb24c5d3c7c41de66021aba7d1faab166d98bf2dc495fbd67dee2d95b7",
+    "tasks/04/base/result.json": "9b899c7c4db9d8d353a7504eaaaf3e99aaddfd73ec7b5ee24712d78b14dd92ab",
+    "tasks/04/retry/result.json": "f8f3ed4986429d8189e9fbfbc98cabec04094ff0ddedf841f6e0feea0242c4e6",
+    "tasks/04/rule/result.json": "590493c8fac059962e85eb98c5af9812816fb7e76275d3c0b543cbd21b00cf5f",
+    "tasks/05/adapted/result.json": "285422df939ec7c50dac618001e9a2af246b4a235a34a43fc779555cc416e64c",
+    "tasks/05/base/result.json": "1d23dc7095ec6ea3fa95b66fa3374455b3b9dbc0b373a2bb64facbce478dd960",
+    "tasks/05/retry/result.json": "0df2bcda8077b37d0a9867951229a8f74544a887d278811facc2a7d092bf4f80",
+    "tasks/05/rule/result.json": "59eef38d9a16ebefaf6b5ec1462efa6190681855ae1f8a6c64d6801a9a934b15"
+  },
+  "failed_job": "3717",
+  "failure_sha256": "a3306232dc185e636cbe45eb280ce81de40a28e73ace919720f3003540435b14",
+  "recovery_code": {
+    "loop_results.py": "6f00d61f8f5e0951c64993c5af4e43737b999c09da36a2637e8537cf8516833b",
+    "loop_finalize.py": "b1b560652d3090cd8d87d1c1ca3d42609d8e0bf742e27e5d53287b0ec355f61a"
+  }
+}

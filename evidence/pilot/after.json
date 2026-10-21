@@ -1,0 +1,55 @@
+{
+  "purpose": "three_development_previews_not_physical_evaluation",
+  "results": [
+    {
+      "validation_index": 0,
+      "task_id": "00006",
+      "fault": "calibration",
+      "raw_output": "{\"cause\": \"Target is not held by both finger pads\", \"changes\": {\"grasp_offset\": [0.004392922312753456, 0.04235180583316217, 0.0]}}\n",
+      "expected": {
+        "cause": "Target is not held by both finger pads",
+        "changes": {
+          "grasp_offset": [
+            0.004392922312753456,
+            0.04235180583316217,
+            0.0
+          ]
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": true
+    },
+    {
+      "validation_index": 1,
+      "task_id": "00007",
+      "fault": "collision",
+      "raw_output": "{\"cause\": \"Unexpected contact while carrying target\", \"changes\": {\"lift_height\": 0.45}}\n",
+      "expected": {
+        "cause": "Unexpected contact while carrying target",
+        "changes": {
+          "lift_height": 0.45
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": true
+    },
+    {
+      "validation_index": 2,
+      "task_id": "00008",
+      "fault": "placement",
+      "raw_output": "{\"cause\": \"Final object does not satisfy physical containment and stability\", \"changes\": {\"place_offset\": [0.16049951393892925, 0.0009934929064095432, 0.0]}}\n",
+      "expected": {
+        "cause": "Final object does not satisfy physical containment and stability",
+        "changes": {
+          "place_offset": [
+            0.16049951393892925,
+            0.0009934929064095432,
+            0.0
+          ]
+        }
+      },
+      "json_with_changes": true,
+      "changes_exact_match": true
+    }
+  ]
+}
