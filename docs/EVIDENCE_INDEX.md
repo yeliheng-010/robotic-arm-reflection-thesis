@@ -1,58 +1,61 @@
 # 证据与复现索引
 
-本仓库提供精选审计材料，不包含完整仿真系统、全部训练数据、权重或每个任务的原始轨迹。因此可以复核本报告的关键数字与证据身份，但仅克隆本仓库不能重新运行全部实验。
+更新：2026-10-28。仓库公开精选审计证据，不包含完整仿真系统、模型权重和全部原始轨迹。可据此核对报告数字及证据身份；仅克隆仓库不能复现实验全流程。
 
-## 1. 当前状态
+## 1. 本轮新增证据
 
-- [2026-10-21 21:54采集快照](../evidence/status_20261021_215414.json)：README本轮更新采用的1099任务、474/139/110样本记录。
-- [21:54服务器检查](../evidence/server_check_20261021_215414.txt)：3718双卡运行状态与当时队列、显存。
-- [README实现检查清单](../evidence/implementation_review.json)：本轮只读核对的本地模块及hash，不等于重新验证所有远端运行源码。
-
-- [首版19:49采集状态快照](../evidence/status_snapshot.json)：保留当时采集时间、来源路径和原始status字段。
-- [首版服务器只读检查](../evidence/server_check.txt)：GPU、Slurm队列及3712/3714/3717/3718状态；记录运行中作业的0:0不等于最终成功。
-
-## 2. 初步训练与生成
-
-- [result.json](../evidence/pilot/result.json)：真实更新、验证loss、adapter变化、保存重载检查等。
-- [manifest.json](../evidence/pilot/manifest.json)：基础模型、数据身份、训练参数与源码/模型hash。
-- [validation_generation.json](../evidence/pilot/validation_generation.json)：保存后独立生成的48条验证记录。
-- [before.json](../evidence/pilot/before.json)、[after.json](../evidence/pilot/after.json)：预固定开发例的生成，不是全部48条基线对照。
-- [updates.jsonl](../evidence/pilot/updates.jsonl)：逐次训练更新。
-- [completion_verification.json](../evidence/pilot/completion_verification.json)、[final_integrity.json](../evidence/pilot/final_integrity.json)：归档验证记录。
-
-训练result的`physics_evaluated=false`反映训练完成时状态。后续物理闭环证据另见closed_loop目录，不改写历史文件以掩盖阶段差异。
-
-## 3. 仿真闭环
-
-- [result.json](../evidence/closed_loop/result.json)：四组汇总、逐场景结果与恢复说明。
-- [delivery_verification.json](../evidence/closed_loop/delivery_verification.json)：24任务、6配对场景、13次模型调用的审计结果。
-- [failure.json](../evidence/closed_loop/failure.json)：保留原汇总异常。
-- [completion_recovery.json](../evidence/closed_loop/completion_recovery.json)：两项汇总恢复、原始结果hash、恢复代码身份。
-- [source-snapshot.json](../evidence/closed_loop/source-snapshot.json)：冻结代码身份记录，不是全部源码。
-- [jobs.tsv](../evidence/closed_loop/jobs.tsv)：原作业最终状态。
-- [仿真截图](../assets/case_01_comparison.png)：案例说明，不替代全量表。
-
-上述历史证据从本地已归档文件逐字节复制；本轮另实时核对作业状态和当前采集。不是本轮重新跑训练或重新做全部轨迹审计。
-
-## 4. 完整产物位置
-
-服务器实验根目录：`/home/yeliheng/grasp_server/stability_20261019/`。
-
-| 内容 | 相对实验根目录 |
+| 文件 | 内容与边界 |
 |---|---|
-| 初步冻结数据 | `pilot_sft_data_v1/` |
-| 模型adapter与训练记录 | `pilot_sft_v1/` |
-| 开发闭环全部任务轨迹 | `closed_loop_v1/tasks/` |
-| 闭环完整冻结manifest及请求 | `closed_loop_v1/manifest.json`、`service_requests.jsonl` |
-| 当前采集 | `expert_batch_v1/` |
-| 当前调度控制 | `expert_dual_after_loop_deploy_v1/` |
+| [已完成研究摘要](../evidence/20261028/completed_studies.json) | 本次从服务器读取6个已完成研究的verification.json，提取训练、成功率、调用、成本及审计字段；另含选择器只读分析 |
+| [诊断运行中快照](../evidence/20261028/diagnostic_snapshot.json) | 23:10时仍在batch，彼时最终审计缺失；保留历史不覆盖 |
+| [诊断最终完成摘录](../evidence/20261028/diagnostic_completed.json) | 23:19读取最终状态，402任务请求、66分支/执行、成功与费用及全阶段审计 |
+| [本轮文件SHA256](../evidence/20261028/SHA256SUMS.txt) | 上述公开摘录文件的字节身份，不包含本文件自身 |
 
-基础模型：`/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B`。运行模型需基础权重、tokenizer、adapter、提示模板和对应环境，不能只复制adapter就视为完整模型。
+摘要的 `source` 为服务器实验根目录下的相对产物名；`source_sha256` 对应完整源文件UTF-8内容。摘录去掉逐轨迹明细、部分细分分析和内部代码路径，因此不能拿摘录文件哈希与源文件哈希直接比较。
 
-运行源码分别位于原项目与独立实验包。复现前读取原环境RUNBOOK、TRAINING_PROTOCOL及冻结manifest，核对依赖与模型hash。新的闭环运行须新冻结版本并整合安全汇总，不能直接重用此次一次性恢复入口。
+本次只读核对已有审计产物，**没有重跑原实验或对全部原始轨迹重新审计**。每个研究的 `passed` 是对应审计产物记录的结果，不意味着真实机械臂迁移或论文结论已获验证。
 
-## 5. 仓库文件身份与更新规则
+## 2. 当前结论与来源映射
 
-[SHA256SUMS.txt](../evidence/SHA256SUMS.txt)记录上传的证据文件与图片身份，不包含自身；版本控制负责文档变更。未来状态更新需新增带时间戳的快照或明确版本，不能将新样本计数写成旧训练数据规模。
+| 主张 | 实验 / 源字段 |
+|---|---|
+| 159条、20次更新、496张量变化、三次重载误差0 | `candidate_sft_v2 / training, after` |
+| 189输入、197回复、24次更新 | `set_sft_v1 / training` |
+| 60条件规则57、base55、两SFT56 | `set_closed_loop_v2 / metrics[field=all], paired` |
+| 三次预算下最新值22/24、中位数24/24，模型与规则一致 | `observation_model_control_v1 / budget_analysis.curves` |
+| 45次同输入、同选择、唯一测量候选；仅36次下一步成功 | `selector_analysis / fields.totals` |
+| 规则pilot15/24与16/24、观测46与42 | `active_observation_pilot_v1 / budget_analysis.curves` |
+| 最新四组14/17/14/14，210次唯一执行、82任务调用 | `active_observation_model_v2 / analysis.overall, physical_executions, ledger` |
+| 模型诊断402完成、各变体OBSERVE计数、费用读取39/41 | 诊断快照 `model_progress.json, model_verification.json` |
+| 11快照0/1/2次观测，规则0/5/6、模型1/6/7 | 最终完成摘录 `verification.json / analysis.overall.arms` |
+| 最终完成与篡改拒绝 | 最终完成摘录 `STATUS.json, verification.json` |
 
-更新主结果时须同时更新README、CURRENT_PROGRESS和证据索引，标明是开发、验证还是最终测试。负结果、异常与恢复日志不得删除以改善表观成绩。
+`expected` 的单位取决于研究：主动观测为条件数，60条件四组闭环为方法轨迹数。训练审计的 `physics_evaluated=false` 是当时训练阶段状态；后续物理评估有独立证据，不回写旧文件。
+
+## 3. 历史证据（2026-10-21）
+
+以下仅说明历史状态，不再作为当前采集或资源安排：
+
+- [21:54采集快照](../evidence/status_20261021_215414.json)、[服务器检查](../evidence/server_check_20261021_215414.txt)：当时1099任务及474/139/110样本计数。
+- [首版快照](../evidence/status_snapshot.json)、[首版服务器检查](../evidence/server_check.txt)：更早时间点，不能与后续训练样本数混用。
+- [实现检查清单](../evidence/implementation_review.json)：当时README所引用模块的检查记录。
+- [pilot训练结果](../evidence/pilot/result.json)、[manifest](../evidence/pilot/manifest.json)：163样本、21更新的早期参数修正模型。
+- [验证生成](../evidence/pilot/validation_generation.json)、[训练更新](../evidence/pilot/updates.jsonl)：标签与训练记录，不等于物理成功率。
+- [早期闭环结果](../evidence/closed_loop/result.json)、[交付审计](../evidence/closed_loop/delivery_verification.json)：6条件、4方法的历史pilot。
+- [历史失败](../evidence/closed_loop/failure.json)、[恢复记录](../evidence/closed_loop/completion_recovery.json)：保留工程失败与恢复。
+- [历史证据SHA256](../evidence/SHA256SUMS.txt)：原有证据与图片清单；本轮新增文件使用上方独立清单。
+
+旧版README及计划保存在 [4113c24](https://github.com/yeliheng-010/robotic-arm-reflection-thesis/tree/4113c24)。早期163条、后续159条与189输入版本的任务和监督口径不同，不作简单累加。
+
+## 4. 完整产物位置与复现前提
+
+原服务器实验根目录为 `/home/yeliheng/grasp_server/`，早期pilot位于其 `stability_20261019/`。近期独立目录：
+
+- `candidate_sft_v2/`、`set_sft_v1/`、`set_closed_loop_v2/`。
+- `observation_model_control_v1/`、`selector_analysis_v1/`。
+- `active_observation_pilot_v1/`、`active_observation_model_v2/`。
+- `observation_decision_diagnostic_v2/`。
+
+完整复现需要对应版本源码、manifest、输入/轨迹、基础权重、adapter、提示、依赖和Slurm资源。先核对冻结身份、协议与环境；新实验另建版本，不覆盖历史失败、原始数据或权重。
+
+本仓库没有提供一条命令复现全部实验的承诺，也不发布服务器登录信息、会话凭证或模型服务令牌。

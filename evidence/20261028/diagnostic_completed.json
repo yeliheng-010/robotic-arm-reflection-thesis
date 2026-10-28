@@ -1,0 +1,913 @@
+{
+  "snapshot_kind": "completed_diagnostic_selected_fields",
+  "checked_at_utc": "2026-10-28T15:19:45.599Z",
+  "timezone": "Asia/Shanghai",
+  "experiment": "observation_decision_diagnostic_v2",
+  "note": "实时只读读取最终审计；省略逐快照明细。source_sha256 对应完整源文件。原运行中快照保留。单次重试诊断不等于完整三次闭环或自主观测策略评估。",
+  "checked_at": "2026-10-28T15:19:45.599Z",
+  "artifacts": {
+    "STATUS.json": {
+      "http_status": 200,
+      "fields": {
+        "status": "completed",
+        "started_at": 1793198824.9062572,
+        "manifest_sha256": "36730e07389db3bb06fea8bad242389195b84a9a9cf746cc19ff60714eb6d2b7",
+        "stage": "finished",
+        "active_job": null,
+        "completed_stages": [
+          {
+            "stage": "model",
+            "job": "5380",
+            "accounting": [
+              [
+                "5380",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          },
+          {
+            "stage": "model_audit",
+            "job": "5381",
+            "accounting": [
+              [
+                "5381",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          },
+          {
+            "stage": "smoke",
+            "job": "5382",
+            "accounting": [
+              [
+                "5383",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5384",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5385",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5382",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          },
+          {
+            "stage": "smoke_audit",
+            "job": "5386",
+            "accounting": [
+              [
+                "5386",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          },
+          {
+            "stage": "batch",
+            "job": "5387",
+            "accounting": [
+              [
+                "5388",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5389",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5390",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5387",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          },
+          {
+            "stage": "final_audit",
+            "job": "5391",
+            "accounting": [
+              [
+                "5391",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          }
+        ],
+        "ended_at": 1793200586.0798159
+      },
+      "source_sha256": "5cc19ed2eb6c0c2de72bef557b8d58ac7e3b78361d56d8eb2343367bb0910e47"
+    },
+    "model_progress.json": {
+      "http_status": 200,
+      "fields": {
+        "status": "completed",
+        "completed": 402,
+        "expected": 402,
+        "started_at": 1793198832.4926648,
+        "last_task": "exec__M1_940306_grasp_place__d1__l2",
+        "ended_at": 1793200011.5125637
+      },
+      "source_sha256": "ae338f25f55c3cc7f7e227928dffcf01b4cdf7e46c72045434c4d2f654534f50"
+    },
+    "model_verification.json": {
+      "http_status": 200,
+      "fields": {
+        "passed": true,
+        "task_calls": 402,
+        "startup_calls": 2,
+        "all_calls": 404,
+        "original_replays": 82,
+        "summary": {
+          "baseline__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "unified_first__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "unified_last__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "missing_directive__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 41,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 11
+          },
+          "comprehension__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 39,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "baseline__base_history": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "unified_first__base_history": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "unified_last__base_history": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "missing_directive__base_history": {
+            "total": 41,
+            "valid": 41,
+            "observe": 41,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 11
+          },
+          "execute_0__base_current": {
+            "total": 11,
+            "valid": 11,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "execute_1__base_current": {
+            "total": 11,
+            "valid": 11,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "execute_2__base_current": {
+            "total": 11,
+            "valid": 11,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          }
+        },
+        "tamper_rejections": [
+          "prompt",
+          "identity",
+          "action",
+          "row"
+        ],
+        "manifest_sha256": "36730e07389db3bb06fea8bad242389195b84a9a9cf746cc19ff60714eb6d2b7",
+        "test_used": false,
+        "training_approved": false
+      },
+      "source_sha256": "749eea6d8b8dcc69df37d5f8707e94619f9f4a6d245c8ce2f2e2ca197a16137f"
+    },
+    "verification.json": {
+      "http_status": 200,
+      "fields": {
+        "passed": true,
+        "complete": true,
+        "expected": 11,
+        "accounted": 11,
+        "model": {
+          "passed": true,
+          "task_calls": 402,
+          "startup_calls": 2,
+          "all_calls": 404,
+          "original_replays": 82,
+          "summary": {
+            "baseline__base_current": {
+              "total": 41,
+              "valid": 41,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "unified_first__base_current": {
+              "total": 41,
+              "valid": 41,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "unified_last__base_current": {
+              "total": 41,
+              "valid": 41,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "missing_directive__base_current": {
+              "total": 41,
+              "valid": 41,
+              "observe": 41,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 11
+            },
+            "comprehension__base_current": {
+              "total": 41,
+              "valid": 41,
+              "observe": 0,
+              "probe_correct": 39,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "baseline__base_history": {
+              "total": 41,
+              "valid": 41,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "unified_first__base_history": {
+              "total": 41,
+              "valid": 41,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "unified_last__base_history": {
+              "total": 41,
+              "valid": 41,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "missing_directive__base_history": {
+              "total": 41,
+              "valid": 41,
+              "observe": 41,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 11
+            },
+            "execute_0__base_current": {
+              "total": 11,
+              "valid": 11,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "execute_1__base_current": {
+              "total": 11,
+              "valid": 11,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            },
+            "execute_2__base_current": {
+              "total": 11,
+              "valid": 11,
+              "observe": 0,
+              "probe_correct": 0,
+              "missing": 11,
+              "observe_when_missing": 0
+            }
+          },
+          "tamper_rejections": [
+            "prompt",
+            "identity",
+            "action",
+            "row"
+          ],
+          "manifest_sha256": "36730e07389db3bb06fea8bad242389195b84a9a9cf746cc19ff60714eb6d2b7",
+          "test_used": false,
+          "training_approved": false
+        },
+        "physical_executions": 66,
+        "branches": 66,
+        "invalid": 0,
+        "analysis": {
+          "overall": {
+            "arms": {
+              "rule_l0": {
+                "snapshots": 11,
+                "successes": 0,
+                "executions": 11,
+                "extra_observations": 0
+              },
+              "rule_l1": {
+                "snapshots": 11,
+                "successes": 5,
+                "executions": 11,
+                "extra_observations": 11
+              },
+              "rule_l2": {
+                "snapshots": 11,
+                "successes": 6,
+                "executions": 11,
+                "extra_observations": 22
+              },
+              "model_l0": {
+                "snapshots": 11,
+                "successes": 1,
+                "executions": 11,
+                "extra_observations": 0
+              },
+              "model_l1": {
+                "snapshots": 11,
+                "successes": 6,
+                "executions": 11,
+                "extra_observations": 11
+              },
+              "model_l2": {
+                "snapshots": 11,
+                "successes": 7,
+                "executions": 11,
+                "extra_observations": 22
+              }
+            },
+            "paired": {
+              "rule_l0_vs_l1": {
+                "both_fail": 6,
+                "observe_only": 5
+              },
+              "rule_l0_vs_l2": {
+                "observe_only": 6,
+                "both_fail": 5
+              },
+              "model_l0_vs_l1": {
+                "both_fail": 5,
+                "both_success": 1,
+                "observe_only": 5
+              },
+              "model_l0_vs_l2": {
+                "observe_only": 6,
+                "both_success": 1,
+                "both_fail": 4
+              }
+            }
+          },
+          "seed_groups": 5,
+          "unique_conditions": 10,
+          "by_seed": {
+            "940301": {
+              "arms": {
+                "rule_l0": {
+                  "snapshots": 3,
+                  "successes": 0,
+                  "executions": 3,
+                  "extra_observations": 0
+                },
+                "rule_l1": {
+                  "snapshots": 3,
+                  "successes": 1,
+                  "executions": 3,
+                  "extra_observations": 3
+                },
+                "rule_l2": {
+                  "snapshots": 3,
+                  "successes": 2,
+                  "executions": 3,
+                  "extra_observations": 6
+                },
+                "model_l0": {
+                  "snapshots": 3,
+                  "successes": 1,
+                  "executions": 3,
+                  "extra_observations": 0
+                },
+                "model_l1": {
+                  "snapshots": 3,
+                  "successes": 2,
+                  "executions": 3,
+                  "extra_observations": 3
+                },
+                "model_l2": {
+                  "snapshots": 3,
+                  "successes": 3,
+                  "executions": 3,
+                  "extra_observations": 6
+                }
+              },
+              "paired": {
+                "rule_l0_vs_l1": {
+                  "both_fail": 2,
+                  "observe_only": 1
+                },
+                "rule_l0_vs_l2": {
+                  "observe_only": 2,
+                  "both_fail": 1
+                },
+                "model_l0_vs_l1": {
+                  "both_fail": 1,
+                  "both_success": 1,
+                  "observe_only": 1
+                },
+                "model_l0_vs_l2": {
+                  "observe_only": 2,
+                  "both_success": 1
+                }
+              }
+            },
+            "940302": {
+              "arms": {
+                "rule_l0": {
+                  "snapshots": 1,
+                  "successes": 0,
+                  "executions": 1,
+                  "extra_observations": 0
+                },
+                "rule_l1": {
+                  "snapshots": 1,
+                  "successes": 0,
+                  "executions": 1,
+                  "extra_observations": 1
+                },
+                "rule_l2": {
+                  "snapshots": 1,
+                  "successes": 0,
+                  "executions": 1,
+                  "extra_observations": 2
+                },
+                "model_l0": {
+                  "snapshots": 1,
+                  "successes": 0,
+                  "executions": 1,
+                  "extra_observations": 0
+                },
+                "model_l1": {
+                  "snapshots": 1,
+                  "successes": 0,
+                  "executions": 1,
+                  "extra_observations": 1
+                },
+                "model_l2": {
+                  "snapshots": 1,
+                  "successes": 0,
+                  "executions": 1,
+                  "extra_observations": 2
+                }
+              },
+              "paired": {
+                "rule_l0_vs_l1": {
+                  "both_fail": 1
+                },
+                "rule_l0_vs_l2": {
+                  "both_fail": 1
+                },
+                "model_l0_vs_l1": {
+                  "both_fail": 1
+                },
+                "model_l0_vs_l2": {
+                  "both_fail": 1
+                }
+              }
+            },
+            "940303": {
+              "arms": {
+                "rule_l0": {
+                  "snapshots": 2,
+                  "successes": 0,
+                  "executions": 2,
+                  "extra_observations": 0
+                },
+                "rule_l1": {
+                  "snapshots": 2,
+                  "successes": 1,
+                  "executions": 2,
+                  "extra_observations": 2
+                },
+                "rule_l2": {
+                  "snapshots": 2,
+                  "successes": 1,
+                  "executions": 2,
+                  "extra_observations": 4
+                },
+                "model_l0": {
+                  "snapshots": 2,
+                  "successes": 0,
+                  "executions": 2,
+                  "extra_observations": 0
+                },
+                "model_l1": {
+                  "snapshots": 2,
+                  "successes": 1,
+                  "executions": 2,
+                  "extra_observations": 2
+                },
+                "model_l2": {
+                  "snapshots": 2,
+                  "successes": 1,
+                  "executions": 2,
+                  "extra_observations": 4
+                }
+              },
+              "paired": {
+                "rule_l0_vs_l1": {
+                  "both_fail": 1,
+                  "observe_only": 1
+                },
+                "rule_l0_vs_l2": {
+                  "both_fail": 1,
+                  "observe_only": 1
+                },
+                "model_l0_vs_l1": {
+                  "both_fail": 1,
+                  "observe_only": 1
+                },
+                "model_l0_vs_l2": {
+                  "both_fail": 1,
+                  "observe_only": 1
+                }
+              }
+            },
+            "940304": {
+              "arms": {
+                "rule_l0": {
+                  "snapshots": 3,
+                  "successes": 0,
+                  "executions": 3,
+                  "extra_observations": 0
+                },
+                "rule_l1": {
+                  "snapshots": 3,
+                  "successes": 1,
+                  "executions": 3,
+                  "extra_observations": 3
+                },
+                "rule_l2": {
+                  "snapshots": 3,
+                  "successes": 1,
+                  "executions": 3,
+                  "extra_observations": 6
+                },
+                "model_l0": {
+                  "snapshots": 3,
+                  "successes": 0,
+                  "executions": 3,
+                  "extra_observations": 0
+                },
+                "model_l1": {
+                  "snapshots": 3,
+                  "successes": 1,
+                  "executions": 3,
+                  "extra_observations": 3
+                },
+                "model_l2": {
+                  "snapshots": 3,
+                  "successes": 1,
+                  "executions": 3,
+                  "extra_observations": 6
+                }
+              },
+              "paired": {
+                "rule_l0_vs_l1": {
+                  "observe_only": 1,
+                  "both_fail": 2
+                },
+                "rule_l0_vs_l2": {
+                  "observe_only": 1,
+                  "both_fail": 2
+                },
+                "model_l0_vs_l1": {
+                  "observe_only": 1,
+                  "both_fail": 2
+                },
+                "model_l0_vs_l2": {
+                  "observe_only": 1,
+                  "both_fail": 2
+                }
+              }
+            },
+            "940306": {
+              "arms": {
+                "rule_l0": {
+                  "snapshots": 2,
+                  "successes": 0,
+                  "executions": 2,
+                  "extra_observations": 0
+                },
+                "rule_l1": {
+                  "snapshots": 2,
+                  "successes": 2,
+                  "executions": 2,
+                  "extra_observations": 2
+                },
+                "rule_l2": {
+                  "snapshots": 2,
+                  "successes": 2,
+                  "executions": 2,
+                  "extra_observations": 4
+                },
+                "model_l0": {
+                  "snapshots": 2,
+                  "successes": 0,
+                  "executions": 2,
+                  "extra_observations": 0
+                },
+                "model_l1": {
+                  "snapshots": 2,
+                  "successes": 2,
+                  "executions": 2,
+                  "extra_observations": 2
+                },
+                "model_l2": {
+                  "snapshots": 2,
+                  "successes": 2,
+                  "executions": 2,
+                  "extra_observations": 4
+                }
+              },
+              "paired": {
+                "rule_l0_vs_l1": {
+                  "observe_only": 2
+                },
+                "rule_l0_vs_l2": {
+                  "observe_only": 2
+                },
+                "model_l0_vs_l1": {
+                  "observe_only": 2
+                },
+                "model_l0_vs_l2": {
+                  "observe_only": 2
+                }
+              }
+            }
+          },
+          "by_attempt": {
+            "1": {
+              "arms": {
+                "rule_l0": {
+                  "snapshots": 5,
+                  "successes": 0,
+                  "executions": 5,
+                  "extra_observations": 0
+                },
+                "rule_l1": {
+                  "snapshots": 5,
+                  "successes": 1,
+                  "executions": 5,
+                  "extra_observations": 5
+                },
+                "rule_l2": {
+                  "snapshots": 5,
+                  "successes": 2,
+                  "executions": 5,
+                  "extra_observations": 10
+                },
+                "model_l0": {
+                  "snapshots": 5,
+                  "successes": 1,
+                  "executions": 5,
+                  "extra_observations": 0
+                },
+                "model_l1": {
+                  "snapshots": 5,
+                  "successes": 2,
+                  "executions": 5,
+                  "extra_observations": 5
+                },
+                "model_l2": {
+                  "snapshots": 5,
+                  "successes": 3,
+                  "executions": 5,
+                  "extra_observations": 10
+                }
+              },
+              "paired": {
+                "rule_l0_vs_l1": {
+                  "both_fail": 4,
+                  "observe_only": 1
+                },
+                "rule_l0_vs_l2": {
+                  "observe_only": 2,
+                  "both_fail": 3
+                },
+                "model_l0_vs_l1": {
+                  "both_fail": 3,
+                  "both_success": 1,
+                  "observe_only": 1
+                },
+                "model_l0_vs_l2": {
+                  "observe_only": 2,
+                  "both_success": 1,
+                  "both_fail": 2
+                }
+              }
+            },
+            "2": {
+              "arms": {
+                "rule_l0": {
+                  "snapshots": 6,
+                  "successes": 0,
+                  "executions": 6,
+                  "extra_observations": 0
+                },
+                "rule_l1": {
+                  "snapshots": 6,
+                  "successes": 4,
+                  "executions": 6,
+                  "extra_observations": 6
+                },
+                "rule_l2": {
+                  "snapshots": 6,
+                  "successes": 4,
+                  "executions": 6,
+                  "extra_observations": 12
+                },
+                "model_l0": {
+                  "snapshots": 6,
+                  "successes": 0,
+                  "executions": 6,
+                  "extra_observations": 0
+                },
+                "model_l1": {
+                  "snapshots": 6,
+                  "successes": 4,
+                  "executions": 6,
+                  "extra_observations": 6
+                },
+                "model_l2": {
+                  "snapshots": 6,
+                  "successes": 4,
+                  "executions": 6,
+                  "extra_observations": 12
+                }
+              },
+              "paired": {
+                "rule_l0_vs_l1": {
+                  "observe_only": 4,
+                  "both_fail": 2
+                },
+                "rule_l0_vs_l2": {
+                  "observe_only": 4,
+                  "both_fail": 2
+                },
+                "model_l0_vs_l1": {
+                  "observe_only": 4,
+                  "both_fail": 2
+                },
+                "model_l0_vs_l2": {
+                  "observe_only": 4,
+                  "both_fail": 2
+                }
+              }
+            }
+          }
+        },
+        "tamper_rejections": [
+          {
+            "selector": "rule",
+            "kind": "physical_hash"
+          },
+          {
+            "selector": "rule",
+            "kind": "source"
+          },
+          {
+            "selector": "rule",
+            "kind": "budget"
+          },
+          {
+            "selector": "rule",
+            "kind": "measurement"
+          },
+          {
+            "selector": "rule",
+            "kind": "selection"
+          },
+          {
+            "selector": "rule",
+            "kind": "success"
+          },
+          {
+            "selector": "model",
+            "kind": "physical_hash"
+          },
+          {
+            "selector": "model",
+            "kind": "source"
+          },
+          {
+            "selector": "model",
+            "kind": "budget"
+          },
+          {
+            "selector": "model",
+            "kind": "measurement"
+          },
+          {
+            "selector": "model",
+            "kind": "selection"
+          },
+          {
+            "selector": "model",
+            "kind": "success"
+          }
+        ],
+        "manifest_sha256": "36730e07389db3bb06fea8bad242389195b84a9a9cf746cc19ff60714eb6d2b7",
+        "test_used": false,
+        "training_approved": false
+      },
+      "source_sha256": "7e155c15155decb3d5a2c2fe14b015ae2291958a31f4e4c79222cf5a32aed8fd"
+    },
+    "jobs.json": {
+      "http_status": 200,
+      "fields": {
+        "preflight": "5378",
+        "controller": "5379",
+        "model": "5380",
+        "model_audit": "5381",
+        "smoke": "5382",
+        "smoke_audit": "5386",
+        "batch": "5387",
+        "final_audit": "5391"
+      },
+      "source_sha256": "8c1a5b7ceb228cd67b875cd95c929b25cce5f58e13bf159ca4cd88ed10e056dd"
+    }
+  }
+}

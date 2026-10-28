@@ -1,0 +1,2213 @@
+{
+  "snapshot_kind": "selected_fields_from_live_server_audits",
+  "checked_at_utc": "2026-10-28T15:04:24.548Z",
+  "timezone": "Asia/Shanghai",
+  "note": "只读读取已有审计产物并提取字段；本次文档发布没有重跑实验或全量轨迹审计。source_sha256 对应服务器完整源文件的 UTF-8 内容，不是本摘录文件哈希。",
+  "studies": {
+    "candidate_sft_v2": {
+      "source": "candidate_sft_v2/verification.json",
+      "source_sha256": "7735c7e901cc2c81439c297225cb2113f679edf7be0288550aef83dabae463bc",
+      "fields": {
+        "passed": true,
+        "test_used": false,
+        "physics_evaluated": false,
+        "identity": "Qwen3.5-4B student, not Flash-Next fine-tuning",
+        "before": {
+          "metrics": {
+            "dev": {
+              "n": 49,
+              "json_valid": 49,
+              "candidate_valid": 49,
+              "target_match": 48,
+              "loss": 0.1245814475150388
+            },
+            "legacy_dev": {
+              "n": 29,
+              "json_valid": 29,
+              "candidate_valid": 29,
+              "target_match": 28,
+              "loss": 0.14079463302061476
+            }
+          },
+          "reload_errors": []
+        },
+        "after": {
+          "metrics": {
+            "dev": {
+              "n": 49,
+              "json_valid": 49,
+              "candidate_valid": 49,
+              "target_match": 49,
+              "loss": 0.00019279549801261658
+            },
+            "legacy_dev": {
+              "n": 29,
+              "json_valid": 29,
+              "candidate_valid": 29,
+              "target_match": 29,
+              "loss": 0.0003115147227272873
+            }
+          },
+          "reload_errors": [
+            0,
+            0,
+            0
+          ]
+        },
+        "training": {
+          "status": "completed",
+          "environment": {
+            "job": "5071",
+            "cuda_visible_devices": "0",
+            "device": "Tesla V100-SXM2-16GB",
+            "versions": {
+              "torch": "2.6.0+cu124",
+              "transformers": "5.20.1",
+              "peft": "0.21.2",
+              "accelerate": "1.12.0",
+              "bitsandbytes": "0.49.2"
+            },
+            "delta_precision": "fp32_reference_without_autocast",
+            "full_attention": "EFFICIENT_ATTENTION SDPA with explicit repeated KV; math/flash disabled"
+          },
+          "updates": 20,
+          "samples_seen": 159,
+          "changed_tensors": 496,
+          "manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+          "adapter_files": {
+            "README.md": "153aed7a2ecf55fdc9feadf96bf9ee0042a8e9f2554e69814cd133cd8497d809",
+            "adapter_model.safetensors": "a41e473c66598f37653442ca99ccc25239012c76abf51fe3fc3523d11e0c1e2e",
+            "adapter_config.json": "1b4a41416f2a20f4bd0e358ceebee1d748e847024e40ead3676f4ab64ed6eb96",
+            "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+            "tokenizer_config.json": "6fc30221b0ec773811dfa2a04ebf0eec1a7e36a3bb1698888e28b38eabc1126c",
+            "tokenizer.json": "a5cd9732badce41de57e6efce8302930ded1c1188c5f81feb2bd6c24c4a1941f"
+          },
+          "peak_allocated_bytes": 14202545664,
+          "test_used": false
+        }
+      }
+    },
+    "set_sft_v1": {
+      "source": "set_sft_v1/verification.json",
+      "source_sha256": "05e243eb4312307e7161a3817bd67143c25cf618d93dd03a5cffc0f2f1086319",
+      "fields": {
+        "passed": true,
+        "complete": true,
+        "manifest_sha256": "e36b56875156eb824e7b0a5c89cc09553c87954f4c5d50df30743069fc592c51",
+        "final_test_used": false,
+        "metrics": {
+          "base": {
+            "dev": {
+              "inputs": 55,
+              "candidate_valid": 55,
+              "set_matches": 54,
+              "finished": 55,
+              "mean_input_set_loss": 0.13763268657706001,
+              "original_subset_n": 49,
+              "original_subset_matches": 48
+            },
+            "legacy_dev": {
+              "inputs": 63,
+              "candidate_valid": 63,
+              "set_matches": 62,
+              "finished": 63,
+              "mean_input_set_loss": 0.18969183527524508,
+              "original_subset_n": 29,
+              "original_subset_matches": 28
+            },
+            "train_diagnostic": {
+              "inputs": 30,
+              "candidate_valid": 30,
+              "set_matches": 28,
+              "finished": 30,
+              "mean_input_set_loss": 0.15334581265019046,
+              "original_subset_n": 0,
+              "original_subset_matches": 0
+            }
+          },
+          "previous159": {
+            "dev": {
+              "inputs": 55,
+              "candidate_valid": 55,
+              "set_matches": 55,
+              "finished": 55,
+              "mean_input_set_loss": 0.024615389973471544,
+              "original_subset_n": 49,
+              "original_subset_matches": 49
+            },
+            "legacy_dev": {
+              "inputs": 63,
+              "candidate_valid": 63,
+              "set_matches": 63,
+              "finished": 63,
+              "mean_input_set_loss": 0.12473848003315248,
+              "original_subset_n": 29,
+              "original_subset_matches": 29
+            },
+            "train_diagnostic": {
+              "inputs": 30,
+              "candidate_valid": 30,
+              "set_matches": 30,
+              "finished": 30,
+              "mean_input_set_loss": 0.051997438074835776,
+              "original_subset_n": 0,
+              "original_subset_matches": 0
+            }
+          },
+          "new189": {
+            "dev": {
+              "inputs": 55,
+              "candidate_valid": 55,
+              "set_matches": 55,
+              "finished": 55,
+              "mean_input_set_loss": 0.020030616121816405,
+              "original_subset_n": 49,
+              "original_subset_matches": 49
+            },
+            "legacy_dev": {
+              "inputs": 63,
+              "candidate_valid": 63,
+              "set_matches": 63,
+              "finished": 63,
+              "mean_input_set_loss": 0.09334739515433617,
+              "original_subset_n": 29,
+              "original_subset_matches": 29
+            },
+            "train_diagnostic": {
+              "inputs": 30,
+              "candidate_valid": 30,
+              "set_matches": 30,
+              "finished": 30,
+              "mean_input_set_loss": 0.024239005590465643,
+              "original_subset_n": 0,
+              "original_subset_matches": 0
+            }
+          }
+        },
+        "training": {
+          "status": "completed",
+          "inputs_seen": 189,
+          "responses_seen": 197,
+          "updates": 24,
+          "changed_tensors": 496,
+          "environment": {
+            "job": "5137",
+            "cuda_visible_devices": "0",
+            "device": "Tesla V100-SXM2-16GB",
+            "versions": {
+              "torch": "2.6.0+cu124",
+              "transformers": "5.20.1",
+              "peft": "0.21.2",
+              "accelerate": "1.12.0",
+              "bitsandbytes": "0.49.2"
+            },
+            "delta_precision": "fp32_reference_without_autocast",
+            "full_attention": "EFFICIENT_ATTENTION SDPA with explicit repeated KV; math/flash disabled"
+          },
+          "manifest_sha256": "e36b56875156eb824e7b0a5c89cc09553c87954f4c5d50df30743069fc592c51",
+          "adapter_files": {
+            "README.md": "153aed7a2ecf55fdc9feadf96bf9ee0042a8e9f2554e69814cd133cd8497d809",
+            "adapter_model.safetensors": "5173e2f733b043bd849f4f5d3fc3ebfcae509a093c5c0d70988c336c956fb38e",
+            "adapter_config.json": "1b4a41416f2a20f4bd0e358ceebee1d748e847024e40ead3676f4ab64ed6eb96",
+            "chat_template.jinja": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+            "tokenizer_config.json": "6fc30221b0ec773811dfa2a04ebf0eec1a7e36a3bb1698888e28b38eabc1126c",
+            "tokenizer.json": "a5cd9732badce41de57e6efce8302930ded1c1188c5f81feb2bd6c24c4a1941f"
+          },
+          "peak_allocated_bytes": 14199564800,
+          "test_used": false
+        },
+        "reload_errors": {
+          "previous": [
+            0,
+            0,
+            0
+          ],
+          "new": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "set_closed_loop_v2": {
+      "source": "set_closed_loop_v2/verification.json",
+      "source_sha256": "313a6289ea92bfbc016d9c1bd9d69879d7945da4497cafddc844156a117951b0",
+      "fields": {
+        "passed": true,
+        "complete": true,
+        "expected": 240,
+        "accounted": 240,
+        "executed": 240,
+        "skipped": 0,
+        "manifest_sha256": "836b5503b241e7c9d316cf1b7626781d7d345c20f03329f851ce918b0a3b253b",
+        "test_used": false,
+        "training_approved": 0,
+        "metrics": [
+          {
+            "field": "all",
+            "value": "all",
+            "method": "rule",
+            "accounted": 60,
+            "executed": 60,
+            "skipped": 0,
+            "successes": 57,
+            "first_success": 3,
+            "recovered": 54,
+            "attempts": 144,
+            "calls": 0,
+            "invalid": 0,
+            "service_errors": 0,
+            "call_elapsed_s": 0
+          },
+          {
+            "field": "all",
+            "value": "all",
+            "method": "base",
+            "accounted": 60,
+            "executed": 60,
+            "skipped": 0,
+            "successes": 55,
+            "first_success": 3,
+            "recovered": 52,
+            "attempts": 144,
+            "calls": 84,
+            "invalid": 0,
+            "service_errors": 0,
+            "call_elapsed_s": 327.9960800430272
+          },
+          {
+            "field": "all",
+            "value": "all",
+            "method": "previous159",
+            "accounted": 60,
+            "executed": 60,
+            "skipped": 0,
+            "successes": 56,
+            "first_success": 3,
+            "recovered": 53,
+            "attempts": 144,
+            "calls": 84,
+            "invalid": 0,
+            "service_errors": 0,
+            "call_elapsed_s": 408.3033320090035
+          },
+          {
+            "field": "all",
+            "value": "all",
+            "method": "new189",
+            "accounted": 60,
+            "executed": 60,
+            "skipped": 0,
+            "successes": 56,
+            "first_success": 3,
+            "recovered": 53,
+            "attempts": 144,
+            "calls": 84,
+            "invalid": 0,
+            "service_errors": 0,
+            "call_elapsed_s": 379.2239613849961
+          }
+        ],
+        "paired": {
+          "rule_vs_base": {
+            "both_success": 55,
+            "left_only": 2,
+            "both_fail": 3
+          },
+          "rule_vs_previous159": {
+            "both_success": 56,
+            "left_only": 1,
+            "both_fail": 3
+          },
+          "rule_vs_new189": {
+            "both_success": 56,
+            "left_only": 1,
+            "both_fail": 3
+          },
+          "base_vs_previous159": {
+            "both_success": 55,
+            "both_fail": 4,
+            "right_only": 1
+          },
+          "base_vs_new189": {
+            "both_success": 55,
+            "both_fail": 4,
+            "right_only": 1
+          },
+          "previous159_vs_new189": {
+            "both_success": 56,
+            "both_fail": 4
+          }
+        }
+      }
+    },
+    "observation_model_control_v1": {
+      "source": "observation_model_control_v1/verification.json",
+      "source_sha256": "73e2be5f3fdbcfd806f71da6350501c0dee20498b9a50c2f259f1f626d0f9499",
+      "fields": {
+        "passed": true,
+        "complete": true,
+        "expected": 24,
+        "accounted": 24,
+        "eligible": 24,
+        "trajectories": 96,
+        "physical_executions": 138,
+        "extra_observations": 152,
+        "model_calls": 45,
+        "invalid": 0,
+        "startup_replay_calls": 9,
+        "manifest_sha256": "1d4d8de6667d3f163e9abba80cccee41df73143c33b4756ccebc5dbbde75d14e",
+        "test_used": false,
+        "training_approved": false,
+        "budget_analysis": {
+          "budgets": [
+            1,
+            2,
+            3
+          ],
+          "shared_prefixes": true,
+          "post_hoc": false,
+          "seed_groups": 12,
+          "curves": [
+            {
+              "budget": 1,
+              "planned": 24,
+              "executed": 24,
+              "skipped": 0,
+              "methods": {
+                "rule_latest": {
+                  "attempts": 24,
+                  "extra_observations": 0,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_elapsed_s": 0,
+                  "executed": 24,
+                  "successes": 5,
+                  "initially_failed": 19,
+                  "recovered": 0
+                },
+                "rule_median": {
+                  "attempts": 24,
+                  "extra_observations": 0,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_elapsed_s": 0,
+                  "executed": 24,
+                  "successes": 5,
+                  "initially_failed": 19,
+                  "recovered": 0
+                },
+                "base_latest": {
+                  "attempts": 24,
+                  "extra_observations": 0,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_elapsed_s": 0,
+                  "executed": 24,
+                  "successes": 5,
+                  "initially_failed": 19,
+                  "recovered": 0
+                },
+                "base_median": {
+                  "attempts": 24,
+                  "extra_observations": 0,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_elapsed_s": 0,
+                  "executed": 24,
+                  "successes": 5,
+                  "initially_failed": 19,
+                  "recovered": 0
+                }
+              },
+              "paired": {
+                "rule_latest__rule_median": {
+                  "left": "rule_latest",
+                  "right": "rule_median",
+                  "counts": {
+                    "both_fail": 19,
+                    "both_success": 5
+                  }
+                },
+                "rule_latest__base_latest": {
+                  "left": "rule_latest",
+                  "right": "base_latest",
+                  "counts": {
+                    "both_fail": 19,
+                    "both_success": 5
+                  }
+                },
+                "rule_latest__base_median": {
+                  "left": "rule_latest",
+                  "right": "base_median",
+                  "counts": {
+                    "both_fail": 19,
+                    "both_success": 5
+                  }
+                },
+                "rule_median__base_latest": {
+                  "left": "rule_median",
+                  "right": "base_latest",
+                  "counts": {
+                    "both_fail": 19,
+                    "both_success": 5
+                  }
+                },
+                "rule_median__base_median": {
+                  "left": "rule_median",
+                  "right": "base_median",
+                  "counts": {
+                    "both_fail": 19,
+                    "both_success": 5
+                  }
+                },
+                "base_latest__base_median": {
+                  "left": "base_latest",
+                  "right": "base_median",
+                  "counts": {
+                    "both_fail": 19,
+                    "both_success": 5
+                  }
+                }
+              }
+            },
+            {
+              "budget": 2,
+              "planned": 24,
+              "executed": 24,
+              "skipped": 0,
+              "methods": {
+                "rule_latest": {
+                  "attempts": 43,
+                  "extra_observations": 38,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_elapsed_s": 0,
+                  "executed": 24,
+                  "successes": 19,
+                  "initially_failed": 19,
+                  "recovered": 14
+                },
+                "rule_median": {
+                  "attempts": 43,
+                  "extra_observations": 38,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_elapsed_s": 0,
+                  "executed": 24,
+                  "successes": 22,
+                  "initially_failed": 19,
+                  "recovered": 17
+                },
+                "base_latest": {
+                  "attempts": 43,
+                  "extra_observations": 38,
+                  "model_calls": 19,
+                  "invalid": 0,
+                  "prompt_tokens": 52191,
+                  "completion_tokens": 386,
+                  "model_elapsed_s": 52.19279087992618,
+                  "executed": 24,
+                  "successes": 19,
+                  "initially_failed": 19,
+                  "recovered": 14
+                },
+                "base_median": {
+                  "attempts": 43,
+                  "extra_observations": 38,
+                  "model_calls": 19,
+                  "invalid": 0,
+                  "prompt_tokens": 52171,
+                  "completion_tokens": 378,
+                  "model_elapsed_s": 46.48128880810691,
+                  "executed": 24,
+                  "successes": 22,
+                  "initially_failed": 19,
+                  "recovered": 17
+                }
+              },
+              "paired": {
+                "rule_latest__rule_median": {
+                  "left": "rule_latest",
+                  "right": "rule_median",
+                  "counts": {
+                    "both_success": 19,
+                    "right_only": 3,
+                    "both_fail": 2
+                  }
+                },
+                "rule_latest__base_latest": {
+                  "left": "rule_latest",
+                  "right": "base_latest",
+                  "counts": {
+                    "both_success": 19,
+                    "both_fail": 5
+                  }
+                },
+                "rule_latest__base_median": {
+                  "left": "rule_latest",
+                  "right": "base_median",
+                  "counts": {
+                    "both_success": 19,
+                    "right_only": 3,
+                    "both_fail": 2
+                  }
+                },
+                "rule_median__base_latest": {
+                  "left": "rule_median",
+                  "right": "base_latest",
+                  "counts": {
+                    "both_success": 19,
+                    "left_only": 3,
+                    "both_fail": 2
+                  }
+                },
+                "rule_median__base_median": {
+                  "left": "rule_median",
+                  "right": "base_median",
+                  "counts": {
+                    "both_success": 22,
+                    "both_fail": 2
+                  }
+                },
+                "base_latest__base_median": {
+                  "left": "base_latest",
+                  "right": "base_median",
+                  "counts": {
+                    "both_success": 19,
+                    "right_only": 3,
+                    "both_fail": 2
+                  }
+                }
+              }
+            },
+            {
+              "budget": 3,
+              "planned": 24,
+              "executed": 24,
+              "skipped": 0,
+              "methods": {
+                "rule_latest": {
+                  "attempts": 48,
+                  "extra_observations": 38,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_elapsed_s": 0,
+                  "executed": 24,
+                  "successes": 22,
+                  "initially_failed": 19,
+                  "recovered": 17
+                },
+                "rule_median": {
+                  "attempts": 45,
+                  "extra_observations": 38,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_elapsed_s": 0,
+                  "executed": 24,
+                  "successes": 24,
+                  "initially_failed": 19,
+                  "recovered": 19
+                },
+                "base_latest": {
+                  "attempts": 48,
+                  "extra_observations": 38,
+                  "model_calls": 24,
+                  "invalid": 0,
+                  "prompt_tokens": 68542,
+                  "completion_tokens": 487,
+                  "model_elapsed_s": 64.78951521689305,
+                  "executed": 24,
+                  "successes": 22,
+                  "initially_failed": 19,
+                  "recovered": 17
+                },
+                "base_median": {
+                  "attempts": 45,
+                  "extra_observations": 38,
+                  "model_calls": 21,
+                  "invalid": 0,
+                  "prompt_tokens": 58190,
+                  "completion_tokens": 416,
+                  "model_elapsed_s": 51.16416047909297,
+                  "executed": 24,
+                  "successes": 24,
+                  "initially_failed": 19,
+                  "recovered": 19
+                }
+              },
+              "paired": {
+                "rule_latest__rule_median": {
+                  "left": "rule_latest",
+                  "right": "rule_median",
+                  "counts": {
+                    "both_success": 22,
+                    "right_only": 2
+                  }
+                },
+                "rule_latest__base_latest": {
+                  "left": "rule_latest",
+                  "right": "base_latest",
+                  "counts": {
+                    "both_success": 22,
+                    "both_fail": 2
+                  }
+                },
+                "rule_latest__base_median": {
+                  "left": "rule_latest",
+                  "right": "base_median",
+                  "counts": {
+                    "both_success": 22,
+                    "right_only": 2
+                  }
+                },
+                "rule_median__base_latest": {
+                  "left": "rule_median",
+                  "right": "base_latest",
+                  "counts": {
+                    "both_success": 22,
+                    "left_only": 2
+                  }
+                },
+                "rule_median__base_median": {
+                  "left": "rule_median",
+                  "right": "base_median",
+                  "counts": {
+                    "both_success": 24
+                  }
+                },
+                "base_latest__base_median": {
+                  "left": "base_latest",
+                  "right": "base_median",
+                  "counts": {
+                    "both_success": 22,
+                    "right_only": 2
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "tamper": {
+          "passed": true,
+          "count": 22
+        }
+      }
+    },
+    "active_observation_pilot_v1": {
+      "source": "active_observation_pilot_v1/verification.json",
+      "source_sha256": "4e806c4e21f59bee89572305f38c61ad38d1d0ea6a122cd6c59bba35106ae041",
+      "fields": {
+        "passed": true,
+        "complete": true,
+        "expected": 24,
+        "accounted": 24,
+        "eligible": 24,
+        "trajectories": 48,
+        "physical_executions": 122,
+        "extra_observations": 88,
+        "model_calls": 0,
+        "manifest_sha256": "e4cca681dd3af251cf428c6ccf5c9b72ced8cec3ad617f5c1220327ceb5f3dec",
+        "test_used": false,
+        "training_approved": false,
+        "budget_analysis": {
+          "budgets": [
+            1,
+            2,
+            3
+          ],
+          "shared_prefixes": true,
+          "post_hoc": false,
+          "seed_groups": 6,
+          "curves": [
+            {
+              "budget": 1,
+              "planned": 24,
+              "executed": 24,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 24,
+                  "successes": 1,
+                  "attempts": 24,
+                  "extra_observations": 0,
+                  "initially_failed": 23,
+                  "recovered": 0
+                },
+                "adaptive": {
+                  "executed": 24,
+                  "successes": 1,
+                  "attempts": 24,
+                  "extra_observations": 0,
+                  "initially_failed": 23,
+                  "recovered": 0
+                }
+              },
+              "paired": {
+                "both_fail": 23,
+                "both_success": 1
+              }
+            },
+            {
+              "budget": 2,
+              "planned": 24,
+              "executed": 24,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 24,
+                  "successes": 10,
+                  "attempts": 47,
+                  "extra_observations": 46,
+                  "initially_failed": 23,
+                  "recovered": 9
+                },
+                "adaptive": {
+                  "executed": 24,
+                  "successes": 10,
+                  "attempts": 47,
+                  "extra_observations": 39,
+                  "initially_failed": 23,
+                  "recovered": 9
+                }
+              },
+              "paired": {
+                "both_success": 10,
+                "both_fail": 14
+              }
+            },
+            {
+              "budget": 3,
+              "planned": 24,
+              "executed": 24,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 24,
+                  "successes": 15,
+                  "attempts": 61,
+                  "extra_observations": 46,
+                  "initially_failed": 23,
+                  "recovered": 14
+                },
+                "adaptive": {
+                  "executed": 24,
+                  "successes": 16,
+                  "attempts": 61,
+                  "extra_observations": 42,
+                  "initially_failed": 23,
+                  "recovered": 15
+                }
+              },
+              "paired": {
+                "both_success": 15,
+                "both_fail": 8,
+                "adaptive_only": 1
+              }
+            }
+          ],
+          "by_factor": {
+            "grasp_bias": [
+              {
+                "budget": 1,
+                "planned": 12,
+                "executed": 12,
+                "skipped": 0,
+                "methods": {
+                  "fixed_first": {
+                    "executed": 12,
+                    "successes": 1,
+                    "attempts": 12,
+                    "extra_observations": 0,
+                    "initially_failed": 11,
+                    "recovered": 0
+                  },
+                  "adaptive": {
+                    "executed": 12,
+                    "successes": 1,
+                    "attempts": 12,
+                    "extra_observations": 0,
+                    "initially_failed": 11,
+                    "recovered": 0
+                  }
+                },
+                "paired": {
+                  "both_fail": 11,
+                  "both_success": 1
+                }
+              },
+              {
+                "budget": 2,
+                "planned": 12,
+                "executed": 12,
+                "skipped": 0,
+                "methods": {
+                  "fixed_first": {
+                    "executed": 12,
+                    "successes": 9,
+                    "attempts": 23,
+                    "extra_observations": 22,
+                    "initially_failed": 11,
+                    "recovered": 8
+                  },
+                  "adaptive": {
+                    "executed": 12,
+                    "successes": 9,
+                    "attempts": 23,
+                    "extra_observations": 18,
+                    "initially_failed": 11,
+                    "recovered": 8
+                  }
+                },
+                "paired": {
+                  "both_success": 9,
+                  "both_fail": 3
+                }
+              },
+              {
+                "budget": 3,
+                "planned": 12,
+                "executed": 12,
+                "skipped": 0,
+                "methods": {
+                  "fixed_first": {
+                    "executed": 12,
+                    "successes": 10,
+                    "attempts": 26,
+                    "extra_observations": 22,
+                    "initially_failed": 11,
+                    "recovered": 9
+                  },
+                  "adaptive": {
+                    "executed": 12,
+                    "successes": 10,
+                    "attempts": 26,
+                    "extra_observations": 18,
+                    "initially_failed": 11,
+                    "recovered": 9
+                  }
+                },
+                "paired": {
+                  "both_success": 10,
+                  "both_fail": 2
+                }
+              }
+            ],
+            "grasp_place": [
+              {
+                "budget": 1,
+                "planned": 12,
+                "executed": 12,
+                "skipped": 0,
+                "methods": {
+                  "fixed_first": {
+                    "executed": 12,
+                    "successes": 0,
+                    "attempts": 12,
+                    "extra_observations": 0,
+                    "initially_failed": 12,
+                    "recovered": 0
+                  },
+                  "adaptive": {
+                    "executed": 12,
+                    "successes": 0,
+                    "attempts": 12,
+                    "extra_observations": 0,
+                    "initially_failed": 12,
+                    "recovered": 0
+                  }
+                },
+                "paired": {
+                  "both_fail": 12
+                }
+              },
+              {
+                "budget": 2,
+                "planned": 12,
+                "executed": 12,
+                "skipped": 0,
+                "methods": {
+                  "fixed_first": {
+                    "executed": 12,
+                    "successes": 1,
+                    "attempts": 24,
+                    "extra_observations": 24,
+                    "initially_failed": 12,
+                    "recovered": 1
+                  },
+                  "adaptive": {
+                    "executed": 12,
+                    "successes": 1,
+                    "attempts": 24,
+                    "extra_observations": 21,
+                    "initially_failed": 12,
+                    "recovered": 1
+                  }
+                },
+                "paired": {
+                  "both_fail": 11,
+                  "both_success": 1
+                }
+              },
+              {
+                "budget": 3,
+                "planned": 12,
+                "executed": 12,
+                "skipped": 0,
+                "methods": {
+                  "fixed_first": {
+                    "executed": 12,
+                    "successes": 5,
+                    "attempts": 35,
+                    "extra_observations": 24,
+                    "initially_failed": 12,
+                    "recovered": 5
+                  },
+                  "adaptive": {
+                    "executed": 12,
+                    "successes": 6,
+                    "attempts": 35,
+                    "extra_observations": 24,
+                    "initially_failed": 12,
+                    "recovered": 6
+                  }
+                },
+                "paired": {
+                  "both_success": 5,
+                  "both_fail": 6,
+                  "adaptive_only": 1
+                }
+              }
+            ]
+          }
+        },
+        "tamper": {
+          "passed": true,
+          "count": 12
+        }
+      }
+    },
+    "active_observation_model_v2": {
+      "source": "active_observation_model_v2/verification.json",
+      "source_sha256": "ba420ea15168b374f8e6ea0d730ce8d38b8c1bce76ed1921538b2d6d2778c7e6",
+      "fields": {
+        "passed": true,
+        "complete": true,
+        "expected": 24,
+        "accounted": 24,
+        "eligible": 24,
+        "trajectories": 96,
+        "physical_executions": 210,
+        "extra_observations": 89,
+        "model_calls": 82,
+        "invalid": 0,
+        "ledger": {
+          "task_calls": 82,
+          "startup_calls": 2,
+          "all_calls": 84
+        },
+        "manifest_sha256": "c73f5aee51e0a4e986f0c1d888874e2e6894273fdec44459c07f2070fbedf8b7",
+        "test_used": false,
+        "training_approved": false,
+        "tamper": {
+          "passed": true,
+          "count": 28
+        },
+        "analysis": {
+          "overall": {
+            "planned": 24,
+            "eligible": 24,
+            "skipped": 0,
+            "methods": {
+              "fixed_first": {
+                "executed": 24,
+                "success": 14,
+                "attempts": 64,
+                "extra_observations": 46,
+                "model_calls": 0,
+                "invalid": 0,
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "model_seconds": 0,
+                "initially_failed": 23,
+                "recovered": 13,
+                "later_observation": 0,
+                "missing": 14,
+                "visibility_recovered": 4,
+                "cumulative_success": [
+                  1,
+                  7,
+                  14
+                ]
+              },
+              "adaptive": {
+                "executed": 24,
+                "success": 17,
+                "attempts": 64,
+                "extra_observations": 43,
+                "model_calls": 0,
+                "invalid": 0,
+                "prompt_tokens": 0,
+                "completion_tokens": 0,
+                "model_seconds": 0,
+                "initially_failed": 23,
+                "recovered": 16,
+                "later_observation": 4,
+                "missing": 14,
+                "visibility_recovered": 7,
+                "cumulative_success": [
+                  1,
+                  7,
+                  17
+                ]
+              },
+              "base_current": {
+                "executed": 24,
+                "success": 14,
+                "attempts": 65,
+                "extra_observations": 0,
+                "model_calls": 41,
+                "invalid": 0,
+                "prompt_tokens": 138556,
+                "completion_tokens": 833,
+                "model_seconds": 102.00586160313105,
+                "initially_failed": 23,
+                "recovered": 13,
+                "later_observation": 0,
+                "missing": 11,
+                "visibility_recovered": 0,
+                "cumulative_success": [
+                  1,
+                  6,
+                  14
+                ]
+              },
+              "base_history": {
+                "executed": 24,
+                "success": 14,
+                "attempts": 65,
+                "extra_observations": 0,
+                "model_calls": 41,
+                "invalid": 0,
+                "prompt_tokens": 144054,
+                "completion_tokens": 833,
+                "model_seconds": 103.30758382403292,
+                "initially_failed": 23,
+                "recovered": 13,
+                "later_observation": 0,
+                "missing": 11,
+                "visibility_recovered": 0,
+                "cumulative_success": [
+                  1,
+                  6,
+                  14
+                ]
+              }
+            },
+            "paired": {
+              "fixed_first__adaptive": {
+                "both_success": 14,
+                "b_only": 3,
+                "both_fail": 7
+              },
+              "fixed_first__base_current": {
+                "both_success": 14,
+                "both_fail": 10
+              },
+              "fixed_first__base_history": {
+                "both_success": 14,
+                "both_fail": 10
+              },
+              "adaptive__base_current": {
+                "both_success": 14,
+                "a_only": 3,
+                "both_fail": 7
+              },
+              "adaptive__base_history": {
+                "both_success": 14,
+                "a_only": 3,
+                "both_fail": 7
+              },
+              "base_current__base_history": {
+                "both_success": 14,
+                "both_fail": 10
+              }
+            }
+          },
+          "seed_groups": 6,
+          "by_seed": {
+            "940301": {
+              "planned": 4,
+              "eligible": 4,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 11,
+                  "extra_observations": 8,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 3,
+                  "visibility_recovered": 1,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    3
+                  ]
+                },
+                "adaptive": {
+                  "executed": 4,
+                  "success": 4,
+                  "attempts": 11,
+                  "extra_observations": 8,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 4,
+                  "later_observation": 1,
+                  "missing": 3,
+                  "visibility_recovered": 2,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    4
+                  ]
+                },
+                "base_current": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 22255,
+                  "completion_tokens": 146,
+                  "model_seconds": 17.318830277072266,
+                  "initially_failed": 4,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 3,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    3
+                  ]
+                },
+                "base_history": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 23164,
+                  "completion_tokens": 146,
+                  "model_seconds": 17.443713170010597,
+                  "initially_failed": 4,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 3,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    3
+                  ]
+                }
+              },
+              "paired": {
+                "fixed_first__adaptive": {
+                  "both_success": 3,
+                  "b_only": 1
+                },
+                "fixed_first__base_current": {
+                  "both_success": 3,
+                  "both_fail": 1
+                },
+                "fixed_first__base_history": {
+                  "both_success": 3,
+                  "both_fail": 1
+                },
+                "adaptive__base_current": {
+                  "both_success": 3,
+                  "a_only": 1
+                },
+                "adaptive__base_history": {
+                  "both_success": 3,
+                  "a_only": 1
+                },
+                "base_current__base_history": {
+                  "both_success": 3,
+                  "both_fail": 1
+                }
+              }
+            },
+            "940302": {
+              "planned": 4,
+              "eligible": 4,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 8,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 2,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "adaptive": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 7,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 1,
+                  "missing": 2,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "base_current": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 26648,
+                  "completion_tokens": 145,
+                  "model_seconds": 18.312059431918897,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 1,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "base_history": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 27578,
+                  "completion_tokens": 145,
+                  "model_seconds": 18.644020323001314,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 1,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              },
+              "paired": {
+                "fixed_first__adaptive": {
+                  "both_fail": 2,
+                  "both_success": 2
+                },
+                "fixed_first__base_current": {
+                  "both_fail": 2,
+                  "both_success": 2
+                },
+                "fixed_first__base_history": {
+                  "both_fail": 2,
+                  "both_success": 2
+                },
+                "adaptive__base_current": {
+                  "both_fail": 2,
+                  "both_success": 2
+                },
+                "adaptive__base_history": {
+                  "both_fail": 2,
+                  "both_success": 2
+                },
+                "base_current__base_history": {
+                  "both_fail": 2,
+                  "both_success": 2
+                }
+              }
+            },
+            "940303": {
+              "planned": 4,
+              "eligible": 4,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 8,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 3,
+                  "visibility_recovered": 1,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "adaptive": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 11,
+                  "extra_observations": 8,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 3,
+                  "later_observation": 1,
+                  "missing": 3,
+                  "visibility_recovered": 2,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    3
+                  ]
+                },
+                "base_current": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 22851,
+                  "completion_tokens": 139,
+                  "model_seconds": 17.061152338108514,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 2,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "base_history": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 23758,
+                  "completion_tokens": 139,
+                  "model_seconds": 17.299905583960935,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 2,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              },
+              "paired": {
+                "fixed_first__adaptive": {
+                  "both_success": 2,
+                  "both_fail": 1,
+                  "b_only": 1
+                },
+                "fixed_first__base_current": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "fixed_first__base_history": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "adaptive__base_current": {
+                  "both_success": 2,
+                  "both_fail": 1,
+                  "a_only": 1
+                },
+                "adaptive__base_history": {
+                  "both_success": 2,
+                  "both_fail": 1,
+                  "a_only": 1
+                },
+                "base_current__base_history": {
+                  "both_success": 2,
+                  "both_fail": 2
+                }
+              }
+            },
+            "940304": {
+              "planned": 4,
+              "eligible": 4,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 8,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 3,
+                  "visibility_recovered": 1,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "adaptive": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 7,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 3,
+                  "visibility_recovered": 1,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "base_current": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 22346,
+                  "completion_tokens": 144,
+                  "model_seconds": 17.344857149000745,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 3,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                },
+                "base_history": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 23255,
+                  "completion_tokens": 144,
+                  "model_seconds": 17.61411456996575,
+                  "initially_failed": 4,
+                  "recovered": 2,
+                  "later_observation": 0,
+                  "missing": 3,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    2
+                  ]
+                }
+              },
+              "paired": {
+                "fixed_first__adaptive": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "fixed_first__base_current": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "fixed_first__base_history": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "adaptive__base_current": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "adaptive__base_history": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "base_current__base_history": {
+                  "both_success": 2,
+                  "both_fail": 2
+                }
+              }
+            },
+            "940305": {
+              "planned": 4,
+              "eligible": 4,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 11,
+                  "extra_observations": 8,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 1,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    3
+                  ]
+                },
+                "adaptive": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 11,
+                  "extra_observations": 7,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 4,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 1,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    3
+                  ]
+                },
+                "base_current": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 25182,
+                  "completion_tokens": 141,
+                  "model_seconds": 17.601277103996836,
+                  "initially_failed": 4,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 0,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    3
+                  ]
+                },
+                "base_history": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 11,
+                  "extra_observations": 0,
+                  "model_calls": 7,
+                  "invalid": 0,
+                  "prompt_tokens": 26122,
+                  "completion_tokens": 141,
+                  "model_seconds": 17.804036639048718,
+                  "initially_failed": 4,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 0,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    1,
+                    3
+                  ]
+                }
+              },
+              "paired": {
+                "fixed_first__adaptive": {
+                  "both_success": 3,
+                  "both_fail": 1
+                },
+                "fixed_first__base_current": {
+                  "both_success": 3,
+                  "both_fail": 1
+                },
+                "fixed_first__base_history": {
+                  "both_success": 3,
+                  "both_fail": 1
+                },
+                "adaptive__base_current": {
+                  "both_success": 3,
+                  "both_fail": 1
+                },
+                "adaptive__base_history": {
+                  "both_success": 3,
+                  "both_fail": 1
+                },
+                "base_current__base_history": {
+                  "both_success": 3,
+                  "both_fail": 1
+                }
+              }
+            },
+            "940306": {
+              "planned": 4,
+              "eligible": 4,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 9,
+                  "extra_observations": 6,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 3,
+                  "recovered": 1,
+                  "later_observation": 0,
+                  "missing": 2,
+                  "visibility_recovered": 1,
+                  "cumulative_success": [
+                    1,
+                    2,
+                    2
+                  ]
+                },
+                "adaptive": {
+                  "executed": 4,
+                  "success": 3,
+                  "attempts": 9,
+                  "extra_observations": 6,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 3,
+                  "recovered": 2,
+                  "later_observation": 1,
+                  "missing": 2,
+                  "visibility_recovered": 2,
+                  "cumulative_success": [
+                    1,
+                    2,
+                    3
+                  ]
+                },
+                "base_current": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 10,
+                  "extra_observations": 0,
+                  "model_calls": 6,
+                  "invalid": 0,
+                  "prompt_tokens": 19274,
+                  "completion_tokens": 118,
+                  "model_seconds": 14.367685303033795,
+                  "initially_failed": 3,
+                  "recovered": 1,
+                  "later_observation": 0,
+                  "missing": 2,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    1,
+                    1,
+                    2
+                  ]
+                },
+                "base_history": {
+                  "executed": 4,
+                  "success": 2,
+                  "attempts": 10,
+                  "extra_observations": 0,
+                  "model_calls": 6,
+                  "invalid": 0,
+                  "prompt_tokens": 20177,
+                  "completion_tokens": 118,
+                  "model_seconds": 14.501793538045604,
+                  "initially_failed": 3,
+                  "recovered": 1,
+                  "later_observation": 0,
+                  "missing": 2,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    1,
+                    1,
+                    2
+                  ]
+                }
+              },
+              "paired": {
+                "fixed_first__adaptive": {
+                  "both_success": 2,
+                  "both_fail": 1,
+                  "b_only": 1
+                },
+                "fixed_first__base_current": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "fixed_first__base_history": {
+                  "both_success": 2,
+                  "both_fail": 2
+                },
+                "adaptive__base_current": {
+                  "both_success": 2,
+                  "both_fail": 1,
+                  "a_only": 1
+                },
+                "adaptive__base_history": {
+                  "both_success": 2,
+                  "both_fail": 1,
+                  "a_only": 1
+                },
+                "base_current__base_history": {
+                  "both_success": 2,
+                  "both_fail": 2
+                }
+              }
+            }
+          },
+          "by_factor": {
+            "grasp_bias": {
+              "planned": 12,
+              "eligible": 12,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 12,
+                  "success": 11,
+                  "attempts": 28,
+                  "extra_observations": 22,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 11,
+                  "recovered": 10,
+                  "later_observation": 0,
+                  "missing": 4,
+                  "visibility_recovered": 2,
+                  "cumulative_success": [
+                    1,
+                    7,
+                    11
+                  ]
+                },
+                "adaptive": {
+                  "executed": 12,
+                  "success": 11,
+                  "attempts": 28,
+                  "extra_observations": 19,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 11,
+                  "recovered": 10,
+                  "later_observation": 0,
+                  "missing": 4,
+                  "visibility_recovered": 2,
+                  "cumulative_success": [
+                    1,
+                    7,
+                    11
+                  ]
+                },
+                "base_current": {
+                  "executed": 12,
+                  "success": 11,
+                  "attempts": 29,
+                  "extra_observations": 0,
+                  "model_calls": 17,
+                  "invalid": 0,
+                  "prompt_tokens": 57499,
+                  "completion_tokens": 347,
+                  "model_seconds": 42.48002676607575,
+                  "initially_failed": 11,
+                  "recovered": 10,
+                  "later_observation": 0,
+                  "missing": 4,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    1,
+                    6,
+                    11
+                  ]
+                },
+                "base_history": {
+                  "executed": 12,
+                  "success": 11,
+                  "attempts": 29,
+                  "extra_observations": 0,
+                  "model_calls": 17,
+                  "invalid": 0,
+                  "prompt_tokens": 59316,
+                  "completion_tokens": 347,
+                  "model_seconds": 43.138294094998855,
+                  "initially_failed": 11,
+                  "recovered": 10,
+                  "later_observation": 0,
+                  "missing": 4,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    1,
+                    6,
+                    11
+                  ]
+                }
+              },
+              "paired": {
+                "fixed_first__adaptive": {
+                  "both_success": 11,
+                  "both_fail": 1
+                },
+                "fixed_first__base_current": {
+                  "both_success": 11,
+                  "both_fail": 1
+                },
+                "fixed_first__base_history": {
+                  "both_success": 11,
+                  "both_fail": 1
+                },
+                "adaptive__base_current": {
+                  "both_success": 11,
+                  "both_fail": 1
+                },
+                "adaptive__base_history": {
+                  "both_success": 11,
+                  "both_fail": 1
+                },
+                "base_current__base_history": {
+                  "both_success": 11,
+                  "both_fail": 1
+                }
+              }
+            },
+            "grasp_place": {
+              "planned": 12,
+              "eligible": 12,
+              "skipped": 0,
+              "methods": {
+                "fixed_first": {
+                  "executed": 12,
+                  "success": 3,
+                  "attempts": 36,
+                  "extra_observations": 24,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 12,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 10,
+                  "visibility_recovered": 2,
+                  "cumulative_success": [
+                    0,
+                    0,
+                    3
+                  ]
+                },
+                "adaptive": {
+                  "executed": 12,
+                  "success": 6,
+                  "attempts": 36,
+                  "extra_observations": 24,
+                  "model_calls": 0,
+                  "invalid": 0,
+                  "prompt_tokens": 0,
+                  "completion_tokens": 0,
+                  "model_seconds": 0,
+                  "initially_failed": 12,
+                  "recovered": 6,
+                  "later_observation": 4,
+                  "missing": 10,
+                  "visibility_recovered": 5,
+                  "cumulative_success": [
+                    0,
+                    0,
+                    6
+                  ]
+                },
+                "base_current": {
+                  "executed": 12,
+                  "success": 3,
+                  "attempts": 36,
+                  "extra_observations": 0,
+                  "model_calls": 24,
+                  "invalid": 0,
+                  "prompt_tokens": 81057,
+                  "completion_tokens": 486,
+                  "model_seconds": 59.5258348370553,
+                  "initially_failed": 12,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 7,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    0,
+                    3
+                  ]
+                },
+                "base_history": {
+                  "executed": 12,
+                  "success": 3,
+                  "attempts": 36,
+                  "extra_observations": 0,
+                  "model_calls": 24,
+                  "invalid": 0,
+                  "prompt_tokens": 84738,
+                  "completion_tokens": 486,
+                  "model_seconds": 60.16928972903406,
+                  "initially_failed": 12,
+                  "recovered": 3,
+                  "later_observation": 0,
+                  "missing": 7,
+                  "visibility_recovered": 0,
+                  "cumulative_success": [
+                    0,
+                    0,
+                    3
+                  ]
+                }
+              },
+              "paired": {
+                "fixed_first__adaptive": {
+                  "both_success": 3,
+                  "b_only": 3,
+                  "both_fail": 6
+                },
+                "fixed_first__base_current": {
+                  "both_success": 3,
+                  "both_fail": 9
+                },
+                "fixed_first__base_history": {
+                  "both_success": 3,
+                  "both_fail": 9
+                },
+                "adaptive__base_current": {
+                  "both_success": 3,
+                  "a_only": 3,
+                  "both_fail": 6
+                },
+                "adaptive__base_history": {
+                  "both_success": 3,
+                  "a_only": 3,
+                  "both_fail": 6
+                },
+                "base_current__base_history": {
+                  "both_success": 3,
+                  "both_fail": 9
+                }
+              }
+            }
+          },
+          "primary_execution_budget": 3,
+          "prefixes_are_counterfactual_budgets": false
+        }
+      }
+    }
+  },
+  "selector_analysis": {
+    "source": "selector_analysis_v1/summary.json",
+    "source_sha256": "b1d0e3ddebc629f2179b37c896a5eeefaa82ff1aede7da7d5fdc1b4689f5b211",
+    "fields": {
+      "passed": true,
+      "reaudited_conditions": 24,
+      "trajectories": 96,
+      "source_files_unchanged": 1872,
+      "totals": {
+        "decisions": 45,
+        "same_input": 45,
+        "same_selected_action": 45,
+        "same_kind": 45,
+        "agrees_with_recomputed_rule": 45,
+        "single_measured": 45,
+        "selected_measured": 45,
+        "next_success": 36,
+        "candidate_counts": {
+          "5": 4,
+          "7": 29,
+          "8": 12
+        },
+        "selected_positions": {
+          "0": 5,
+          "1": 4,
+          "2": 6,
+          "3": 3,
+          "4": 5,
+          "5": 11,
+          "6": 9,
+          "7": 2
+        },
+        "selected_kinds": {
+          "measured_grasp": 41,
+          "measured_place": 4
+        }
+      },
+      "by_aggregation": {
+        "latest": {
+          "decisions": 24,
+          "same_input": 24,
+          "same_selected_action": 24,
+          "same_kind": 24,
+          "agrees_with_recomputed_rule": 24,
+          "single_measured": 24,
+          "selected_measured": 24,
+          "next_success": 17,
+          "candidate_counts": {
+            "5": 2,
+            "7": 16,
+            "8": 6
+          },
+          "selected_positions": {
+            "0": 2,
+            "1": 2,
+            "2": 3,
+            "3": 2,
+            "4": 4,
+            "5": 8,
+            "6": 3
+          },
+          "selected_kinds": {
+            "measured_grasp": 22,
+            "measured_place": 2
+          }
+        },
+        "median": {
+          "decisions": 21,
+          "same_input": 21,
+          "same_selected_action": 21,
+          "same_kind": 21,
+          "agrees_with_recomputed_rule": 21,
+          "single_measured": 21,
+          "selected_measured": 21,
+          "next_success": 19,
+          "candidate_counts": {
+            "5": 2,
+            "7": 13,
+            "8": 6
+          },
+          "selected_positions": {
+            "0": 3,
+            "1": 2,
+            "2": 3,
+            "3": 1,
+            "4": 1,
+            "5": 3,
+            "6": 6,
+            "7": 2
+          },
+          "selected_kinds": {
+            "measured_grasp": 19,
+            "measured_place": 2
+          }
+        }
+      },
+      "new_physical_executions": 0,
+      "new_model_calls": 0,
+      "test_used": false,
+      "source_manifest_sha256": "1d4d8de6667d3f163e9abba80cccee41df73143c33b4756ccebc5dbbde75d14e",
+      "post_hoc": true
+    }
+  }
+}

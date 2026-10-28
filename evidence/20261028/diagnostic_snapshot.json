@@ -1,0 +1,228 @@
+{
+  "snapshot_kind": "live_server_status_and_audit_extract",
+  "checked_at_utc": "2026-10-28T15:10:48.056Z",
+  "timezone": "Asia/Shanghai",
+  "experiment": "observation_decision_diagnostic_v2",
+  "note": "状态只对应读取时间。各文件分别读取，并非原子快照。完整源文件SHA256与摘录文件哈希不同。最终审计不存在时不能认定整轮完成。",
+  "checked_at": "2026-10-28T15:10:48.056Z",
+  "artifacts": {
+    "STATUS.json": {
+      "http_status": 200,
+      "fields": {
+        "status": "running",
+        "started_at": 1793198824.9062572,
+        "manifest_sha256": "36730e07389db3bb06fea8bad242389195b84a9a9cf746cc19ff60714eb6d2b7",
+        "stage": "batch",
+        "active_job": "5387",
+        "completed_stages": [
+          {
+            "stage": "model",
+            "job": "5380",
+            "accounting": [
+              [
+                "5380",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          },
+          {
+            "stage": "model_audit",
+            "job": "5381",
+            "accounting": [
+              [
+                "5381",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          },
+          {
+            "stage": "smoke",
+            "job": "5382",
+            "accounting": [
+              [
+                "5383",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5384",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5385",
+                "COMPLETED",
+                "0:0"
+              ],
+              [
+                "5382",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          },
+          {
+            "stage": "smoke_audit",
+            "job": "5386",
+            "accounting": [
+              [
+                "5386",
+                "COMPLETED",
+                "0:0"
+              ]
+            ]
+          }
+        ]
+      },
+      "source_sha256": "d51119582f4b9d356d8ad4519a469501a34a2ef04b86bbabd47688352963686c"
+    },
+    "model_progress.json": {
+      "http_status": 200,
+      "fields": {
+        "status": "completed",
+        "completed": 402,
+        "expected": 402,
+        "started_at": 1793198832.4926648,
+        "last_task": "exec__M1_940306_grasp_place__d1__l2",
+        "ended_at": 1793200011.5125637
+      },
+      "source_sha256": "ae338f25f55c3cc7f7e227928dffcf01b4cdf7e46c72045434c4d2f654534f50"
+    },
+    "model_verification.json": {
+      "http_status": 200,
+      "fields": {
+        "passed": true,
+        "task_calls": 402,
+        "startup_calls": 2,
+        "all_calls": 404,
+        "original_replays": 82,
+        "summary": {
+          "baseline__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "unified_first__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "unified_last__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "missing_directive__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 41,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 11
+          },
+          "comprehension__base_current": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 39,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "baseline__base_history": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "unified_first__base_history": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "unified_last__base_history": {
+            "total": 41,
+            "valid": 41,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "missing_directive__base_history": {
+            "total": 41,
+            "valid": 41,
+            "observe": 41,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 11
+          },
+          "execute_0__base_current": {
+            "total": 11,
+            "valid": 11,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "execute_1__base_current": {
+            "total": 11,
+            "valid": 11,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          },
+          "execute_2__base_current": {
+            "total": 11,
+            "valid": 11,
+            "observe": 0,
+            "probe_correct": 0,
+            "missing": 11,
+            "observe_when_missing": 0
+          }
+        },
+        "tamper_rejections": [
+          "prompt",
+          "identity",
+          "action",
+          "row"
+        ],
+        "manifest_sha256": "36730e07389db3bb06fea8bad242389195b84a9a9cf746cc19ff60714eb6d2b7",
+        "test_used": false,
+        "training_approved": false
+      },
+      "source_sha256": "749eea6d8b8dcc69df37d5f8707e94619f9f4a6d245c8ce2f2e2ca197a16137f"
+    },
+    "verification.json": {
+      "http_status": 404
+    },
+    "jobs.json": {
+      "http_status": 200,
+      "fields": {
+        "preflight": "5378",
+        "controller": "5379",
+        "model": "5380",
+        "model_audit": "5381",
+        "smoke": "5382",
+        "smoke_audit": "5386",
+        "batch": "5387"
+      },
+      "source_sha256": "21862bdd18d4375944cc475fd27f900bb99c779e7bf860b080d1e5ceb9e20f79"
+    }
+  }
+}
