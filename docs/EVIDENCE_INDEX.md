@@ -4,6 +4,8 @@
 
 ## 1. 本轮新增证据
 
+新增可视化见[图表说明](FIGURE_GALLERY.md)。[绘图数据](../evidence/figures_20261028/source_data.json)保存9个服务器来源文件的hash、完整绘图数值和10张截图身份；[图包hash清单](../evidence/figures_20261028/SHA256SUMS.txt)核对公开图片、数据与脚本。场景原图来自10月25日，图包更新于10月28日。
+
 | 文件 | 内容与边界 |
 |---|---|
 | [已完成研究摘要](../evidence/20261028/completed_studies.json) | 本次从服务器读取6个已完成研究的verification.json，提取训练、成功率、调用、成本及审计字段；另含选择器只读分析 |

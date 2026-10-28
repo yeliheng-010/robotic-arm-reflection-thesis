@@ -1,0 +1,63 @@
+# 本周场景与实验图表
+
+图表更新：2026-10-28。场景原图及初始噪声预检记录来自10月25日，后续微调与观测实验延续到本周。面向 GitHub 阅读与组会展示，图内使用中文说明；9张图均来自已经保存的仿真截图、训练日志或审计结果，未调用图像生成模型，没有新增训练或物理实验。
+
+## 图表导航与下载
+
+| 图 | 回答的问题 | PNG | PDF | SVG |
+|---|---|---|---|---|
+| 场景变化 | 新增的几何扰动具体长什么样 | [预览](../assets/weekly_20261028/scene_variants.png) | [下载](../assets/weekly_20261028/scene_variants.pdf) | [下载](../assets/weekly_20261028/scene_variants.svg) |
+| 反馈噪声 | 噪声与缺测实际如何进入反馈 | [预览](../assets/weekly_20261028/feedback_noise.png) | [下载](../assets/weekly_20261028/feedback_noise.pdf) | [下载](../assets/weekly_20261028/feedback_noise.svg) |
+| 训练loss | 两轮微调每次更新发生了什么 | [预览](../assets/weekly_20261028/training_loss.png) | [下载](../assets/weekly_20261028/training_loss.pdf) | [下载](../assets/weekly_20261028/training_loss.svg) |
+| 验证loss | 同一诊断子集在微调前后如何变化 | [预览](../assets/weekly_20261028/validation_loss.png) | [下载](../assets/weekly_20261028/validation_loss.pdf) | [下载](../assets/weekly_20261028/validation_loss.svg) |
+| 微调闭环 | loss改善是否转化为任务成功 | [预览](../assets/weekly_20261028/sft_success.png) | [下载](../assets/weekly_20261028/sft_success.pdf) | [下载](../assets/weekly_20261028/sft_success.svg) |
+| 聚合预算 | 最新测量与中位数如何影响成功率 | [预览](../assets/weekly_20261028/aggregation_budget.png) | [下载](../assets/weekly_20261028/aggregation_budget.pdf) | [下载](../assets/weekly_20261028/aggregation_budget.svg) |
+| 主动观测 | 成功率与观测费用的权衡 | [预览](../assets/weekly_20261028/active_observation.png) | [下载](../assets/weekly_20261028/active_observation.pdf) | [下载](../assets/weekly_20261028/active_observation.svg) |
+| 恢复案例 | 同一复合故障的四组最终状态 | [预览](../assets/weekly_20261028/recovery_case.png) | [下载](../assets/weekly_20261028/recovery_case.pdf) | [下载](../assets/weekly_20261028/recovery_case.svg) |
+| 观测价值 | 固定缺测快照补看后能否恢复 | [预览](../assets/weekly_20261028/observation_value.png) | [下载](../assets/weekly_20261028/observation_value.pdf) | [下载](../assets/weekly_20261028/observation_value.svg) |
+
+README已按研究过程嵌入全部9张图。PNG为300 dpi导出；图表PDF/SVG保留矢量文字与曲线，截图面板仍是原始栅格图。SVG显示中文需要字体支持，跨设备阅读优先使用PNG或嵌入字体的PDF。这些是展示图，不声称符合某期刊最终投稿尺寸。
+
+## 场景图与案例图的选择规则
+
+场景图使用第二批场景扩展中预登记的全部五种扰动因素，统一选择首个种子910001、RedBlock→BlueBin组合，展示有挡板任务开始前截图；另加同1cm布局的无挡板控制。不是把“有挡板”当成“测量加噪”，也不是新增随机场景。
+
+物体位置1/3cm、朝向30°、组合扰动2cm+20°、容器1cm均为配置中的采样范围。各物体实际位姿与原文件SHA256保留在[source_data.json](../evidence/figures_20261028/source_data.json)。布局有拒绝采样约束，不能根据图中像素位移倒推出精确厘米数。
+
+恢复图选择此前已报告的差异案例M1_940301_grasp_place，展示四种方法第3次尝试的after截图。它用于解释一个已知差异，不用于估计差异案例的总体占比。成功标注逐一读取该方法的result.json。机械臂遮挡是原始画面的一部分，没有通过修图移除。
+
+10张[原始截图](../evidence/figures_20261028/raw/)均完整保留。排版仅统一缩放，没有裁剪、局部增强、亮度修改或伪造物体。
+
+## 曲线的口径与边界
+
+- **训练loss**：159条版本20个更新点；189输入版本24个点，全部显示。对数坐标要求正值，脚本已检查；无平滑、无挑选最佳区间。两版目标聚合不同，不作单因素优劣解释。
+- **验证loss**：仅159条版本的before/after两个检查点；dev49、legacy_dev29各自配对。连线只表示两端差异，不代表记录过中间值。
+- **微调成功率**：60开发条件、4方法、240轨迹，无跳过；规则57、base55、两个微调56。不同方法用柱状图，纵轴从0开始。
+- **聚合预算曲线**：24条件、12种子组；1/2/3次执行预算下，最新值5/19/22，中位数5/22/24，规则与模型相同。
+- **主动观测曲线**：固定三次执行预算策略的累计成功。固定与自适应在第1/2次分别1/7，最终14/17；基础模型与历史模型均1/6/14。不是三个独立预算反事实。
+- **固定观测诊断**：11快照、10条件、5种子组。固定补看0/1/2次，规则0/5/6，模型1/6/7；每组11分支均实际执行。不是完整自主闭环。
+- **噪声图**：全部72条投影/残差字段，63条非缺失点、9条缺失单列。σ=0/5/15mm、缺失概率0/0.25，同随机种子复用；点可能完全重合。σ为0也可能存在缺失。原始残差只用于审计，不作为模型泄露输入。
+
+成功率图展示完整条件的原始总体比例，不画未经支持的误差条或显著性星号。条件共享种子，不能按独立同分布样本作过度解释；没有将不同研究的样本数量或结果连成时间学习曲线。
+
+## 数据、脚本与复现
+
+- [统一绘图数据与来源hash](../evidence/figures_20261028/source_data.json)包含逐步loss、完整聚合与诊断数据、噪声字段和截图身份。
+- [训练CSV](../evidence/figures_20261028/training_loss.csv)、[验证CSV](../evidence/figures_20261028/validation_loss.csv)、[闭环CSV](../evidence/figures_20261028/sft_success.csv)、[聚合CSV](../evidence/figures_20261028/aggregation_budget.csv)、[补看CSV](../evidence/figures_20261028/observation_value.csv)便于直接复查。
+- 绘图代码：[数据图](../scripts/plot_weekly_metrics.py)、[场景图](../scripts/plot_weekly_scenes.py)、[公共样式](../scripts/weekly_figure_style.py)。
+- [采集脚本](../scripts/collect_weekly_figure_data.py)只读原服务器记录，公开仓库重画不需要再次运行它。
+
+已具备Python、Matplotlib、NumPy、Pillow和Noto Sans CJK SC字体的环境中，从仓库根目录运行：
+
+```bash
+python scripts/plot_weekly_metrics.py
+python scripts/plot_weekly_scenes.py
+```
+
+图形QA可通过FIGURE_QA_PATH指定nature-figure的审计工具目录；没有审计工具时脚本明确记为未检查，不伪造通过。图形导出不会启动仿真、推理或微调。
+
+## 本次检查
+
+已核对10张原图hash、9个绘图来源文件身份、数值分母与全部原始更新；检查了九张图的内容和排版。所有多面板图通过1.5pt容差的最终绘图区对齐检查。单面板没有多面板比较，不把它写成多面板对齐验证。
+
+合并公共样式后的静态预检无FAIL；展示尺寸、300dpi PNG及没有投稿TIFF的提示按GitHub展示用途处理。PDF字号检查与其他结果见[QA记录](../evidence/figures_20261028/qa/QA_REPORT.md)。当前环境缺少PyMuPDF，自动PDF碰撞检查未能运行，因此不宣称该项通过；图中文字及图例已逐图人工查看。

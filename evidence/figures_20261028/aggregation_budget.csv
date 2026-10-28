@@ -1,0 +1,7 @@
+method,budget,success,n
+rule_latest,1,5,24
+rule_latest,2,19,24
+rule_latest,3,22,24
+rule_median,1,5,24
+rule_median,2,22,24
+rule_median,3,24,24
