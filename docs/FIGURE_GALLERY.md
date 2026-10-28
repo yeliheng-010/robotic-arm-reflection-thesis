@@ -2,21 +2,63 @@
 
 图表更新：2026-10-28。场景原图及初始噪声预检记录来自10月25日，后续微调与观测实验延续到本周。面向 GitHub 阅读与组会展示，图内使用中文说明；9张图均来自已经保存的仿真截图、训练日志或审计结果，未调用图像生成模型，没有新增训练或物理实验。
 
-## 图表导航与下载
+## 图表与说明（直接展示）
 
-| 图 | 回答的问题 | PNG | PDF | SVG |
-|---|---|---|---|---|
-| 场景变化 | 新增的几何扰动具体长什么样 | [预览](../assets/weekly_20261028/scene_variants.png) | [下载](../assets/weekly_20261028/scene_variants.pdf) | [下载](../assets/weekly_20261028/scene_variants.svg) |
-| 反馈噪声 | 噪声与缺测实际如何进入反馈 | [预览](../assets/weekly_20261028/feedback_noise.png) | [下载](../assets/weekly_20261028/feedback_noise.pdf) | [下载](../assets/weekly_20261028/feedback_noise.svg) |
-| 训练loss | 两轮微调每次更新发生了什么 | [预览](../assets/weekly_20261028/training_loss.png) | [下载](../assets/weekly_20261028/training_loss.pdf) | [下载](../assets/weekly_20261028/training_loss.svg) |
-| 验证loss | 同一诊断子集在微调前后如何变化 | [预览](../assets/weekly_20261028/validation_loss.png) | [下载](../assets/weekly_20261028/validation_loss.pdf) | [下载](../assets/weekly_20261028/validation_loss.svg) |
-| 微调闭环 | loss改善是否转化为任务成功 | [预览](../assets/weekly_20261028/sft_success.png) | [下载](../assets/weekly_20261028/sft_success.pdf) | [下载](../assets/weekly_20261028/sft_success.svg) |
-| 聚合预算 | 最新测量与中位数如何影响成功率 | [预览](../assets/weekly_20261028/aggregation_budget.png) | [下载](../assets/weekly_20261028/aggregation_budget.pdf) | [下载](../assets/weekly_20261028/aggregation_budget.svg) |
-| 主动观测 | 成功率与观测费用的权衡 | [预览](../assets/weekly_20261028/active_observation.png) | [下载](../assets/weekly_20261028/active_observation.pdf) | [下载](../assets/weekly_20261028/active_observation.svg) |
-| 恢复案例 | 同一复合故障的四组最终状态 | [预览](../assets/weekly_20261028/recovery_case.png) | [下载](../assets/weekly_20261028/recovery_case.pdf) | [下载](../assets/weekly_20261028/recovery_case.svg) |
-| 观测价值 | 固定缺测快照补看后能否恢复 | [预览](../assets/weekly_20261028/observation_value.png) | [下载](../assets/weekly_20261028/observation_value.pdf) | [下载](../assets/weekly_20261028/observation_value.svg) |
+以下9张图直接显示在各自说明下面，无需跳转或下载。README及进度、实验设计、困难分析、组会文档也在对应段落嵌入相关图片。PNG为300 dpi导出；同名PDF/SVG仍保留在仓库中，截图面板仍是原始栅格图。这些是展示图，不声称符合某期刊最终投稿尺寸。
 
-README已按研究过程嵌入全部9张图。PNG为300 dpi导出；图表PDF/SVG保留矢量文字与曲线，截图面板仍是原始栅格图。SVG显示中文需要字体支持，跨设备阅读优先使用PNG或嵌入字体的PDF。这些是展示图，不声称符合某期刊最终投稿尺寸。
+### 1. 场景变化：物体位姿微扰，容器尚未大范围重新布局
+
+五种扰动分别改变物体位置、朝向或容器位置；另有一格无挡板控制。容器当前仅在原位置附近±1 cm内采样，因此三个容器的整体布局看起来基本不变。三个容器在有效桌面区域内随机重新摆放已列入后续计划，尚未执行，下面仍是原实验截图。
+
+![五种场景微扰与无挡板控制](../assets/weekly_20261028/scene_variants.png)
+
+### 2. 反馈噪声：改变测量数值或使字段缺失
+
+这层干预作用于反馈残差，不改变RGB图像。72条投影记录包含63条非缺失值和9条缺失值；σ=0/5/15 mm，缺失概率0/25%。
+
+![反馈残差噪声与缺失字段](../assets/weekly_20261028/feedback_noise.png)
+
+### 3. 训练loss：展示全部更新点
+
+159条版本有20次更新，189输入版本有24次更新。曲线未平滑，两版监督目标不同，不能仅比较曲线高低判断哪版更好。
+
+![两版微调的完整训练loss](../assets/weekly_20261028/training_loss.png)
+
+### 4. 验证loss：只有训练前后两个检查点
+
+展示159条版本在dev49和legacy_dev29上的配对变化。连线表示两个检查点之间的差异，不代表记录过中间过程，也不代表物理任务成功率。
+
+![微调前后的验证loss](../assets/weekly_20261028/validation_loss.png)
+
+### 5. 微调闭环：loss下降后的实际任务效果
+
+同一60条件中，规则57/60、基础模型55/60、两版微调均56/60。保留有限增益，不将标签拟合改善写成显著物理收益。
+
+![规则与基础及微调模型的闭环成功率](../assets/weekly_20261028/sft_success.png)
+
+### 6. 聚合预算：不同测量处理方式的成功率
+
+同一24条件下比较最新值与中位数；相同聚合方式的规则与模型结果一致。横轴是物理执行预算，不是训练轮数。
+
+![观测聚合与执行预算的成功率曲线](../assets/weekly_20261028/aggregation_budget.png)
+
+### 7. 主动观测：效果和观测费用一起看
+
+自适应规则最终成功17/24，其余三组14/24。左图为固定三次尝试策略的累计成功，右图为实际额外观测费用；不能解释为三个独立预算实验。
+
+![主动观测累计成功率与观测费用](../assets/weekly_20261028/active_observation.png)
+
+### 8. 恢复案例：四种策略的最终状态
+
+这是特意选择的已知差异案例M1_940301_grasp_place，不是随机代表样本。标注来自物理验收，机械臂遮挡物体时不能仅凭截图判断成功。
+
+![同一复合故障下四种策略的恢复画面](../assets/weekly_20261028/recovery_case.png)
+
+### 9. 观测价值：固定缺测快照补看后的下一步效果
+
+11个来源快照、66个实际执行分支；补看0/1/2次后规则成功0/5/6，基础4B成功1/6/7，分母各11。该图是重置后单次重试的结果，不是完整自主闭环。
+
+![固定追加观测次数与下一次重试成功率](../assets/weekly_20261028/observation_value.png)
 
 ## 场景图与案例图的选择规则
 
