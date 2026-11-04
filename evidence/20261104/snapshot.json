@@ -1,0 +1,89 @@
+{
+  "captured_at_utc": "2026-11-04T06:20:37.987Z",
+  "timezone": "Asia/Shanghai",
+  "source_job": 6169,
+  "completed_batches": 9,
+  "summary": {
+    "train": {
+      "snapshots": 133,
+      "seed_groups": 45,
+      "recoveries": 78,
+      "recovery_seed_groups": 40,
+      "tasks": [
+        "PurpleCapsule",
+        "RedBlock"
+      ],
+      "correction_action_types": [
+        "SET_GRASP_OFFSET",
+        "SET_GRASP_STRATEGY",
+        "SET_TIME_SCALE"
+      ]
+    },
+    "dev": {
+      "snapshots": 36,
+      "seed_groups": 15,
+      "recoveries": 20,
+      "recovery_seed_groups": 13,
+      "tasks": [
+        "PurpleCapsule",
+        "RedBlock"
+      ],
+      "correction_action_types": [
+        "SET_GRASP_OFFSET",
+        "SET_GRASP_STRATEGY",
+        "SET_TIME_SCALE"
+      ]
+    }
+  },
+  "gate": {
+    "checks": {
+      "train_snapshots": true,
+      "train_seeds": true,
+      "dev_snapshots": false,
+      "dev_seeds": true,
+      "train_recoveries": true,
+      "recovery_seeds": true,
+      "correction_diversity": true,
+      "train_tasks": true,
+      "dev_tasks": true
+    },
+    "quantitative_ready": false,
+    "training_ready": false,
+    "further_required": [
+      "verified_training_export",
+      "frozen_base_model_comparison",
+      "controlled_training_protocol"
+    ]
+  },
+  "counts": {
+    "train": {
+      "records": 117,
+      "actions": {
+        "SET_GRASP_STRATEGY": 69,
+        "SET_GRASP_OFFSET": 5,
+        "SET_TIME_SCALE": 4,
+        "STOP": 39
+      }
+    },
+    "dev": {
+      "records": 30,
+      "actions": {
+        "SET_GRASP_STRATEGY": 15,
+        "SET_GRASP_OFFSET": 4,
+        "SET_TIME_SCALE": 1,
+        "STOP": 10
+      }
+    }
+  },
+  "outputs": {
+    "train.jsonl": "97e49006fc4308be80b39c1ce983e13a4852f619d7ea7ed5858f6e259fbde7c5",
+    "dev.jsonl": "9ac3df9220af7e86e5d4939e05cac8b3940c43a204a62121c78f5697a7d5b3f8",
+    "outcomes.jsonl": "8339fc5cf9e56fb80a06298eec6283c72b15d5e7661ff9a46edae6403f18e5bb"
+  },
+  "current_visual_training_updates": 0,
+  "notes": [
+    "SFT records are not natural snapshots",
+    "Recovery collection is not autonomous model performance",
+    "Current visual training differs from historical trained adapters"
+  ]
+}

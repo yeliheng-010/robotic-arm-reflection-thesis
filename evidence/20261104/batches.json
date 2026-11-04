@@ -1,0 +1,502 @@
+[
+  {
+    "completed_batches": 1,
+    "export_job": 5980,
+    "summary": {
+      "train": {
+        "snapshots": 9,
+        "seed_groups": 4,
+        "recoveries": 7,
+        "recovery_seed_groups": 4,
+        "tasks": [
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 7,
+        "seed_groups": 3,
+        "recoveries": 5,
+        "recovery_seed_groups": 3,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 10,
+        "actions": {
+          "SET_GRASP_OFFSET": 1,
+          "SET_GRASP_STRATEGY": 5,
+          "SET_TIME_SCALE": 1,
+          "STOP": 3
+        }
+      },
+      "dev": {
+        "records": 7,
+        "actions": {
+          "SET_GRASP_STRATEGY": 4,
+          "SET_GRASP_OFFSET": 1,
+          "STOP": 2
+        }
+      }
+    }
+  },
+  {
+    "completed_batches": 2,
+    "export_job": 6016,
+    "summary": {
+      "train": {
+        "snapshots": 32,
+        "seed_groups": 11,
+        "recoveries": 21,
+        "recovery_seed_groups": 11,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 11,
+        "seed_groups": 5,
+        "recoveries": 8,
+        "recovery_seed_groups": 5,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 31,
+        "actions": {
+          "SET_GRASP_STRATEGY": 17,
+          "SET_GRASP_OFFSET": 2,
+          "SET_TIME_SCALE": 2,
+          "STOP": 10
+        }
+      },
+      "dev": {
+        "records": 12,
+        "actions": {
+          "SET_GRASP_OFFSET": 2,
+          "SET_GRASP_STRATEGY": 6,
+          "STOP": 4
+        }
+      }
+    }
+  },
+  {
+    "completed_batches": 3,
+    "export_job": 6038,
+    "summary": {
+      "train": {
+        "snapshots": 48,
+        "seed_groups": 18,
+        "recoveries": 32,
+        "recovery_seed_groups": 17,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 16,
+        "seed_groups": 7,
+        "recoveries": 11,
+        "recovery_seed_groups": 7,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 48,
+        "actions": {
+          "SET_GRASP_STRATEGY": 26,
+          "SET_GRASP_OFFSET": 3,
+          "SET_TIME_SCALE": 3,
+          "STOP": 16
+        }
+      },
+      "dev": {
+        "records": 16,
+        "actions": {
+          "SET_GRASP_STRATEGY": 8,
+          "SET_GRASP_OFFSET": 2,
+          "SET_TIME_SCALE": 1,
+          "STOP": 5
+        }
+      }
+    }
+  },
+  {
+    "completed_batches": 4,
+    "export_job": 6055,
+    "summary": {
+      "train": {
+        "snapshots": 57,
+        "seed_groups": 21,
+        "recoveries": 38,
+        "recovery_seed_groups": 20,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 20,
+        "seed_groups": 9,
+        "recoveries": 14,
+        "recovery_seed_groups": 9,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 57,
+        "actions": {
+          "SET_GRASP_STRATEGY": 32,
+          "SET_GRASP_OFFSET": 3,
+          "SET_TIME_SCALE": 3,
+          "STOP": 19
+        }
+      },
+      "dev": {
+        "records": 21,
+        "actions": {
+          "SET_GRASP_STRATEGY": 10,
+          "SET_GRASP_OFFSET": 3,
+          "SET_TIME_SCALE": 1,
+          "STOP": 7
+        }
+      }
+    }
+  },
+  {
+    "completed_batches": 5,
+    "export_job": 6106,
+    "summary": {
+      "train": {
+        "snapshots": 75,
+        "seed_groups": 28,
+        "recoveries": 49,
+        "recovery_seed_groups": 26,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 25,
+        "seed_groups": 11,
+        "recoveries": 15,
+        "recovery_seed_groups": 10,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 73,
+        "actions": {
+          "SET_GRASP_STRATEGY": 43,
+          "SET_GRASP_OFFSET": 3,
+          "SET_TIME_SCALE": 3,
+          "STOP": 24
+        }
+      },
+      "dev": {
+        "records": 22,
+        "actions": {
+          "SET_GRASP_STRATEGY": 11,
+          "SET_GRASP_OFFSET": 3,
+          "SET_TIME_SCALE": 1,
+          "STOP": 7
+        }
+      }
+    }
+  },
+  {
+    "completed_batches": 6,
+    "export_job": 6117,
+    "summary": {
+      "train": {
+        "snapshots": 85,
+        "seed_groups": 31,
+        "recoveries": 53,
+        "recovery_seed_groups": 28,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 27,
+        "seed_groups": 12,
+        "recoveries": 16,
+        "recovery_seed_groups": 11,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 79,
+        "actions": {
+          "SET_GRASP_STRATEGY": 47,
+          "SET_GRASP_OFFSET": 3,
+          "SET_TIME_SCALE": 3,
+          "STOP": 26
+        }
+      },
+      "dev": {
+        "records": 24,
+        "actions": {
+          "SET_GRASP_STRATEGY": 11,
+          "SET_GRASP_OFFSET": 4,
+          "SET_TIME_SCALE": 1,
+          "STOP": 8
+        }
+      }
+    }
+  },
+  {
+    "completed_batches": 7,
+    "export_job": 6144,
+    "summary": {
+      "train": {
+        "snapshots": 99,
+        "seed_groups": 36,
+        "recoveries": 59,
+        "recovery_seed_groups": 32,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 30,
+        "seed_groups": 13,
+        "recoveries": 18,
+        "recovery_seed_groups": 12,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 88,
+        "actions": {
+          "SET_GRASP_STRATEGY": 52,
+          "SET_GRASP_OFFSET": 4,
+          "SET_TIME_SCALE": 3,
+          "STOP": 29
+        }
+      },
+      "dev": {
+        "records": 27,
+        "actions": {
+          "SET_GRASP_STRATEGY": 13,
+          "SET_GRASP_OFFSET": 4,
+          "SET_TIME_SCALE": 1,
+          "STOP": 9
+        }
+      }
+    }
+  },
+  {
+    "completed_batches": 8,
+    "export_job": 6154,
+    "summary": {
+      "train": {
+        "snapshots": 112,
+        "seed_groups": 40,
+        "recoveries": 65,
+        "recovery_seed_groups": 35,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 30,
+        "seed_groups": 13,
+        "recoveries": 18,
+        "recovery_seed_groups": 12,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 97,
+        "actions": {
+          "SET_GRASP_STRATEGY": 58,
+          "SET_GRASP_OFFSET": 4,
+          "SET_TIME_SCALE": 3,
+          "STOP": 32
+        }
+      },
+      "dev": {
+        "records": 27,
+        "actions": {
+          "SET_GRASP_STRATEGY": 13,
+          "SET_GRASP_OFFSET": 4,
+          "SET_TIME_SCALE": 1,
+          "STOP": 9
+        }
+      }
+    }
+  },
+  {
+    "completed_batches": 9,
+    "export_job": 6169,
+    "summary": {
+      "train": {
+        "snapshots": 133,
+        "seed_groups": 45,
+        "recoveries": 78,
+        "recovery_seed_groups": 40,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      },
+      "dev": {
+        "snapshots": 36,
+        "seed_groups": 15,
+        "recoveries": 20,
+        "recovery_seed_groups": 13,
+        "tasks": [
+          "PurpleCapsule",
+          "RedBlock"
+        ],
+        "correction_action_types": [
+          "SET_GRASP_OFFSET",
+          "SET_GRASP_STRATEGY",
+          "SET_TIME_SCALE"
+        ]
+      }
+    },
+    "counts": {
+      "train": {
+        "records": 117,
+        "actions": {
+          "SET_GRASP_STRATEGY": 69,
+          "SET_GRASP_OFFSET": 5,
+          "SET_TIME_SCALE": 4,
+          "STOP": 39
+        }
+      },
+      "dev": {
+        "records": 30,
+        "actions": {
+          "SET_GRASP_STRATEGY": 15,
+          "SET_GRASP_OFFSET": 4,
+          "SET_TIME_SCALE": 1,
+          "STOP": 10
+        }
+      }
+    }
+  }
+]

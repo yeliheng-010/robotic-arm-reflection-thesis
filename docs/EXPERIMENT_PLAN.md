@@ -1,8 +1,12 @@
 # 实验设计与验收口径
 
+**当前协议入口（2026-11-04）：[自然失败数据与微调准入](RECOVERY_DATASET_PROTOCOL.md)。** 正式场景仅baseline与varied_noisy，AI只读公开观测/执行事实；已完成九批正式采集，train133/dev36自然快照。当前由“数量与覆盖门槛 + 编码审计 + 基础模型缺陷证据”共同决定受控试训，不是只按样本数开训。
+
+下文保留2026-10-28的历史观测诊断设计，不代表本轮最新训练准入要求。最新状态见[当前进度](CURRENT_PROGRESS.md)。
+
 版本：2026-10-28。论文题目：《基于机械臂的错误反馈于智能反思系统》。
 
-本页为当前研究设计。早期“先扩到固定数据量再训练”的计划已被机制诊断优先的路线取代；历史方案见 [4113c24 版本](https://github.com/yeliheng-010/robotic-arm-reflection-thesis/blob/4113c24/docs/EXPERIMENT_PLAN.md)。本页不改写已完成实验协议；后续策略改动应另建冻结版本。
+以下为当时的研究设计：早期“先扩到固定数据量再训练”的计划转向机制诊断优先；更早方案见 [4113c24 版本](https://github.com/yeliheng-010/robotic-arm-reflection-thesis/blob/4113c24/docs/EXPERIMENT_PLAN.md)。历史冻结结果不改写，当前新增协议见上方入口。
 
 ## 1. 研究问题与对应实验
 

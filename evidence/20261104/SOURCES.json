@@ -1,0 +1,174 @@
+{
+  "captured_at_utc": "2026-11-04T06:20:37.987Z",
+  "scope": "Selected fields from locally synchronized verified artifacts; full originals remain in the experiment workspace",
+  "sources": [
+    {
+      "path": "recovery_dataset_v1/exports/job_6169/manifest.json",
+      "sha256": "ed48fda092d73549d8c6bbc2986cd40ae536310f315af31aa5c9557e0681ebc5",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_5980/manifest.json",
+      "sha256": "d0e260adf2319efbdbc0bafe3e73bcb45aa1513716b62b325c5a5f5b7bc30472",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_6016/manifest.json",
+      "sha256": "d8b7e300a65af1e6ead3deaa8131275688905d4bcaa40839b64c0ecd5654ddf9",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_6038/manifest.json",
+      "sha256": "409e3758a6d544cfc94957cf71dfe66d0d8f1859b62eee45e61100f4c6acc872",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_6055/manifest.json",
+      "sha256": "821032cfed845b5b72df2f62f2bc6a2163ed3192411190d6c8e52563d5a95f1d",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_6106/manifest.json",
+      "sha256": "c1191a4c16c32705edafd2ca4405dd3ed13231b760b9fefbcd64c6207ca2f541",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_6117/manifest.json",
+      "sha256": "4b49d7bb24e404df3c9107fcba8590b44e3edbb2e3c16eaf838d1b82a94567d6",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_6144/manifest.json",
+      "sha256": "91d00c4b3e7c3b61c1ce1ed5570abd69bd7847c3496d63a57ae1dc196260061d",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_6154/manifest.json",
+      "sha256": "17ccbfea8cba9b7c5b335db2e5a7e6595504d9ad143673b43b9421eeff4b6f45",
+      "extracted_fields": [
+        "summary",
+        "counts",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "collection_coverage_v1/results/job_6173.json",
+      "sha256": "793c395a75da7af0fe79176d185d37fd0905263c6808016c6237470fa677543c",
+      "extracted_fields": [
+        "by_task",
+        "stages",
+        "summary",
+        "limitation"
+      ]
+    },
+    {
+      "path": "collection_audit_triage_v2/results/job_6140.json",
+      "sha256": "34ca6d1b08f2b8e7f169bbd1d5deaea67961eb0a8ecae32be04eb1ba8e11d9f0",
+      "extracted_fields": [
+        "case",
+        "attempts",
+        "rows.reconstruction",
+        "contacts",
+        "physical_attempts",
+        "model_calls"
+      ]
+    },
+    {
+      "path": "recovery_integrity_v3/verification/job_6141.json",
+      "sha256": "01b6cd6e416c1a231e2f48f2a9848fbe4a97a8e864f3931c55e26c8647cd58e3",
+      "extracted_fields": [
+        "rejected_case",
+        "evidence",
+        "prior_case",
+        "prior_exact_equal",
+        "physical_attempts",
+        "model_calls"
+      ]
+    },
+    {
+      "path": "recovery_collection_v1/batches/004/physics/audit_rejections/R0_964143_varied_noisy.json",
+      "sha256": "c74dc3476f3977e3a4f5ebdba906e5f7149231ac68f87e0ff8644ba1b8350f60",
+      "extracted_fields": [
+        "id",
+        "passed",
+        "reason",
+        "consumed_attempts",
+        "eligible_natural_snapshots",
+        "verified_recoveries",
+        "contacts"
+      ]
+    },
+    {
+      "path": "recovery_collection_v1/batches/005/physics/audit_rejections/R0_964167_varied_noisy.json",
+      "sha256": "87fb5e63736c38ae83633f7e49634b42fc5ab42ba7bfecd63a428e93d8771825",
+      "extracted_fields": [
+        "id",
+        "passed",
+        "reason",
+        "consumed_attempts",
+        "eligible_natural_snapshots",
+        "verified_recoveries",
+        "contacts"
+      ]
+    },
+    {
+      "path": "recovery_collection_v1/batches/006/physics/audit_rejections/R1_964194_varied_noisy.json",
+      "sha256": "83ea0441e8dd1a83c86e114aba1d112674c5b339cbacd22917d4865900cc2845",
+      "extracted_fields": [
+        "id",
+        "passed",
+        "reason",
+        "consumed_attempts",
+        "eligible_natural_snapshots",
+        "verified_recoveries",
+        "contacts"
+      ]
+    },
+    {
+      "path": "recovery_collection_v1/batches/008/physics/audit_rejections/R0_964288_varied_noisy.json",
+      "sha256": "9ab8957d1572c65978313d4e6edf51b5e3bf1ea6250dd7e4e8cffe0635d938be",
+      "extracted_fields": [
+        "id",
+        "passed",
+        "reason",
+        "consumed_attempts",
+        "eligible_natural_snapshots",
+        "verified_recoveries",
+        "contacts"
+      ]
+    }
+  ],
+  "omitted": "Absolute environment paths, full trajectories, images, model weights and raw training examples are not published here"
+}
