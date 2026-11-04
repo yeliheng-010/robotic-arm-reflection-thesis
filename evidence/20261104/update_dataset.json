@@ -1,0 +1,114 @@
+{
+  "captured_at_utc": "2026-11-04T06:39:44.365Z",
+  "export_job": 6184,
+  "batches": 10,
+  "summary": {
+    "train": {
+      "snapshots": 145,
+      "seed_groups": 49,
+      "recoveries": 83,
+      "recovery_seed_groups": 43,
+      "tasks": [
+        "PurpleCapsule",
+        "RedBlock"
+      ],
+      "correction_action_types": [
+        "SET_GRASP_OFFSET",
+        "SET_GRASP_STRATEGY",
+        "SET_TIME_SCALE"
+      ]
+    },
+    "dev": {
+      "snapshots": 42,
+      "seed_groups": 17,
+      "recoveries": 24,
+      "recovery_seed_groups": 15,
+      "tasks": [
+        "PurpleCapsule",
+        "RedBlock"
+      ],
+      "correction_action_types": [
+        "SET_GRASP_OFFSET",
+        "SET_GRASP_STRATEGY",
+        "SET_TIME_SCALE"
+      ]
+    }
+  },
+  "gate_at_export": {
+    "checks": {
+      "train_snapshots": true,
+      "train_seeds": true,
+      "dev_snapshots": true,
+      "dev_seeds": true,
+      "train_recoveries": true,
+      "recovery_seeds": true,
+      "correction_diversity": true,
+      "train_tasks": true,
+      "dev_tasks": true
+    },
+    "quantitative_ready": true,
+    "training_ready": false,
+    "further_required": [
+      "verified_training_export",
+      "frozen_base_model_comparison",
+      "controlled_training_protocol"
+    ]
+  },
+  "counts": {
+    "train": {
+      "records": 124,
+      "actions": {
+        "SET_GRASP_STRATEGY": 74,
+        "SET_GRASP_OFFSET": 5,
+        "SET_TIME_SCALE": 4,
+        "STOP": 41
+      }
+    },
+    "dev": {
+      "records": 36,
+      "actions": {
+        "SET_GRASP_STRATEGY": 19,
+        "SET_GRASP_OFFSET": 4,
+        "SET_TIME_SCALE": 1,
+        "STOP": 12
+      }
+    }
+  },
+  "outputs": {
+    "train.jsonl": "5b56c754d4eedf325a280b83a2ad289308177c22d6180ddc450b8410a5b95c51",
+    "dev.jsonl": "a47d50c845b5b4f6e58cd5861c607e7982f52f7cf6e2ba63ecd1604c959bc0fe",
+    "outcomes.jsonl": "8a99d7c66b80992984623b320eb5d0a6dd210506efe8a0087b1aca942582601b"
+  },
+  "tenth_batch": {
+    "conditions": 14,
+    "accepted": 14,
+    "attempts": 46,
+    "all_conditions_accounted_for": true
+  },
+  "execution": {
+    "baseline": {
+      "attempts": 20,
+      "motion_started": 20,
+      "accepted_condition_attempts": 20,
+      "rejected_condition_attempts": 0,
+      "raw_task_success_ignores_safety": 20,
+      "raw_categories": {
+        "success": 20
+      }
+    },
+    "varied_noisy": {
+      "attempts": 595,
+      "motion_started": 519,
+      "accepted_condition_attempts": 576,
+      "rejected_condition_attempts": 19,
+      "raw_task_success_ignores_safety": 237,
+      "raw_categories": {
+        "success": 237,
+        "planning_rejection": 92,
+        "natural_execution_or_perception_failure": 265,
+        "unqualified_error_type:object_outside_container": 1
+      }
+    }
+  },
+  "limitation": "Exploratory recovery evidence is not autonomous AI success rate; raw task success ignores safety"
+}

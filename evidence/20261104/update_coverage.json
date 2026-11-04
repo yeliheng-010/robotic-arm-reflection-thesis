@@ -1,0 +1,2462 @@
+{
+  "source_job": 6188,
+  "by_task": {
+    "train": {
+      "PurpleCapsule": {
+        "snapshots": 20,
+        "seeds": 7,
+        "recoveries": 6,
+        "recovery_seeds": 4
+      },
+      "RedBlock": {
+        "snapshots": 125,
+        "seeds": 45,
+        "recoveries": 77,
+        "recovery_seeds": 40
+      }
+    },
+    "dev": {
+      "PurpleCapsule": {
+        "snapshots": 7,
+        "seeds": 4,
+        "recoveries": 5,
+        "recovery_seeds": 4
+      },
+      "RedBlock": {
+        "snapshots": 35,
+        "seeds": 13,
+        "recoveries": 19,
+        "recovery_seeds": 11
+      }
+    }
+  },
+  "stages": {
+    "train": {
+      "proposed": {
+        "conditions": 480,
+        "seed_groups": 240,
+        "camera": {
+          "azimuth_offset_deg": {
+            "min": -59.798966189367356,
+            "max": 59.84154182908909,
+            "edges": [
+              -30,
+              0,
+              30
+            ],
+            "histogram": [
+              55,
+              57,
+              66,
+              62
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "elevation_deg": {
+            "min": 35.21367823617899,
+            "max": 74.7392158756798,
+            "edges": [
+              45,
+              60
+            ],
+            "histogram": [
+              68,
+              88,
+              84
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "distance_m": {
+            "min": 0.9087269848540567,
+            "max": 1.4735020298934758,
+            "edges": [
+              1.1,
+              1.3
+            ],
+            "histogram": [
+              92,
+              81,
+              67
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "fovy": {
+            "min": 48.14250577395527,
+            "max": 64.95618734960026,
+            "edges": [
+              50,
+              60
+            ],
+            "histogram": [
+              24,
+              142,
+              74
+            ],
+            "convention": "left_closed_right_open"
+          }
+        },
+        "positions": {
+          "BlueBin": {
+            "x": {
+              "min": 0.8515159513256658,
+              "max": 1.429408101462751,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14037881818943218,
+              "max": 1.0575870343394955,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "GreenCylinder": {
+            "x": {
+              "min": 0.8514895550056174,
+              "max": 1.5492850739523067,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.0807423781674068,
+              "max": 1.099781392315797,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.8,
+              "max": 0.8,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "OrangeSphere": {
+            "x": {
+              "min": 0.8609785115159406,
+              "max": 1.5464395210643824,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08206901814619198,
+              "max": 1.0913710296449513,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "PurpleCapsule": {
+            "x": {
+              "min": 0.8513215262815041,
+              "max": 1.5486409255119735,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08461122315554587,
+              "max": 1.099389428155152,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBin": {
+            "x": {
+              "min": 0.8500272800425713,
+              "max": 1.4396224294788451,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14161946059853728,
+              "max": 1.0541665920651213,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBlock": {
+            "x": {
+              "min": 0.8514199571903095,
+              "max": 1.5449996742852836,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08159308169710354,
+              "max": 1.099106149700397,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.79,
+              "max": 0.79,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "SortingTray": {
+            "x": {
+              "min": 0.8502244104174248,
+              "max": 1.4239009589482206,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.12960836407165965,
+              "max": 1.0710851979519858,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                240
+              ],
+              "convention": "left_closed_right_open"
+            }
+          }
+        },
+        "colors": {
+          "BlueBin": {
+            "橙色": 40,
+            "蓝色": 45,
+            "黄色": 33,
+            "绿色": 30,
+            "红色": 47,
+            "紫色": 45
+          },
+          "RedBin": {
+            "红色": 40,
+            "绿色": 32,
+            "蓝色": 45,
+            "橙色": 43,
+            "紫色": 35,
+            "黄色": 45
+          },
+          "SortingTray": {
+            "紫色": 40,
+            "黄色": 41,
+            "蓝色": 32,
+            "橙色": 46,
+            "绿色": 48,
+            "红色": 33
+          }
+        },
+        "noise": {
+          "depth_sigma_m": 0.003,
+          "dropout": 0.02
+        },
+        "tasks": {
+          "RedBlock": 240,
+          "PurpleCapsule": 240
+        }
+      },
+      "qualified": {
+        "conditions": 138,
+        "seed_groups": 109,
+        "camera": {
+          "azimuth_offset_deg": {
+            "min": -59.798966189367356,
+            "max": 59.84154182908909,
+            "edges": [
+              -30,
+              0,
+              30
+            ],
+            "histogram": [
+              19,
+              17,
+              27,
+              46
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "elevation_deg": {
+            "min": 35.276407208187635,
+            "max": 74.7392158756798,
+            "edges": [
+              45,
+              60
+            ],
+            "histogram": [
+              29,
+              41,
+              39
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "distance_m": {
+            "min": 0.9087269848540567,
+            "max": 1.4667956920433844,
+            "edges": [
+              1.1,
+              1.3
+            ],
+            "histogram": [
+              43,
+              40,
+              26
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "fovy": {
+            "min": 48.14250577395527,
+            "max": 64.95618734960026,
+            "edges": [
+              50,
+              60
+            ],
+            "histogram": [
+              8,
+              71,
+              30
+            ],
+            "convention": "left_closed_right_open"
+          }
+        },
+        "positions": {
+          "BlueBin": {
+            "x": {
+              "min": 0.8527754187159987,
+              "max": 1.429408101462751,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14367625319264327,
+              "max": 1.0560062321109362,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "GreenCylinder": {
+            "x": {
+              "min": 0.8563694997352802,
+              "max": 1.547108449101156,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.0842943102614826,
+              "max": 1.098580342715275,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.8,
+              "max": 0.8,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "OrangeSphere": {
+            "x": {
+              "min": 0.8663920460436063,
+              "max": 1.5440236185227332,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08282936325878748,
+              "max": 1.0913710296449513,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "PurpleCapsule": {
+            "x": {
+              "min": 0.8562780314970689,
+              "max": 1.5486409255119735,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.09372080082690855,
+              "max": 1.099389428155152,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBin": {
+            "x": {
+              "min": 0.8554627769281704,
+              "max": 1.4396224294788451,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14569577624946947,
+              "max": 1.0541665920651213,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBlock": {
+            "x": {
+              "min": 0.8516368058105352,
+              "max": 1.543416350636961,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08159308169710354,
+              "max": 1.099106149700397,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.79,
+              "max": 0.79,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "SortingTray": {
+            "x": {
+              "min": 0.8541585003908974,
+              "max": 1.4120981598233846,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.12960836407165965,
+              "max": 1.0710851979519858,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                109
+              ],
+              "convention": "left_closed_right_open"
+            }
+          }
+        },
+        "colors": {
+          "BlueBin": {
+            "橙色": 17,
+            "蓝色": 18,
+            "黄色": 20,
+            "绿色": 14,
+            "红色": 22,
+            "紫色": 18
+          },
+          "RedBin": {
+            "红色": 21,
+            "绿色": 13,
+            "蓝色": 24,
+            "橙色": 16,
+            "紫色": 14,
+            "黄色": 21
+          },
+          "SortingTray": {
+            "紫色": 23,
+            "黄色": 15,
+            "蓝色": 9,
+            "橙色": 27,
+            "绿色": 23,
+            "红色": 12
+          }
+        },
+        "noise": {
+          "depth_sigma_m": 0.003,
+          "dropout": 0.02
+        },
+        "tasks": {
+          "PurpleCapsule": 56,
+          "RedBlock": 82
+        }
+      },
+      "natural": {
+        "conditions": 52,
+        "seed_groups": 49,
+        "camera": {
+          "azimuth_offset_deg": {
+            "min": -56.90431644257924,
+            "max": 56.846276024055946,
+            "edges": [
+              -30,
+              0,
+              30
+            ],
+            "histogram": [
+              5,
+              8,
+              10,
+              26
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "elevation_deg": {
+            "min": 35.276407208187635,
+            "max": 74.5099517697235,
+            "edges": [
+              45,
+              60
+            ],
+            "histogram": [
+              16,
+              16,
+              17
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "distance_m": {
+            "min": 0.9087269848540567,
+            "max": 1.4484574696078867,
+            "edges": [
+              1.1,
+              1.3
+            ],
+            "histogram": [
+              19,
+              17,
+              13
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "fovy": {
+            "min": 48.14250577395527,
+            "max": 64.95618734960026,
+            "edges": [
+              50,
+              60
+            ],
+            "histogram": [
+              4,
+              33,
+              12
+            ],
+            "convention": "left_closed_right_open"
+          }
+        },
+        "positions": {
+          "BlueBin": {
+            "x": {
+              "min": 0.8704180064037965,
+              "max": 1.429008886958742,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14937054128951371,
+              "max": 1.0560062321109362,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "GreenCylinder": {
+            "x": {
+              "min": 0.857489228428208,
+              "max": 1.5436034947085502,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08787247881122434,
+              "max": 1.097047137812328,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.8,
+              "max": 0.8,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "OrangeSphere": {
+            "x": {
+              "min": 0.8663920460436063,
+              "max": 1.543481268423231,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08902518450782801,
+              "max": 1.0750397708755939,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "PurpleCapsule": {
+            "x": {
+              "min": 0.8562780314970689,
+              "max": 1.5303056022313346,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.09372080082690855,
+              "max": 1.0969220351746762,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBin": {
+            "x": {
+              "min": 0.8646749925551885,
+              "max": 1.4396224294788451,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14702699582636744,
+              "max": 1.0343089425095076,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBlock": {
+            "x": {
+              "min": 0.8611254667126448,
+              "max": 1.543416350636961,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14501908595900342,
+              "max": 1.0983605768451763,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.79,
+              "max": 0.79,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "SortingTray": {
+            "x": {
+              "min": 0.9115462652115098,
+              "max": 1.4120981598233846,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.16095657802281493,
+              "max": 1.0709735858415206,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                49
+              ],
+              "convention": "left_closed_right_open"
+            }
+          }
+        },
+        "colors": {
+          "BlueBin": {
+            "蓝色": 10,
+            "红色": 9,
+            "紫色": 12,
+            "黄色": 10,
+            "橙色": 5,
+            "绿色": 3
+          },
+          "RedBin": {
+            "红色": 11,
+            "橙色": 10,
+            "绿色": 4,
+            "蓝色": 11,
+            "紫色": 4,
+            "黄色": 9
+          },
+          "SortingTray": {
+            "橙色": 15,
+            "绿色": 10,
+            "黄色": 6,
+            "紫色": 10,
+            "蓝色": 3,
+            "红色": 5
+          }
+        },
+        "noise": {
+          "depth_sigma_m": 0.003,
+          "dropout": 0.02
+        },
+        "tasks": {
+          "RedBlock": 45,
+          "PurpleCapsule": 7
+        }
+      },
+      "recovered": {
+        "conditions": 44,
+        "seed_groups": 43,
+        "camera": {
+          "azimuth_offset_deg": {
+            "min": -56.90431644257924,
+            "max": 56.846276024055946,
+            "edges": [
+              -30,
+              0,
+              30
+            ],
+            "histogram": [
+              5,
+              6,
+              9,
+              23
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "elevation_deg": {
+            "min": 35.276407208187635,
+            "max": 74.5099517697235,
+            "edges": [
+              45,
+              60
+            ],
+            "histogram": [
+              14,
+              14,
+              15
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "distance_m": {
+            "min": 0.9129991633583933,
+            "max": 1.4484574696078867,
+            "edges": [
+              1.1,
+              1.3
+            ],
+            "histogram": [
+              15,
+              16,
+              12
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "fovy": {
+            "min": 48.14250577395527,
+            "max": 64.95618734960026,
+            "edges": [
+              50,
+              60
+            ],
+            "histogram": [
+              3,
+              29,
+              11
+            ],
+            "convention": "left_closed_right_open"
+          }
+        },
+        "positions": {
+          "BlueBin": {
+            "x": {
+              "min": 0.8704180064037965,
+              "max": 1.429008886958742,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14937054128951371,
+              "max": 1.0560062321109362,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "GreenCylinder": {
+            "x": {
+              "min": 0.857489228428208,
+              "max": 1.5436034947085502,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08787247881122434,
+              "max": 1.097047137812328,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.8,
+              "max": 0.8,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "OrangeSphere": {
+            "x": {
+              "min": 0.8663920460436063,
+              "max": 1.543481268423231,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08902518450782801,
+              "max": 1.0332705375499054,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "PurpleCapsule": {
+            "x": {
+              "min": 0.8562780314970689,
+              "max": 1.5303056022313346,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.09372080082690855,
+              "max": 1.0969220351746762,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBin": {
+            "x": {
+              "min": 0.8646749925551885,
+              "max": 1.4396224294788451,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14702699582636744,
+              "max": 1.0343089425095076,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBlock": {
+            "x": {
+              "min": 0.8611254667126448,
+              "max": 1.543416350636961,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14501908595900342,
+              "max": 1.0983605768451763,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.79,
+              "max": 0.79,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "SortingTray": {
+            "x": {
+              "min": 0.9115462652115098,
+              "max": 1.4120981598233846,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.16095657802281493,
+              "max": 1.0709735858415206,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                43
+              ],
+              "convention": "left_closed_right_open"
+            }
+          }
+        },
+        "colors": {
+          "BlueBin": {
+            "蓝色": 9,
+            "红色": 8,
+            "紫色": 10,
+            "黄色": 10,
+            "橙色": 4,
+            "绿色": 2
+          },
+          "RedBin": {
+            "红色": 9,
+            "橙色": 8,
+            "绿色": 4,
+            "蓝色": 11,
+            "紫色": 4,
+            "黄色": 7
+          },
+          "SortingTray": {
+            "橙色": 15,
+            "绿色": 7,
+            "黄色": 6,
+            "紫色": 9,
+            "蓝色": 2,
+            "红色": 4
+          }
+        },
+        "noise": {
+          "depth_sigma_m": 0.003,
+          "dropout": 0.02
+        },
+        "tasks": {
+          "RedBlock": 40,
+          "PurpleCapsule": 4
+        }
+      }
+    },
+    "dev": {
+      "proposed": {
+        "conditions": 160,
+        "seed_groups": 80,
+        "camera": {
+          "azimuth_offset_deg": {
+            "min": -58.70335734650724,
+            "max": 59.9285772883195,
+            "edges": [
+              -30,
+              0,
+              30
+            ],
+            "histogram": [
+              16,
+              18,
+              25,
+              21
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "elevation_deg": {
+            "min": 35.39932378113414,
+            "max": 73.22717110380809,
+            "edges": [
+              45,
+              60
+            ],
+            "histogram": [
+              25,
+              30,
+              25
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "distance_m": {
+            "min": 0.9167597914295275,
+            "max": 1.4747298783068257,
+            "edges": [
+              1.1,
+              1.3
+            ],
+            "histogram": [
+              29,
+              24,
+              27
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "fovy": {
+            "min": 48.43359202457869,
+            "max": 64.83960623747271,
+            "edges": [
+              50,
+              60
+            ],
+            "histogram": [
+              7,
+              44,
+              29
+            ],
+            "convention": "left_closed_right_open"
+          }
+        },
+        "positions": {
+          "BlueBin": {
+            "x": {
+              "min": 0.8527340062888272,
+              "max": 1.4076694113386794,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14089083270787028,
+              "max": 0.9991429586241973,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "GreenCylinder": {
+            "x": {
+              "min": 0.8597804407542546,
+              "max": 1.5452354872861656,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.09030683075828234,
+              "max": 1.08332524362125,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.8,
+              "max": 0.8,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "OrangeSphere": {
+            "x": {
+              "min": 0.854135038163298,
+              "max": 1.541829303395584,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08408295699670575,
+              "max": 1.0950885589981114,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "PurpleCapsule": {
+            "x": {
+              "min": 0.864998907319309,
+              "max": 1.5237248279416704,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08459405687620396,
+              "max": 1.090789036933873,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBin": {
+            "x": {
+              "min": 0.8514046571747291,
+              "max": 1.4357656549207949,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.1402740120131581,
+              "max": 1.059136984326266,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBlock": {
+            "x": {
+              "min": 0.8592919284971654,
+              "max": 1.5341560714790825,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08278229313109346,
+              "max": 1.0918320160545267,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.79,
+              "max": 0.79,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "SortingTray": {
+            "x": {
+              "min": 0.8600877502171724,
+              "max": 1.423886170495347,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.16249277860670652,
+              "max": 1.0734061186230606,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                80
+              ],
+              "convention": "left_closed_right_open"
+            }
+          }
+        },
+        "colors": {
+          "BlueBin": {
+            "紫色": 19,
+            "黄色": 11,
+            "橙色": 11,
+            "绿色": 16,
+            "红色": 9,
+            "蓝色": 14
+          },
+          "RedBin": {
+            "橙色": 11,
+            "紫色": 11,
+            "绿色": 22,
+            "红色": 10,
+            "蓝色": 17,
+            "黄色": 9
+          },
+          "SortingTray": {
+            "蓝色": 9,
+            "黄色": 16,
+            "橙色": 14,
+            "紫色": 14,
+            "红色": 18,
+            "绿色": 9
+          }
+        },
+        "noise": {
+          "depth_sigma_m": 0.003,
+          "dropout": 0.02
+        },
+        "tasks": {
+          "RedBlock": 80,
+          "PurpleCapsule": 80
+        }
+      },
+      "qualified": {
+        "conditions": 41,
+        "seed_groups": 34,
+        "camera": {
+          "azimuth_offset_deg": {
+            "min": -58.70335734650724,
+            "max": 59.9285772883195,
+            "edges": [
+              -30,
+              0,
+              30
+            ],
+            "histogram": [
+              7,
+              5,
+              10,
+              12
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "elevation_deg": {
+            "min": 36.92687300428632,
+            "max": 73.22717110380809,
+            "edges": [
+              45,
+              60
+            ],
+            "histogram": [
+              11,
+              15,
+              8
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "distance_m": {
+            "min": 0.9167597914295275,
+            "max": 1.4717050902416948,
+            "edges": [
+              1.1,
+              1.3
+            ],
+            "histogram": [
+              11,
+              12,
+              11
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "fovy": {
+            "min": 49.40672235616424,
+            "max": 64.45142612271967,
+            "edges": [
+              50,
+              60
+            ],
+            "histogram": [
+              1,
+              19,
+              14
+            ],
+            "convention": "left_closed_right_open"
+          }
+        },
+        "positions": {
+          "BlueBin": {
+            "x": {
+              "min": 0.8601898472450936,
+              "max": 1.4051036909355479,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14089083270787028,
+              "max": 0.9991429586241973,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "GreenCylinder": {
+            "x": {
+              "min": 0.8786805121899934,
+              "max": 1.5429827472547673,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.09531261948358323,
+              "max": 1.08332524362125,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.8,
+              "max": 0.8,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "OrangeSphere": {
+            "x": {
+              "min": 0.8753498754604131,
+              "max": 1.5256110398970908,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08408295699670575,
+              "max": 1.0950885589981114,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "PurpleCapsule": {
+            "x": {
+              "min": 0.8834339004942203,
+              "max": 1.5237248279416704,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.09442182645631414,
+              "max": 1.023387958325031,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBin": {
+            "x": {
+              "min": 0.8530598942241355,
+              "max": 1.4280129092681135,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.1402740120131581,
+              "max": 1.0061646837714746,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBlock": {
+            "x": {
+              "min": 0.8592919284971654,
+              "max": 1.525073836486083,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08278229313109346,
+              "max": 1.0834402759989898,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.79,
+              "max": 0.79,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "SortingTray": {
+            "x": {
+              "min": 0.8725660335598105,
+              "max": 1.4189723861107613,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.18498347096956874,
+              "max": 1.0734061186230606,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                34
+              ],
+              "convention": "left_closed_right_open"
+            }
+          }
+        },
+        "colors": {
+          "BlueBin": {
+            "紫色": 11,
+            "橙色": 5,
+            "绿色": 6,
+            "红色": 4,
+            "蓝色": 6,
+            "黄色": 2
+          },
+          "RedBin": {
+            "橙色": 7,
+            "绿色": 14,
+            "红色": 2,
+            "紫色": 4,
+            "蓝色": 4,
+            "黄色": 3
+          },
+          "SortingTray": {
+            "蓝色": 5,
+            "黄色": 10,
+            "紫色": 4,
+            "橙色": 5,
+            "红色": 8,
+            "绿色": 2
+          }
+        },
+        "noise": {
+          "depth_sigma_m": 0.003,
+          "dropout": 0.02
+        },
+        "tasks": {
+          "RedBlock": 22,
+          "PurpleCapsule": 19
+        }
+      },
+      "natural": {
+        "conditions": 17,
+        "seed_groups": 17,
+        "camera": {
+          "azimuth_offset_deg": {
+            "min": -50.427716702421755,
+            "max": 49.21602033372357,
+            "edges": [
+              -30,
+              0,
+              30
+            ],
+            "histogram": [
+              4,
+              4,
+              6,
+              3
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "elevation_deg": {
+            "min": 38.48587744485387,
+            "max": 73.22717110380809,
+            "edges": [
+              45,
+              60
+            ],
+            "histogram": [
+              6,
+              6,
+              5
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "distance_m": {
+            "min": 0.9358730213904485,
+            "max": 1.4717050902416948,
+            "edges": [
+              1.1,
+              1.3
+            ],
+            "histogram": [
+              5,
+              4,
+              8
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "fovy": {
+            "min": 50.95968469066026,
+            "max": 64.10187338074687,
+            "edges": [
+              50,
+              60
+            ],
+            "histogram": [
+              0,
+              10,
+              7
+            ],
+            "convention": "left_closed_right_open"
+          }
+        },
+        "positions": {
+          "BlueBin": {
+            "x": {
+              "min": 0.8601898472450936,
+              "max": 1.4051036909355479,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14726431557866307,
+              "max": 0.9991429586241973,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "GreenCylinder": {
+            "x": {
+              "min": 0.8786805121899934,
+              "max": 1.5429827472547673,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.2366602984642286,
+              "max": 1.08332524362125,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.8,
+              "max": 0.8,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "OrangeSphere": {
+            "x": {
+              "min": 0.947339575338853,
+              "max": 1.5233158078874682,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.10409211596672725,
+              "max": 1.0950885589981114,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "PurpleCapsule": {
+            "x": {
+              "min": 0.8834339004942203,
+              "max": 1.521188334995252,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.09442182645631414,
+              "max": 1.023387958325031,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBin": {
+            "x": {
+              "min": 0.8530598942241355,
+              "max": 1.3858997712578218,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.1402740120131581,
+              "max": 1.0061646837714746,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBlock": {
+            "x": {
+              "min": 0.9754958530170137,
+              "max": 1.525073836486083,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.08749462271779378,
+              "max": 1.0834402759989898,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.79,
+              "max": 0.79,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "SortingTray": {
+            "x": {
+              "min": 0.8725660335598105,
+              "max": 1.359826039980117,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.18498347096956874,
+              "max": 1.0734061186230606,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                17
+              ],
+              "convention": "left_closed_right_open"
+            }
+          }
+        },
+        "colors": {
+          "BlueBin": {
+            "紫色": 7,
+            "橙色": 3,
+            "红色": 3,
+            "蓝色": 3,
+            "绿色": 1
+          },
+          "RedBin": {
+            "橙色": 5,
+            "红色": 1,
+            "绿色": 5,
+            "紫色": 3,
+            "蓝色": 2,
+            "黄色": 1
+          },
+          "SortingTray": {
+            "蓝色": 5,
+            "紫色": 2,
+            "绿色": 2,
+            "红色": 3,
+            "黄色": 4,
+            "橙色": 1
+          }
+        },
+        "noise": {
+          "depth_sigma_m": 0.003,
+          "dropout": 0.02
+        },
+        "tasks": {
+          "RedBlock": 13,
+          "PurpleCapsule": 4
+        }
+      },
+      "recovered": {
+        "conditions": 15,
+        "seed_groups": 15,
+        "camera": {
+          "azimuth_offset_deg": {
+            "min": -50.427716702421755,
+            "max": 49.21602033372357,
+            "edges": [
+              -30,
+              0,
+              30
+            ],
+            "histogram": [
+              3,
+              4,
+              5,
+              3
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "elevation_deg": {
+            "min": 38.48587744485387,
+            "max": 73.22717110380809,
+            "edges": [
+              45,
+              60
+            ],
+            "histogram": [
+              6,
+              4,
+              5
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "distance_m": {
+            "min": 0.981176354331962,
+            "max": 1.4717050902416948,
+            "edges": [
+              1.1,
+              1.3
+            ],
+            "histogram": [
+              4,
+              3,
+              8
+            ],
+            "convention": "left_closed_right_open"
+          },
+          "fovy": {
+            "min": 50.95968469066026,
+            "max": 64.10187338074687,
+            "edges": [
+              50,
+              60
+            ],
+            "histogram": [
+              0,
+              8,
+              7
+            ],
+            "convention": "left_closed_right_open"
+          }
+        },
+        "positions": {
+          "BlueBin": {
+            "x": {
+              "min": 0.8601898472450936,
+              "max": 1.4051036909355479,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.14726431557866307,
+              "max": 0.9991429586241973,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "GreenCylinder": {
+            "x": {
+              "min": 0.8786805121899934,
+              "max": 1.5429827472547673,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.2366602984642286,
+              "max": 1.08332524362125,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.8,
+              "max": 0.8,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "OrangeSphere": {
+            "x": {
+              "min": 0.947339575338853,
+              "max": 1.5233158078874682,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.10409211596672725,
+              "max": 1.0950885589981114,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "PurpleCapsule": {
+            "x": {
+              "min": 0.8834339004942203,
+              "max": 1.5078425127636312,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.09442182645631414,
+              "max": 1.023387958325031,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.78,
+              "max": 0.78,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBin": {
+            "x": {
+              "min": 0.8530598942241355,
+              "max": 1.3858997712578218,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.1402740120131581,
+              "max": 1.0061646837714746,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "RedBlock": {
+            "x": {
+              "min": 0.9754958530170137,
+              "max": 1.525073836486083,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.11993872844779269,
+              "max": 0.9552797833117264,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.79,
+              "max": 0.79,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            }
+          },
+          "SortingTray": {
+            "x": {
+              "min": 0.8725660335598105,
+              "max": 1.359826039980117,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "y": {
+              "min": 0.18498347096956874,
+              "max": 1.0734061186230606,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            },
+            "z": {
+              "min": 0.74,
+              "max": 0.74,
+              "edges": [],
+              "histogram": [
+                15
+              ],
+              "convention": "left_closed_right_open"
+            }
+          }
+        },
+        "colors": {
+          "BlueBin": {
+            "紫色": 7,
+            "橙色": 3,
+            "红色": 3,
+            "蓝色": 1,
+            "绿色": 1
+          },
+          "RedBin": {
+            "橙色": 4,
+            "红色": 1,
+            "绿色": 4,
+            "紫色": 3,
+            "蓝色": 2,
+            "黄色": 1
+          },
+          "SortingTray": {
+            "蓝色": 5,
+            "紫色": 2,
+            "绿色": 2,
+            "红色": 3,
+            "橙色": 1,
+            "黄色": 2
+          }
+        },
+        "noise": {
+          "depth_sigma_m": 0.003,
+          "dropout": 0.02
+        },
+        "tasks": {
+          "RedBlock": 11,
+          "PurpleCapsule": 4
+        }
+      }
+    }
+  },
+  "limitation": "Descriptive selected-data coverage; not uniformity, causality or generalization evidence"
+}

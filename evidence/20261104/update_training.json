@@ -1,0 +1,94 @@
+{
+  "captured_at_utc": "2026-11-04T06:39:44.365Z",
+  "audit": {
+    "passed": true,
+    "records": 160,
+    "quantitative_ready": true,
+    "split_counts": {
+      "train": 124,
+      "dev": 36
+    }
+  },
+  "comparison": {
+    "summary": {
+      "model": {
+        "stop_before_completion": 22,
+        "completed_stop": 11,
+        "unmeasured_action": 21
+      },
+      "fixed_rule": {
+        "observed_success": 19,
+        "completed_stop": 5,
+        "unmeasured_action": 22,
+        "observed_failure": 8
+      }
+    },
+    "inputs": 54,
+    "natural_snapshots": 42,
+    "model_calls": 54,
+    "physical_attempts": 0,
+    "training_updates": 0,
+    "limitation": "Offline observed-option comparison; unmeasured choices are unknown, not failures"
+  },
+  "training_config": {
+    "seed": 42,
+    "rank": 8,
+    "learning_rate": 0.00005,
+    "epochs": 1,
+    "accumulation": 4,
+    "train_samples": 124,
+    "training_authorized": true,
+    "test_used": false,
+    "entrypoint_version": 2,
+    "learnable_evidence": {
+      "defect_seed_groups": 9,
+      "defect_snapshots": 11,
+      "criterion": "known_success_option_available_and_base_invalid_stop_or_observed_failure"
+    },
+    "scope": "controlled_multimodal_action_trial"
+  },
+  "smoke_update": {
+    "update": {
+      "loss": 0.6408774852752686,
+      "gradient_norm": 11.112929344177246,
+      "samples": 1,
+      "supervised_tokens": 13
+    },
+    "changed_tensors": 496,
+    "manifest_sha256": "8a47b7a9148bee99b5c9d88ec459d139bff39ae8df2a1c45b57228431dacd01b",
+    "peak_allocated_bytes": 10469201408
+  },
+  "smoke_reload": {
+    "passed": true,
+    "reload_max_logit_error": 0,
+    "independent_process": true,
+    "manifest_sha256": "8a47b7a9148bee99b5c9d88ec459d139bff39ae8df2a1c45b57228431dacd01b"
+  },
+  "verified_training_updates": [
+    {
+      "step": 1,
+      "loss": 0.5146575894425897,
+      "samples": 4,
+      "gradient_norm": 8.949986457824707
+    },
+    {
+      "step": 2,
+      "loss": 0.28781809609221376,
+      "samples": 4,
+      "gradient_norm": 2.9593400955200195
+    },
+    {
+      "step": 3,
+      "loss": 0.19329069103255417,
+      "samples": 4,
+      "gradient_norm": 2.8766682147979736
+    }
+  ],
+  "scheduler": {
+    "6194": "COMPLETED/0:0",
+    "6195": "COMPLETED/0:0",
+    "6196": "COMPLETED/0:0",
+    "6197": "COMPLETED/0:0",
+    "6198": "RUNNING"
+  }
+}

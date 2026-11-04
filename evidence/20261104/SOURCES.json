@@ -168,7 +168,134 @@
         "verified_recoveries",
         "contacts"
       ]
+    },
+    {
+      "path": "visual_dataset_audit_v1/results/job_6194.json",
+      "sha256": "53de971a293aea367ba5d323f9d760f53b97f4ec2bf82ef144ae956af2e3a439",
+      "extracted_fields": [
+        "passed",
+        "records.length",
+        "quantitative_ready"
+      ]
+    },
+    {
+      "path": "visual_comparison_v1/prepared/export_6184/report.json",
+      "sha256": "c5f7055076438a49da6e67b2e0052a0ae058a4bd3922ac984aabf8111da55e39",
+      "extracted_fields": [
+        "summary",
+        "inputs",
+        "natural_snapshots",
+        "model_calls",
+        "physical_attempts",
+        "training_updates",
+        "limitation"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/manifest.json",
+      "sha256": "8a47b7a9148bee99b5c9d88ec459d139bff39ae8df2a1c45b57228431dacd01b",
+      "extracted_fields": [
+        "seed",
+        "rank",
+        "learning_rate",
+        "epochs",
+        "accumulation",
+        "train_samples",
+        "training_authorized",
+        "test_used",
+        "entrypoint_version",
+        "learnable_evidence",
+        "scope"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/smoke/update.json",
+      "sha256": "df67680fbf3aa7dcf5c704783733d292df8dab6b7e8fcb4c811e271d73a3838b",
+      "extracted_fields": [
+        "update",
+        "changed_tensors",
+        "manifest_sha256",
+        "peak_allocated_bytes"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/smoke/passed.json",
+      "sha256": "5c99813cc300c1aee4144b515dfcbb0563b530f3a2ba62b2589a3aa38119b647",
+      "extracted_fields": [
+        "passed",
+        "reload_max_logit_error",
+        "independent_process",
+        "manifest_sha256"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/001.json",
+      "sha256": "b30c5cf9c668ae2785e9fabe9f2246d113392e866d015b1b16fcdeac3517d0d3",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "samples",
+        "gradient_norm"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/002.json",
+      "sha256": "649fe8b67f690eb2ef1d2248c24a7ee6785f1e26ca3b765f77a7319ecbeed6bf",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "samples",
+        "gradient_norm"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/003.json",
+      "sha256": "071c247a83eb2498ab216108c00bd96f8ee6149c58e0dc78396949ae4d859fea",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "samples",
+        "gradient_norm"
+      ]
+    },
+    {
+      "path": "recovery_dataset_v1/exports/job_6184/manifest.json",
+      "sha256": "a73282e1f295a7222049543f4be2cfedcb19fff0153ab80375bb78eb26af171a",
+      "extracted_fields": [
+        "summary",
+        "gate",
+        "counts",
+        "outputs",
+        "batches.length"
+      ]
+    },
+    {
+      "path": "recovery_collection_v1/batches/009/physics/complete_v2.json",
+      "sha256": "dc3b364bdf88cf904fcbbc49c6e0a4a8eb9f9f895c238c04cced65be4536bac8",
+      "extracted_fields": [
+        "conditions.length",
+        "conditions.accepted",
+        "attempts",
+        "all_conditions_accounted_for"
+      ]
+    },
+    {
+      "path": "collection_coverage_v1/results/job_6188.json",
+      "sha256": "4bb0f6e6efd793f467234f91a1903b15b2918c330b43432a98eec2cdc47c4566",
+      "extracted_fields": [
+        "by_task",
+        "stages",
+        "limitation"
+      ]
+    },
+    {
+      "path": "recovery_integrity_v2/execution/job_6189.json",
+      "sha256": "6ec800c30516bfa6e6fd38043cd751721bcc181feebcd88d027d5722145765cc",
+      "extracted_fields": [
+        "summary"
+      ]
     }
   ],
-  "omitted": "Absolute environment paths, full trajectories, images, model weights and raw training examples are not published here"
+  "omitted": "Absolute environment paths, full trajectories, images, model weights and raw training examples are not published here",
+  "updated_at_utc": "2026-11-04T06:39:44.365Z"
 }
