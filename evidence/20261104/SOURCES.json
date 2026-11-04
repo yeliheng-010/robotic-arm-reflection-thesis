@@ -294,8 +294,277 @@
       "extracted_fields": [
         "summary"
       ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/004.json",
+      "sha256": "d073749b27f123d15c42fc5166a4f2bf12bfabbebb16bcf9d8cf2e17f4361307",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/005.json",
+      "sha256": "f8e9b7061b71d22112bc9f8c4e7b7a8964bdc4fc83ae26454245ec0d0bf24655",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/006.json",
+      "sha256": "3f35bf47715111dd3916fc4c2d0d4f2a137108ed6d94f69e1e46c5a7e81a389d",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/007.json",
+      "sha256": "b30261aff5bc976c19e0d20fbc6668223cca4c0438db353f128cfd5f575dce04",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/008.json",
+      "sha256": "cef7abe4af4f4d49302afc3e907a9e6f1c31e819b76ed0c5ddbfdb251f2db23f",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/009.json",
+      "sha256": "b27594de7061d85f451487aaa081352fcf6bb7be00f9b13563c97540721bb969",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/010.json",
+      "sha256": "b6a234121593c2f2621471ce2df4f0c2b3157fdf7ebd9332c1127f836174c5ec",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/011.json",
+      "sha256": "c46b2691d84b0639b43965d72975b21af9d2501f756e8e09c44bc69b8cb974d4",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/012.json",
+      "sha256": "5f02045cdb0ac03cc46c7a6357010db9115f3495527508f78bc892b9ecd33602",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/013.json",
+      "sha256": "5d8970bafa708f20133b64710405132ada261869b990f4512c273a6135817fac",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/014.json",
+      "sha256": "baec71bde19ed57f13a2aca2c8fe4bddcefc20aa7e4b35b1e4f354737c16798f",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/015.json",
+      "sha256": "06f8401a0a493ecb680cf8ab8b28292e0bd7b098d84c2281323bf2a34d94e017",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/016.json",
+      "sha256": "768c73f8e2f0c8522c2e1b0e14e48767da02fb104ff22008e7ef0d26b6106139",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "visual_finetune_v1/training/updates/017.json",
+      "sha256": "7d88abdff2b49caeab07342f0b27fcd8d791a69850fc6e735981efc346199551",
+      "extracted_fields": [
+        "step",
+        "loss",
+        "gradient_norm",
+        "samples",
+        "indices",
+        "elapsed_s"
+      ]
+    },
+    {
+      "path": "recovery_collection_v1/batches/003/physics/manifest.json",
+      "sha256": "16bc3a0d3cbeb01bad98336cc31c919fb26015091b4389718c2220385f2de459",
+      "extracted_fields": [
+        "selected cases.config"
+      ]
+    },
+    {
+      "path": "recovery_collection_v1/batches/009/physics/manifest.json",
+      "sha256": "f694f7a6096e9de541a2aaa7cc9493a5eca1a67fdc6e1a1f62a74fe9772baf68",
+      "extracted_fields": [
+        "selected cases.config"
+      ]
+    },
+    {
+      "path": "scene_pair_validation_v1/verification.json",
+      "sha256": "f2fd924fd4fb94f2e74fa072a0d480567e75814f878656bf72f274c15f89bb61",
+      "extracted_fields": [
+        "passed",
+        "complete",
+        "metrics",
+        "model_calls"
+      ]
+    },
+    {
+      "path": "scene_pair_feasibility_v5/verification.json",
+      "sha256": "395d14de20c83ac6a03615d2cfc712f39ef69cf9b72c9e79f66bcdb9a2ea3235",
+      "extracted_fields": [
+        "passed",
+        "metrics",
+        "promotion_allowed",
+        "actual_new_attempts"
+      ]
+    },
+    {
+      "path": "scene_pair_v2/anchor_verification.json",
+      "sha256": "ff9108385e0e45d6d039b4720ecf6dced0c3dfb3a726ee7646d045d012f04eb5",
+      "extracted_fields": [
+        "passed",
+        "comparisons"
+      ]
+    },
+    {
+      "path": "visual_data_review_v1/inventory.json",
+      "sha256": "d10bf7150f4f18b88f75629e8f0767167e68740e2eaab1b63a9159025b9d0acd",
+      "extracted_fields": [
+        "summary",
+        "metrics"
+      ]
+    },
+    {
+      "path": "scene_pair_route_v3/REPORT.md",
+      "sha256": "914a0aa736fa18e71f101b928c72626872bfdb02433e7aac3d5b27de81eb4fb7",
+      "extracted_fields": [
+        "targeted two-case outcomes and limitations"
+      ]
+    },
+    {
+      "path": "scene_pair_guard_v2/REPORT.md",
+      "sha256": "664a6e96053a6076ace147d29fa58ceb3a96337b2428046069a1afcbb0b3e28b",
+      "extracted_fields": [
+        "release/contact guard outcomes"
+      ]
+    },
+    {
+      "path": "scene_pair_depth_v1/REPORT.md",
+      "sha256": "c8780038d2f11390cd22725b53e0f6a8581178d5d3e40ce5aa2508f81023779a",
+      "extracted_fields": [
+        "depth recovery and physical failure"
+      ]
+    },
+    {
+      "path": "scene_diversity_v2/sd_config.py",
+      "sha256": "7f73664772d8f66688df3a039aaa79ce50c24556a08fb181a4a5ca1d7a6b195e",
+      "extracted_fields": [
+        "MOVING",
+        "SOURCES",
+        "CONTAINERS"
+      ]
+    },
+    {
+      "path": "scene_diversity_v2/sd_camera.py",
+      "sha256": "667934a8d4f2e082d63ff450159d6d78ddb7508ce17ad583a12744f1af34a050",
+      "extracted_fields": [
+        "sample ranges"
+      ]
+    },
+    {
+      "path": "scene_diversity_v2/sd_layout.py",
+      "sha256": "5ce6122bb68e1d48ea7c2016fbe35ce59deea96fba9ef17c7b6f4b37b21ebe86",
+      "extracted_fields": [
+        "position proposal and constraints"
+      ]
+    },
+    {
+      "path": "scene_diversity_v2/sd_appearance.py",
+      "sha256": "06078359165e702a1d80aa00895fa90b50e44b1828e9124523abe033136fb846",
+      "extracted_fields": [
+        "palette and stable identities"
+      ]
     }
   ],
   "omitted": "Absolute environment paths, full trajectories, images, model weights and raw training examples are not published here",
-  "updated_at_utc": "2026-11-04T06:39:44.365Z"
+  "updated_at_utc": "2026-11-04T06:52:40.736Z"
 }

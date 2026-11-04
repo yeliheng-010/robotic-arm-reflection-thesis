@@ -1,0 +1,923 @@
+{
+  "captured_at_utc": "2026-11-04T06:52:40.736Z",
+  "images": [
+    {
+      "file": "assets/weekly_20261104/baseline_960102.png",
+      "source": "scene_pair_v1/smoke/baseline/preview/rgb.png",
+      "seed": 960102,
+      "scene": "baseline",
+      "sha256": "1e37b88d5c1a3747f989a4a8901f401271ae154ed02e9f51aea349ad0f824192",
+      "matches_training_export": null,
+      "note": "Original baseline preview from two-scene smoke; fixed control, not paired performance evidence for the other three seeds"
+    },
+    {
+      "file": "assets/weekly_20261104/varied_964103.png",
+      "source": "recovery_collection_v1/batches/003/physics/cases/R0_964103_varied_noisy/slow_then_top/attempt_2/execution/attempt_1/before.png",
+      "seed": 964103,
+      "scene": "varied_noisy",
+      "sha256": "9423701b2d9ce13243abaf91ce865e0d9f98834726a8347759c4b931269a62c2",
+      "matches_training_export": true,
+      "note": "Original before.png referenced by export 6184; seed chosen for illustration, not a random performance sample"
+    },
+    {
+      "file": "assets/weekly_20261104/varied_964294.png",
+      "source": "recovery_collection_v1/batches/009/physics/cases/R0_964294_varied_noisy/slow_then_top/attempt_2/execution/attempt_1/before.png",
+      "seed": 964294,
+      "scene": "varied_noisy",
+      "sha256": "2c54a481053f433071da1bb1e18d60a057fef5d7fa5c30275c984f43f8c9b127",
+      "matches_training_export": true,
+      "note": "Original before.png referenced by export 6184; seed chosen for illustration, not a random performance sample"
+    },
+    {
+      "file": "assets/weekly_20261104/varied_964306.png",
+      "source": "recovery_collection_v1/batches/009/physics/cases/R0_964306_varied_noisy/slow_then_top/attempt_2/execution/attempt_1/before.png",
+      "seed": 964306,
+      "scene": "varied_noisy",
+      "sha256": "1f2f09b59581a7aab36a2d467587609dd086a81ac84ea2d494570ac75a7901cb",
+      "matches_training_export": true,
+      "note": "Original before.png referenced by export 6184; seed chosen for illustration, not a random performance sample"
+    }
+  ],
+  "composite": {
+    "file": "assets/weekly_20261104/random_layout_camera_comparison.jpg",
+    "sha256": "61c9367f2aac269559d1c7aa38bdbc6cef86614ba8d81d62cabd9963995f32be",
+    "operations": "2 by 2 grid; original square images resized to 640x640; Chinese headers and footer only; no scene edits"
+  },
+  "randomization_scope": {
+    "bodies": [
+      "BlueBin",
+      "RedBin",
+      "SortingTray",
+      "RedBlock",
+      "GreenCylinder",
+      "PurpleCapsule",
+      "OrangeSphere"
+    ],
+    "fixed_background_examples": [
+      "fruit props",
+      "tools",
+      "Rubiks cube",
+      "duck"
+    ],
+    "all_tabletop_items_randomized": false,
+    "container_yaw_randomized": false,
+    "rgb_noise_added": false
+  },
+  "selected_configs": {
+    "964103": {
+      "seed": 964103,
+      "group": "varied_noisy",
+      "layout_enabled": true,
+      "appearance": {
+        "BlueBin": {
+          "color": "蓝色",
+          "rgba": [
+            0.10118025012599495,
+            0.25295062531498735,
+            0.860032126070957,
+            1
+          ]
+        },
+        "RedBin": {
+          "color": "红色",
+          "rgba": [
+            0.8175788655086509,
+            0.0961857488833707,
+            0.0961857488833707,
+            1
+          ]
+        },
+        "SortingTray": {
+          "color": "橙色",
+          "rgba": [
+            0.8372858514879081,
+            0.35254141115280346,
+            0.07050828223056069,
+            1
+          ]
+        }
+      },
+      "camera": {
+        "position": [
+          0.6077662559992211,
+          -0.02402832354008022,
+          1.9340104104640798
+        ],
+        "target": [
+          1.2787883015342842,
+          0.5643289740679582,
+          0.82
+        ],
+        "rotation": [
+          [
+            0.6592740847393689,
+            0.5868228038465432,
+            -0.470102837767173
+          ],
+          [
+            -0.7519027072640898,
+            0.5145307540091588,
+            -0.4121897887960096
+          ],
+          [
+            0,
+            0.6252176421570715,
+            0.7804504468161652
+          ]
+        ],
+        "fovy": 57.38616244816487,
+        "azimuth_offset_deg": 41.24453384221349,
+        "elevation_deg": 51.301836407769045,
+        "distance_m": 1.4273941606525655
+      },
+      "bodies": {
+        "BlueBin": {
+          "position": [
+            1.0593586037543525,
+            0.3736440813983857,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "RedBin": {
+          "position": [
+            1.027747485609106,
+            0.6620724174994258,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "SortingTray": {
+          "position": [
+            1.2455463786176657,
+            0.9639374868560731,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "RedBlock": {
+          "position": [
+            1.543416350636961,
+            0.19853063405061055,
+            0.79
+          ],
+          "yaw_delta": 1.82587603564708
+        },
+        "GreenCylinder": {
+          "position": [
+            1.2751417056588568,
+            0.5112378993315455,
+            0.8
+          ],
+          "yaw_delta": 2.568223473492786
+        },
+        "PurpleCapsule": {
+          "position": [
+            1.4846047619544809,
+            0.5520626432273803,
+            0.78
+          ],
+          "yaw_delta": -0.17964813749865405
+        },
+        "OrangeSphere": {
+          "position": [
+            1.2153012330375996,
+            0.127011222911247,
+            0.78
+          ],
+          "yaw_delta": -0.5594436849068831
+        }
+      },
+      "geometry_accepted": true,
+      "sensor": {
+        "depth_sigma_m": 0.003,
+        "dropout": 0.02
+      },
+      "compiled_check": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    "964294": {
+      "seed": 964294,
+      "group": "varied_noisy",
+      "layout_enabled": true,
+      "appearance": {
+        "BlueBin": {
+          "color": "黄色",
+          "rgba": [
+            0.9853250609848394,
+            0.8539483861868609,
+            0.08758444986531906,
+            1
+          ]
+        },
+        "RedBin": {
+          "color": "蓝色",
+          "rgba": [
+            0.08730312852483146,
+            0.21825782131207866,
+            0.7420765924610674,
+            1
+          ]
+        },
+        "SortingTray": {
+          "color": "橙色",
+          "rgba": [
+            0.8999866258083191,
+            0.37894173718245017,
+            0.07578834743649003,
+            1
+          ]
+        }
+      },
+      "camera": {
+        "position": [
+          0.2782222845974832,
+          0.9680534809350976,
+          1.7259088754818896
+        ],
+        "target": [
+          1.157611631727877,
+          0.655583170014906,
+          0.82
+        ],
+        "rotation": [
+          [
+            -0.3348180225352133,
+            0.6563153365445831,
+            -0.6761265198185766
+          ],
+          [
+            -0.9422828088135798,
+            -0.2332062105834987,
+            0.24024564836782264
+          ],
+          [
+            0,
+            0.7175409691172034,
+            0.6965163010571572
+          ]
+        ],
+        "fovy": 48.78488873255363,
+        "azimuth_offset_deg": -19.561472372144156,
+        "elevation_deg": 44.14817029337334,
+        "distance_m": 1.3006283903290146
+      },
+      "bodies": {
+        "BlueBin": {
+          "position": [
+            0.9509648789051963,
+            0.36836611017695586,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "RedBin": {
+          "position": [
+            1.410512447802736,
+            0.2748509868747764,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "SortingTray": {
+          "position": [
+            1.206120246152727,
+            0.7227971390247176,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "RedBlock": {
+          "position": [
+            1.349810281702745,
+            0.915371450760682,
+            0.79
+          ],
+          "yaw_delta": 1.197833363079348
+        },
+        "GreenCylinder": {
+          "position": [
+            1.376225788566664,
+            0.45960873959108667,
+            0.8
+          ],
+          "yaw_delta": 0.09886126823366803
+        },
+        "PurpleCapsule": {
+          "position": [
+            1.0729636608155992,
+            0.9511971361938255,
+            0.78
+          ],
+          "yaw_delta": 2.610115748183846
+        },
+        "OrangeSphere": {
+          "position": [
+            1.0061073957980524,
+            0.14038751779888778,
+            0.78
+          ],
+          "yaw_delta": -2.421992504686161
+        }
+      },
+      "geometry_accepted": true,
+      "sensor": {
+        "depth_sigma_m": 0.003,
+        "dropout": 0.02
+      },
+      "compiled_check": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    "964306": {
+      "seed": 964306,
+      "group": "varied_noisy",
+      "layout_enabled": true,
+      "appearance": {
+        "BlueBin": {
+          "color": "黄色",
+          "rgba": [
+            0.8910039677627426,
+            0.7722034387277102,
+            0.07920035269002156,
+            1
+          ]
+        },
+        "RedBin": {
+          "color": "橙色",
+          "rgba": [
+            1,
+            0.4338764623664127,
+            0.08677529247328254,
+            1
+          ]
+        },
+        "SortingTray": {
+          "color": "紫色",
+          "rgba": [
+            0.5583794534483812,
+            0.1395948633620953,
+            0.744505937931175,
+            1
+          ]
+        }
+      },
+      "camera": {
+        "position": [
+          0.6363163124314034,
+          0.3054814308819908,
+          2.0971532914807836
+        ],
+        "target": [
+          1.1866916606069953,
+          0.6077441954261089,
+          0.82
+        ],
+        "rotation": [
+          [
+            0.4813761707341362,
+            0.7865872965794736,
+            -0.38672652754774284
+          ],
+          [
+            -0.876514108414314,
+            0.4319889173952283,
+            -0.2123878362768425
+          ],
+          [
+            0,
+            0.44120970083112854,
+            0.8974040338066829
+          ]
+        ],
+        "fovy": 57.37021368398088,
+        "azimuth_offset_deg": 28.775320523898102,
+        "elevation_deg": 63.81890969270981,
+        "distance_m": 1.4231641973607458
+      },
+      "bodies": {
+        "BlueBin": {
+          "position": [
+            0.8906285667214546,
+            0.3477804392684792,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "RedBin": {
+          "position": [
+            1.4396224294788451,
+            0.2930147376444875,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "SortingTray": {
+          "position": [
+            1.1844663610277795,
+            0.6220946239708712,
+            0.74
+          ],
+          "yaw_delta": 0
+        },
+        "RedBlock": {
+          "position": [
+            1.333185190732832,
+            0.905174431473511,
+            0.79
+          ],
+          "yaw_delta": -1.0467427647928602
+        },
+        "GreenCylinder": {
+          "position": [
+            1.4254216664587132,
+            1.0398660145822258,
+            0.8
+          ],
+          "yaw_delta": 2.9484802884161168
+        },
+        "PurpleCapsule": {
+          "position": [
+            1.1730587363349794,
+            0.8291471923738291,
+            0.78
+          ],
+          "yaw_delta": -2.2574682659004597
+        },
+        "OrangeSphere": {
+          "position": [
+            1.3266783062667113,
+            1.0267746034236516,
+            0.78
+          ],
+          "yaw_delta": 1.6286183648007544
+        }
+      },
+      "geometry_accepted": true,
+      "sensor": {
+        "depth_sigma_m": 0.003,
+        "dropout": 0.02
+      },
+      "compiled_check": {
+        "passed": true,
+        "failures": []
+      }
+    }
+  },
+  "early_paired_validation": {
+    "passed": true,
+    "complete": true,
+    "metrics": {
+      "baseline": {
+        "planned": 24,
+        "executed": 24,
+        "rejected": 0,
+        "success": 24,
+        "legacy_success": 24,
+        "gains": 0,
+        "regressions": 0,
+        "first_success": 24,
+        "main_attempts": 24,
+        "branch_attempts": 0,
+        "failures": {}
+      },
+      "varied_noisy": {
+        "planned": 24,
+        "executed": 14,
+        "rejected": 10,
+        "success": 5,
+        "legacy_success": 5,
+        "gains": 0,
+        "regressions": 0,
+        "first_success": 2,
+        "main_attempts": 33,
+        "branch_attempts": 0,
+        "failures": {
+          "collision": 4,
+          "empty_grasp": 1,
+          "grounding_out_of_image": 1,
+          "object_dropped": 1,
+          "ik_failure": 2
+        }
+      }
+    },
+    "model_calls": 0
+  },
+  "camera_revision": {
+    "passed": true,
+    "metrics": {
+      "baseline": {
+        "planned": 24,
+        "executed": 24,
+        "rejected": 0,
+        "success": 24,
+        "old_success": 24,
+        "gains": 0,
+        "regressions": 0,
+        "attempts": 24,
+        "first_success": 24,
+        "failures": {}
+      },
+      "varied_noisy": {
+        "planned": 24,
+        "executed": 22,
+        "rejected": 2,
+        "success": 5,
+        "old_success": 5,
+        "gains": 3,
+        "regressions": 3,
+        "attempts": 50,
+        "first_success": 5,
+        "failures": {
+          "collision": 8,
+          "empty_grasp": 2,
+          "no_grasp_candidate": 2,
+          "depth_invalid": 1,
+          "object_dropped": 2,
+          "ik_failure": 2
+        }
+      }
+    },
+    "promotion_allowed": false,
+    "actual_new_attempts": 50
+  },
+  "anchor": {
+    "passed": true,
+    "comparisons": [
+      {
+        "scene": "baseline",
+        "old_success": true,
+        "new_success": true,
+        "prefix_identical": 1,
+        "attempts": 1,
+        "recovery_active": false,
+        "selected": null,
+        "physical_success": true
+      },
+      {
+        "scene": "varied_noisy",
+        "old_success": false,
+        "new_success": true,
+        "prefix_identical": 2,
+        "attempts": 3,
+        "recovery_active": true,
+        "selected": "world_down_0",
+        "physical_success": true
+      }
+    ]
+  },
+  "visual_pilot": {
+    "summary": {
+      "decisions": 16,
+      "unique_natural_snapshots": 4,
+      "verified_natural_recoveries": 2,
+      "correction_action_types": [
+        "SET_GRASP_STRATEGY"
+      ],
+      "natural_seed_groups": [
+        962905,
+        962907
+      ],
+      "recovery_seed_groups": [
+        962905,
+        962907
+      ],
+      "natural_tasks": [
+        "RedBlock"
+      ],
+      "exclusions": {},
+      "decision_statuses": {
+        "proposed": 16
+      },
+      "action_counts": {
+        "SET_GRASP_STRATEGY": 2,
+        "OBSERVE": 8,
+        "STOP": 2,
+        "SET_TIME_SCALE": 4
+      },
+      "pilot_is_training_data": false,
+      "training_ready": false
+    },
+    "metrics": {
+      "baseline": {
+        "conditions": 2,
+        "first_success": 2,
+        "first_natural_failures": 0,
+        "methods": {
+          "fixed_rule": {
+            "success": 2,
+            "recovery_from_first_natural": 0,
+            "model_calls": 0
+          },
+          "direct": {
+            "success": 2,
+            "recovery_from_first_natural": 0,
+            "model_calls": 0
+          },
+          "diagnostic": {
+            "success": 2,
+            "recovery_from_first_natural": 0,
+            "model_calls": 0
+          }
+        }
+      },
+      "varied_noisy": {
+        "conditions": 5,
+        "first_success": 3,
+        "first_natural_failures": 2,
+        "methods": {
+          "fixed_rule": {
+            "success": 5,
+            "recovery_from_first_natural": 2,
+            "model_calls": 0
+          },
+          "direct": {
+            "success": 3,
+            "recovery_from_first_natural": 0,
+            "model_calls": 6
+          },
+          "diagnostic": {
+            "success": 3,
+            "recovery_from_first_natural": 0,
+            "model_calls": 8
+          }
+        }
+      }
+    }
+  },
+  "training": {
+    "verified_updates": 17,
+    "planned_updates": 31,
+    "samples_seen": 68,
+    "unique_sample_indices": 68,
+    "planned_samples": 124,
+    "completion_artifact_present": false,
+    "failure_artifact_present": false,
+    "updates": [
+      {
+        "loss": 0.5146575894425897,
+        "gradient_norm": 8.949986457824707,
+        "samples": 4,
+        "supervised_tokens": 68,
+        "step": 1,
+        "indices": [
+          9,
+          88,
+          98,
+          74
+        ],
+        "elapsed_s": 60.74414615705609,
+        "peak_allocated_bytes": 10506680832
+      },
+      {
+        "loss": 0.28781809609221376,
+        "gradient_norm": 2.9593400955200195,
+        "samples": 4,
+        "supervised_tokens": 92,
+        "step": 2,
+        "indices": [
+          66,
+          16,
+          72,
+          76
+        ],
+        "elapsed_s": 111.05237844202202,
+        "peak_allocated_bytes": 10506680832
+      },
+      {
+        "loss": 0.19329069103255417,
+        "gradient_norm": 2.8766682147979736,
+        "samples": 4,
+        "supervised_tokens": 66,
+        "step": 3,
+        "indices": [
+          100,
+          79,
+          90,
+          21
+        ],
+        "elapsed_s": 171.24211948004086,
+        "peak_allocated_bytes": 10616068608
+      },
+      {
+        "loss": 0.07921940990184484,
+        "gradient_norm": 4.213932037353516,
+        "samples": 4,
+        "supervised_tokens": 76,
+        "step": 4,
+        "indices": [
+          30,
+          96,
+          32,
+          47
+        ],
+        "elapsed_s": 218.54316095204558,
+        "peak_allocated_bytes": 10616068608
+      },
+      {
+        "loss": 0.08583278943072348,
+        "gradient_norm": 3.3818182945251465,
+        "samples": 4,
+        "supervised_tokens": 68,
+        "step": 5,
+        "indices": [
+          67,
+          118,
+          92,
+          59
+        ],
+        "elapsed_s": 278.39962727902457,
+        "peak_allocated_bytes": 10616068608
+      },
+      {
+        "loss": 0.019741262868046762,
+        "gradient_norm": 0.9912700653076172,
+        "samples": 4,
+        "supervised_tokens": 60,
+        "step": 6,
+        "indices": [
+          97,
+          2,
+          102,
+          101
+        ],
+        "elapsed_s": 344.28122079302557,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.05005464609712362,
+        "gradient_norm": 4.589126110076904,
+        "samples": 4,
+        "supervised_tokens": 84,
+        "step": 7,
+        "indices": [
+          36,
+          82,
+          7,
+          1
+        ],
+        "elapsed_s": 391.30920086207334,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.019929202936028182,
+        "gradient_norm": 2.433520555496216,
+        "samples": 4,
+        "supervised_tokens": 68,
+        "step": 8,
+        "indices": [
+          84,
+          50,
+          26,
+          87
+        ],
+        "elapsed_s": 451.8329602560261,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.003735717293559848,
+        "gradient_norm": 0.22598548233509064,
+        "samples": 4,
+        "supervised_tokens": 68,
+        "step": 9,
+        "indices": [
+          56,
+          123,
+          93,
+          51
+        ],
+        "elapsed_s": 513.1074799960479,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.0008126638001014822,
+        "gradient_norm": 0.04778827726840973,
+        "samples": 4,
+        "supervised_tokens": 76,
+        "step": 10,
+        "indices": [
+          39,
+          70,
+          34,
+          112
+        ],
+        "elapsed_s": 562.9457341560628,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.01068111680261178,
+        "gradient_norm": 2.030372142791748,
+        "samples": 4,
+        "supervised_tokens": 76,
+        "step": 11,
+        "indices": [
+          38,
+          107,
+          41,
+          52
+        ],
+        "elapsed_s": 614.334501782083,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.00046485814527841285,
+        "gradient_norm": 0.023327793926000595,
+        "samples": 4,
+        "supervised_tokens": 84,
+        "step": 12,
+        "indices": [
+          62,
+          80,
+          22,
+          60
+        ],
+        "elapsed_s": 665.4457403019769,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.0008456445537055569,
+        "gradient_norm": 0.07896140217781067,
+        "samples": 4,
+        "supervised_tokens": 68,
+        "step": 13,
+        "indices": [
+          99,
+          23,
+          40,
+          103
+        ],
+        "elapsed_s": 726.415936284,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.00037550532234538545,
+        "gradient_norm": 0.012948214076459408,
+        "samples": 4,
+        "supervised_tokens": 76,
+        "step": 14,
+        "indices": [
+          116,
+          65,
+          6,
+          55
+        ],
+        "elapsed_s": 772.9807933230186,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.00032997019872326697,
+        "gradient_norm": 0.011216874234378338,
+        "samples": 4,
+        "supervised_tokens": 76,
+        "step": 15,
+        "indices": [
+          61,
+          113,
+          63,
+          18
+        ],
+        "elapsed_s": 828.8083922930527,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.0002976888162696636,
+        "gradient_norm": 0.011575720272958279,
+        "samples": 4,
+        "supervised_tokens": 76,
+        "step": 16,
+        "indices": [
+          49,
+          122,
+          42,
+          73
+        ],
+        "elapsed_s": 879.1840531480266,
+        "peak_allocated_bytes": 10992390656
+      },
+      {
+        "loss": 0.1482073223667883,
+        "gradient_norm": 3.182230234146118,
+        "samples": 4,
+        "supervised_tokens": 94,
+        "step": 17,
+        "indices": [
+          8,
+          24,
+          46,
+          37
+        ],
+        "elapsed_s": 929.3118439280661,
+        "peak_allocated_bytes": 10992390656
+      }
+    ]
+  },
+  "limitations": [
+    "Screenshots are selected illustrations, not success-rate evidence",
+    "Randomization currently covers seven instances, not every background prop",
+    "Pilot and early paired validation use different conditions; do not compare as before/after gain",
+    "No post-finetuning model evaluation yet"
+  ]
+}

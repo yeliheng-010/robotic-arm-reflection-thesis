@@ -1,5 +1,9 @@
 # 证据与复现索引
 
+## 本周图文进度（14:52截点）
+
+[截图与本周实验摘录](../evidence/20261104/weekly_visual_evidence.json)保存四张原图身份、三个增强配置、早期配对验证、视觉pilot及17次真实训练更新。[原图与拼图校验](../assets/weekly_20261104/SHA256SUMS.txt)对应[图文进度页](CURRENT_PROGRESS.md)。随机化覆盖7个指定实例，不代表全部背景物件随机化；训练更新不代表物理效果改善。
+
 ## 最新补充：14:39截点
 
 [十批数据与完整执行分母](../evidence/20261104/update_dataset.json)、[最新多样性覆盖](../evidence/20261104/update_coverage.json)、[全量编码/基础模型对照/真实训练更新](../evidence/20261104/update_training.json)对应[最新组会补充](MEETING_20261104_UPDATE.md)。正式快照145/42，SFT124/36；训练已启动，效果尚待验证。SOURCES保留旧条目并新增来源，SHA256SUMS覆盖8份公开JSON。下面的九批数字固定保留为14:20历史截点。
