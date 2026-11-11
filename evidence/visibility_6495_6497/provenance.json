@@ -1,0 +1,43 @@
+{
+  "sources": [
+    {
+      "source": "visibility_boundary_v1/evidence/remote/private_errors.json",
+      "sha256": "a6bc0a171a26313492ec1a16f32043c7f41bfdb630f44300d0df3dd8fbe55ba6"
+    },
+    {
+      "source": "visibility_boundary_v2/evidence/remote/private_errors.json",
+      "sha256": "2d5ef81fb413e33976cc0dee177b9f6ca8cfe0460a93f923f8c299062916d3a5"
+    },
+    {
+      "source": "visibility_calibration_v1/release_visibility_curve.csv",
+      "sha256": "290f4c054ea1964f561f49dbf56c114b5dcbf6b49cf385848d793da463a8ad08"
+    },
+    {
+      "source": "visibility_calibration_v1/FINAL_VERIFICATION.json",
+      "sha256": "dbfd739d40e1fed7f887a6bd3d9f0d6e94d70c0c099d15ead612ad894072fff2"
+    },
+    {
+      "source": "visibility_calibration_v1/evidence/remote/audit.json",
+      "sha256": "c973c587ee76247df036fc48658f908ff5316cfe3ed81e0343f42160d9d62f34"
+    },
+    {
+      "source": "visibility_boundary_v1/evidence/remote/audit.json",
+      "sha256": "584478363ce22568563123b67e76ed4559b3d6e806af3563d5e940eb122ca381"
+    },
+    {
+      "source": "visibility_boundary_v2/evidence/remote/audit.json",
+      "sha256": "49e7681c21fc979b05c315843a31f5c409780600c592556d486e56ca085f5b7c"
+    }
+  ],
+  "published_fields": [
+    "experiment",
+    "view_index",
+    "repeat",
+    "visibility",
+    "center_error_mm",
+    "axis_error_deg",
+    "accurate",
+    "quality_passed",
+    "fit_condition"
+  ]
+}

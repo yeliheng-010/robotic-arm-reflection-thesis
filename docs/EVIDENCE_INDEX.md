@@ -1,3 +1,27 @@
+# 最新证据索引：可见性标定6495–6497
+
+证据截至2026-11-11。来源是已有实验输出，本次未重跑物理或训练。
+
+| 公开文件 | 内容与验证 |
+|---|---|
+| [snapshot.json](../evidence/visibility_6495_6497/snapshot.json) | 1独立布局、108候选、345单视角/132双视角、0任务/模型/训练、未部署阈值；8本地/15远端测试；45代表拟合复核 |
+| [measurements.csv](../evidence/visibility_6495_6497/measurements.csv) | 6496/6497全部192次测量的可见比例、误差、准确分类、质量接受、拟合条件数；无坐标或私有真值 |
+| [summary.csv](../evidence/visibility_6495_6497/summary.csv) | 12个视角的次数、准确数、质量接受数、中位和最大中心误差；均从测量重算核对 |
+| [provenance.json](../evidence/visibility_6495_6497/provenance.json) | 原来源的相对实验包标识、SHA256、发布字段范围；原文件保留实验环境 |
+| [scheduler_final.txt](../evidence/visibility_6495_6497/scheduler_final.txt) | 三作业终态COMPLETED/0:0，73/28/40秒 |
+| [图表约定](../evidence/visibility_6495_6497/FIGURE_CONTRACT.md) / [QA](../evidence/visibility_6495_6497/QA.md) | 数据范围、统计单位、图形完整性和视觉检查 |
+| [绘图源码](../scripts/plot_visibility_report.py) / [导出核对源码](../scripts/collect_visibility_report.py) | 可从公开CSV重建图；导出原始测量需已有实验包，不在此仓库运行仿真 |
+| [前序工程进展摘录](../evidence/visibility_6495_6497/engineering_context.md) | 6481–6494的抓姿、放置和观察结果，含源报告哈希 |
+
+122文件/21源码核验来自原实验交付；本次另行核对公开统计、图形与链接。45个代表拟合复算不是所有相机重新渲染。历史3/8为跨工程迭代开发账本，不与其他批次合并。
+
+[11月4日图文原报告](CURRENT_PROGRESS_20261104.md)保留当时截图、数据和训练截点；后续没有在本次发布中补造训练完成结论。
+
+
+---
+
+## 历史记录（以下保留原更新截点，不代表当前状态）
+
 # 证据与复现索引
 
 ## 本周图文进度（14:52截点）

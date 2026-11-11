@@ -1,0 +1,36 @@
+{
+  "delivery_verified": true,
+  "files": 122,
+  "source_matches": 21,
+  "local_tests": 8,
+  "remote_tests": 15,
+  "independent_fit_checks": 45,
+  "candidate_views": 108,
+  "single_estimates": 345,
+  "pair_estimates": 132,
+  "independent_layouts": 1,
+  "physical_task_attempts": 0,
+  "model_calls": 0,
+  "training_runs": 0,
+  "high_success_threshold": null,
+  "threshold_deployed": false,
+  "fit_audits": [
+    {
+      "experiment": "visibility_calibration_v1",
+      "passed": true,
+      "checked_fits": 9
+    },
+    {
+      "experiment": "visibility_boundary_v1",
+      "passed": true,
+      "checked_fits": 18
+    },
+    {
+      "experiment": "visibility_boundary_v2",
+      "passed": true,
+      "checked_fits": 18
+    }
+  ],
+  "boundary_rows": 192,
+  "scope": "One development layout; simulated segmentation; no physical success claim"
+}
