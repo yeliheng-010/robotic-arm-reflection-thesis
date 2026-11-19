@@ -1,0 +1,107 @@
+{
+  "public": [
+    {
+      "observation_index": 0,
+      "attempt": 1,
+      "time_s": 16.500000000001734,
+      "observed": {
+        "source": {
+          "visible_pixels": 1007,
+          "valid_depth_pixels": 1007,
+          "valid_depth_fraction": 1.0,
+          "segmentation_source": "simulation_segmentation",
+          "position_source": "noisy_depth_backprojection",
+          "status": "visible_surface",
+          "surface_centroid_world_m": [
+            1.4143338566055186,
+            0.16254082853766932,
+            0.8365992324047544
+          ],
+          "surface_spread_p10_p90_m": [
+            0.06243942366685307,
+            0.04277363303044904,
+            0.03123053323296332
+          ],
+          "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+        },
+        "destination": {
+          "visible_pixels": 15578,
+          "valid_depth_pixels": 15578,
+          "valid_depth_fraction": 1.0,
+          "segmentation_source": "simulation_segmentation",
+          "position_source": "noisy_depth_backprojection",
+          "status": "visible_surface",
+          "surface_centroid_world_m": [
+            1.4630152883611514,
+            0.09128754154237628,
+            0.8483658593463581
+          ],
+          "surface_spread_p10_p90_m": [
+            0.2801910409770747,
+            0.1702873954174588,
+            0.13991866921715346
+          ],
+          "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+        }
+      },
+      "acquisition": "fresh_rgbd_render_paused_state",
+      "perception": "simulation_assisted_segmentation_noisy_depth_surface_statistics"
+    }
+  ],
+  "private": [
+    {
+      "stats": {
+        "valid_pixels": 409600,
+        "dropped_pixels": 0,
+        "dropout_fraction": 0.0,
+        "noise_rmse_m": 0.0
+      },
+      "seed_components": [
+        963800,
+        962201,
+        1,
+        0
+      ],
+      "state_unchanged": true,
+      "state_sha256": "89660fb97d013b8062ecd5fa2b10db2a7ef680238eb333038426c4fbb9b31bc1",
+      "clean_sha256": "48832b1cdb4ee2656897808f25faa88c4dfd54dbb802bf21e7be6ca95bb76acb",
+      "noisy_sha256": "48832b1cdb4ee2656897808f25faa88c4dfd54dbb802bf21e7be6ca95bb76acb",
+      "rgb_sha256": "1437a8e00d26b27f4fe8bc87c7d45f9b0a4f3e40e87425876f173c3fc1aecad3",
+      "sensor_sha256": "c5db4fca30073e62ee3733ea7ab0755a041d5ae2d68e74db2e8f85433f6a1625",
+      "transform": [
+        [
+          1.6653345369377348e-16,
+          -0.8944271909999159,
+          0.44721359549995787,
+          0.85
+        ],
+        [
+          -0.9999999999999999,
+          -1.6653345369377348e-16,
+          2.7755575615628914e-17,
+          0.6
+        ],
+        [
+          2.7755575615628914e-17,
+          -0.44721359549995787,
+          -0.8944271909999157,
+          1.9
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        577.2952816868557,
+        577.2952816868557,
+        320.0,
+        320.0
+      ]
+    }
+  ],
+  "additional_observations": 0,
+  "remaining": 2
+}

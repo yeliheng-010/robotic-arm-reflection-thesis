@@ -1,0 +1,47 @@
+{
+  "observation_index": 0,
+  "attempt": 1,
+  "time_s": 16.500000000001734,
+  "observed": {
+    "source": {
+      "visible_pixels": 1007,
+      "valid_depth_pixels": 1007,
+      "valid_depth_fraction": 1.0,
+      "segmentation_source": "simulation_segmentation",
+      "position_source": "noisy_depth_backprojection",
+      "status": "visible_surface",
+      "surface_centroid_world_m": [
+        1.4143338566055186,
+        0.16254082853766932,
+        0.8365992324047544
+      ],
+      "surface_spread_p10_p90_m": [
+        0.06243942366685307,
+        0.04277363303044904,
+        0.03123053323296332
+      ],
+      "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+    },
+    "destination": {
+      "visible_pixels": 15578,
+      "valid_depth_pixels": 15578,
+      "valid_depth_fraction": 1.0,
+      "segmentation_source": "simulation_segmentation",
+      "position_source": "noisy_depth_backprojection",
+      "status": "visible_surface",
+      "surface_centroid_world_m": [
+        1.4630152883611514,
+        0.09128754154237628,
+        0.8483658593463581
+      ],
+      "surface_spread_p10_p90_m": [
+        0.2801910409770747,
+        0.1702873954174588,
+        0.13991866921715346
+      ],
+      "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+    }
+  },
+  "acquisition": "fresh_rgbd_render_paused_state",
+  "perception": "simulation_assisted_segmentation_noisy_depth_surface_statistics"
+}

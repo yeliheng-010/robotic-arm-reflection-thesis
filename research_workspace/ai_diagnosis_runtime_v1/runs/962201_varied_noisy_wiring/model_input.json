@@ -1,0 +1,472 @@
+{
+  "request": {
+    "version": "ai-diagnosis-live-v1",
+    "task": {
+      "source": "RedBlock",
+      "destination": "BlueBin"
+    },
+    "after_attempt": 1,
+    "state": {
+      "replan": false,
+      "reground": false,
+      "lift_height": 0.35,
+      "time_scale": 1.5,
+      "grasp_offset": [
+        0.005,
+        0.0,
+        0.0
+      ],
+      "place_offset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "candidate_index": 0
+    },
+    "evidence": [
+      {
+        "field": "parameters",
+        "value": {
+          "replan": false,
+          "reground": false,
+          "lift_height": 0.35,
+          "time_scale": 1.5,
+          "grasp_offset": [
+            0.005,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "source": "executor_command",
+        "id": "e1"
+      },
+      {
+        "field": "action",
+        "value": "back_to_zero",
+        "source": "executor_command",
+        "id": "e2"
+      },
+      {
+        "field": "motion_segment",
+        "value": "return_home",
+        "source": "executor_command",
+        "id": "e3"
+      },
+      {
+        "field": "available_candidate_count",
+        "value": 5,
+        "source": "perception_candidate_inventory",
+        "id": "e4"
+      },
+      {
+        "field": "rgbd_surface_observations",
+        "value": [
+          {
+            "observation_index": 0,
+            "attempt": 1,
+            "time_s": 16.500000000001734,
+            "observed": {
+              "source": {
+                "visible_pixels": 3072,
+                "valid_depth_pixels": 3004,
+                "valid_depth_fraction": 0.9778645833333334,
+                "segmentation_source": "simulation_segmentation",
+                "position_source": "noisy_depth_backprojection",
+                "status": "visible_surface",
+                "surface_centroid_world_m": [
+                  1.4057877382033992,
+                  0.9932601219825317,
+                  0.8341523272497121
+                ],
+                "surface_spread_p10_p90_m": [
+                  0.05965796486752861,
+                  0.057252042732693464,
+                  0.05246769472294721
+                ],
+                "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+              },
+              "destination": {
+                "visible_pixels": 26035,
+                "valid_depth_pixels": 25514,
+                "valid_depth_fraction": 0.9799884770501248,
+                "segmentation_source": "simulation_segmentation",
+                "position_source": "noisy_depth_backprojection",
+                "status": "visible_surface",
+                "surface_centroid_world_m": [
+                  1.3710523218542998,
+                  0.964741605826149,
+                  0.8088680095919834
+                ],
+                "surface_spread_p10_p90_m": [
+                  0.28003395516943463,
+                  0.19025307033307637,
+                  0.142734251640124
+                ],
+                "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+              }
+            },
+            "acquisition": "fresh_rgbd_render_paused_state",
+            "perception": "simulation_assisted_segmentation_noisy_depth_surface_statistics"
+          }
+        ],
+        "source": "rendered_rgbd_simulation_assisted_segmentation",
+        "id": "e5"
+      },
+      {
+        "field": "robot_telemetry",
+        "value": {
+          "sampling": "fixed_every_10_physics_steps",
+          "summary": "uniform_time_index_subset",
+          "samples": [
+            {
+              "step": 10,
+              "time_s": 0.020000000000000004,
+              "action": "idle",
+              "q_rad": [
+                -4.1852572436617964e-09,
+                -1.2671248306115256e-08,
+                -2.457836808504466e-08,
+                -1.285693716911436e-07,
+                -3.635513643943668e-09,
+                -1.34678260695986e-07
+              ],
+              "tcp_fk_xyz_m": [
+                0.7999999657905729,
+                0.9640000000000001,
+                1.8249999999999984
+              ],
+              "command_tcp_xyz_m": [
+                0.8,
+                0.964,
+                1.8250000000000002
+              ],
+              "gripper_joint_rad": 0.00044346734582363624,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 750,
+              "time_s": 1.500000000000001,
+              "action": "move_to_grasp_pose",
+              "q_rad": [
+                0.0004151250383082448,
+                -0.0016886795018251648,
+                0.14837773091030165,
+                -0.00022997480869749054,
+                -0.1482447136877037,
+                -4.629920932951231e-06
+              ],
+              "tcp_fk_xyz_m": [
+                0.9046297963699713,
+                0.9615207936947069,
+                1.8147612176483863
+              ],
+              "command_tcp_xyz_m": [
+                1.029726162189912,
+                0.9516140760814226,
+                1.7744000501775268
+              ],
+              "gripper_joint_rad": 0.002603003058642158,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 1500,
+              "time_s": 2.999999999999891,
+              "action": "move_to_grasp_pose",
+              "q_rad": [
+                0.04840645664306388,
+                -0.02011930071289815,
+                1.6495883261850426,
+                -0.030978676959573407,
+                -1.6063203984127525,
+                -0.22243859417700532
+              ],
+              "tcp_fk_xyz_m": [
+                1.2697255339504574,
+                0.7487342737816736,
+                1.0773916825937175
+              ],
+              "command_tcp_xyz_m": [
+                1.2421313696347982,
+                0.7624866808272767,
+                1.0625292282829901
+              ],
+              "gripper_joint_rad": 0.0029238854893237124,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 2250,
+              "time_s": 4.499999999999726,
+              "action": "move_to_grasp_pose",
+              "q_rad": [
+                0.6117622234181346,
+                -0.21859787057186614,
+                2.391077513530488,
+                -0.7398397887224498,
+                -1.8466261781267201,
+                -2.3012364420350613
+              ],
+              "tcp_fk_xyz_m": [
+                1.05414981675849,
+                0.8654674790758232,
+                0.895576458121087
+              ],
+              "command_tcp_xyz_m": [
+                1.0602921287903297,
+                0.8668702577112118,
+                0.8902319703609023
+              ],
+              "gripper_joint_rad": 0.002911050075677838,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 3000,
+              "time_s": 5.999999999999561,
+              "action": "close_gripper",
+              "q_rad": [
+                0.5422467832531802,
+                0.018896694715150274,
+                2.5043570250582268,
+                -1.1138239282810238,
+                -1.834021448116042,
+                -2.386070067503487
+              ],
+              "tcp_fk_xyz_m": [
+                1.0783536419890067,
+                0.8542785164505048,
+                0.8103798355984638
+              ],
+              "command_tcp_xyz_m": [
+                1.0825094849740202,
+                0.8561017005527252,
+                0.8151761376053385
+              ],
+              "gripper_joint_rad": 0.12617656770825902,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 3750,
+              "time_s": 7.499999999999396,
+              "action": "close_gripper",
+              "q_rad": [
+                0.5419825619650395,
+                0.018990175204947016,
+                2.503287770423742,
+                -1.1183343904171026,
+                -1.8331255801405881,
+                -2.385407099584905
+              ],
+              "tcp_fk_xyz_m": [
+                1.0795796967379998,
+                0.8551350161257772,
+                0.8112884865332377
+              ],
+              "command_tcp_xyz_m": [
+                1.0825094849740202,
+                0.8561017005527252,
+                0.8151761376053385
+              ],
+              "gripper_joint_rad": 0.20732749935586753,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 4500,
+              "time_s": 8.999999999999675,
+              "action": "move_to_point",
+              "q_rad": [
+                0.5416776834650584,
+                -0.3587329949060193,
+                1.8401633470195407,
+                -0.06940224859843987,
+                -1.8346549497390074,
+                -2.3865555778581324
+              ],
+              "tcp_fk_xyz_m": [
+                1.0832174048015728,
+                0.8567954267028032,
+                1.1374933374161598
+              ],
+              "command_tcp_xyz_m": [
+                1.0825094849740204,
+                0.8561017005527252,
+                1.1651761376053384
+              ],
+              "gripper_joint_rad": 0.21144495063970214,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 5250,
+              "time_s": 10.500000000000176,
+              "action": "move_to_point",
+              "q_rad": [
+                0.4935168373032355,
+                0.46522233242279015,
+                0.9405698909539081,
+                0.01062902341029243,
+                -1.8258811690673782,
+                -2.4351599282979985
+              ],
+              "tcp_fk_xyz_m": [
+                1.3896182377138244,
+                1.003421524697826,
+                1.147685610534037
+              ],
+              "command_tcp_xyz_m": [
+                1.40530393810571,
+                1.0105396757064258,
+                1.1651761376053384
+              ],
+              "gripper_joint_rad": 0.2101572587188863,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 6000,
+              "time_s": 12.000000000000677,
+              "action": "move_to_point",
+              "q_rad": [
+                0.49209272645113866,
+                0.6262022451773661,
+                1.4588997128196286,
+                -0.665696841850891,
+                -1.825507438234545,
+                -2.4369312400188208
+              ],
+              "tcp_fk_xyz_m": [
+                1.4011007186478859,
+                1.0085236672853264,
+                0.8545712533010896
+              ],
+              "command_tcp_xyz_m": [
+                1.4053039381057095,
+                1.0105396757064258,
+                0.8600000000000001
+              ],
+              "gripper_joint_rad": 0.20941140210903955,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 6750,
+              "time_s": 13.500000000001178,
+              "action": "open_gripper",
+              "q_rad": [
+                0.4921034447612386,
+                0.6418193728468394,
+                1.4801173028507264,
+                -0.7043323434399438,
+                -1.8256032725957134,
+                -2.4369156681078317
+              ],
+              "tcp_fk_xyz_m": [
+                1.399680718226669,
+                1.007747002764754,
+                0.8384461593181758
+              ],
+              "command_tcp_xyz_m": [
+                1.4053039381057095,
+                1.0105396757064258,
+                0.8600000000000001
+              ],
+              "gripper_joint_rad": 0.1786689088618289,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 7500,
+              "time_s": 15.000000000001679,
+              "action": "back_to_zero",
+              "q_rad": [
+                0.4920970504557799,
+                0.6152318021084769,
+                1.4553881590660003,
+                -0.6533212177168843,
+                -1.8257367961865136,
+                -2.4369318250978393
+              ],
+              "tcp_fk_xyz_m": [
+                1.400588499008048,
+                1.0081946986879902,
+                0.8625381217593483
+              ],
+              "command_tcp_xyz_m": [
+                1.4053039381057095,
+                1.0105396757064258,
+                0.9100000000000001
+              ],
+              "gripper_joint_rad": 0.0029301077275214115,
+              "source": "simulated_robot_encoders_and_commands"
+            },
+            {
+              "step": 8250,
+              "time_s": 16.500000000001734,
+              "action": "back_to_zero",
+              "q_rad": [
+                0.060590141146953484,
+                0.07110924478178314,
+                0.17067828929720325,
+                -0.05913948228351764,
+                -0.22601125910330466,
+                -0.3012317756589959
+              ],
+              "tcp_fk_xyz_m": [
+                0.970862030132125,
+                0.9691743017758263,
+                1.8014982354416937
+              ],
+              "command_tcp_xyz_m": [
+                0.8,
+                0.964,
+                1.8250000000000002
+              ],
+              "gripper_joint_rad": 0.002594753840722173,
+              "source": "simulated_robot_encoders_and_commands"
+            }
+          ],
+          "total_samples": 825
+        },
+        "source": "simulated_encoders_and_commands",
+        "id": "e6"
+      }
+    ],
+    "budget": {
+      "executions_remaining": 2,
+      "observations_remaining": 2
+    },
+    "actions": [
+      {
+        "id": "STOP",
+        "effect": "停止本轨迹，不增加预算。",
+        "args_spec": {}
+      }
+    ],
+    "sensing_status": {
+      "rgb": "captured_artifact_not_sent_to_text_model",
+      "depth": "attached_surface_summary",
+      "telemetry": "attached_uniform_summary"
+    },
+    "scope": "paused_scene_observation_with_assisted_segmentation"
+  },
+  "direct_messages": [
+    {
+      "role": "system",
+      "content": "你负责在有限预算内选择机械臂下一步动作。输入仅含明确列出的证据和合法动作。\n命令不等于动作已完成，计划TCP不等于实测TCP；未附加观测不能当作测量缺失或零值。\n只能选择actions中的ID并按已登记参数范围给出args。不得增加预算或修改安全保护。\n模型提议仍须执行侧检查；动作列出不意味着已知会成功。没有足够证据时明确保留不确定性。\n只输出严格JSON，不得添加代码围栏或额外字段。\n输出格式：{\"action\":{\"id\":\"合法动作ID\",\"args\":{}}}。"
+    },
+    {
+      "role": "user",
+      "content": "{\"version\": \"ai-diagnosis-live-v1\", \"task\": {\"source\": \"RedBlock\", \"destination\": \"BlueBin\"}, \"after_attempt\": 1, \"state\": {\"replan\": false, \"reground\": false, \"lift_height\": 0.35, \"time_scale\": 1.5, \"grasp_offset\": [0.005, 0.0, 0.0], \"place_offset\": [0.0, 0.0, 0.0], \"candidate_index\": 0}, \"evidence\": [{\"field\": \"parameters\", \"value\": {\"replan\": false, \"reground\": false, \"lift_height\": 0.35, \"time_scale\": 1.5, \"grasp_offset\": [0.005, 0.0, 0.0], \"place_offset\": [0.0, 0.0, 0.0], \"candidate_index\": 0}, \"source\": \"executor_command\", \"id\": \"e1\"}, {\"field\": \"action\", \"value\": \"back_to_zero\", \"source\": \"executor_command\", \"id\": \"e2\"}, {\"field\": \"motion_segment\", \"value\": \"return_home\", \"source\": \"executor_command\", \"id\": \"e3\"}, {\"field\": \"available_candidate_count\", \"value\": 5, \"source\": \"perception_candidate_inventory\", \"id\": \"e4\"}, {\"field\": \"rgbd_surface_observations\", \"value\": [{\"observation_index\": 0, \"attempt\": 1, \"time_s\": 16.500000000001734, \"observed\": {\"source\": {\"visible_pixels\": 3072, \"valid_depth_pixels\": 3004, \"valid_depth_fraction\": 0.9778645833333334, \"segmentation_source\": \"simulation_segmentation\", \"position_source\": \"noisy_depth_backprojection\", \"status\": \"visible_surface\", \"surface_centroid_world_m\": [1.4057877382033992, 0.9932601219825317, 0.8341523272497121], \"surface_spread_p10_p90_m\": [0.05965796486752861, 0.057252042732693464, 0.05246769472294721], \"interpretation\": \"Visible surface statistic, not object body center or calibrated confidence\"}, \"destination\": {\"visible_pixels\": 26035, \"valid_depth_pixels\": 25514, \"valid_depth_fraction\": 0.9799884770501248, \"segmentation_source\": \"simulation_segmentation\", \"position_source\": \"noisy_depth_backprojection\", \"status\": \"visible_surface\", \"surface_centroid_world_m\": [1.3710523218542998, 0.964741605826149, 0.8088680095919834], \"surface_spread_p10_p90_m\": [0.28003395516943463, 0.19025307033307637, 0.142734251640124], \"interpretation\": \"Visible surface statistic, not object body center or calibrated confidence\"}}, \"acquisition\": \"fresh_rgbd_render_paused_state\", \"perception\": \"simulation_assisted_segmentation_noisy_depth_surface_statistics\"}], \"source\": \"rendered_rgbd_simulation_assisted_segmentation\", \"id\": \"e5\"}, {\"field\": \"robot_telemetry\", \"value\": {\"sampling\": \"fixed_every_10_physics_steps\", \"summary\": \"uniform_time_index_subset\", \"samples\": [{\"step\": 10, \"time_s\": 0.020000000000000004, \"action\": \"idle\", \"q_rad\": [-4.1852572436617964e-09, -1.2671248306115256e-08, -2.457836808504466e-08, -1.285693716911436e-07, -3.635513643943668e-09, -1.34678260695986e-07], \"tcp_fk_xyz_m\": [0.7999999657905729, 0.9640000000000001, 1.8249999999999984], \"command_tcp_xyz_m\": [0.8, 0.964, 1.8250000000000002], \"gripper_joint_rad\": 0.00044346734582363624, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 750, \"time_s\": 1.500000000000001, \"action\": \"move_to_grasp_pose\", \"q_rad\": [0.0004151250383082448, -0.0016886795018251648, 0.14837773091030165, -0.00022997480869749054, -0.1482447136877037, -4.629920932951231e-06], \"tcp_fk_xyz_m\": [0.9046297963699713, 0.9615207936947069, 1.8147612176483863], \"command_tcp_xyz_m\": [1.029726162189912, 0.9516140760814226, 1.7744000501775268], \"gripper_joint_rad\": 0.002603003058642158, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 1500, \"time_s\": 2.999999999999891, \"action\": \"move_to_grasp_pose\", \"q_rad\": [0.04840645664306388, -0.02011930071289815, 1.6495883261850426, -0.030978676959573407, -1.6063203984127525, -0.22243859417700532], \"tcp_fk_xyz_m\": [1.2697255339504574, 0.7487342737816736, 1.0773916825937175], \"command_tcp_xyz_m\": [1.2421313696347982, 0.7624866808272767, 1.0625292282829901], \"gripper_joint_rad\": 0.0029238854893237124, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 2250, \"time_s\": 4.499999999999726, \"action\": \"move_to_grasp_pose\", \"q_rad\": [0.6117622234181346, -0.21859787057186614, 2.391077513530488, -0.7398397887224498, -1.8466261781267201, -2.3012364420350613], \"tcp_fk_xyz_m\": [1.05414981675849, 0.8654674790758232, 0.895576458121087], \"command_tcp_xyz_m\": [1.0602921287903297, 0.8668702577112118, 0.8902319703609023], \"gripper_joint_rad\": 0.002911050075677838, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 3000, \"time_s\": 5.999999999999561, \"action\": \"close_gripper\", \"q_rad\": [0.5422467832531802, 0.018896694715150274, 2.5043570250582268, -1.1138239282810238, -1.834021448116042, -2.386070067503487], \"tcp_fk_xyz_m\": [1.0783536419890067, 0.8542785164505048, 0.8103798355984638], \"command_tcp_xyz_m\": [1.0825094849740202, 0.8561017005527252, 0.8151761376053385], \"gripper_joint_rad\": 0.12617656770825902, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 3750, \"time_s\": 7.499999999999396, \"action\": \"close_gripper\", \"q_rad\": [0.5419825619650395, 0.018990175204947016, 2.503287770423742, -1.1183343904171026, -1.8331255801405881, -2.385407099584905], \"tcp_fk_xyz_m\": [1.0795796967379998, 0.8551350161257772, 0.8112884865332377], \"command_tcp_xyz_m\": [1.0825094849740202, 0.8561017005527252, 0.8151761376053385], \"gripper_joint_rad\": 0.20732749935586753, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 4500, \"time_s\": 8.999999999999675, \"action\": \"move_to_point\", \"q_rad\": [0.5416776834650584, -0.3587329949060193, 1.8401633470195407, -0.06940224859843987, -1.8346549497390074, -2.3865555778581324], \"tcp_fk_xyz_m\": [1.0832174048015728, 0.8567954267028032, 1.1374933374161598], \"command_tcp_xyz_m\": [1.0825094849740204, 0.8561017005527252, 1.1651761376053384], \"gripper_joint_rad\": 0.21144495063970214, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 5250, \"time_s\": 10.500000000000176, \"action\": \"move_to_point\", \"q_rad\": [0.4935168373032355, 0.46522233242279015, 0.9405698909539081, 0.01062902341029243, -1.8258811690673782, -2.4351599282979985], \"tcp_fk_xyz_m\": [1.3896182377138244, 1.003421524697826, 1.147685610534037], \"command_tcp_xyz_m\": [1.40530393810571, 1.0105396757064258, 1.1651761376053384], \"gripper_joint_rad\": 0.2101572587188863, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 6000, \"time_s\": 12.000000000000677, \"action\": \"move_to_point\", \"q_rad\": [0.49209272645113866, 0.6262022451773661, 1.4588997128196286, -0.665696841850891, -1.825507438234545, -2.4369312400188208], \"tcp_fk_xyz_m\": [1.4011007186478859, 1.0085236672853264, 0.8545712533010896], \"command_tcp_xyz_m\": [1.4053039381057095, 1.0105396757064258, 0.8600000000000001], \"gripper_joint_rad\": 0.20941140210903955, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 6750, \"time_s\": 13.500000000001178, \"action\": \"open_gripper\", \"q_rad\": [0.4921034447612386, 0.6418193728468394, 1.4801173028507264, -0.7043323434399438, -1.8256032725957134, -2.4369156681078317], \"tcp_fk_xyz_m\": [1.399680718226669, 1.007747002764754, 0.8384461593181758], \"command_tcp_xyz_m\": [1.4053039381057095, 1.0105396757064258, 0.8600000000000001], \"gripper_joint_rad\": 0.1786689088618289, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 7500, \"time_s\": 15.000000000001679, \"action\": \"back_to_zero\", \"q_rad\": [0.4920970504557799, 0.6152318021084769, 1.4553881590660003, -0.6533212177168843, -1.8257367961865136, -2.4369318250978393], \"tcp_fk_xyz_m\": [1.400588499008048, 1.0081946986879902, 0.8625381217593483], \"command_tcp_xyz_m\": [1.4053039381057095, 1.0105396757064258, 0.9100000000000001], \"gripper_joint_rad\": 0.0029301077275214115, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 8250, \"time_s\": 16.500000000001734, \"action\": \"back_to_zero\", \"q_rad\": [0.060590141146953484, 0.07110924478178314, 0.17067828929720325, -0.05913948228351764, -0.22601125910330466, -0.3012317756589959], \"tcp_fk_xyz_m\": [0.970862030132125, 0.9691743017758263, 1.8014982354416937], \"command_tcp_xyz_m\": [0.8, 0.964, 1.8250000000000002], \"gripper_joint_rad\": 0.002594753840722173, \"source\": \"simulated_robot_encoders_and_commands\"}], \"total_samples\": 825}, \"source\": \"simulated_encoders_and_commands\", \"id\": \"e6\"}], \"budget\": {\"executions_remaining\": 2, \"observations_remaining\": 2}, \"actions\": [{\"id\": \"STOP\", \"effect\": \"停止本轨迹，不增加预算。\", \"args_spec\": {}}], \"sensing_status\": {\"rgb\": \"captured_artifact_not_sent_to_text_model\", \"depth\": \"attached_surface_summary\", \"telemetry\": \"attached_uniform_summary\"}, \"scope\": \"paused_scene_observation_with_assisted_segmentation\"}"
+    }
+  ],
+  "diagnostic_messages": [
+    {
+      "role": "system",
+      "content": "你负责在有限预算内选择机械臂下一步动作。输入仅含明确列出的证据和合法动作。\n命令不等于动作已完成，计划TCP不等于实测TCP；未附加观测不能当作测量缺失或零值。\n只能选择actions中的ID并按已登记参数范围给出args。不得增加预算或修改安全保护。\n模型提议仍须执行侧检查；动作列出不意味着已知会成功。没有足够证据时明确保留不确定性。\n只输出严格JSON，不得添加代码围栏或额外字段。\n输出action、assessment和expected_observation三个字段。\naction格式为{\"id\":\"合法动作ID\",\"args\":{}}。\nassessment格式为{\"hypotheses\":[{\"claim\":\"简短可检验假设\",\"evidence_ids\":[\"实际证据ID\"]}],\n\"uncertainty\":\"证据不足或尚不能排除的情况\"}。\nhypotheses最多3项，证据不足可以为空；不能编造证据。expected_observation简述动作之后预期可观察到的变化。\n每段文字最多240字符。只需简短结论和证据引用，不要求展开内部推理。"
+    },
+    {
+      "role": "user",
+      "content": "{\"version\": \"ai-diagnosis-live-v1\", \"task\": {\"source\": \"RedBlock\", \"destination\": \"BlueBin\"}, \"after_attempt\": 1, \"state\": {\"replan\": false, \"reground\": false, \"lift_height\": 0.35, \"time_scale\": 1.5, \"grasp_offset\": [0.005, 0.0, 0.0], \"place_offset\": [0.0, 0.0, 0.0], \"candidate_index\": 0}, \"evidence\": [{\"field\": \"parameters\", \"value\": {\"replan\": false, \"reground\": false, \"lift_height\": 0.35, \"time_scale\": 1.5, \"grasp_offset\": [0.005, 0.0, 0.0], \"place_offset\": [0.0, 0.0, 0.0], \"candidate_index\": 0}, \"source\": \"executor_command\", \"id\": \"e1\"}, {\"field\": \"action\", \"value\": \"back_to_zero\", \"source\": \"executor_command\", \"id\": \"e2\"}, {\"field\": \"motion_segment\", \"value\": \"return_home\", \"source\": \"executor_command\", \"id\": \"e3\"}, {\"field\": \"available_candidate_count\", \"value\": 5, \"source\": \"perception_candidate_inventory\", \"id\": \"e4\"}, {\"field\": \"rgbd_surface_observations\", \"value\": [{\"observation_index\": 0, \"attempt\": 1, \"time_s\": 16.500000000001734, \"observed\": {\"source\": {\"visible_pixels\": 3072, \"valid_depth_pixels\": 3004, \"valid_depth_fraction\": 0.9778645833333334, \"segmentation_source\": \"simulation_segmentation\", \"position_source\": \"noisy_depth_backprojection\", \"status\": \"visible_surface\", \"surface_centroid_world_m\": [1.4057877382033992, 0.9932601219825317, 0.8341523272497121], \"surface_spread_p10_p90_m\": [0.05965796486752861, 0.057252042732693464, 0.05246769472294721], \"interpretation\": \"Visible surface statistic, not object body center or calibrated confidence\"}, \"destination\": {\"visible_pixels\": 26035, \"valid_depth_pixels\": 25514, \"valid_depth_fraction\": 0.9799884770501248, \"segmentation_source\": \"simulation_segmentation\", \"position_source\": \"noisy_depth_backprojection\", \"status\": \"visible_surface\", \"surface_centroid_world_m\": [1.3710523218542998, 0.964741605826149, 0.8088680095919834], \"surface_spread_p10_p90_m\": [0.28003395516943463, 0.19025307033307637, 0.142734251640124], \"interpretation\": \"Visible surface statistic, not object body center or calibrated confidence\"}}, \"acquisition\": \"fresh_rgbd_render_paused_state\", \"perception\": \"simulation_assisted_segmentation_noisy_depth_surface_statistics\"}], \"source\": \"rendered_rgbd_simulation_assisted_segmentation\", \"id\": \"e5\"}, {\"field\": \"robot_telemetry\", \"value\": {\"sampling\": \"fixed_every_10_physics_steps\", \"summary\": \"uniform_time_index_subset\", \"samples\": [{\"step\": 10, \"time_s\": 0.020000000000000004, \"action\": \"idle\", \"q_rad\": [-4.1852572436617964e-09, -1.2671248306115256e-08, -2.457836808504466e-08, -1.285693716911436e-07, -3.635513643943668e-09, -1.34678260695986e-07], \"tcp_fk_xyz_m\": [0.7999999657905729, 0.9640000000000001, 1.8249999999999984], \"command_tcp_xyz_m\": [0.8, 0.964, 1.8250000000000002], \"gripper_joint_rad\": 0.00044346734582363624, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 750, \"time_s\": 1.500000000000001, \"action\": \"move_to_grasp_pose\", \"q_rad\": [0.0004151250383082448, -0.0016886795018251648, 0.14837773091030165, -0.00022997480869749054, -0.1482447136877037, -4.629920932951231e-06], \"tcp_fk_xyz_m\": [0.9046297963699713, 0.9615207936947069, 1.8147612176483863], \"command_tcp_xyz_m\": [1.029726162189912, 0.9516140760814226, 1.7744000501775268], \"gripper_joint_rad\": 0.002603003058642158, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 1500, \"time_s\": 2.999999999999891, \"action\": \"move_to_grasp_pose\", \"q_rad\": [0.04840645664306388, -0.02011930071289815, 1.6495883261850426, -0.030978676959573407, -1.6063203984127525, -0.22243859417700532], \"tcp_fk_xyz_m\": [1.2697255339504574, 0.7487342737816736, 1.0773916825937175], \"command_tcp_xyz_m\": [1.2421313696347982, 0.7624866808272767, 1.0625292282829901], \"gripper_joint_rad\": 0.0029238854893237124, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 2250, \"time_s\": 4.499999999999726, \"action\": \"move_to_grasp_pose\", \"q_rad\": [0.6117622234181346, -0.21859787057186614, 2.391077513530488, -0.7398397887224498, -1.8466261781267201, -2.3012364420350613], \"tcp_fk_xyz_m\": [1.05414981675849, 0.8654674790758232, 0.895576458121087], \"command_tcp_xyz_m\": [1.0602921287903297, 0.8668702577112118, 0.8902319703609023], \"gripper_joint_rad\": 0.002911050075677838, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 3000, \"time_s\": 5.999999999999561, \"action\": \"close_gripper\", \"q_rad\": [0.5422467832531802, 0.018896694715150274, 2.5043570250582268, -1.1138239282810238, -1.834021448116042, -2.386070067503487], \"tcp_fk_xyz_m\": [1.0783536419890067, 0.8542785164505048, 0.8103798355984638], \"command_tcp_xyz_m\": [1.0825094849740202, 0.8561017005527252, 0.8151761376053385], \"gripper_joint_rad\": 0.12617656770825902, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 3750, \"time_s\": 7.499999999999396, \"action\": \"close_gripper\", \"q_rad\": [0.5419825619650395, 0.018990175204947016, 2.503287770423742, -1.1183343904171026, -1.8331255801405881, -2.385407099584905], \"tcp_fk_xyz_m\": [1.0795796967379998, 0.8551350161257772, 0.8112884865332377], \"command_tcp_xyz_m\": [1.0825094849740202, 0.8561017005527252, 0.8151761376053385], \"gripper_joint_rad\": 0.20732749935586753, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 4500, \"time_s\": 8.999999999999675, \"action\": \"move_to_point\", \"q_rad\": [0.5416776834650584, -0.3587329949060193, 1.8401633470195407, -0.06940224859843987, -1.8346549497390074, -2.3865555778581324], \"tcp_fk_xyz_m\": [1.0832174048015728, 0.8567954267028032, 1.1374933374161598], \"command_tcp_xyz_m\": [1.0825094849740204, 0.8561017005527252, 1.1651761376053384], \"gripper_joint_rad\": 0.21144495063970214, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 5250, \"time_s\": 10.500000000000176, \"action\": \"move_to_point\", \"q_rad\": [0.4935168373032355, 0.46522233242279015, 0.9405698909539081, 0.01062902341029243, -1.8258811690673782, -2.4351599282979985], \"tcp_fk_xyz_m\": [1.3896182377138244, 1.003421524697826, 1.147685610534037], \"command_tcp_xyz_m\": [1.40530393810571, 1.0105396757064258, 1.1651761376053384], \"gripper_joint_rad\": 0.2101572587188863, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 6000, \"time_s\": 12.000000000000677, \"action\": \"move_to_point\", \"q_rad\": [0.49209272645113866, 0.6262022451773661, 1.4588997128196286, -0.665696841850891, -1.825507438234545, -2.4369312400188208], \"tcp_fk_xyz_m\": [1.4011007186478859, 1.0085236672853264, 0.8545712533010896], \"command_tcp_xyz_m\": [1.4053039381057095, 1.0105396757064258, 0.8600000000000001], \"gripper_joint_rad\": 0.20941140210903955, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 6750, \"time_s\": 13.500000000001178, \"action\": \"open_gripper\", \"q_rad\": [0.4921034447612386, 0.6418193728468394, 1.4801173028507264, -0.7043323434399438, -1.8256032725957134, -2.4369156681078317], \"tcp_fk_xyz_m\": [1.399680718226669, 1.007747002764754, 0.8384461593181758], \"command_tcp_xyz_m\": [1.4053039381057095, 1.0105396757064258, 0.8600000000000001], \"gripper_joint_rad\": 0.1786689088618289, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 7500, \"time_s\": 15.000000000001679, \"action\": \"back_to_zero\", \"q_rad\": [0.4920970504557799, 0.6152318021084769, 1.4553881590660003, -0.6533212177168843, -1.8257367961865136, -2.4369318250978393], \"tcp_fk_xyz_m\": [1.400588499008048, 1.0081946986879902, 0.8625381217593483], \"command_tcp_xyz_m\": [1.4053039381057095, 1.0105396757064258, 0.9100000000000001], \"gripper_joint_rad\": 0.0029301077275214115, \"source\": \"simulated_robot_encoders_and_commands\"}, {\"step\": 8250, \"time_s\": 16.500000000001734, \"action\": \"back_to_zero\", \"q_rad\": [0.060590141146953484, 0.07110924478178314, 0.17067828929720325, -0.05913948228351764, -0.22601125910330466, -0.3012317756589959], \"tcp_fk_xyz_m\": [0.970862030132125, 0.9691743017758263, 1.8014982354416937], \"command_tcp_xyz_m\": [0.8, 0.964, 1.8250000000000002], \"gripper_joint_rad\": 0.002594753840722173, \"source\": \"simulated_robot_encoders_and_commands\"}], \"total_samples\": 825}, \"source\": \"simulated_encoders_and_commands\", \"id\": \"e6\"}], \"budget\": {\"executions_remaining\": 2, \"observations_remaining\": 2}, \"actions\": [{\"id\": \"STOP\", \"effect\": \"停止本轨迹，不增加预算。\", \"args_spec\": {}}], \"sensing_status\": {\"rgb\": \"captured_artifact_not_sent_to_text_model\", \"depth\": \"attached_surface_summary\", \"telemetry\": \"attached_uniform_summary\"}, \"scope\": \"paused_scene_observation_with_assisted_segmentation\"}"
+    }
+  ]
+}

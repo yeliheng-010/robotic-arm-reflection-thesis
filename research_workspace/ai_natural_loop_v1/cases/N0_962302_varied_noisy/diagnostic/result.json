@@ -1,0 +1,795 @@
+{
+  "method": "diagnostic",
+  "ledger": {
+    "item": {
+      "id": "N0_962302_varied_noisy",
+      "source": "RedBlock",
+      "destination": "BlueBin",
+      "seed": 962302,
+      "group": "varied_noisy",
+      "fault": "none",
+      "split": "pilot_development_not_training"
+    },
+    "steps": [
+      {
+        "index": 1,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 1.0,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": false,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/first/execution/result.json",
+        "result_sha256": "2ab8a0a8cc8a1d06adca05b09b9600727306ebe1968f02cb0132822c421824ba",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/first"
+      },
+      {
+        "index": 2,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 1.0,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": false,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/attempt_2/execution/result.json",
+        "result_sha256": "bc376c3b2ad15eed82d2190b066654155ad5cdffc1fea60683d4e03ecf2eba29",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/attempt_2"
+      },
+      {
+        "index": 3,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 1.0,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": false,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/attempt_3/execution/result.json",
+        "result_sha256": "a360a33e5ea7aa25f1263850e529b9c018254ef2caa37bcb006f00a10f39ee40",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/attempt_3"
+      }
+    ]
+  },
+  "success": false,
+  "status": "execution_budget_exhausted",
+  "decisions": [
+    {
+      "index": 1,
+      "after_attempt": 1,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/decisions/decision_1.json",
+      "input_sha256": "ed9e20373d622917f19a90e825a7b3083f84012b21f5ba13a3a4768642d593ee",
+      "status": "proposed",
+      "model": {
+        "id": "N0_962302_varied_noisy_diagnostic_1",
+        "response": {
+          "text": "{\"action\": {\"id\": \"OBSERVE\", \"args\": {}}, \"assessment\": {\"hypotheses\": [{\"claim\": \"当前抓取姿态可能导致抓取失败\", \"evidence_ids\": [\"e7\"]}, {\"claim\": \"目标物体位置已确认\", \"evidence_ids\": [\"e6\"]}], \"uncertainty\": \"未实测TCP与命令TCP差异，无法排除抓取失败风险\"}, \"expected_observation\": \"获取当前抓取姿态下的实测TCP与物体相对位置信息\"}\n",
+          "finish_reason": "stop",
+          "prompt_tokens": 5697,
+          "completion_tokens": 106,
+          "generated_ids": [
+            4754,
+            1265,
+            763,
+            5046,
+            306,
+            763,
+            328,
+            46,
+            7116,
+            73477,
+            487,
+            328,
+            2048,
+            763,
+            4535,
+            2069,
+            328,
+            62486,
+            763,
+            5046,
+            71,
+            57296,
+            37052,
+            763,
+            59670,
+            7611,
+            763,
+            328,
+            99927,
+            126601,
+            105121,
+            115784,
+            126601,
+            101757,
+            487,
+            328,
+            68,
+            26590,
+            7824,
+            763,
+            4241,
+            68,
+            22,
+            1293,
+            2069,
+            5046,
+            7611,
+            763,
+            328,
+            97622,
+            109901,
+            97795,
+            96221,
+            101632,
+            487,
+            328,
+            68,
+            26590,
+            7824,
+            763,
+            4241,
+            68,
+            21,
+            1293,
+            69983,
+            328,
+            1299,
+            77383,
+            763,
+            328,
+            96449,
+            125161,
+            48218,
+            95999,
+            101772,
+            48218,
+            100721,
+            3709,
+            97996,
+            104225,
+            126601,
+            101757,
+            97043,
+            13933,
+            328,
+            7095,
+            29415,
+            8503,
+            763,
+            328,
+            100552,
+            99927,
+            126601,
+            105121,
+            98276,
+            125161,
+            48218,
+            95999,
+            109901,
+            98304,
+            97795,
+            96280,
+            8934,
+            248046,
+            198,
+            248044
+          ],
+          "eos_ids": 248044,
+          "elapsed_s": 10.289118802989833,
+          "identity": {
+            "base": "Qwen3.5-4B",
+            "adapter_enabled": false,
+            "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+            "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+          }
+        },
+        "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c",
+        "elapsed_s": 10.301803180016577,
+        "validation": {
+          "valid": true,
+          "error": null,
+          "parsed": {
+            "action": {
+              "id": "OBSERVE",
+              "args": {}
+            },
+            "assessment": {
+              "hypotheses": [
+                {
+                  "claim": "当前抓取姿态可能导致抓取失败",
+                  "evidence_ids": [
+                    "e7"
+                  ]
+                },
+                {
+                  "claim": "目标物体位置已确认",
+                  "evidence_ids": [
+                    "e6"
+                  ]
+                }
+              ],
+              "uncertainty": "未实测TCP与命令TCP差异，无法排除抓取失败风险"
+            },
+            "expected_observation": "获取当前抓取姿态下的实测TCP与物体相对位置信息"
+          }
+        }
+      },
+      "action": {
+        "id": "OBSERVE",
+        "args": {}
+      }
+    },
+    {
+      "index": 2,
+      "after_attempt": 1,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/decisions/decision_2.json",
+      "input_sha256": "f164cc6b9c3c8aaf5c533185fbd7f83a2aa3fe835fdffe374c520bbd802c69b0",
+      "status": "proposed",
+      "model": {
+        "id": "N0_962302_varied_noisy_diagnostic_2",
+        "response": {
+          "text": "{\"action\": {\"id\": \"OBSERVE\", \"args\": {}}, \"assessment\": {\"hypotheses\": [{\"claim\": \"当前抓取姿态下无法稳定夹取RedBlock\", \"evidence_ids\": [\"e7\"]}, {\"claim\": \"目标物体位置在RGBD观测中可见但深度噪声较大\", \"evidence_ids\": [\"e6\"]}], \"uncertainty\": \"未实测TCP与目标相对位置，无法确认抓取失败原因\"}, \"expected_observation\": \"获取新的RGBD表面统计或深度数据以辅助定位\"}\n",
+          "finish_reason": "stop",
+          "prompt_tokens": 6261,
+          "completion_tokens": 118,
+          "generated_ids": [
+            4754,
+            1265,
+            763,
+            5046,
+            306,
+            763,
+            328,
+            46,
+            7116,
+            73477,
+            487,
+            328,
+            2048,
+            763,
+            4535,
+            2069,
+            328,
+            62486,
+            763,
+            5046,
+            71,
+            57296,
+            37052,
+            763,
+            59670,
+            7611,
+            763,
+            328,
+            99927,
+            126601,
+            105121,
+            95849,
+            97996,
+            98423,
+            98377,
+            96284,
+            5844,
+            4561,
+            487,
+            328,
+            68,
+            26590,
+            7824,
+            763,
+            4241,
+            68,
+            22,
+            1293,
+            2069,
+            5046,
+            7611,
+            763,
+            328,
+            97622,
+            109901,
+            97795,
+            95772,
+            17643,
+            35,
+            112769,
+            95789,
+            101802,
+            96342,
+            99581,
+            110674,
+            103869,
+            487,
+            328,
+            68,
+            26590,
+            7824,
+            763,
+            4241,
+            68,
+            21,
+            1293,
+            69983,
+            328,
+            1299,
+            77383,
+            763,
+            328,
+            96449,
+            125161,
+            48218,
+            95999,
+            97622,
+            98304,
+            97795,
+            3709,
+            97996,
+            101632,
+            126601,
+            101757,
+            97494,
+            13933,
+            328,
+            7095,
+            29415,
+            8503,
+            763,
+            328,
+            100552,
+            98408,
+            17643,
+            35,
+            100592,
+            98457,
+            96348,
+            99581,
+            96902,
+            95828,
+            103829,
+            101657,
+            8934,
+            248046,
+            198,
+            248044
+          ],
+          "eos_ids": 248044,
+          "elapsed_s": 11.404571397928521,
+          "identity": {
+            "base": "Qwen3.5-4B",
+            "adapter_enabled": false,
+            "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+            "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+          }
+        },
+        "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c",
+        "elapsed_s": 11.418119508074597,
+        "validation": {
+          "valid": true,
+          "error": null,
+          "parsed": {
+            "action": {
+              "id": "OBSERVE",
+              "args": {}
+            },
+            "assessment": {
+              "hypotheses": [
+                {
+                  "claim": "当前抓取姿态下无法稳定夹取RedBlock",
+                  "evidence_ids": [
+                    "e7"
+                  ]
+                },
+                {
+                  "claim": "目标物体位置在RGBD观测中可见但深度噪声较大",
+                  "evidence_ids": [
+                    "e6"
+                  ]
+                }
+              ],
+              "uncertainty": "未实测TCP与目标相对位置，无法确认抓取失败原因"
+            },
+            "expected_observation": "获取新的RGBD表面统计或深度数据以辅助定位"
+          }
+        }
+      },
+      "action": {
+        "id": "OBSERVE",
+        "args": {}
+      }
+    },
+    {
+      "index": 3,
+      "after_attempt": 1,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/decisions/decision_3.json",
+      "input_sha256": "c5067efd1b05778a6f14bafaf89d459cce1e2881e9e41de70d5fc8744cd39357",
+      "status": "proposed",
+      "model": {
+        "id": "N0_962302_varied_noisy_diagnostic_3",
+        "response": {
+          "text": "{\"action\": {\"id\": \"RETRY\", \"args\": {}}, \"assessment\": {\"hypotheses\": [{\"claim\": \"重试抓取可能因深度噪声导致位置偏差\", \"evidence_ids\": [\"e6\"]}, {\"claim\": \"当前抓取高度0.35m可能非最优\", \"evidence_ids\": [\"e1\"]}], \"uncertainty\": \"未观测到实际抓取结果，无法确认是否成功\"}, \"expected_observation\": \"机械臂重新尝试抓取RedBlock，若成功则TCP将移动至BlueBin上方\"}\n",
+          "finish_reason": "stop",
+          "prompt_tokens": 6790,
+          "completion_tokens": 118,
+          "generated_ids": [
+            4754,
+            1265,
+            763,
+            5046,
+            306,
+            763,
+            328,
+            762,
+            25365,
+            487,
+            328,
+            2048,
+            763,
+            4535,
+            2069,
+            328,
+            62486,
+            763,
+            5046,
+            71,
+            57296,
+            37052,
+            763,
+            59670,
+            7611,
+            763,
+            328,
+            145748,
+            126601,
+            96539,
+            96161,
+            99581,
+            110674,
+            97994,
+            97795,
+            112601,
+            487,
+            328,
+            68,
+            26590,
+            7824,
+            763,
+            4241,
+            68,
+            21,
+            1293,
+            2069,
+            5046,
+            7611,
+            763,
+            328,
+            99927,
+            126601,
+            99958,
+            15,
+            13,
+            18,
+            20,
+            76,
+            96539,
+            96365,
+            116206,
+            487,
+            328,
+            68,
+            26590,
+            7824,
+            763,
+            4241,
+            68,
+            16,
+            1293,
+            69983,
+            328,
+            1299,
+            77383,
+            763,
+            328,
+            96449,
+            112769,
+            95839,
+            97125,
+            126601,
+            97989,
+            3709,
+            97996,
+            101632,
+            97553,
+            97378,
+            13933,
+            328,
+            7095,
+            29415,
+            8503,
+            763,
+            328,
+            98011,
+            100248,
+            100544,
+            103811,
+            126601,
+            5844,
+            4561,
+            3709,
+            97199,
+            97378,
+            96711,
+            48218,
+            96123,
+            98169,
+            96337,
+            10025,
+            27852,
+            102049,
+            8934,
+            248046,
+            198,
+            248044
+          ],
+          "eos_ids": 248044,
+          "elapsed_s": 11.581269833026454,
+          "identity": {
+            "base": "Qwen3.5-4B",
+            "adapter_enabled": false,
+            "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+            "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+          }
+        },
+        "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c",
+        "elapsed_s": 11.59533845295664,
+        "validation": {
+          "valid": true,
+          "error": null,
+          "parsed": {
+            "action": {
+              "id": "RETRY",
+              "args": {}
+            },
+            "assessment": {
+              "hypotheses": [
+                {
+                  "claim": "重试抓取可能因深度噪声导致位置偏差",
+                  "evidence_ids": [
+                    "e6"
+                  ]
+                },
+                {
+                  "claim": "当前抓取高度0.35m可能非最优",
+                  "evidence_ids": [
+                    "e1"
+                  ]
+                }
+              ],
+              "uncertainty": "未观测到实际抓取结果，无法确认是否成功"
+            },
+            "expected_observation": "机械臂重新尝试抓取RedBlock，若成功则TCP将移动至BlueBin上方"
+          }
+        }
+      },
+      "action": {
+        "id": "RETRY",
+        "args": {}
+      }
+    },
+    {
+      "index": 4,
+      "after_attempt": 2,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/decisions/decision_4.json",
+      "input_sha256": "23201c8560f270d4df87936587a3a967c7fb7cf6375ea1b4c380a2331f2e8c7e",
+      "status": "proposed",
+      "model": {
+        "id": "N0_962302_varied_noisy_diagnostic_4",
+        "response": {
+          "text": "{\"action\": {\"id\": \"RETRY\", \"args\": {}}, \"assessment\": {\"hypotheses\": [{\"claim\": \"重试当前抓取姿态可能成功\", \"evidence_ids\": [\"e1\", \"e2\", \"e3\"]}], \"uncertainty\": \"未观测到抓取失败证据，但预算仅剩1次\"}, \"expected_observation\": \"机械臂回到初始抓取位并尝试闭合夹爪\"}\n",
+          "finish_reason": "stop",
+          "prompt_tokens": 5737,
+          "completion_tokens": 91,
+          "generated_ids": [
+            4754,
+            1265,
+            763,
+            5046,
+            306,
+            763,
+            328,
+            762,
+            25365,
+            487,
+            328,
+            2048,
+            763,
+            4535,
+            2069,
+            328,
+            62486,
+            763,
+            5046,
+            71,
+            57296,
+            37052,
+            763,
+            59670,
+            7611,
+            763,
+            328,
+            145748,
+            99927,
+            126601,
+            105121,
+            96539,
+            97378,
+            487,
+            328,
+            68,
+            26590,
+            7824,
+            763,
+            4241,
+            68,
+            16,
+            487,
+            328,
+            68,
+            17,
+            487,
+            328,
+            68,
+            18,
+            1293,
+            69983,
+            328,
+            1299,
+            77383,
+            763,
+            328,
+            96449,
+            112769,
+            95839,
+            126601,
+            101757,
+            100720,
+            3709,
+            96342,
+            100731,
+            139205,
+            16,
+            96157,
+            13933,
+            328,
+            7095,
+            29415,
+            8503,
+            763,
+            328,
+            98011,
+            100248,
+            103744,
+            104542,
+            126601,
+            96022,
+            96172,
+            103811,
+            120749,
+            98377,
+            103028,
+            8934,
+            248046,
+            198,
+            248044
+          ],
+          "eos_ids": 248044,
+          "elapsed_s": 9.194824629928917,
+          "identity": {
+            "base": "Qwen3.5-4B",
+            "adapter_enabled": false,
+            "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+            "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+          }
+        },
+        "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c",
+        "elapsed_s": 9.208006678964011,
+        "validation": {
+          "valid": true,
+          "error": null,
+          "parsed": {
+            "action": {
+              "id": "RETRY",
+              "args": {}
+            },
+            "assessment": {
+              "hypotheses": [
+                {
+                  "claim": "重试当前抓取姿态可能成功",
+                  "evidence_ids": [
+                    "e1",
+                    "e2",
+                    "e3"
+                  ]
+                }
+              ],
+              "uncertainty": "未观测到抓取失败证据，但预算仅剩1次"
+            },
+            "expected_observation": "机械臂回到初始抓取位并尝试闭合夹爪"
+          }
+        }
+      },
+      "action": {
+        "id": "RETRY",
+        "args": {}
+      }
+    }
+  ],
+  "views": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/views/a1_o0.json",
+      "sha256": "9bd0dfd166830c20b7573e2e7a5f82b9ef577eabf889dfacc1abbff462ae056f"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/views/a1_o1.json",
+      "sha256": "2898c32aae5566682c8da3dc9127718ece73b7ee34a59c6d49d1936d854dd119"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/views/a1_o2.json",
+      "sha256": "62cda6da41c621b615d7420e4ce850387a1c3c46c4c219b4e6115d0061bd3d34"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/views/a2_o0.json",
+      "sha256": "e59dab4f315fef38e46f760a8ac03cbeca006a74ae057e6e5274714dc4445cbc"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_varied_noisy/diagnostic/views/a3_o0.json",
+      "sha256": "1e2891ee206a0335c9a1192d9fe2e3661a804ba3cec1238afefbbd73d48bef8a"
+    }
+  ],
+  "extra_observations": 2,
+  "model_calls": 4,
+  "new_attempts": 2
+}

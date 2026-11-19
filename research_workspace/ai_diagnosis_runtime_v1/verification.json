@@ -1,0 +1,205 @@
+{
+  "passed": true,
+  "model_smoke_gate": true,
+  "rows": [
+    {
+      "id": "962201_baseline_wiring",
+      "success": true,
+      "attempts": 1,
+      "error": null,
+      "execution_sensor": {
+        "passed": true,
+        "frames": 2,
+        "attempt": 1
+      },
+      "observation": {
+        "passed": true,
+        "frames": 1,
+        "extra": 0,
+        "private_audit_excluded": true,
+        "state_and_clean_frame_identical": true,
+        "noise": [
+          {
+            "valid_pixels": 409600,
+            "dropped_pixels": 0,
+            "dropout_fraction": 0.0,
+            "noise_rmse_m": 0.0
+          }
+        ]
+      },
+      "motion": {
+        "passed": true,
+        "groups": [
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 153,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          }
+        ],
+        "clearance_m": 0.01,
+        "actual_motion": true,
+        "grasp_checked": true,
+        "carry_checked": true
+      },
+      "model_input": {
+        "passed": true,
+        "telemetry_samples": 825,
+        "shared_user_input": true,
+        "actions": [
+          "STOP"
+        ]
+      },
+      "lifecycle": {
+        "evidence": "exception_cleanup_and_process_exit",
+        "runtime_close_event_missing": true,
+        "limitation": "Successful close inferred from unwinding; not a saved runtime flag"
+      }
+    },
+    {
+      "id": "962201_varied_noisy_wiring",
+      "success": true,
+      "attempts": 1,
+      "error": null,
+      "execution_sensor": {
+        "passed": true,
+        "frames": 2,
+        "attempt": 1
+      },
+      "observation": {
+        "passed": true,
+        "frames": 1,
+        "extra": 0,
+        "private_audit_excluded": true,
+        "state_and_clean_frame_identical": true,
+        "noise": [
+          {
+            "valid_pixels": 409600,
+            "dropped_pixels": 8141,
+            "dropout_fraction": 0.01987548828125,
+            "noise_rmse_m": 0.002994298003613949
+          }
+        ]
+      },
+      "motion": {
+        "passed": true,
+        "groups": [
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 153,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          },
+          {
+            "feasible": true,
+            "samples": 51,
+            "executed": true
+          }
+        ],
+        "clearance_m": 0.01,
+        "actual_motion": true,
+        "grasp_checked": true,
+        "carry_checked": true
+      },
+      "model_input": {
+        "passed": true,
+        "telemetry_samples": 825,
+        "shared_user_input": true,
+        "actions": [
+          "STOP"
+        ]
+      },
+      "lifecycle": {
+        "retained_after_attempt": true,
+        "released": true,
+        "close_requests": 1,
+        "actual_new_attempts": 1,
+        "evidence": "runtime_event"
+      }
+    }
+  ],
+  "manifest_sha256": "44493e862487c41194cfa634dade6158d7707f74a0159df900e9dd03e84b397d",
+  "model_calls": 0,
+  "training_runs": 0,
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/bridge.json": "496f4d469141564d59e5782e844bdda1855e4bec87d8948076680ee10ce615ae",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/guard.json": "e92d9ea2f4eb74bad621b1e6d5ed8dea3b8575a1f23f50117562d8394d1f9399",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/telemetry.json": "f1cb0d38654c41feff384a2bce82f123fe365ecc411266e7df1549e96616e74e",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/model_input.json": "51996d31a18a4c6b67672963dc24965c5b8a444535074275932e12a56c1cdb56",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/ledger.json": "b13329d4d3b4a3c22e50af3c633c78128e5bf182ee6f32643fb85a62b3372d1b",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observation_summary.json": "1ae101e3f00d578aed8fe57253ec46ff7e0b167ef93f7b088663b1cf5379cb2d",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/recovery.json": "281e53730bcfaf0d96c97216ce129092f3f705a7e64ea16de9472aaab340b82a",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/result.json": "511faa97c6000ff221e15eac5f575e89baa22317c6ab0932ce5a687f15508d81",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/depth_evidence.npz": "2c16ddefa4fe986b887227d5f5fa8f2fa148d644bf807b3f31ae898c7fc7febe",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/before.png": "d1c098ea3a48d6619f43dac95d2096a032ffbc51debafa187faa3a59a3786fef",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/plan.json": "d59aa88a205a898263478d3bdcd66a1b3e00fa5c0f2d51a65522586843a74ff7",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/mask.png": "6d9f744a061e1ed7fc5562a97e98075b4f1d07b1ec17c5a461323d7daa7e08ec",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/after.png": "12079423666375e8beb82bff9b29e0a7c6489ba433fa68fe76f9805342b6f0a9",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/diagnostics.json": "0e2bacacd40a00256872d661b2aa629d2692a00052b593ba255426c101bf2391",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observations/observation_0/rgb.png": "1437a8e00d26b27f4fe8bc87c7d45f9b0a4f3e40e87425876f173c3fc1aecad3",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observations/observation_0/private_sensor.npz": "c5db4fca30073e62ee3733ea7ab0755a041d5ae2d68e74db2e8f85433f6a1625",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observations/observation_0/audit.json": "71c71ece17d811a7df52bec79f49f8009ebde1dcb96a5410ae6da8c97510c539",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observations/observation_0/public.json": "f9d2240c637b8ed24a500cda2e5887d3846ec374f4e8f98ce9df2bc9ba1f1b40",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/model_input.json": "41a9ad0c4a785993c7b53897441be737238a9ecc0cfc7ab551553ad1d3b1b8e1",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/ledger.json": "adaecaf25144f058776fd475b01a07af0747a938449d1432dd949b4d0c41a05c",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/observation_summary.json": "5ca69f134adac58ee70b4541a3b04f15010b72d6dc7d49eefe1b6f32a9e40970",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/bridge.json": "2dc7504f4838d509f804e2302007cfd6312485f0f320cc1bb6feb461c4f89133",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/guard.json": "09ceac89cfaf47e9ae4ccda2359d7b75bd22fa03b2d7a39439f8e9bd1fcde047",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/telemetry.json": "a973a5339779c07c361b0b701b72eb3573c6aa06daffca9c2535bdc23bf6c2ab",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/lifecycle.json": "7517a446c3ca01767f1dea3d0b6e9d6c919188db2c7e9fd83fb51e17f24ee149",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/execution/result.json": "aeefe7915a19802c3ac03a2f426e0aac67aa03998a9977f6676236b7de5fbbe2",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/execution/attempt_1/depth_evidence.npz": "51135a1298dd054c349c207b38d06f7eee01e15e4cd69cd4bf5cf2cc732b21cf",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/execution/attempt_1/before.png": "063a6754f7c30d8d7d8368e4a8d7881427b652617344631a3d0fad39100a22f7",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/execution/attempt_1/plan.json": "f683b25fca3dbded5920bda77778db2e8c14ac9547738f8ef6c0b4b8079ca83c",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/execution/attempt_1/mask.png": "b102386048244228f943b2e8d77d596f0601cb819a1a5f3c25b0b9ae7f8dc0ea",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/execution/attempt_1/after.png": "e8b890f8781dedf1dcc390a0f638cf8528e6f04aeb400976c67f3dbec6ef0e61",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/execution/attempt_1/diagnostics.json": "063368edd385f4a80c6711878d7f9c96474f1b3332cfda87e4a03eecb0e9eb8e",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/observations/observation_0/rgb.png": "270ba2143cc7c5139f3e818c0ef2ff2ffa8d786a0a562bc181334f1b0aa09849",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/observations/observation_0/private_sensor.npz": "f5b2ba4c30b926c6830bc68e31708649af2f3c9d0c211decbddc620d3b6abf4d",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/observations/observation_0/audit.json": "61b18ce0000f0b7a2ae5052f6266f30a44660bbd966a1f2bf555e46fd58226b8",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/observations/observation_0/public.json": "ce38ba6f7a9eb18b56d6379353f5c03d8d9d7eca0b0269fbf95809d759b3a83f"
+  }
+}

@@ -1,0 +1,7 @@
+test_original_rejects_executor_tuple_fixed_adapter_preserves_values (test_revision.RevisionTests.test_original_rejects_executor_tuple_fixed_adapter_preserves_values) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+[task] 红色方块 -> 绿色箱子 parser=explicit

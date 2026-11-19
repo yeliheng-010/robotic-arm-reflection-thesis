@@ -1,0 +1,55 @@
+{
+  "method": "diagnostic",
+  "ledger": {
+    "item": {
+      "id": "N0_962302_baseline",
+      "source": "RedBlock",
+      "destination": "BlueBin",
+      "seed": 962302,
+      "group": "baseline",
+      "fault": "none",
+      "split": "pilot_development_not_training"
+    },
+    "steps": [
+      {
+        "index": 1,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 1.0,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": true,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_baseline/first/execution/result.json",
+        "result_sha256": "6d7d275111bb5a406617169ef8c06b0350be1b29a0776e99226f1b8d062fa608",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_baseline/first"
+      }
+    ]
+  },
+  "success": true,
+  "status": "success",
+  "decisions": [],
+  "views": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962302_baseline/diagnostic/views/a1_o0.json",
+      "sha256": "65ba62c7f8e03e02ef7a3f5a976e46fdba7a80355be7d02e514692b5f1186266"
+    }
+  ],
+  "extra_observations": 0,
+  "model_calls": 0,
+  "new_attempts": 0
+}

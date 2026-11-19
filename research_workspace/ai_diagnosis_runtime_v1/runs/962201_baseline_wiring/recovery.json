@@ -1,0 +1,10 @@
+{
+  "physical_rerun": false,
+  "observed_frames_reused": 1,
+  "source_job": 5880,
+  "cause": "in_memory_tuple_rejected_by_json_list_contract",
+  "lifecycle_event_missing": true,
+  "cleanup_evidence": "exception_unwound_retained_context_no_close_error",
+  "log_sha256": "ef69f394ed3caf4a065e7d89687e78d376f618f7e6e0a1ae01040d9d869d5f01",
+  "result_sha256": "511faa97c6000ff221e15eac5f575e89baa22317c6ab0932ce5a687f15508d81"
+}

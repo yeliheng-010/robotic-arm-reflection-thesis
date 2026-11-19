@@ -1,0 +1,32 @@
+{
+  "parent_sha256": "44493e862487c41194cfa634dade6158d7707f74a0159df900e9dd03e84b397d",
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/live_requests_v2.py": "a87a94eeff4a76e0252f4e1f46f93069fb7ce58c8853858c01f84f6f33b504ed",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/test_revision.py": "971308b805bb188702e79047ba077c503b2e91061ef6bcd2abd273024a97acf4",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/recover_baseline.py": "0403e5ebc879dba2f8173067686b3fd87852338f4160d16cf006124926af03a5",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/live_resume.py": "0d96eeb89caae07fbc5211646cd435115db582bc2d9f4742f48275e2723384fb",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/resume.sbatch": "60ab88f8e16a056735191420847c9e0e3cae180c7284a143f81f48237d0be352",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/audit_live.py": "38ac6851d04984b91f60550a89c51a174e27afba9ad9f9a5488f14b0b173b378",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/audit_motion_live.py": "a0206e1f90ab155d8cb8b37d59b514267767f9451192bf68e4871c294c4d4e13",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/audit_sensor_live.py": "b577b5dff4767cebb0727dff5c9636e7fe53931c311b3a85ded37cc0081a6fa6",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/audit.sbatch": "56914bdcc8abaebe87e123ec1deb80f0832b3dbfc90faaec140fd33d75cba7bf",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/bridge.json": "496f4d469141564d59e5782e844bdda1855e4bec87d8948076680ee10ce615ae",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/guard.json": "e92d9ea2f4eb74bad621b1e6d5ed8dea3b8575a1f23f50117562d8394d1f9399",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/telemetry.json": "f1cb0d38654c41feff384a2bce82f123fe365ecc411266e7df1549e96616e74e",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/result.json": "511faa97c6000ff221e15eac5f575e89baa22317c6ab0932ce5a687f15508d81",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/depth_evidence.npz": "2c16ddefa4fe986b887227d5f5fa8f2fa148d644bf807b3f31ae898c7fc7febe",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/before.png": "d1c098ea3a48d6619f43dac95d2096a032ffbc51debafa187faa3a59a3786fef",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/plan.json": "d59aa88a205a898263478d3bdcd66a1b3e00fa5c0f2d51a65522586843a74ff7",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/mask.png": "6d9f744a061e1ed7fc5562a97e98075b4f1d07b1ec17c5a461323d7daa7e08ec",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/after.png": "12079423666375e8beb82bff9b29e0a7c6489ba433fa68fe76f9805342b6f0a9",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/execution/attempt_1/diagnostics.json": "0e2bacacd40a00256872d661b2aa629d2692a00052b593ba255426c101bf2391",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observations/observation_0/rgb.png": "1437a8e00d26b27f4fe8bc87c7d45f9b0a4f3e40e87425876f173c3fc1aecad3",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observations/observation_0/private_sensor.npz": "c5db4fca30073e62ee3733ea7ab0755a041d5ae2d68e74db2e8f85433f6a1625",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observations/observation_0/audit.json": "71c71ece17d811a7df52bec79f49f8009ebde1dcb96a5410ae6da8c97510c539",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_baseline_wiring/observations/observation_0/public.json": "f9d2240c637b8ed24a500cda2e5887d3846ec374f4e8f98ce9df2bc9ba1f1b40"
+  },
+  "reused": "962201_baseline_wiring",
+  "remaining_execution": "962201_varied_noisy_wiring",
+  "max_additional_attempts": 1,
+  "reason": "Normalize tuple at request boundary; no motion or sensor changes"
+}

@@ -1,0 +1,324 @@
+{
+  "method": "direct",
+  "ledger": {
+    "item": {
+      "id": "N0_962301_varied_noisy",
+      "source": "RedBlock",
+      "destination": "BlueBin",
+      "seed": 962301,
+      "group": "varied_noisy",
+      "fault": "none",
+      "split": "pilot_development_not_training"
+    },
+    "steps": [
+      {
+        "index": 1,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 1.0,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": false,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/first/execution/result.json",
+        "result_sha256": "c09c529dd0a7a01eeb1795fe8d677685b1bec2933688b1dcff8103be528d500b",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/first"
+      },
+      {
+        "index": 2,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 1.0,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": false,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/attempt_2/execution/result.json",
+        "result_sha256": "6547486811223de91a5de51edfbd0865c00ad12868feb45b1c319b38f30985f5",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/attempt_2"
+      }
+    ]
+  },
+  "success": false,
+  "status": "policy_stop",
+  "decisions": [
+    {
+      "index": 1,
+      "after_attempt": 1,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/decisions/decision_1.json",
+      "input_sha256": "2ca01d410033c3898b318e2da7d787d51b277958c2595dcc20f40ac5e98b4b6d",
+      "status": "proposed",
+      "model": {
+        "id": "N0_962301_varied_noisy_direct_1",
+        "response": {
+          "text": "{\"action\":{\"id\":\"OBSERVE\",\"args\":{}}}\n",
+          "finish_reason": "stop",
+          "prompt_tokens": 5571,
+          "completion_tokens": 16,
+          "generated_ids": [
+            4754,
+            1265,
+            21624,
+            306,
+            3147,
+            46,
+            7116,
+            73477,
+            2129,
+            2048,
+            763,
+            90,
+            72964,
+            248046,
+            198,
+            248044
+          ],
+          "eos_ids": 248044,
+          "elapsed_s": 2.942351739970036,
+          "identity": {
+            "base": "Qwen3.5-4B",
+            "adapter_enabled": false,
+            "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+            "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+          }
+        },
+        "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c",
+        "elapsed_s": 2.9802542520919815,
+        "validation": {
+          "valid": true,
+          "error": null,
+          "parsed": {
+            "action": {
+              "id": "OBSERVE",
+              "args": {}
+            }
+          }
+        }
+      },
+      "action": {
+        "id": "OBSERVE",
+        "args": {}
+      }
+    },
+    {
+      "index": 2,
+      "after_attempt": 1,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/decisions/decision_2.json",
+      "input_sha256": "22988aa0b43d6768989a490cebf456f9f4dddc79e950051ee6d0e9ecdb491264",
+      "status": "proposed",
+      "model": {
+        "id": "N0_962301_varied_noisy_direct_2",
+        "response": {
+          "text": "{\"action\":{\"id\":\"OBSERVE\",\"args\":{}}}\n",
+          "finish_reason": "stop",
+          "prompt_tokens": 6140,
+          "completion_tokens": 16,
+          "generated_ids": [
+            4754,
+            1265,
+            21624,
+            306,
+            3147,
+            46,
+            7116,
+            73477,
+            2129,
+            2048,
+            763,
+            90,
+            72964,
+            248046,
+            198,
+            248044
+          ],
+          "eos_ids": 248044,
+          "elapsed_s": 2.760834635933861,
+          "identity": {
+            "base": "Qwen3.5-4B",
+            "adapter_enabled": false,
+            "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+            "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+          }
+        },
+        "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c",
+        "elapsed_s": 2.774712956044823,
+        "validation": {
+          "valid": true,
+          "error": null,
+          "parsed": {
+            "action": {
+              "id": "OBSERVE",
+              "args": {}
+            }
+          }
+        }
+      },
+      "action": {
+        "id": "OBSERVE",
+        "args": {}
+      }
+    },
+    {
+      "index": 3,
+      "after_attempt": 1,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/decisions/decision_3.json",
+      "input_sha256": "5ea76648afcd8b1e03521793bb98bd259382e2c5584fc99af332a365e99dd578",
+      "status": "proposed",
+      "model": {
+        "id": "N0_962301_varied_noisy_direct_3",
+        "response": {
+          "text": "{\"action\":{\"id\":\"RETRY\",\"args\":{}}}\n",
+          "finish_reason": "stop",
+          "prompt_tokens": 6667,
+          "completion_tokens": 15,
+          "generated_ids": [
+            4754,
+            1265,
+            21624,
+            306,
+            3147,
+            762,
+            25365,
+            2129,
+            2048,
+            763,
+            90,
+            72964,
+            248046,
+            198,
+            248044
+          ],
+          "eos_ids": 248044,
+          "elapsed_s": 2.819854735978879,
+          "identity": {
+            "base": "Qwen3.5-4B",
+            "adapter_enabled": false,
+            "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+            "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+          }
+        },
+        "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c",
+        "elapsed_s": 2.8341947679873556,
+        "validation": {
+          "valid": true,
+          "error": null,
+          "parsed": {
+            "action": {
+              "id": "RETRY",
+              "args": {}
+            }
+          }
+        }
+      },
+      "action": {
+        "id": "RETRY",
+        "args": {}
+      }
+    },
+    {
+      "index": 4,
+      "after_attempt": 2,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/decisions/decision_4.json",
+      "input_sha256": "cfeb3370ec8a4c3cf578ee77974d6c1cb89d5fb3a69f301b0e60ba86eb3f2272",
+      "status": "proposed",
+      "model": {
+        "id": "N0_962301_varied_noisy_direct_4",
+        "response": {
+          "text": "{\"action\":{\"id\":\"STOP\",\"args\":{}}}\n",
+          "finish_reason": "stop",
+          "prompt_tokens": 5374,
+          "completion_tokens": 14,
+          "generated_ids": [
+            4754,
+            1265,
+            21624,
+            306,
+            3147,
+            48964,
+            2129,
+            2048,
+            763,
+            90,
+            72964,
+            248046,
+            198,
+            248044
+          ],
+          "eos_ids": 248044,
+          "elapsed_s": 2.4115211439784616,
+          "identity": {
+            "base": "Qwen3.5-4B",
+            "adapter_enabled": false,
+            "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+            "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+          }
+        },
+        "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c",
+        "elapsed_s": 2.4234820040874183,
+        "validation": {
+          "valid": true,
+          "error": null,
+          "parsed": {
+            "action": {
+              "id": "STOP",
+              "args": {}
+            }
+          }
+        }
+      },
+      "action": {
+        "id": "STOP",
+        "args": {}
+      }
+    }
+  ],
+  "views": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/views/a1_o0.json",
+      "sha256": "27934b4ee7647602432377b2eb99b33f6f84509a3f5af810b2f04fc6b4248bf3"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/views/a1_o1.json",
+      "sha256": "12c901083fb910827804146465e31b7a2c864695e4f27badfe11caba5aa82822"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/views/a1_o2.json",
+      "sha256": "bb541243043feb56e70b4b77ff991e2b9a6a36ca0c1e0fa6fdbd378a7018c2c0"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N0_962301_varied_noisy/direct/views/a2_o0.json",
+      "sha256": "675c9eece6d5aa02266dec3042be92f2e0d66caf7b04cc87f907262cbe1dfd29"
+    }
+  ],
+  "extra_observations": 2,
+  "model_calls": 4,
+  "new_attempts": 1
+}

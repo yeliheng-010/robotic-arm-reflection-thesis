@@ -1,0 +1,22 @@
+{
+  "rows": [
+    {
+      "id": "962201_baseline_wiring",
+      "success": true,
+      "attempts": 1,
+      "reused_physical_result": true
+    },
+    {
+      "id": "962201_varied_noisy_wiring",
+      "success": true,
+      "attempts": 1,
+      "grasp_checked": true,
+      "carry_checked": true
+    }
+  ],
+  "actual_new_attempts": 2,
+  "model_calls": 0,
+  "training_runs": 0,
+  "manifest_sha256": "44493e862487c41194cfa634dade6158d7707f74a0159df900e9dd03e84b397d",
+  "revision_sha256": "d6ce93d0d26df1eb7f6db1ae5981ce66e71fa72978022e0c834d7ccd6631d621"
+}

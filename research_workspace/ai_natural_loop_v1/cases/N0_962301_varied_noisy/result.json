@@ -1,0 +1,30 @@
+{
+  "id": "N0_962301_varied_noisy",
+  "status": "completed",
+  "methods": {
+    "fixed_rule": {
+      "success": false,
+      "new_attempts": 2,
+      "model_calls": 0,
+      "extra_observations": 0,
+      "status": "execution_budget_exhausted"
+    },
+    "direct": {
+      "success": false,
+      "new_attempts": 1,
+      "model_calls": 4,
+      "extra_observations": 2,
+      "status": "policy_stop"
+    },
+    "diagnostic": {
+      "success": false,
+      "new_attempts": 1,
+      "model_calls": 4,
+      "extra_observations": 2,
+      "status": "policy_stop"
+    }
+  },
+  "new_attempts": 5,
+  "model_calls": 8,
+  "manifest_sha256": "e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c"
+}

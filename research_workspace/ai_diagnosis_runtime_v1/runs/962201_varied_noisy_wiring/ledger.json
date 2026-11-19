@@ -1,0 +1,39 @@
+{
+  "item": {
+    "id": "962201_varied_noisy_wiring",
+    "seed": 962201,
+    "group": "varied_noisy",
+    "source": "RedBlock",
+    "destination": "BlueBin",
+    "fault": "none",
+    "split": "engineering_development"
+  },
+  "steps": [
+    {
+      "index": 1,
+      "state": {
+        "parameters": {
+          "replan": false,
+          "reground": false,
+          "lift_height": 0.35,
+          "time_scale": 1.5,
+          "grasp_offset": [
+            0.005,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": true,
+      "result_path": "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/runs/962201_varied_noisy_wiring/execution/result.json",
+      "result_sha256": "aeefe7915a19802c3ac03a2f426e0aac67aa03998a9977f6676236b7de5fbbe2"
+    }
+  ]
+}

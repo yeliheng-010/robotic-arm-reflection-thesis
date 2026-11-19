@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "kind": "local_delivery_only",
+  "source_files": 21,
+  "python_files": 8,
+  "source_identities_unchanged": true,
+  "structure_checked": true,
+  "local_document_links_checked": true,
+  "progress_documents": 5,
+  "model_calls": 0,
+  "physics_attempts": 0,
+  "live_integration_ready": false,
+  "offline_verification_sha256": "443142f52f4237a272ec82399bed93241fc85f4f60f5df515bd8bd6c95b8bdfe",
+  "document_sha256": {
+    "ai_diagnosis_v1\\AUDIT.md": "a405de4dc6610715bb028ba493263567d69ce0e1023060bba1443ba7f81cef62",
+    "ai_diagnosis_v1\\PLAN.md": "05eae03f436da237afba889549f51d265b69d19df977d9f66bb7cd42976a1621",
+    "ai_diagnosis_v1\\PROTOCOL.md": "dcb129b1deb241a7898e8d6ffede5527b51301432c30127df58ef14e5642927d",
+    "ai_diagnosis_v1\\README.md": "52e0c2fc1a6e021aa43b8ea3fbbdeaab377eb13a383d32373dfaad24fe56c210",
+    "ai_diagnosis_v1\\REVIEW.md": "3b21cd045abcc1adf7a5db6e6ccb1b20141cfaba1d6adaba09c2bf5fdc390a1e",
+    "SCENE_DIVERSITY_RUN.md": "23edea06d95063d09ae4a43717c1842c48f7d7e8bdc78b8c3cb70938607df6f2",
+    "thesis-research-progress\\docs\\CURRENT_PROGRESS.md": "4d8446250d1c0f869c0aa8f9592dc8629f69271b92e1915d30d9bd80494a3ccb",
+    "thesis-research-progress\\docs\\EXPERIMENT_PLAN.md": "0df35c41b08a5fdf02fb34b1552cfd812300e1d85038d2d52de932632def4543",
+    "thesis-research-progress\\docs\\EVIDENCE_INDEX.md": "0fe9df4304f67377ab788dfc71b1b24bb5c73835a1e975f453a4b0a298baadaf",
+    "thesis-research-progress\\docs\\ROADMAP.md": "39055e5266408a873997d1dd14c25bbc577012b7b3473d2d0151071f9b7957b9"
+  },
+  "extra_source_sha256": {
+    "active_observation_model_v2/am_generator.py": "7b3f8c024a2fb4fd4f418e47711ea550b7071604460d1542a1d90eca8d85ed77"
+  }
+}

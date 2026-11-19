@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "kind": "offline_boundary_only",
+  "cases": [
+    {
+      "id": "961103_varied_noisy_0",
+      "ledger_sha256": "78387b6d846f25cac5f834f0589a3b4a2af9c1698e01118650d5f7ce5b6802ac",
+      "record_sha256": "ec7c440abe78759cae6edcee71ab4ce44ed2b834d0ef41c673591c484fcf001a",
+      "remaining_executions": 0,
+      "legal_actions": [
+        "STOP"
+      ],
+      "model_called": false,
+      "source_use": "used_seed_development_interface_example"
+    },
+    {
+      "id": "961104_varied_noisy_0",
+      "ledger_sha256": "14e8f1fedf9e9cd7b061e58e6f0831e25565c120b5a489602a472cef92eca174",
+      "record_sha256": "528b8974f3f0feb92cc558338a5b3d5c93b33eb069c66c34a15e8b74575cd8b3",
+      "remaining_executions": 0,
+      "legal_actions": [
+        "STOP"
+      ],
+      "model_called": false,
+      "source_use": "used_seed_development_interface_example"
+    }
+  ],
+  "source_sha256": {
+    "scene_pair_v2/pair_run.py": "3167aad1e6dacecc91a89915890944d1177841a2d6e830acb82cabebf9b55f8e",
+    "scene_pair_v2/pair_runtime.py": "5d250e83eaaa9710ed45b0779a753e64d8757e521234da818209b33f04812124",
+    "scene_pair_v2/drop_recovery.py": "7e93cd76ebd92956b1816b5d1484c723d28e337d0c51c91d8790688eba0f6a7c",
+    "scene_diversity_v2/sd_physics.py": "721d07348f98f87e5c7cc24263a50ccd7fbfafc45643148247e3bff73095691b",
+    "active_observation_model_v2/am_policy.py": "dc222a99ddba5d496d3054a7244e3cf1b12dcaf8f863d7e4a3bb593da6db0706",
+    "active_observation_model_v2/am_decision.py": "52ed7afdcd41419f862caeafaaa2bf3147820fe6e2de1dc790e4a1695f7fddb4",
+    "active_observation_model_v2/am_client.py": "9cd8aa894590cc61ca6be60c5caf9dac3bb0a296deed8335b8a97bfc6c59666b",
+    "active_observation_model_v2/worker.py": "af648fcc65fcac24d2b7e4817e7e19680b1d7e15248ebca04f27b4c261bacb29",
+    "active_observation_pilot_v1/ap_sensor.py": "a3d59896a6fd8ac1995b8f33f457d8808e1830ade6063eb03916139f09fd953a",
+    "active_observation_pilot_v1/ap_policy.py": "6c5c8148e94996ab051e413db7e01c2038e8c24acb5c499bfc4d48289090954b",
+    "bounded_reflection_v1/bounded/candidates.py": "e095c5d36e93fc66a345f8df24c6f81a8f57c4a7b3385b83cf52e5bda79e9c52",
+    "route_loop_v1/loopstudy/actions.py": "2a0ab15835d7ada64a7aaebda4a2b541ecdc7f8a2c7e8a1889cde6bda24e8eb1",
+    "route_loop_v1/loopstudy/episode.py": "87119da3cc1d57c87a0e4f61abf37203a33d2db0d89a970a01eab20a9c7bb708",
+    "route_loop_v1/loopstudy/runtime.py": "f0fe349fe5e9805c0bf4338689968a881e4e8bbc37dfb2f7082da18ead0dafa5",
+    "controlled/feedback.py": "380140079eaffbb66ae69c2876bacdf86cc0979267a85cf00b68a68cb673686c",
+    "feedback_semantics_v2/semanticfix2/context.py": "c483b45983a6cb5c896acbd470cf08ead2fa1df3c7fd1a99685d50e0db37190e",
+    "scene_pair_route_v3/goal_runtime.py": "b90f449f729c03147f0c3ea58a84b33b5cdaf984963a35cff5beace25c084e67",
+    "scene_pair_route_v2/waypoint_runtime.py": "e7b3dfe36ebfa76be1f2f11829c2e0d9e5f4b5b0f2520de480e1773ebaea8505",
+    "scene_pair_route_v2/waypoint_paths.py": "b51d56dfe9ad5b6a43931dc36b9ac77609d74912804699553319118148e43977",
+    "scene_pair_contact_diagnostic_v1/contact_capture.py": "0608bc9bac5de9d41069febdf930b6b31fec9aa061332bc3fc5266486355c1ff",
+    "scene_pair_contact_diagnostic_v1/contact_data.py": "8f9e131a35db8909a625ebf5247bdf399e31b2c05d9c5aa8ba11d15ed51e575c"
+  },
+  "original_manifest_sha256": "f9c4f178756ce13a4c3703530d71930feb2c154729caab5861ce09b9d70fc829",
+  "model_calls": 0,
+  "physics_attempts": 0,
+  "training_runs": 0,
+  "live_integration_ready": false,
+  "implementation_sha256": {
+    "action_check.py": "d7d55b73499707289ac54ec7d6d71d8d4570b8c215a5ca7ab41365b5ba807e6b",
+    "boundary.py": "420cc0c1608d4cada40d60d79d75033cd850df058150b8a03e8aac57c4b39434",
+    "contracts.py": "889b9e17b5484b99fba1901e6c6a1bd2c0b5d8fd5dc085f6aa34eb4b64b88826",
+    "decision.py": "e5ed12fd1f63c9880ecc4c88e5950c5003c9c6e4059365d0c7a59e30096f792e",
+    "offline_check.py": "e6629b3329e5ca6aa15e85ca60b31b66c7380e813921c4d6b54fb288b0882d31",
+    "prompts.py": "bb8543605faea8ee7da708f0840713ed887500e030c6db2b2258ea9f5bd6e15a",
+    "test_boundary.py": "3baf17dab3495835277a372c057c4c3bb4b0a042f88e6a90ea065f5a9190fb12",
+    "test_decision.py": "af51ae863466168606ab7e89384c3eb6e1203803903178955e36f78ed9a81ddd"
+  }
+}

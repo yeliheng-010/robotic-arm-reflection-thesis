@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "source": "S1_962602_varied_noisy",
+  "source_attempt": 1,
+  "checks": [
+    "audited_source",
+    "input_boundary",
+    "mode_fairness",
+    "two_image_identity",
+    "budget"
+  ],
+  "physical_attempts": 0,
+  "model_calls": 0,
+  "training_ready": false,
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_multimodal_requests_v1/check.py": "f9da166f54b1333a655ac42cc4c1a70069638a0d56a23c05f7010cff9459f5d0",
+    "/home/yeliheng/grasp_server/ai_multimodal_requests_v1/visual_requests.py": "03493e4b61b6ccd6ce7bab59c207529fcec151f3989cfbb07ba2941fb7512d07",
+    "/home/yeliheng/grasp_server/ai_multimodal_requests_v1/input.json": "a38423c6167bd898f1999bdf4a75bf275c6febf35883d6c7a98d213e2a439964"
+  }
+}
