@@ -1,0 +1,21 @@
+[task] 紫色胶囊 -> 黄色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=1226, 场景原始=264350, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=collision
+[task] 紫色胶囊 -> 黄色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=1222, 场景原始=264164, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=collision
+[task] 紫色胶囊 -> 黄色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=1225, 场景原始=264303, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=collision
+N1_962302_varied_noisy fixed_rule {'success': False, 'new_attempts': 2, 'model_calls': 0, 'extra_observations': 0, 'status': 'execution_budget_exhausted'}
+[task] 紫色胶囊 -> 黄色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=1222, 场景原始=264164, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=collision
+N1_962302_varied_noisy direct {'success': False, 'new_attempts': 1, 'model_calls': 4, 'extra_observations': 2, 'status': 'policy_stop'}
+[task] 紫色胶囊 -> 黄色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=1222, 场景原始=264164, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=collision
+[task] 紫色胶囊 -> 黄色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=1225, 场景原始=264303, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=collision
+N1_962302_varied_noisy diagnostic {'success': False, 'new_attempts': 2, 'model_calls': 4, 'extra_observations': 2, 'status': 'execution_budget_exhausted'}

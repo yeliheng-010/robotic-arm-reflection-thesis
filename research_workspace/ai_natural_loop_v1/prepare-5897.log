@@ -1,0 +1,66 @@
+test_hidden_cause_does_not_change_input_or_rule (test_nc_requests.RequestTests.test_hidden_cause_does_not_change_input_or_rule) ... ok
+test_modes_share_user_input_and_snapshots_do_not_mutate (test_nc_requests.RequestTests.test_modes_share_user_input_and_snapshots_do_not_mutate) ... ok
+test_rule_uses_only_missing_depth_and_fixed_time_sequence (test_nc_requests.RequestTests.test_rule_uses_only_missing_depth_and_fixed_time_sequence) ... ok
+test_inner_exception_closes_both_once_without_swallowing (test_nc_session.OwnershipTests.test_inner_exception_closes_both_once_without_swallowing) ... ok
+test_nested_branch_does_not_capture_or_close_shared_env (test_nc_session.OwnershipTests.test_nested_branch_does_not_capture_or_close_shared_env) ... ok
+test_observation_budget_is_shared_across_attempts (test_nc_state.BranchTests.test_observation_budget_is_shared_across_attempts) ... ok
+test_shared_prefix_not_mutated_by_branch (test_nc_state.BranchTests.test_shared_prefix_not_mutated_by_branch) ... ok
+test_success_and_four_decision_cap (test_nc_state.BranchTests.test_success_and_four_decision_cap) ... ok
+test_three_attempts_no_fourth (test_nc_state.BranchTests.test_three_attempts_no_fourth) ... ok
+test_close_failure_never_claims_release (test_f_lifetime.LifetimeTests.test_close_failure_never_claims_release) ... ok
+test_no_environment_is_explicit (test_f_lifetime.LifetimeTests.test_no_environment_is_explicit) ... ok
+test_observation_exception_closes_once_and_records (test_f_lifetime.LifetimeTests.test_observation_exception_closes_once_and_records) ... ok
+test_snapshot_excludes_future_frames_and_private_stop (test_f_requests.RequestTests.test_snapshot_excludes_future_frames_and_private_stop) ... ok
+test_actual_eos_required (test_f_response.ResponseTests.test_actual_eos_required) ... ok
+test_illegal_action_is_not_replaced (test_f_response.ResponseTests.test_illegal_action_is_not_replaced) ... ok
+test_truncated_valid_json_is_still_rejected (test_f_response.ResponseTests.test_truncated_valid_json_is_still_rejected) ... ok
+test_advanced_time_is_rejected (test_f_sensor_v2.SensorRevisionTests.test_advanced_time_is_rejected) ... ok
+test_reused_noise_is_rejected (test_f_sensor_v2.SensorRevisionTests.test_reused_noise_is_rejected) ... ok
+test_rgb_difference_permitted_only_when_not_model_input (test_f_sensor_v2.SensorRevisionTests.test_rgb_difference_permitted_only_when_not_model_input) ... ok
+test_state_and_clean_depth_still_require_exact_identity (test_f_sensor_v2.SensorRevisionTests.test_state_and_clean_depth_still_require_exact_identity) ... ok
+test_natural_error_is_not_replaced (test_f_stop.StopTests.test_natural_error_is_not_replaced) ... ok
+test_stops_only_after_original_finishes (test_f_stop.StopTests.test_stops_only_after_original_finishes) ... ok
+test_all_success_does_not_prove_failure_observation (test_coverage.CoverageTests.test_all_success_does_not_prove_failure_observation) ... ok
+test_failure_without_repeated_frames_still_blocks (test_coverage.CoverageTests.test_failure_without_repeated_frames_still_blocks) ... ok
+test_gate_requires_all_coverage_fields (test_coverage.CoverageTests.test_gate_requires_all_coverage_fields) ... ok
+test_default_plus_two_observations_then_stop (test_lease.LeaseTests.test_default_plus_two_observations_then_stop) ... ok
+test_exception_releases_and_restores_close (test_lease.LeaseTests.test_exception_releases_and_restores_close) ... ok
+test_extra_environment_not_leaked (test_lease.LeaseTests.test_extra_environment_not_leaked) ... ok
+test_inner_finally_close_is_deferred (test_lease.LeaseTests.test_inner_finally_close_is_deferred) ... ok
+test_success_and_third_attempt_allow_default_only (test_lease.LeaseTests.test_success_and_third_attempt_allow_default_only) ... ok
+test_action_mapping_updates_copy_and_preserves_others (test_motion.MotionTests.test_action_mapping_updates_copy_and_preserves_others) ... ok
+test_carry_times_and_target_reach_original (test_motion.MotionTests.test_carry_times_and_target_reach_original) ... ok
+test_grasp_offset_and_durations_reach_original (test_motion.MotionTests.test_grasp_offset_and_durations_reach_original) ... ok
+test_silent_offset_override_is_rejected (test_motion.MotionTests.test_silent_offset_override_is_rejected) ... ok
+test_unsupported_candidate_selection_not_advertised (test_motion.MotionTests.test_unsupported_candidate_selection_not_advertised) ... ok
+test_private_sensor_audit_and_errors_cannot_reach_prompt (test_requests.RequestTests.test_private_sensor_audit_and_errors_cannot_reach_prompt) ... ok
+test_unavailable_command_metadata_is_not_invented (test_requests.RequestTests.test_unavailable_command_metadata_is_not_invented) ... ok
+test_original_rejects_executor_tuple_fixed_adapter_preserves_values (test_revision.RevisionTests.test_original_rejects_executor_tuple_fixed_adapter_preserves_values) ... ok
+test_depth_change_changes_position_without_truth_input (test_sensor.SensorTests.test_depth_change_changes_position_without_truth_input) ... ok
+test_invalid_dimensions_rejected (test_sensor.SensorTests.test_invalid_dimensions_rejected) ... ok
+test_no_depth_is_unknown_not_filled_with_truth (test_sensor.SensorTests.test_no_depth_is_unknown_not_filled_with_truth) ... ok
+test_telemetry_summary_uses_uniform_indices (test_sensor.SensorTests.test_telemetry_summary_uses_uniform_indices) ... ok
+test_boolean_attempt_and_execution_after_success_rejected (test_boundary.BoundaryTests.test_boolean_attempt_and_execution_after_success_rejected) ... ok
+test_command_metadata_cannot_carry_free_text_diagnosis (test_boundary.BoundaryTests.test_command_metadata_cannot_carry_free_text_diagnosis) ... ok
+test_comparison_methods_share_identical_visible_input (test_boundary.BoundaryTests.test_comparison_methods_share_identical_visible_input) ... ok
+test_exhausted_ledger_has_only_stop (test_boundary.BoundaryTests.test_exhausted_ledger_has_only_stop) ... ok
+test_hidden_information_does_not_change_request (test_boundary.BoundaryTests.test_hidden_information_does_not_change_request) ... ok
+test_menu_is_independent_of_error_class (test_boundary.BoundaryTests.test_menu_is_independent_of_error_class) ... ok
+test_mismatched_execution_or_bad_budget_rejected (test_boundary.BoundaryTests.test_mismatched_execution_or_bad_budget_rejected) ... ok
+test_missing_sensing_is_not_fabricated (test_boundary.BoundaryTests.test_missing_sensing_is_not_fabricated) ... ok
+test_unwired_capabilities_not_advertised (test_boundary.BoundaryTests.test_unwired_capabilities_not_advertised) ... ok
+test_direct_and_diagnostic_accept_same_action (test_decision.DecisionTests.test_direct_and_diagnostic_accept_same_action) ... ok
+test_duplicate_keys_nonfinite_and_extra_fields_rejected (test_decision.DecisionTests.test_duplicate_keys_nonfinite_and_extra_fields_rejected) ... ok
+test_invalid_action_never_falls_back (test_decision.DecisionTests.test_invalid_action_never_falls_back) ... ok
+test_offset_absolute_limit_and_observation_budget (test_decision.DecisionTests.test_offset_absolute_limit_and_observation_budget) ... ok
+test_parameter_bounds_and_exact_args (test_decision.DecisionTests.test_parameter_bounds_and_exact_args) ... ok
+test_unavailable_and_exhausted_actions_rejected (test_decision.DecisionTests.test_unavailable_and_exhausted_actions_rejected) ... ok
+test_uncertain_assessment_and_valid_choice_preserved (test_decision.DecisionTests.test_uncertain_assessment_and_valid_choice_preserved) ... ok
+test_unknown_evidence_reference_rejected (test_decision.DecisionTests.test_unknown_evidence_reference_rejected) ... ok
+test_valid_parameter_proposals_are_not_replaced (test_decision.DecisionTests.test_valid_parameter_proposals_are_not_replaced) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 0.016s
+
+OK
+{'frozen': 'e4d311d54993edb353ae9b7f198efce9020752770eb700b0baa20a05759bba4c', 'tests': 60, 'conditions': 8}

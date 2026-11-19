@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "conditions": 8,
+  "attempts": 26,
+  "model_calls": 31,
+  "training_ready": false
+}

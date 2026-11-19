@@ -1,0 +1,144 @@
+{
+  "method": "fixed_rule",
+  "ledger": {
+    "item": {
+      "id": "N1_962301_varied_noisy",
+      "source": "PurpleCapsule",
+      "destination": "RedBin",
+      "seed": 962301,
+      "group": "varied_noisy",
+      "fault": "none",
+      "split": "pilot_development_not_training"
+    },
+    "steps": [
+      {
+        "index": 1,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 1.0,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": false,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/first/execution/result.json",
+        "result_sha256": "a9dbbffb1c6b4254b4a2f56d8758962cc065cd19ed85682787a70f927be75964",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/first"
+      },
+      {
+        "index": 2,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 1.5,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": false,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/attempt_2/execution/result.json",
+        "result_sha256": "3e3d336baccc583fef8207c76d103acac411ba17374fc418972151483f1d79da",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/attempt_2"
+      },
+      {
+        "index": 3,
+        "state": {
+          "parameters": {
+            "replan": false,
+            "reground": false,
+            "lift_height": 0.35,
+            "time_scale": 2.0,
+            "grasp_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "place_offset": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "candidate_index": 0
+          },
+          "profile": "original"
+        },
+        "success": false,
+        "result_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/attempt_3/execution/result.json",
+        "result_sha256": "d4827ec11d1997b76cd575e51adf06dea249e419c479f5ebcacef0031bd32887",
+        "session_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/attempt_3"
+      }
+    ]
+  },
+  "success": false,
+  "status": "execution_budget_exhausted",
+  "decisions": [
+    {
+      "index": 1,
+      "after_attempt": 1,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/decisions/decision_1.json",
+      "input_sha256": "f36de0f9e63ee3ce6f0183917391d07e1731e0512a02176c7a89ba0a247a6733",
+      "status": "proposed",
+      "action": {
+        "id": "SET_TIME_SCALE",
+        "args": {
+          "value": 1.5
+        }
+      }
+    },
+    {
+      "index": 2,
+      "after_attempt": 2,
+      "input_path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/decisions/decision_2.json",
+      "input_sha256": "74e9438676d404fdfe6ddfea9cd678290e87339f075794ca175af9856063923d",
+      "status": "proposed",
+      "action": {
+        "id": "SET_TIME_SCALE",
+        "args": {
+          "value": 2.0
+        }
+      }
+    }
+  ],
+  "views": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/views/a1_o0.json",
+      "sha256": "1da28a3b9174676d741711e713a69595691080b3c14828a2c715dc38d2281559"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/views/a2_o0.json",
+      "sha256": "e44151c0e164cbd74d6e32cfc741a8e91f479862fb2e4f2c8e64cb8db88977ba"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_natural_loop_v1/cases/N1_962301_varied_noisy/fixed_rule/views/a3_o0.json",
+      "sha256": "fdc85ab1a9e118175e1ec85e06c478baad0583258c9735d75e873a5e3167699c"
+    }
+  ],
+  "extra_observations": 0,
+  "model_calls": 0,
+  "new_attempts": 2
+}

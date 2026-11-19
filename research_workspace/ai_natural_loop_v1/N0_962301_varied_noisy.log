@@ -1,0 +1,15 @@
+[task] 红色方块 -> 紫色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=1331, 场景原始=222813, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=collision
+[task] 红色方块 -> 紫色箱子 parser=explicit
+[retry] attempt=1 accepted=False error=depth_invalid
+[task] 红色方块 -> 紫色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=1341, 场景原始=222781, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=collision
+N0_962301_varied_noisy fixed_rule {'success': False, 'new_attempts': 2, 'model_calls': 0, 'extra_observations': 0, 'status': 'execution_budget_exhausted'}
+[task] 红色方块 -> 紫色箱子 parser=explicit
+[retry] attempt=1 accepted=False error=depth_invalid
+N0_962301_varied_noisy direct {'success': False, 'new_attempts': 1, 'model_calls': 4, 'extra_observations': 2, 'status': 'policy_stop'}
+[task] 红色方块 -> 紫色箱子 parser=explicit
+[retry] attempt=1 accepted=False error=depth_invalid
+N0_962301_varied_noisy diagnostic {'success': False, 'new_attempts': 1, 'model_calls': 4, 'extra_observations': 2, 'status': 'policy_stop'}

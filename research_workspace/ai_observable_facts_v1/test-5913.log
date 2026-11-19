@@ -1,0 +1,9 @@
+test_bad_time_or_contradictory_state_rejected (test_public_execution.FactsTests.test_bad_time_or_contradictory_state_rejected) ... ok
+test_hidden_labels_and_future_fields_have_no_effect (test_public_execution.FactsTests.test_hidden_labels_and_future_fields_have_no_effect) ... ok
+test_partial_motion_is_reported_as_started_not_completed (test_public_execution.FactsTests.test_partial_motion_is_reported_as_started_not_completed) ... ok
+test_rejected_plan_does_not_invent_execution_time (test_public_execution.FactsTests.test_rejected_plan_does_not_invent_execution_time) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

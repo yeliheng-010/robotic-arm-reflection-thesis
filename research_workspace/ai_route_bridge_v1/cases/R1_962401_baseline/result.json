@@ -1,0 +1,42 @@
+{
+  "status": "completed",
+  "steps": [
+    {
+      "index": 1,
+      "state": {
+        "parameters": {
+          "replan": false,
+          "reground": false,
+          "lift_height": 0.35,
+          "time_scale": 1.0,
+          "grasp_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": true,
+      "result_path": "/home/yeliheng/grasp_server/ai_route_bridge_v1/cases/R1_962401_baseline/attempt_1/execution/result.json",
+      "result_sha256": "ec865f5179732a966ebe54ffce3cd6c18afe0d9ce5e86539610dda3c2eec53da",
+      "session_path": "/home/yeliheng/grasp_server/ai_route_bridge_v1/cases/R1_962401_baseline/attempt_1"
+    }
+  ],
+  "actions": [],
+  "observations": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_route_bridge_v1/cases/R1_962401_baseline/attempt_1/observation_summary.json",
+      "sha256": "14083ce1da02e6fba1fe0b25ac0f863e8973850e167d0611c60e1f94efae710c"
+    }
+  ],
+  "success": true,
+  "manifest_sha256": "6b00861336efd21caaf0dd4c1799b906baad2a8fc862d373f7757588f6c2cd3a",
+  "model_calls": 0
+}
