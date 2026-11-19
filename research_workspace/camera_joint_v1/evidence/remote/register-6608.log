@@ -1,0 +1,23 @@
+test_larger_visible_object_is_preferred (camera_joint_v1.test_policy.PolicyTests.test_larger_visible_object_is_preferred) ... ok
+test_missing_object_measurement_is_ranked_as_bad (camera_joint_v1.test_policy.PolicyTests.test_missing_object_measurement_is_ranked_as_bad) ... ok
+test_nonfinite_projection_is_rejected (camera_joint_v1.test_policy.PolicyTests.test_nonfinite_projection_is_rejected) ... ok
+test_scene_outside_upper_bound_is_rejected (camera_joint_v1.test_policy.PolicyTests.test_scene_outside_upper_bound_is_rejected) ... ok
+test_small_scene_tightens_to_original_lower_bound (camera_joint_v1.test_policy.PolicyTests.test_small_scene_tightens_to_original_lower_bound) ... ok
+test_snug_fovy_keeps_registered_margin (camera_joint_v1.test_policy.PolicyTests.test_snug_fovy_keeps_registered_margin) ... ok
+test_truth_does_not_influence_ranking (camera_joint_v1.test_policy.PolicyTests.test_truth_does_not_influence_ranking) ... ok
+test_cache_reuses_only_identical_camera (camera_joint_v1.test_search.SearchTests.test_cache_reuses_only_identical_camera) ... ok
+test_first_success_stops_search (camera_joint_v1.test_search.SearchTests.test_first_success_stops_search) ... ok
+test_invalid_local_slots_still_consume_budget (camera_joint_v1.test_search.SearchTests.test_invalid_local_slots_still_consume_budget) ... ok
+test_original_budget_is_exact_and_has_no_retry (camera_joint_v1.test_search.SearchTests.test_original_budget_is_exact_and_has_no_retry) ... ok
+test_all_integration_entries_forbidden (pose_fresh_v1.test_pause.PauseTests.test_all_integration_entries_forbidden) ... ok
+test_state_mutation_is_detected (pose_fresh_v1.test_pause.PauseTests.test_state_mutation_is_detected) ... ok
+test_both_rejected_stays_rejected (pose_selective_v1.test_policy.PolicyTests.test_both_rejected_stays_rejected) ... ok
+test_nonboolean_quality_is_not_approval (pose_selective_v1.test_policy.PolicyTests.test_nonboolean_quality_is_not_approval) ... ok
+test_original_accepted_is_never_replaced (pose_selective_v1.test_policy.PolicyTests.test_original_accepted_is_never_replaced) ... ok
+test_repair_used_only_after_original_rejection (pose_selective_v1.test_policy.PolicyTests.test_repair_used_only_after_original_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.008s
+
+OK
+{'registered': 12, 'compiled': 12}

@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "clear": {
+    "accepted": true,
+    "identical_measurements": true
+  },
+  "occluded": {
+    "accepted": false,
+    "identical_measurements": true
+  },
+  "physical_attempts": 0,
+  "model_calls": 0,
+  "rejected_public_files": 0
+}

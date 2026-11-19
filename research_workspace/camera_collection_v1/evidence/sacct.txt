@@ -1,0 +1,14 @@
+sacct -j 6198,6394,6395,6396,6397,6398 --format=JobID,State,ExitCode,Elapsed -n
+6198          COMPLETED      0:0   00:31:03 
+6198.batch    COMPLETED      0:0   00:31:03 
+6394             FAILED      1:0   00:00:01 
+6394.batch       FAILED      1:0   00:00:01 
+6395             FAILED      1:0   00:00:05 
+6395.batch       FAILED      1:0   00:00:05 
+6396             FAILED      1:0   00:00:05 
+6396.batch       FAILED      1:0   00:00:05 
+6397          COMPLETED      0:0   00:00:17 
+6397.batch    COMPLETED      0:0   00:00:17 
+6398          COMPLETED      0:0   00:07:47 
+6398.batch    COMPLETED      0:0   00:07:47 
+[yeliheng@gpu ~]$ 

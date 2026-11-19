@@ -1,0 +1,389 @@
+{
+  "measurements": {
+    "BlueBin": {
+      "pixels": 27888,
+      "short_side": 200,
+      "long_side": 210,
+      "largest_component": 27888,
+      "isolated_pixels": 27941,
+      "framed": true
+    },
+    "RedBin": {
+      "pixels": 21859,
+      "short_side": 170,
+      "long_side": 182,
+      "largest_component": 21859,
+      "isolated_pixels": 21941,
+      "framed": true
+    },
+    "SortingTray": {
+      "pixels": 17702,
+      "short_side": 144,
+      "long_side": 181,
+      "largest_component": 17702,
+      "isolated_pixels": 18937,
+      "framed": true
+    },
+    "RedBlock": {
+      "pixels": 1698,
+      "short_side": 39,
+      "long_side": 48,
+      "largest_component": 1698,
+      "isolated_pixels": 1712,
+      "framed": true
+    },
+    "GreenCylinder": {
+      "pixels": 1004,
+      "short_side": 29,
+      "long_side": 42,
+      "largest_component": 1004,
+      "isolated_pixels": 1027,
+      "framed": true
+    },
+    "PurpleCapsule": {
+      "pixels": 1771,
+      "short_side": 47,
+      "long_side": 80,
+      "largest_component": 1771,
+      "isolated_pixels": 2024,
+      "framed": true
+    },
+    "OrangeSphere": {
+      "pixels": 812,
+      "short_side": 31,
+      "long_side": 33,
+      "largest_component": 812,
+      "isolated_pixels": 814,
+      "framed": true
+    },
+    "Apple": {
+      "pixels": 639,
+      "short_side": 28,
+      "long_side": 29,
+      "largest_component": 639,
+      "isolated_pixels": 640,
+      "framed": true
+    },
+    "Banana": {
+      "pixels": 1420,
+      "short_side": 30,
+      "long_side": 97,
+      "largest_component": 1420,
+      "isolated_pixels": 1420,
+      "framed": true
+    },
+    "Hammer": {
+      "pixels": 1898,
+      "short_side": 59,
+      "long_side": 102,
+      "largest_component": 1898,
+      "isolated_pixels": 1898,
+      "framed": true
+    },
+    "Knife": {
+      "pixels": 816,
+      "short_side": 28,
+      "long_side": 93,
+      "largest_component": 816,
+      "isolated_pixels": 852,
+      "framed": true
+    },
+    "Duck": {
+      "pixels": 706,
+      "short_side": 31,
+      "long_side": 33,
+      "largest_component": 706,
+      "isolated_pixels": 706,
+      "framed": true
+    },
+    "Flashlight": {
+      "pixels": 326,
+      "short_side": 22,
+      "long_side": 25,
+      "largest_component": 326,
+      "isolated_pixels": 327,
+      "framed": true
+    },
+    "rubik": {
+      "pixels": 902,
+      "short_side": 35,
+      "long_side": 35,
+      "largest_component": 902,
+      "isolated_pixels": 967,
+      "framed": true
+    }
+  },
+  "gate": {
+    "passed": true,
+    "rejected": [],
+    "objects": {
+      "BlueBin": {
+        "passed": true,
+        "visible_fraction": 0.9981031459146058,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "RedBin": {
+        "passed": true,
+        "visible_fraction": 0.9962627045257737,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "SortingTray": {
+        "passed": true,
+        "visible_fraction": 0.9347837566668427,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "RedBlock": {
+        "passed": true,
+        "visible_fraction": 0.991822429906542,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "GreenCylinder": {
+        "passed": true,
+        "visible_fraction": 0.9776046738072055,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "PurpleCapsule": {
+        "passed": true,
+        "visible_fraction": 0.875,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "OrangeSphere": {
+        "passed": true,
+        "visible_fraction": 0.9975429975429976,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "Apple": {
+        "passed": true,
+        "visible_fraction": 0.9984375,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "Banana": {
+        "passed": true,
+        "visible_fraction": 1.0,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "Hammer": {
+        "passed": true,
+        "visible_fraction": 1.0,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "Knife": {
+        "passed": true,
+        "visible_fraction": 0.9577464788732394,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "Duck": {
+        "passed": true,
+        "visible_fraction": 1.0,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "Flashlight": {
+        "passed": true,
+        "visible_fraction": 0.9969418960244648,
+        "component_fraction": 1.0,
+        "reasons": []
+      },
+      "rubik": {
+        "passed": true,
+        "visible_fraction": 0.9327817993795243,
+        "component_fraction": 1.0,
+        "reasons": []
+      }
+    }
+  },
+  "framing": {
+    "passed": true,
+    "bodies": {
+      "BlueBin": {
+        "passed": true,
+        "low": [
+          347.65420687816055,
+          352.33924935030404
+        ],
+        "high": [
+          548.003394646541,
+          562.4249863778718
+        ],
+        "min_depth": 0.8424678125572744
+      },
+      "RedBin": {
+        "passed": true,
+        "low": [
+          336.4228994009804,
+          137.34973266192566
+        ],
+        "high": [
+          507.61240371117196,
+          320.01537349432937
+        ],
+        "min_depth": 0.9746621031684598
+      },
+      "SortingTray": {
+        "passed": true,
+        "low": [
+          161.57959779273835,
+          283.4050907584496
+        ],
+        "high": [
+          307.21943160959717,
+          468.51156381903695
+        ],
+        "min_depth": 0.9808107195151569
+      },
+      "RedBlock": {
+        "passed": true,
+        "low": [
+          102.81574108748097,
+          304.4264486581484
+        ],
+        "high": [
+          159.52539842652385,
+          354.7719961435046
+        ],
+        "min_depth": 1.0330848404207384
+      },
+      "GreenCylinder": {
+        "passed": true,
+        "low": [
+          318.4147041189483,
+          244.53256095011267
+        ],
+        "high": [
+          353.1629665878407,
+          292.59210511076515
+        ],
+        "min_depth": 1.0515950533318261
+      },
+      "PurpleCapsule": {
+        "passed": true,
+        "low": [
+          100.46335345433795,
+          422.00482550782476
+        ],
+        "high": [
+          171.54903747544853,
+          509.9258425895065
+        ],
+        "min_depth": 0.9691948589460775
+      },
+      "OrangeSphere": {
+        "passed": true,
+        "low": [
+          503.10620916504917,
+          378.2697215047301
+        ],
+        "high": [
+          555.4115173302911,
+          419.87068319461855
+        ],
+        "min_depth": 1.0051299387213102
+      },
+      "Apple": {
+        "passed": true,
+        "low": [
+          274.7493656902086,
+          278.87138249029977
+        ],
+        "high": [
+          310.4489375838207,
+          322.4243540394614
+        ],
+        "min_depth": 1.0542031125720368
+      },
+      "Banana": {
+        "passed": true,
+        "low": [
+          236.75226391322383,
+          238.53710754802512
+        ],
+        "high": [
+          280.3370541675634,
+          344.80160853113756
+        ],
+        "min_depth": 0.9893567760667424
+      },
+      "Hammer": {
+        "passed": true,
+        "low": [
+          85.42376272272136,
+          370.5254671554168
+        ],
+        "high": [
+          173.25474318173426,
+          490.0812620280098
+        ],
+        "min_depth": 0.9458824943654521
+      },
+      "Knife": {
+        "passed": true,
+        "low": [
+          221.74390059413417,
+          220.71277252572796
+        ],
+        "high": [
+          319.1639510724117,
+          257.7977065671224
+        ],
+        "min_depth": 1.154013344415457
+      },
+      "Duck": {
+        "passed": true,
+        "low": [
+          149.1055730094135,
+          223.78793233139848
+        ],
+        "high": [
+          194.1846652725414,
+          271.05800563736204
+        ],
+        "min_depth": 1.087204748325668
+      },
+      "Flashlight": {
+        "passed": true,
+        "low": [
+          215.9242915397994,
+          268.49335405442656
+        ],
+        "high": [
+          249.51046270382454,
+          318.59153138136503
+        ],
+        "min_depth": 0.934872844336182
+      },
+      "rubik": {
+        "passed": true,
+        "low": [
+          184.03070771040976,
+          264.0988730051925
+        ],
+        "high": [
+          222.02504731042225,
+          304.4854468268261
+        ],
+        "min_depth": 1.0866765543725065
+      }
+    }
+  },
+  "calibration": {
+    "passed": true,
+    "samples": 465,
+    "max_outside_bounds_m": 0.0005300712782245753,
+    "edge_kernel_pixels": 3
+  },
+  "accepted": true,
+  "state_path": "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964294/first/initial_visibility.npz",
+  "state_sha256": "30fc758b7799cf6c65fb5d6eabde9b7692a9c24f437faebc76ccb799c9538879",
+  "state_unchanged": true
+}

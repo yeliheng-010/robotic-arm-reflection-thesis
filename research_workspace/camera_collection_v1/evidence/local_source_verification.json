@@ -1,0 +1,65 @@
+{
+  "manifest_sha256": "ab813e15cc8fe2acb6d1fac297030d6fdce0800faf1ee900a2d3656fcdc78da2",
+  "files": [
+    {
+      "file": "cc_policy.py",
+      "sha256": "26919ca683d26a8ae439d5752a7e0e908e4ba115c91931f68bd4e11ae7eacd61"
+    },
+    {
+      "file": "environment.sh",
+      "sha256": "7d84189a7d444d014dc6f6e34783f97f8dd9f89f120eb0a6e5ba29608ea2188b"
+    },
+    {
+      "file": "test.sbatch",
+      "sha256": "d740e106d83bc1135ef4416c40ac132cd730802f7bde162b5f1c36feb6132cd1"
+    },
+    {
+      "file": "test_policy.py",
+      "sha256": "f1231a50945177f820f9f300bff67d79bcfba3c18beb0bc3fbba4a8b8f63df0a"
+    },
+    {
+      "file": "cc_audit.py",
+      "sha256": "d4bf419d54c40503076ef4c97bbf7c12e7837d1d076f369e2af223c63f97c452"
+    },
+    {
+      "file": "cc_common.py",
+      "sha256": "96666b1e4bafb5d700f81cf45c6ac604aa301cb6744ab253e19d99641f4b2566"
+    },
+    {
+      "file": "cc_prepare.py",
+      "sha256": "b4d00da92aeffbb1c8dd8fde82280c2eaf99aabdca3ec627b536660e9ade0466"
+    },
+    {
+      "file": "cc_qualify.py",
+      "sha256": "69ddfeab77e231dfa442e2b151b03900ca548f9deb219abc1b76daf6d3d6b0c9"
+    },
+    {
+      "file": "cc_run.py",
+      "sha256": "536b93ee6dc77a9669665ccd210547408ce28bd7f3efa66719409cb8412d8b1f"
+    },
+    {
+      "file": "cc_runtime.py",
+      "sha256": "deb0a05f42a4698810759f2ba851f4af96e40252ac22ed7e52e30ff923dd1f5b"
+    },
+    {
+      "file": "cc_smoke.py",
+      "sha256": "edfe64a79bda5b884a49eb0fa4dfbb864d73fc7bcf4c7b2c4171c9da2d2f1da1"
+    },
+    {
+      "file": "cc_worker.py",
+      "sha256": "96008e675df25dcccd67ed203cddbb0db87846fd76bc9316a804a4ba31bc3164"
+    },
+    {
+      "file": "run.sbatch",
+      "sha256": "b2b6f5a0ba4efbd77b4fbea59c08fd6cff4cf2e698e3af2a0fb00e6265d22a70"
+    },
+    {
+      "file": "smoke.sbatch",
+      "sha256": "0981d93f95a4711a30d26f684f3b9754a584bc0fffbad08ddd827482ef62d237"
+    },
+    {
+      "file": "cc_verify.py",
+      "sha256": "3f451d758bc31d8c91b50946941ea4ee73d6d8021d837fc782f0e7447f117cb3"
+    }
+  ]
+}

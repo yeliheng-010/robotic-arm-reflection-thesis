@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "old_success": false,
+  "new_success": false,
+  "initial": {
+    "accepted": true,
+    "identical_measurements": true
+  },
+  "final": {
+    "accepted": false,
+    "identical_measurements": true
+  },
+  "geometry": {
+    "active": true,
+    "geometry": {
+      "selected": true,
+      "endpoint": {
+        "ok": true,
+        "reason": null,
+        "fk_max_error": 2.220446049250313e-16,
+        "contacts": [],
+        "distance_m": 0.01,
+        "closest_geoms": [
+          "9",
+          "blue_bin_floor"
+        ],
+        "closest_bodies": [
+          "shoulder_link",
+          "BlueBin"
+        ]
+      },
+      "path": {
+        "prefix_legs": 3,
+        "carry_legs": 3,
+        "passed": true
+      },
+      "reconstruction": {
+        "max_abs_m": 0.0,
+        "fields_max_abs_m": {
+          "source_center": 0.0,
+          "source_half": 0.0,
+          "bin_center": 0.0,
+          "interior_half": 0.0,
+          "usable_half": 0.0,
+          "wall_top": 0.0
+        },
+        "reconstruction_atol_m": 1e-06,
+        "static_fields_exact": true,
+        "placement": {
+          "edge_margin_m": [
+            0.0821278893249705,
+            0.0595788186296211
+          ],
+          "bottom_gap_m": 0.009999999999999898,
+          "strictly_inside_bin": true,
+          "gap_reconstruction_delta_m": 0.0,
+          "propagated_delta_m": 0.0,
+          "per_field_atol_m": 1e-06
+        }
+      }
+    }
+  },
+  "contact": {
+    "samples": 452,
+    "self_contact_samples": 0,
+    "max_self_force": 0.0
+  },
+  "identities": {
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/result.json": "94540e67b934faa7db5427c9fbcfd8fef85b793c0a97068deb1e6f13cde58202",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/started.json": "21d414fdd01516edf30d13a5578d9913ae32ced94c4885b9c869af4c1dc73e47",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/contacts.jsonl": "4bb1098446070e137e64d4ba3880c26b06333f74d9267ff013f8adda9315490a",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/control.json": "c81bdca601fa61712dc06d3411bc44b53b717245f0e79eb7edb4218b1b378d52",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/initial_visibility.npz": "53ee906ab34238147a2ea809c24ea5dd99b29dadaa6a4aef8f0e2ae2dfc33ad3",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/initial_visibility.json": "d5d43ec2752fdf60af79ac3e35e56680a158eb9c58e6d6d78739cb11aeb026c7",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/span_inputs.npz": "07c9d7c945b63158cfb0ff4e3b4280ad41bfe9aaccdc12bca40e56d6cd54cf99",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/bridge.json": "568bb7c136575b6c310caa088d98bde12697e9c412ee0b3cfe193d52ae1028fd",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/guard.json": "20fd94ea86d517116232c3dfe4e4aaa0a32a92b4083c22a147fd8aac1d815523",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/telemetry.json": "f8401bbfcec9181d30e0f32b411e111da94fc734303e90f375d3b3a9c14644f0",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/route.json": "ddf953feb9c2252debda706dfa352f6dc758efb28337b8304f4e5316f1dcf462",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/span_guard.json": "f2bb6897cfc1767c47de5930f6723d30752da5aab0510490bb861a0932d52238",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/step.json": "526869ae70d0d48907b7d917cea573335d267c878ec045162aa1c1dd15a47e8f",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/observation_summary.json": "58972f4fc39d0315b57afb96a39a226e63966a50944f03443d4cb15b35bf980a",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/publication.json": "34e0982400eb441b0ecccf416bb566cef3f6e7403ac7957c455e8376585d0d99",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/result.json": "ce7599acc5f970a5e19b8ff6ea0123f93822c3840c5a16d2c75c96e77d07486d",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/attempt_1/depth_evidence.npz": "0a891a9a814285c78ca97da2c0b1af3f6dd209d5dbe5f7bf2ea965aac1451b3a",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/attempt_1/before.png": "13aefa17382f2a3ef236809d6a4b6cee8362f5f41e174780ca9e0523855cd1e6",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/attempt_1/plan.json": "59e89e2fcc180e7500bd4bb4d1ec31c95228544a3c7661b6623bc3059b2d0eb3",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/attempt_1/mask.png": "d3d7ce466026263a385674834583710432a7f98f69747edf98f5e6283c17cd54",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/attempt_1/after.png": "d793f3ac36b1c61c35690b3f0ca6ca14f7128c056b9c494204d68b877c24672d",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/attempt_1/diagnostics.json": "f09a5d152d9eb1518635756d5e757772a54bcc4386daf17bf0e1f215862e4bf2",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/attempt_1/world_candidates.json": "7552cba50724eafd378af116a45fb7efd1078b640770163488b69a737ae88b86",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/execution/attempt_1/depth_recovery.json": "485b4bb7b50b24ca612909bcd8283de34c5da7a5d2a0a429875d42e42e6bd9de",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/observations/visibility_0.npz": "70887603450cb4f9ab3a9b0938eb9641ad4e76a25d0955eb2a9890a91d7f9695",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/observations/visibility_0.json": "c64e16801c50b3dd167b438005f3a3d6c3cd678fa716cdb669096b1182bf2795",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/private_audit/observation_0/rgb.png": "d8fd98a50d7607649160c6ecbea381018bcaf8a724f5fa98e62624e9fe86e3e1",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/private_audit/observation_0/private_sensor.npz": "7bc67a5a3df92e54b22080660ba129d046365cfead1cdff61e302ee0139cc837",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/private_audit/observation_0/audit.json": "351271e7f73d4e0694390cee7501dffb3d1b2a4da4342429a7f37caf5dc29e23",
+    "/home/yeliheng/grasp_server/camera_collection_v1/pilot/cases/964012/first/private_audit/observation_0/public.json": "9b0221e5ae3bf383512d1977cf839f1d1ff48eea15ef7137a3f60e0c44e67364"
+  },
+  "manifest_sha256": "ab813e15cc8fe2acb6d1fac297030d6fdce0800faf1ee900a2d3656fcdc78da2"
+}

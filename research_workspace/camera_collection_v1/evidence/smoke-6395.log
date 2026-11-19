@@ -1,0 +1,18 @@
+test_baseline_change_is_rejected (test_policy.WiringTests.test_baseline_change_is_rejected) ... ok
+test_gate_precedes_each_capture (test_policy.WiringTests.test_gate_precedes_each_capture) ... ok
+test_layout_or_noise_change_is_rejected (test_policy.WiringTests.test_layout_or_noise_change_is_rejected) ... ok
+test_only_camera_changes_and_input_is_not_mutated (test_policy.WiringTests.test_only_camera_changes_and_input_is_not_mutated) ... ok
+test_rejected_camera_never_falls_back (test_policy.WiringTests.test_rejected_camera_never_falls_back) ... ok
+test_rejection_does_not_capture_or_publish (test_policy.WiringTests.test_rejection_does_not_capture_or_publish) ... ok
+test_unknown_audit_is_not_a_physical_failure (test_policy.WiringTests.test_unknown_audit_is_not_a_physical_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.000s
+
+OK
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/camera_collection_v1/cc_smoke.py", line 9, in <module>
+    from cc_runtime import GuardedSampler
+  File "/home/yeliheng/grasp_server/camera_collection_v1/cc_runtime.py", line 9, in <module>
+    from live_observations import Sampler, state
+ModuleNotFoundError: No module named 'live_observations'

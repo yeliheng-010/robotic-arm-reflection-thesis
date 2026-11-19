@@ -1,0 +1,97 @@
+test_baseline_change_is_rejected (test_policy.WiringTests.test_baseline_change_is_rejected) ... FAIL
+test_gate_precedes_each_capture (test_policy.WiringTests.test_gate_precedes_each_capture) ... FAIL
+test_layout_or_noise_change_is_rejected (test_policy.WiringTests.test_layout_or_noise_change_is_rejected) ... FAIL
+test_only_camera_changes_and_input_is_not_mutated (test_policy.WiringTests.test_only_camera_changes_and_input_is_not_mutated) ... FAIL
+test_rejected_camera_never_falls_back (test_policy.WiringTests.test_rejected_camera_never_falls_back) ... FAIL
+test_rejection_does_not_capture_or_publish (test_policy.WiringTests.test_rejection_does_not_capture_or_publish) ... FAIL
+test_unknown_audit_is_not_a_physical_failure (test_policy.WiringTests.test_unknown_audit_is_not_a_physical_failure) ... FAIL
+
+======================================================================
+FAIL: test_baseline_change_is_rejected (test_policy.WiringTests.test_baseline_change_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/camera_collection_v1/test_policy.py", line 37, in test_baseline_change_is_rejected
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_gate_precedes_each_capture (test_policy.WiringTests.test_gate_precedes_each_capture)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/camera_collection_v1/test_policy.py", line 58, in test_gate_precedes_each_capture
+    self.assertEqual(['check', 'capture', 'check', 'capture'], events)
+AssertionError: Lists differ: ['check', 'capture', 'check', 'capture'] != ['capture', 'capture']
+
+First differing element 0:
+'check'
+'capture'
+
+First list contains 2 additional elements.
+First extra element 2:
+'check'
+
+- ['check', 'capture', 'check', 'capture']
++ ['capture', 'capture']
+
+======================================================================
+FAIL: test_layout_or_noise_change_is_rejected (test_policy.WiringTests.test_layout_or_noise_change_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/camera_collection_v1/test_policy.py", line 26, in test_layout_or_noise_change_is_rejected
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_only_camera_changes_and_input_is_not_mutated (test_policy.WiringTests.test_only_camera_changes_and_input_is_not_mutated)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/camera_collection_v1/test_policy.py", line 18, in test_only_camera_changes_and_input_is_not_mutated
+    self.assertEqual(config, result['config'])
+AssertionError: {'cam[15 chars]n': [4, 5, 6]}, 'sensor': {'dropout': 0.02}, '[20 chars] 0]}} != {'cam[15 chars]n': [1, 2, 3]}, 'sensor': {'dropout': 0.02}, '[20 chars] 0]}}
+  {'bodies': {'box': [0, 0]},
+-  'camera': {'position': [4, 5, 6]},
+?                          ^  ^  ^
+
++  'camera': {'position': [1, 2, 3]},
+?                          ^  ^  ^
+
+   'sensor': {'dropout': 0.02}}
+
+======================================================================
+FAIL: test_rejected_camera_never_falls_back (test_policy.WiringTests.test_rejected_camera_never_falls_back)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/camera_collection_v1/test_policy.py", line 30, in test_rejected_camera_never_falls_back
+    with self.assertRaises(ValueError):
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_rejection_does_not_capture_or_publish (test_policy.WiringTests.test_rejection_does_not_capture_or_publish)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/camera_collection_v1/test_policy.py", line 44, in test_rejection_does_not_capture_or_publish
+    with self.assertRaises(VisibilityRejected):
+AssertionError: VisibilityRejected not raised
+
+======================================================================
+FAIL: test_unknown_audit_is_not_a_physical_failure (test_policy.WiringTests.test_unknown_audit_is_not_a_physical_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/camera_collection_v1/test_policy.py", line 64, in test_unknown_audit_is_not_a_physical_failure
+    self.assertEqual(dict(registered=3, qualified=2, audited_pairs=1,
+AssertionError: {'registered': 3, 'qualified': 2, 'audited[122 chars]': 1} != {}
++ {}
+- {'audited_pairs': 1,
+-  'improved': 1,
+-  'new_successes': 1,
+-  'old_successes': 0,
+-  'qualification_rejections': 1,
+-  'qualified': 2,
+-  'registered': 3,
+-  'regressed': 0,
+-  'unknown': 1}
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+FAILED (failures=7)
