@@ -1,0 +1,84 @@
+{
+  "status": "completed",
+  "steps": [
+    {
+      "index": 1,
+      "state": {
+        "parameters": {
+          "replan": false,
+          "reground": false,
+          "lift_height": 0.35,
+          "time_scale": 1.0,
+          "grasp_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": false,
+      "result_path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/execution/result.json",
+      "result_sha256": "7ad0c527c9e0948f9dd8d828d9b8956c4bacbf30e6ae34c45ed3553e5a86b040",
+      "session_path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1",
+      "control": {
+        "grasp_mode": "original"
+      }
+    },
+    {
+      "index": 2,
+      "state": {
+        "parameters": {
+          "replan": true,
+          "reground": false,
+          "lift_height": 0.15,
+          "time_scale": 1.5,
+          "grasp_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": true,
+      "result_path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/result.json",
+      "result_sha256": "0b0bfbd824f4b5f7c45c2e8780de26870c8ec9cdc82e4ef9ad05e3efda6063dc",
+      "session_path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2",
+      "control": {
+        "grasp_mode": "world_down"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "after_attempt": 1,
+      "action": "SELF_SAFE_ROUTE"
+    }
+  ],
+  "observations": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/observation_summary.json",
+      "sha256": "41d299fc851c5cd81c1e2c6070a1e0521340f09e70b0e8bc5349fd15fc548a60"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/observation_summary.json",
+      "sha256": "17940d737dacf9d00f2ec34733434d5791f20dae9104dcaba5f36558af4c7eb9"
+    }
+  ],
+  "success": true,
+  "manifest_sha256": "a56f76d5b64440e2eab2afa25ff717780a285792391014fa69d64b10ebdf1808",
+  "model_calls": 0
+}

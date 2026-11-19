@@ -1,0 +1,14 @@
+test_branch_reference (test_observation_reference_v5.ObservationReference.test_branch_reference) ... ok
+test_foreign_frame (test_observation_reference_v5.ObservationReference.test_foreign_frame) ... ok
+test_hash_tampering (test_observation_reference_v5.ObservationReference.test_hash_tampering) ... ok
+test_wrong_attempt (test_observation_reference_v5.ObservationReference.test_wrong_attempt) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.004s
+
+OK
+[INFO] 点云采样: 目标原始=1929, 场景原始=297107, 网络输入=20000 (目标占比=65%)
+[INFO] 点云采样: 目标原始=1938, 场景原始=297200, 网络输入=20000 (目标占比=65%)
+[INFO] 点云采样: 目标原始=1938, 场景原始=297200, 网络输入=20000 (目标占比=65%)
+[INFO] 点云采样: 目标原始=1946, 场景原始=297264, 网络输入=20000 (目标占比=65%)
+{'id': 'A0_962905_varied_noisy', 'attempts': 4, 'model_calls': 7}

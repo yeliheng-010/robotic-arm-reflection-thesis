@@ -1,0 +1,473 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "id": "S0_962601_baseline",
+      "attempts": 2,
+      "success": true,
+      "rows": [
+        {
+          "index": 1,
+          "success": false,
+          "route": {
+            "active": false
+          },
+          "contacts": {
+            "samples": 53,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        },
+        {
+          "index": 2,
+          "success": true,
+          "route": {
+            "active": true,
+            "geometry": {
+              "selected": true,
+              "endpoint": {
+                "ok": true,
+                "reason": null,
+                "fk_max_error": 2.82763703275952e-16,
+                "contacts": [],
+                "distance_m": 0.01,
+                "closest_geoms": [
+                  "9",
+                  "blue_bin_floor"
+                ],
+                "closest_bodies": [
+                  "shoulder_link",
+                  "BlueBin"
+                ]
+              },
+              "path": {
+                "prefix_legs": 3,
+                "carry_legs": 3,
+                "passed": true
+              },
+              "reconstruction": {
+                "max_abs_m": 2.626320845244834e-07,
+                "fields_max_abs_m": {
+                  "source_center": 2.626320845244834e-07,
+                  "source_half": 6.041649069921107e-09,
+                  "bin_center": 0.0,
+                  "interior_half": 0.0,
+                  "usable_half": 6.041649069921107e-09,
+                  "wall_top": 0.0
+                },
+                "reconstruction_atol_m": 1e-06,
+                "static_fields_exact": true,
+                "placement": {
+                  "edge_margin_m": [
+                    0.020000105054857387,
+                    0.06945068424899013
+                  ],
+                  "bottom_gap_m": 0.010000003624961895,
+                  "strictly_inside_bin": true
+                }
+              }
+            }
+          },
+          "contacts": {
+            "samples": 826,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "S1_962601_baseline",
+      "attempts": 1,
+      "success": true,
+      "rows": [
+        {
+          "index": 1,
+          "success": true,
+          "route": {
+            "active": false
+          },
+          "contacts": {
+            "samples": 808,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "S0_962601_varied_noisy",
+      "attempts": 3,
+      "success": false,
+      "rows": [
+        {
+          "index": 1,
+          "success": false,
+          "route": {
+            "active": false
+          },
+          "contacts": {
+            "samples": 2,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        },
+        {
+          "index": 2,
+          "success": false,
+          "route": {
+            "active": true,
+            "geometry": {
+              "selected": false,
+              "status": "registered_candidates_exhausted",
+              "full_search_repeated": false,
+              "reconstruction": {
+                "max_abs_m": 2.4815423960156124e-07,
+                "fields_max_abs_m": {
+                  "source_center": 2.4815423960156124e-07,
+                  "source_half": 5.7897316052546444e-08,
+                  "bin_center": 0.0,
+                  "interior_half": 0.0,
+                  "usable_half": 5.7897316052546444e-08,
+                  "wall_top": 0.0
+                },
+                "reconstruction_atol_m": 1e-06,
+                "static_fields_exact": true
+              }
+            }
+          },
+          "contacts": {
+            "samples": 0,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        },
+        {
+          "index": 3,
+          "success": false,
+          "route": {
+            "active": true,
+            "geometry": {
+              "selected": false,
+              "status": "registered_candidates_exhausted",
+              "full_search_repeated": false,
+              "reconstruction": {
+                "max_abs_m": 2.4815423960156124e-07,
+                "fields_max_abs_m": {
+                  "source_center": 2.4815423960156124e-07,
+                  "source_half": 5.7897316052546444e-08,
+                  "bin_center": 0.0,
+                  "interior_half": 0.0,
+                  "usable_half": 5.7897316052546444e-08,
+                  "wall_top": 0.0
+                },
+                "reconstruction_atol_m": 1e-06,
+                "static_fields_exact": true
+              }
+            }
+          },
+          "contacts": {
+            "samples": 0,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "S1_962601_varied_noisy",
+      "attempts": 3,
+      "success": false,
+      "rows": [
+        {
+          "index": 1,
+          "success": false,
+          "route": {
+            "active": false
+          },
+          "contacts": {
+            "samples": 526,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        },
+        {
+          "index": 2,
+          "success": false,
+          "route": {
+            "active": true,
+            "geometry": {
+              "selected": false,
+              "status": "registered_candidates_exhausted",
+              "full_search_repeated": false,
+              "reconstruction": {
+                "max_abs_m": 1.0993506949219523e-07,
+                "fields_max_abs_m": {
+                  "source_center": 1.0993506949219523e-07,
+                  "source_half": 0.0,
+                  "bin_center": 0.0,
+                  "interior_half": 0.0,
+                  "usable_half": 0.0,
+                  "wall_top": 0.0
+                },
+                "reconstruction_atol_m": 1e-06,
+                "static_fields_exact": true
+              }
+            }
+          },
+          "contacts": {
+            "samples": 0,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        },
+        {
+          "index": 3,
+          "success": false,
+          "route": {
+            "active": true,
+            "geometry": {
+              "selected": false,
+              "status": "registered_candidates_exhausted",
+              "full_search_repeated": false,
+              "reconstruction": {
+                "max_abs_m": 1.0993506949219523e-07,
+                "fields_max_abs_m": {
+                  "source_center": 1.0993506949219523e-07,
+                  "source_half": 0.0,
+                  "bin_center": 0.0,
+                  "interior_half": 0.0,
+                  "usable_half": 0.0,
+                  "wall_top": 0.0
+                },
+                "reconstruction_atol_m": 1e-06,
+                "static_fields_exact": true
+              }
+            }
+          },
+          "contacts": {
+            "samples": 0,
+            "self_contact_samples": 0,
+            "max_self_force": 0.0
+          }
+        }
+      ]
+    }
+  ],
+  "training_ready": false,
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/result.json": "b9e04bd7fcb998768fc64cf130ccb8c580826648ea58af76f1ec74ceb2e5a40d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/started.json": "cd0e353cb685ca69158ae19cafd9004d5e2ecd4a7b5d816b1b3c5a549fb46766",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/contacts.jsonl": "c2b60fe2e3f19feb0bb295e2df4aa345443e291a507844c9b6988b615765d936",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/control.json": "adee24f33df7aac44d9f59870a1b98156e674bbad97d58fb4047618786f25b1e",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/bridge.json": "ba40bf44effaadcd99cd3086386b40cd4d015aab6fd8d25ec8c53d18153058d3",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/guard.json": "20fd94ea86d517116232c3dfe4e4aaa0a32a92b4083c22a147fd8aac1d815523",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/telemetry.json": "96afb6201416f49bf96755979960c402ede040386cd5bf6247559e80fa2399e5",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/route.json": "01d278ece7c87b441283ffb2c11387a4b209f71dd2838548ee20d497fa2ed95d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/step.json": "6e2f3cc658a9ab96ef507e851dde212e2f50ddad47cd24bb3224fe3ca0e51ae7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/observation_summary.json": "41d299fc851c5cd81c1e2c6070a1e0521340f09e70b0e8bc5349fd15fc548a60",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/contact_summary.json": "16a4aa77be057995019fbc3936895ba9fb4d384bf7d55ec683e8ffb294e654e1",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/execution/result.json": "7ad0c527c9e0948f9dd8d828d9b8956c4bacbf30e6ae34c45ed3553e5a86b040",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/execution/attempt_1/depth_evidence.npz": "2c16ddefa4fe986b887227d5f5fa8f2fa148d644bf807b3f31ae898c7fc7febe",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/execution/attempt_1/before.png": "6046685c27817bd7e76c95fd854963584d3897fd772d48cf027fa4220ee0c857",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/execution/attempt_1/plan.json": "d59aa88a205a898263478d3bdcd66a1b3e00fa5c0f2d51a65522586843a74ff7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/execution/attempt_1/mask.png": "6d9f744a061e1ed7fc5562a97e98075b4f1d07b1ec17c5a461323d7daa7e08ec",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/execution/attempt_1/after.png": "445c8b5aec12334a3d13542bd329f9383f9d6fdebc1362cee1b4bc72e9030860",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/execution/attempt_1/diagnostics.json": "1c784d169a9feb3d6ec9a44737784b714148f2ba3df1b5604ae3b3248635fb03",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/observations/observation_0/rgb.png": "11f3e7c8d7cf0781ccf6c703e26c6320c50268f603d69270c8aad1f28ea529e0",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/observations/observation_0/private_sensor.npz": "d653db7dccfe5990f87581c936d56390ebb06cbf34d29ac5083a9007a50aac27",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/observations/observation_0/audit.json": "272851603257caf56383b0638f4db2513bd41062f7576675c8bfb0cc8b126cf4",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_1/observations/observation_0/public.json": "f6d449340de6f4ff4b6096907d6060e149bf35acd136a4147412b96e0aaf3a92",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/started.json": "c66f4f2392db97fa4959a321934834bf0cfeadb2d581a9a56f38c53ae9308422",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/contacts.jsonl": "c32fc148ba8869fda87ac7cb9b24041b810b0291d3fad53878e119ba64ce61fb",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/control.json": "c81bdca601fa61712dc06d3411bc44b53b717245f0e79eb7edb4218b1b378d52",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/bridge.json": "5d60b16e24834cd0b01607737b3cb54f93140052a4fac4da071ddd1822e37b97",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/guard.json": "61997e15d2ca28cfc62c242b0ca6cd91676eb64ab44f4bf6b81a983b20ef4f6e",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/telemetry.json": "ca4212638f9653d73f5b03b9ac8615d087ee51eee540036db32d7bb2bf4961b8",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/route.json": "4e1679ce9005990bb0774d88740e6ac2dbeb7a5eb32eaf56401ac8d65a57f194",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/step.json": "24554a5690cac45cbce86536a433562c45ac00c92adf1572efc94f2d359c080b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/observation_summary.json": "17940d737dacf9d00f2ec34733434d5791f20dae9104dcaba5f36558af4c7eb9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/contact_summary.json": "ad0d2c3cf1bfe9cea552b80a47903e253a96e43f2ea95dd2045bd930b75c9f42",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/result.json": "0b0bfbd824f4b5f7c45c2e8780de26870c8ec9cdc82e4ef9ad05e3efda6063dc",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/attempt_1/depth_evidence.npz": "2c16ddefa4fe986b887227d5f5fa8f2fa148d644bf807b3f31ae898c7fc7febe",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/attempt_1/before.png": "ad3fe4dfda271df43a22e9519f12c01c513be170459f8d1e1f6459697863c9c5",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/attempt_1/plan.json": "d59aa88a205a898263478d3bdcd66a1b3e00fa5c0f2d51a65522586843a74ff7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/attempt_1/mask.png": "6d9f744a061e1ed7fc5562a97e98075b4f1d07b1ec17c5a461323d7daa7e08ec",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/attempt_1/after.png": "34d7b599f57757410f7c37e08ab5f62a3b1bb2b1c2ac974fc48b6e1554a3fcaa",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/attempt_1/diagnostics.json": "0e2bacacd40a00256872d661b2aa629d2692a00052b593ba255426c101bf2391",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/attempt_1/world_candidates.json": "7552cba50724eafd378af116a45fb7efd1078b640770163488b69a737ae88b86",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/execution/attempt_1/depth_recovery.json": "485b4bb7b50b24ca612909bcd8283de34c5da7a5d2a0a429875d42e42e6bd9de",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/observations/observation_0/rgb.png": "e93965a68e64fd4e3ac026a9fd0f38ba65579f69385349209234525f7a1c03bb",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/observations/observation_0/private_sensor.npz": "179d745eeb03b99a4554b212975a70ff0d73eb92341b57df9860998b103dfbf7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/observations/observation_0/audit.json": "21e27aa92ca3fa06b369cd0026b75edb2015921ba627eba3327d0f58eeeafe52",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_baseline/attempt_2/observations/observation_0/public.json": "4ff043dc2fa8dd70fc745c9c18fe439ec70ed32a71479f2d912c69f411070d1a",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/result.json": "1036a640d2ad7a81d511800650d72965fbfd1e6b3c168897c0f20858bd2d2111",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/started.json": "55b93a1fe6f0ffe14697b4709acc553bde2b7239cd42d7f5cc2fae03deed7589",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/contacts.jsonl": "6596c51b844349364eae9c77ba4c2f52c352cb1d4d4077c78c86689d0202d80f",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/control.json": "adee24f33df7aac44d9f59870a1b98156e674bbad97d58fb4047618786f25b1e",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/bridge.json": "ee0bcafd3ba2304a9fd1f6af0c3e081ffb34ce1e1c0a7d4032c329df9c504dce",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/guard.json": "11da8cdf3b966a194f82952f8737d8b09d97a563baea5ec4c50e14d78c63af02",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/telemetry.json": "d51f975ce6f0819be3cf95b5e87fe15daf28fe06d31426099c6a772215ac53b5",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/route.json": "01d278ece7c87b441283ffb2c11387a4b209f71dd2838548ee20d497fa2ed95d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/step.json": "9ac608a8d5ab3ec5b788d58d7d4809aa3b3dc95774e29a96c50dc3684a8be0b7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/observation_summary.json": "cd1697504c4d5a0ac4d8056af657a3879d3e9c656b2532e0333ef062a68a2f21",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/contact_summary.json": "ac900f2583f73c6d814e9bff92fe8403b544032d7c304b0f9f84d7068cf31ebd",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/execution/result.json": "02fe988864d5f690243f791ce598c9ed9a51cbb3202f9d1440d290f4e6fd7091",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/execution/attempt_1/depth_evidence.npz": "2c16ddefa4fe986b887227d5f5fa8f2fa148d644bf807b3f31ae898c7fc7febe",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/execution/attempt_1/before.png": "6f1c0665431d351d523ebab3cafb4e976bc9c89cd77ea4110b0c98ea956d9a01",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/execution/attempt_1/plan.json": "6b91434d2b2d6c62e2316f970c8b3964fa418ceee9af7f4991349683e71006a3",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/execution/attempt_1/mask.png": "1c033a50b5a164f1625558b1d834d176528cfb0458a9d430356a40c077a11cb1",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/execution/attempt_1/after.png": "bfd2147002b1e8fa518c8815c58fae0b73f7255688073d602c6034031528a513",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/execution/attempt_1/diagnostics.json": "b0a1430e2c8967494088390b91ac11a374cc3555bfcebc51b97f2e73054b696f",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/observations/observation_0/rgb.png": "5163f898cfc903d8327993495fc288de12305d6db85269e226ea0029a5cb58fb",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/observations/observation_0/private_sensor.npz": "d648a78d93898f989131f52d49ab283c145609e3942542faa9bc77a2ef47b746",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/observations/observation_0/audit.json": "1cdfe77077362317c24117e453770fd6d979dd72678e281daf20a050a42dde05",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_baseline/attempt_1/observations/observation_0/public.json": "42de3a542877d816fc4267d131fbd521b5b4e7de0bdba40acb42850521db3f7a",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/result.json": "dab7bcff7569c571e7aa955c612eeae9c8c48023e9686314c5ec6b02b5bba1dd",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/started.json": "962a107e3dede56f82274127f613cc1d0a1c0c35fe00c9c488304af06369afa9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/contacts.jsonl": "826387407402e8db41b3a6c2f7d2e0731500cc06269ded88491f95b641a38c60",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/control.json": "adee24f33df7aac44d9f59870a1b98156e674bbad97d58fb4047618786f25b1e",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/bridge.json": "945f73fc5b24cdb4b31ca5ff8927f59c8cc95a1fc1b070ef6141463d37d91618",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/guard.json": "20fd94ea86d517116232c3dfe4e4aaa0a32a92b4083c22a147fd8aac1d815523",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/telemetry.json": "7468c9f1542480986d54122ccbd146dad59eedf86d725d6997d6323e6c431fec",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/route.json": "01d278ece7c87b441283ffb2c11387a4b209f71dd2838548ee20d497fa2ed95d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/step.json": "6cc2e783a9ead7e14f3db1fb618b8c103d8a2d9199b1348de9885a309bd58077",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/observation_summary.json": "632987aec1f7b1167ae1bcf40c9e0e2101d13804d594dccce88f379f35ff62d7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/contact_summary.json": "4267d4e8fd5c72378fb5fdc167239d5a7c4e81c4d74d0f4ff043144d720cdb08",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/execution/result.json": "1849ca6c0d200e54904c37ec27305cb40c50dfc03d5ef4c0b7f4fc087d3bae1d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/execution/attempt_1/depth_evidence.npz": "c47da5deb9ef2a593ed9d3a69d6814d93ad9d56756c75e9cd5f8adb897c8d4df",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/execution/attempt_1/before.png": "c7e37525cf509ad0a1f660c13c9f9dd5c49ff86eb3378d7f0836358e09f11e3c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/execution/attempt_1/plan.json": "e4a2ab644894fbdffcf9871c33ee8d6588943a0efffe1aa30522a03aa22d656a",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/execution/attempt_1/mask.png": "71314d538bb8e6702a495ecdf73e75cd753e0b4d7c54e605be9fee0c24059d7b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/execution/attempt_1/after.png": "d0d7efce5ab43c2a1292dd7807f20752d303cc01679e43af43b9af9fdbd7515b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/execution/attempt_1/diagnostics.json": "7a12becd72393f9a8e53bddbff3d7375a3ac83b6f10ad76381b76e60d0e7a46a",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/observations/observation_0/rgb.png": "52b90fc07585eb0eecb223174b5d6c0d48fae93c1be6c964777f6e1b2b1fd582",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/observations/observation_0/private_sensor.npz": "1f8280bb67062ce526329595c8ea83f4ee7aaed88e06ea65a991d6d4828474ac",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/observations/observation_0/audit.json": "ff73b972b2ed7bfdf07337f1e4af00857772ce62dc396101f3280d060d0d6b8d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_1/observations/observation_0/public.json": "f6f06e44d7c3aa7497d4f82b068020aab604a1e2b2db1093f0334e36c48b6eab",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/started.json": "3bf13ce6794a46e9dc0608fa558295bfa5ced34a263a789e151f3ce565e1753f",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/contacts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/control.json": "c81bdca601fa61712dc06d3411bc44b53b717245f0e79eb7edb4218b1b378d52",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/bridge.json": "e70a48d6375b382c9ee7a3948db34fb2b2666f6f01bd9627277cbb78da8b55ea",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/guard.json": "20fd94ea86d517116232c3dfe4e4aaa0a32a92b4083c22a147fd8aac1d815523",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/telemetry.json": "7468c9f1542480986d54122ccbd146dad59eedf86d725d6997d6323e6c431fec",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/route.json": "c5ae900741fecb92bb16bd7812667a0022da29d6051508bce08ea09824c4bdb9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/step.json": "62738943cc64307b10d670a63255de933c90497834d399b3f3d1148698c3c9cc",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/observation_summary.json": "8be9d63cc995472e1019bbf624fca0abe563cabd115d675bf9cc37854012f448",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/contact_summary.json": "c541e0ee826421101307f3d39ae36e9a219501d8079aaf9272d9caec4559dee9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/result.json": "e22f0274f3103a5ac800e3c87f75407687a5c1dd434efc685acb60b094e4e545",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/attempt_1/depth_evidence.npz": "d5432accd3ca2bbdfb967b643103ae2a55f5c205f39bfd434aa286fb55eac07c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/attempt_1/before.png": "430ce7315a121cbabab263add7f04c67cedede847af45d3823c67fc7034c4968",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/attempt_1/plan.json": "e4a2ab644894fbdffcf9871c33ee8d6588943a0efffe1aa30522a03aa22d656a",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/attempt_1/mask.png": "71314d538bb8e6702a495ecdf73e75cd753e0b4d7c54e605be9fee0c24059d7b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/attempt_1/after.png": "4f6c7085cba43b262e76b1e9ece74934930eb1e92a7fee64ebcefb2ed1aa2274",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/attempt_1/diagnostics.json": "2d34ec2101691935f1f01b575498234af0cf2a7f05c5f89dd89b61c81bbf72f7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/attempt_1/world_candidates.json": "7552cba50724eafd378af116a45fb7efd1078b640770163488b69a737ae88b86",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/execution/attempt_1/depth_recovery.json": "485b4bb7b50b24ca612909bcd8283de34c5da7a5d2a0a429875d42e42e6bd9de",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/observations/observation_0/rgb.png": "f3f67ebbef51fa80c99b20a941eeb439831300ae1efb8dc9921293ab3e0c438b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/observations/observation_0/private_sensor.npz": "cebdbaf7dc5bf9f72024c3e1628bf92c9cc73484f356212d37a4bcdf2c618d5b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/observations/observation_0/audit.json": "0cac4773fa20c9490f59fbeb3f4fb4f506ceaf764dbb51e735d3e73d8cbd9e5e",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_2/observations/observation_0/public.json": "a35d87fcbad2b5914e0396d12f14610f60540f1d74e84d4f6a744b062eb9614f",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/started.json": "c434993a89b8be8c9708f1d1011148e0eb3e4650a7340ad4da236b15bbec32e1",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/contacts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/control.json": "c81bdca601fa61712dc06d3411bc44b53b717245f0e79eb7edb4218b1b378d52",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/bridge.json": "764ec9a2f06f94a432891b2c1ad0864299fffd9b9dc04d31163ec6139486e145",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/guard.json": "20fd94ea86d517116232c3dfe4e4aaa0a32a92b4083c22a147fd8aac1d815523",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/telemetry.json": "7468c9f1542480986d54122ccbd146dad59eedf86d725d6997d6323e6c431fec",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/route.json": "5ea83d4fee1936b70fdd05c5042e50874e2fec749557ed13d8c18aac1d31cba6",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/step.json": "844a15c14af11d20d8b89bfc93327e075400ccbc8200f1969ae6c0cca23e2ce9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/observation_summary.json": "7e3e0587efa8b084f4226b93711f7b901e714eb4311ec54bebe37bbe1fe6b95a",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/contact_summary.json": "c541e0ee826421101307f3d39ae36e9a219501d8079aaf9272d9caec4559dee9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/result.json": "4f163be2dd2630ba727d801aac1ae2cb249befe169f1f57397ca251f6e14eb73",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/attempt_1/depth_evidence.npz": "a550a08ad6356d6336b1ae34dd19dcfb24203792029fa6bca35bbb408be6e89d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/attempt_1/before.png": "641641c4deb3143f6b4bfc7132c9a4ac87f9672d78e826bcd0c59e8ff28e8da7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/attempt_1/plan.json": "e4a2ab644894fbdffcf9871c33ee8d6588943a0efffe1aa30522a03aa22d656a",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/attempt_1/mask.png": "71314d538bb8e6702a495ecdf73e75cd753e0b4d7c54e605be9fee0c24059d7b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/attempt_1/after.png": "9a2a43ebc6ff067af76e689b5fa9d04ab852f497b2223d19b1119b90e390fee2",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/attempt_1/diagnostics.json": "2dfc71c1b660e473c4b0df06cece4562c6e426a55ab085509ec6ea5ba5dae7ce",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/attempt_1/world_candidates.json": "7552cba50724eafd378af116a45fb7efd1078b640770163488b69a737ae88b86",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/execution/attempt_1/depth_recovery.json": "485b4bb7b50b24ca612909bcd8283de34c5da7a5d2a0a429875d42e42e6bd9de",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/observations/observation_0/rgb.png": "b37e22af88dc440ad55fa3274413c3101509e999312230527462b4673e8aed7d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/observations/observation_0/private_sensor.npz": "1df50bbd8e3367cf81713e28609935cf1e428c6c52a8579a52a74bee84b0f6f7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/observations/observation_0/audit.json": "3d1479a3f7bc3cde52c4ada7849dec126f2416cfe673ad03117d7bacf2de28eb",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962601_varied_noisy/attempt_3/observations/observation_0/public.json": "166479cf4024aecf64f26fe7d9d898f9cb9160f1386e856cf9f9731830e02c7c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/result.json": "63d4c1d4dd54fe81eaa385794a7a5a88b9195218a13589db86a62a237f12d147",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/started.json": "31b22835dd86f3f050ba19a2cc4243aa58e56fabb444f11b659ae1cffa698d47",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/contacts.jsonl": "82f26b3752624d73a58b4579c016ceaf4c0468620934da7388050de01ee97a73",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/control.json": "adee24f33df7aac44d9f59870a1b98156e674bbad97d58fb4047618786f25b1e",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/bridge.json": "957941d498bcb5ec9947a30456327997ff9babddeeb0add4198c6a227b899bed",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/guard.json": "20fd94ea86d517116232c3dfe4e4aaa0a32a92b4083c22a147fd8aac1d815523",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/telemetry.json": "dd5994bac66eb7fb7aaf5ab49834db39959a3d816503172185cbfa320ff68927",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/route.json": "01d278ece7c87b441283ffb2c11387a4b209f71dd2838548ee20d497fa2ed95d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/step.json": "ab2a4e91c26eacfa299d176d068acae1512ef253704041dd246484a4f7fa30fc",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/observation_summary.json": "41aba848861800fffc2567d6112ee01aa452dcbe8ef8fbc88087023e97434c9b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/contact_summary.json": "44cbecdcca4ba5dc24788e60d14d91bc6f8a5ec6a214bccfe1f31ef89e98b046",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/execution/result.json": "2ed36db74eed419b435416060fd0d1ae5347aa52a71f4625a754c5991b13f897",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/execution/attempt_1/depth_evidence.npz": "c47da5deb9ef2a593ed9d3a69d6814d93ad9d56756c75e9cd5f8adb897c8d4df",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/execution/attempt_1/before.png": "855c5083a12345e787c88ba8164bcac87ff3d7591425288142edd9509c104435",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/execution/attempt_1/plan.json": "73173a9a065b3739e3f72f4ec8c7fde787464850abccbb51e4bfafca74e87068",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/execution/attempt_1/mask.png": "358e34b923f0b5359a84739548c2db712b08c0eaa96b57dfc98685b551d964a9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/execution/attempt_1/after.png": "62f7d7c705f98ec29cafada30826144425cef0e4e25c1b96fca3e3a092a6a6fc",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/execution/attempt_1/diagnostics.json": "667a7d79b88480db06beca64fa5b6ef56a95c4c2bdf54caf1947c25bbf7182e7",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/observations/observation_0/rgb.png": "8c4535dedc80e512496c771d350e9bab12d4fd1fa04417848d3d8f84c7b5c77b",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/observations/observation_0/private_sensor.npz": "0ef9c6796f50efd8121947b039ca7f8e76f70593104c6fd86867ba5ad70eae30",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/observations/observation_0/audit.json": "18fe8e67738133c68e6e047e9bc1bc97c4f51859766e8b325212971e91249d62",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_1/observations/observation_0/public.json": "cedaed4a3e414cebab41cf2e6a0abf3963599e97192cac2f321af9cecb9a0f68",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/started.json": "d9cecbffd9d0af2d201c7cd0d0f723e1cdfcabc664cab02e7d1ff2df4f689ada",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/contacts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/control.json": "c81bdca601fa61712dc06d3411bc44b53b717245f0e79eb7edb4218b1b378d52",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/bridge.json": "b7ca3e0481445befba00d19b3d8bd7fb837b08c145cbddb7560b04f999d206d6",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/guard.json": "20fd94ea86d517116232c3dfe4e4aaa0a32a92b4083c22a147fd8aac1d815523",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/telemetry.json": "7468c9f1542480986d54122ccbd146dad59eedf86d725d6997d6323e6c431fec",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/route.json": "6241a2d1014bf3f668f3e5cae612747e81b8497d083b729182679ff4127c9660",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/step.json": "9e62c9ad587d04ee0c4c4e93e903f92e4373bcaaac121e9ee80a58621975d095",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/observation_summary.json": "d11cf4cd965cf0c005bfb7c8576f45f584083742609f90bac3ec57eabf4a8fe3",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/contact_summary.json": "c541e0ee826421101307f3d39ae36e9a219501d8079aaf9272d9caec4559dee9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/result.json": "92e47c9f11a94da5c7cd3bd358b26458d6472238ee9d1d8a99cef7b46b4a0ea8",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/attempt_1/depth_evidence.npz": "d5432accd3ca2bbdfb967b643103ae2a55f5c205f39bfd434aa286fb55eac07c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/attempt_1/before.png": "f69a83e224d9559d794bc605cca378c658b4ae5232f084d016d57519bf06ac23",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/attempt_1/plan.json": "73173a9a065b3739e3f72f4ec8c7fde787464850abccbb51e4bfafca74e87068",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/attempt_1/mask.png": "358e34b923f0b5359a84739548c2db712b08c0eaa96b57dfc98685b551d964a9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/attempt_1/after.png": "bdda996a60f9dc7fcb3e149947dc47d4ea0a79883188ba8ace8b8f84c69203d5",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/attempt_1/diagnostics.json": "c69ee5a98c798874aba0b89dd1f53d6371e0d57417f2c5dcec4a6830d42c14fb",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/attempt_1/world_candidates.json": "7552cba50724eafd378af116a45fb7efd1078b640770163488b69a737ae88b86",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/execution/attempt_1/depth_recovery.json": "485b4bb7b50b24ca612909bcd8283de34c5da7a5d2a0a429875d42e42e6bd9de",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/observations/observation_0/rgb.png": "02c1821e8c94fccb3e9733b609441fc1b977dd8333b6170a0f7c29077bf3f2cb",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/observations/observation_0/private_sensor.npz": "051fe3a2db89748e430c729ff1766a5b9bb896e087df9ebbe34a8b5f5dd96e1c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/observations/observation_0/audit.json": "e42a02f2c2ec8474e30a349519fec7191e358a75a566e6012d7e8dd302dab821",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_2/observations/observation_0/public.json": "a0bac7f749d37d0c667d3c0ab103427721770b07e5ae3c01258284e540931d0a",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/started.json": "075862679f2f26f06c57ffc90f6a98118bf952d2b1f9a37e758717e403bc2642",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/contacts.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/control.json": "c81bdca601fa61712dc06d3411bc44b53b717245f0e79eb7edb4218b1b378d52",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/bridge.json": "9a36683a19570bad7b40a20f33ffa389b4b108dbdfd3842525b9968055feaf20",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/guard.json": "20fd94ea86d517116232c3dfe4e4aaa0a32a92b4083c22a147fd8aac1d815523",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/telemetry.json": "7468c9f1542480986d54122ccbd146dad59eedf86d725d6997d6323e6c431fec",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/route.json": "365ce1c6eda4fd4b8ce299756b69b6642eaed4e9310aae82dca6e1dbebf57e98",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/step.json": "fbfe2fc823532addbf977d7aba96ad515263be11edd7d1cb3fbb3911c1acf268",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/observation_summary.json": "b8cf43283f95a04114ac9117ec9c9a3d38e73dc875e8ecac06d2b67d4964a414",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/lifecycle.json": "2ccbfaa177bdb40f535b63e1bd7909f4538ee4df48077c45073f98c4d86f205c",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/contact_summary.json": "c541e0ee826421101307f3d39ae36e9a219501d8079aaf9272d9caec4559dee9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/result.json": "1a46d010b2d58cfef5df682f64688dbe4300a4808ee935255b4a0d962280dec9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/attempt_1/depth_evidence.npz": "a550a08ad6356d6336b1ae34dd19dcfb24203792029fa6bca35bbb408be6e89d",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/attempt_1/before.png": "98a644c5506758bdaea789b509ff43fdfd51fcfecb17e955fff8025a368331e6",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/attempt_1/plan.json": "73173a9a065b3739e3f72f4ec8c7fde787464850abccbb51e4bfafca74e87068",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/attempt_1/mask.png": "358e34b923f0b5359a84739548c2db712b08c0eaa96b57dfc98685b551d964a9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/attempt_1/after.png": "2720655b2c73536739446e7a46721d1a72e0011633a7881d7aa66d916e6d1413",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/attempt_1/diagnostics.json": "b26a6d895f46411324581f00318347fd67f5e21d651070c08e29a2868bb8bce9",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/attempt_1/world_candidates.json": "7552cba50724eafd378af116a45fb7efd1078b640770163488b69a737ae88b86",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/execution/attempt_1/depth_recovery.json": "485b4bb7b50b24ca612909bcd8283de34c5da7a5d2a0a429875d42e42e6bd9de",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/observations/observation_0/rgb.png": "9a115b40441a3c97c241c2320c417d5a93b1e123c6ac7dbb6d74fa0004ec8fa6",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/observations/observation_0/private_sensor.npz": "50348bb955ee6a470e53c882c5c0b677f0b482448cf3a6847d81dbaa6a8e04f2",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/observations/observation_0/audit.json": "cf01eed3bd0037d037d0d66f04867efc5dd6fe5a7b289307e70e2c266f49f248",
+    "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S1_962601_varied_noisy/attempt_3/observations/observation_0/public.json": "c13ece215e6bc4d563f493e829c340eb925e23677fd9719b8cc89f59869d9ec6"
+  },
+  "manifest_sha256": "a56f76d5b64440e2eab2afa25ff717780a285792391014fa69d64b10ebdf1808"
+}

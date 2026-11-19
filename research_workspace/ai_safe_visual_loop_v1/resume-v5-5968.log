@@ -1,0 +1,20 @@
+test_branch_reference (test_observation_reference_v5.ObservationReference.test_branch_reference) ... ok
+test_foreign_frame (test_observation_reference_v5.ObservationReference.test_foreign_frame) ... ok
+test_hash_tampering (test_observation_reference_v5.ObservationReference.test_hash_tampering) ... ok
+test_wrong_attempt (test_observation_reference_v5.ObservationReference.test_wrong_attempt) ... ok
+test_modes_share_actions_and_new_parser_accepts_registered_strategy (test_strategy.StrategyInterfaceTests.test_modes_share_actions_and_new_parser_accepts_registered_strategy) ... ok
+test_switch_consumes_execution_and_forbids_top_offset_mix (test_strategy.StrategyInterfaceTests.test_switch_consumes_execution_and_forbids_top_offset_mix) ... ok
+test_transition_resets_offset_without_mutating_previous_state (test_strategy.StrategyInterfaceTests.test_transition_resets_offset_without_mutating_previous_state) ... ok
+test_new_bound_and_restore_old_interface (test_actions.ActionTests.test_new_bound_and_restore_old_interface) ... ok
+test_parser_and_budget (test_actions.ActionTests.test_parser_and_budget) ... ok
+test_rule_uses_public_observation_and_command_only (test_actions.ActionTests.test_rule_uses_public_observation_and_command_only) ... ok
+test_single_axis_finite_and_accumulated_bound (test_actions.ActionTests.test_single_axis_finite_and_accumulated_bound) ... ok
+test_display_instruction_follows_random_colour_not_body_id (test_labels.LabelTests.test_display_instruction_follows_random_colour_not_body_id) ... ok
+test_original_configuration_labels (test_labels.LabelTests.test_original_configuration_labels) ... ok
+test_initial_success_and_engineering_recovery_cannot_open_gate (test_span_gate.SpanGateTests.test_initial_success_and_engineering_recovery_cannot_open_gate) ... ok
+test_preparation_uses_new_lift_without_mutating_reservation (test_span_gate.SpanGateTests.test_preparation_uses_new_lift_without_mutating_reservation) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.017s
+
+OK

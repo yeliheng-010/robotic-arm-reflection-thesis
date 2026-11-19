@@ -1,0 +1,23 @@
+test_new_bound_and_restore_old_interface (test_actions.ActionTests.test_new_bound_and_restore_old_interface) ... ok
+test_parser_and_budget (test_actions.ActionTests.test_parser_and_budget) ... ok
+test_rule_uses_public_observation_and_command_only (test_actions.ActionTests.test_rule_uses_public_observation_and_command_only) ... ok
+test_single_axis_finite_and_accumulated_bound (test_actions.ActionTests.test_single_axis_finite_and_accumulated_bound) ... ok
+test_display_instruction_follows_random_colour_not_body_id (test_labels.LabelTests.test_display_instruction_follows_random_colour_not_body_id) ... ok
+test_original_configuration_labels (test_labels.LabelTests.test_original_configuration_labels) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.001s
+
+OK
+usage: worker.py [-h] case_id
+
+positional arguments:
+  case_id
+
+options:
+  -h, --help  show this help message and exit
+usage: audit.py [-h] --case-id CASE_ID
+
+options:
+  -h, --help         show this help message and exit
+  --case-id CASE_ID

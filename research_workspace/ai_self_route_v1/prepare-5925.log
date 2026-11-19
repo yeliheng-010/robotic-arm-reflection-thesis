@@ -1,0 +1,13 @@
+test_registered_sequence_and_original_preserved (test_sr.ActionTests.test_registered_sequence_and_original_preserved) ... ok
+test_unregistered_and_out_of_order_rejected (test_sr.ActionTests.test_unregistered_and_out_of_order_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+usage: sr_audit.py [-h] --seed SEED
+
+options:
+  -h, --help   show this help message and exit
+  --seed SEED
+{'conditions': 8, 'tests': 2, 'frozen': 'a56f76d5b64440e2eab2afa25ff717780a285792391014fa69d64b10ebdf1808'}

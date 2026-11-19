@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "steps": [
+    {
+      "index": 1,
+      "state": {
+        "parameters": {
+          "replan": false,
+          "reground": false,
+          "lift_height": 0.35,
+          "time_scale": 1.0,
+          "grasp_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": true,
+      "result_path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962602_varied_noisy/attempt_1/execution/result.json",
+      "result_sha256": "341ef9e21c0bc16297ecf43ad12a9afc97ffdd89acc8eda4e244226fd56f3440",
+      "session_path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962602_varied_noisy/attempt_1",
+      "control": {
+        "grasp_mode": "original"
+      }
+    }
+  ],
+  "actions": [],
+  "observations": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_self_route_v1/cases/S0_962602_varied_noisy/attempt_1/observation_summary.json",
+      "sha256": "509d29840b9c9c54c679d117805b3b74d6ed8e865f3e28cfd2d687a7b5d6490c"
+    }
+  ],
+  "success": true,
+  "manifest_sha256": "a56f76d5b64440e2eab2afa25ff717780a285792391014fa69d64b10ebdf1808",
+  "model_calls": 0
+}
