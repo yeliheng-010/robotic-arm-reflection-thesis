@@ -1,0 +1,10 @@
+{
+  "valid": true,
+  "error": null,
+  "parsed": {
+    "action": {
+      "id": "OBSERVE",
+      "args": {}
+    }
+  }
+}

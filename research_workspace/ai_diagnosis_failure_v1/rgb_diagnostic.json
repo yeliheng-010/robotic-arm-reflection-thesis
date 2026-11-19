@@ -1,0 +1,55 @@
+{
+  "rows": [
+    {
+      "index": 1,
+      "rgb": {
+        "shape": [
+          640,
+          640,
+          3
+        ],
+        "changed_pixels": 183,
+        "total_pixels": 409600,
+        "max_absolute_channel_difference": 1,
+        "mean_absolute_channel_difference": 0.0003458658854166667,
+        "channel_difference_histogram": {
+          "-1": 233,
+          "0": 1228375,
+          "1": 192
+        }
+      },
+      "clean_depth_identical": true,
+      "state_digest_identical": true,
+      "time_identical": true
+    },
+    {
+      "index": 2,
+      "rgb": {
+        "shape": [
+          640,
+          640,
+          3
+        ],
+        "changed_pixels": 182,
+        "total_pixels": 409600,
+        "max_absolute_channel_difference": 1,
+        "mean_absolute_channel_difference": 0.00033203125,
+        "channel_difference_histogram": {
+          "-1": 207,
+          "0": 1228392,
+          "1": 201
+        }
+      },
+      "clean_depth_identical": true,
+      "state_digest_identical": true,
+      "time_identical": true
+    }
+  ],
+  "physical_executions": 0,
+  "new_renders": 0,
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/run/observations/observation_0/rgb.png": "52f5990e6bc8e2020412153f56f533aba2e0e189cd066eada87acdacf7d13fd2",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/run/observations/observation_1/rgb.png": "2835c218792e214110290e439670bbf7f56855b4023a23035a6853b595c475fb",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/run/observations/observation_2/rgb.png": "78ebc30cd1313bf3fe7ea7292d14055d0a4b068314c659ebb13f6f89c2eb3fc2"
+  }
+}

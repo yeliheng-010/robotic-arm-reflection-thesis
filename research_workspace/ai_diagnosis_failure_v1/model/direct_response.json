@@ -1,0 +1,32 @@
+{
+  "text": "{\"action\":{\"id\":\"OBSERVE\",\"args\":{}}}\n",
+  "finish_reason": "stop",
+  "prompt_tokens": 5451,
+  "completion_tokens": 16,
+  "generated_ids": [
+    4754,
+    1265,
+    21624,
+    306,
+    3147,
+    46,
+    7116,
+    73477,
+    2129,
+    2048,
+    763,
+    90,
+    72964,
+    248046,
+    198,
+    248044
+  ],
+  "eos_ids": 248044,
+  "elapsed_s": 2.7797506119823083,
+  "identity": {
+    "base": "Qwen3.5-4B",
+    "adapter_enabled": false,
+    "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+    "model_path": "/home/yeliheng/grasp_server/qwen35/models/Qwen3.5-4B"
+  }
+}

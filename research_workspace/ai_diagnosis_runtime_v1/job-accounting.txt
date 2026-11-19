@@ -1,0 +1,9 @@
+sacct -j 5882,5883 --format=JobID,JobName,State,ExitCode,Elapsed -P
+[?2004lJobID|JobName|State|ExitCode|Elapsed
+5882|ai-runtime-audit|COMPLETED|0:0|00:00:14
+5882.batch|batch|COMPLETED|0:0|00:00:14
+5883|ai-runtime-coverage|COMPLETED|0:0|00:00:05
+5883.batch|batch|COMPLETED|0:0|00:00:05
+]0;yeliheng@gpu:~[?2004h[yeliheng@gpu ~]$ squeue -u yeliheng -o "%.18i %.24j %.10T %.10M %R"
+[?2004l             JOBID                     NAME      STATE       TIME NODELIST(REASON)
+]0;yeliheng@gpu:~[?2004h[yeliheng@gpu ~]$ 

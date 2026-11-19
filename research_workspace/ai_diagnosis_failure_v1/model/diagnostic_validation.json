@@ -1,0 +1,28 @@
+{
+  "valid": true,
+  "error": null,
+  "parsed": {
+    "action": {
+      "id": "OBSERVE",
+      "args": {}
+    },
+    "assessment": {
+      "hypotheses": [
+        {
+          "claim": "当前抓取姿态可能导致抓取失败",
+          "evidence_ids": [
+            "e4"
+          ]
+        },
+        {
+          "claim": "表面统计显示目标区域可见性良好",
+          "evidence_ids": [
+            "e3"
+          ]
+        }
+      ],
+      "uncertainty": "未实测TCP与目标相对位置，无法排除抓取偏移风险"
+    },
+    "expected_observation": "获取新的RGBD观测数据以更新表面统计"
+  }
+}

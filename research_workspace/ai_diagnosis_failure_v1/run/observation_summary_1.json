@@ -1,0 +1,206 @@
+{
+  "public": [
+    {
+      "observation_index": 0,
+      "attempt": 1,
+      "time_s": 12.000000000000677,
+      "observed": {
+        "source": {
+          "visible_pixels": 158,
+          "valid_depth_pixels": 155,
+          "valid_depth_fraction": 0.9810126582278481,
+          "segmentation_source": "simulation_segmentation",
+          "position_source": "noisy_depth_backprojection",
+          "status": "visible_surface",
+          "surface_centroid_world_m": [
+            1.43034102002985,
+            1.0009092618161601,
+            0.8671293724368536
+          ],
+          "surface_spread_p10_p90_m": [
+            0.01325308717985152,
+            0.02089210743972647,
+            0.007109013226674343
+          ],
+          "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+        },
+        "destination": {
+          "visible_pixels": 13070,
+          "valid_depth_pixels": 12823,
+          "valid_depth_fraction": 0.9811017597551644,
+          "segmentation_source": "simulation_segmentation",
+          "position_source": "noisy_depth_backprojection",
+          "status": "visible_surface",
+          "surface_centroid_world_m": [
+            1.4947365561288637,
+            0.9666029132151094,
+            0.8267181260809306
+          ],
+          "surface_spread_p10_p90_m": [
+            0.2822652704159101,
+            0.1517791664349306,
+            0.1412702558466844
+          ],
+          "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+        }
+      },
+      "acquisition": "fresh_rgbd_render_paused_state",
+      "perception": "simulation_assisted_segmentation_noisy_depth_surface_statistics"
+    },
+    {
+      "observation_index": 1,
+      "attempt": 1,
+      "time_s": 12.000000000000677,
+      "observed": {
+        "source": {
+          "visible_pixels": 158,
+          "valid_depth_pixels": 154,
+          "valid_depth_fraction": 0.9746835443037974,
+          "segmentation_source": "simulation_segmentation",
+          "position_source": "noisy_depth_backprojection",
+          "status": "visible_surface",
+          "surface_centroid_world_m": [
+            1.4306608725568317,
+            1.0003997346381466,
+            0.8670332185837277
+          ],
+          "surface_spread_p10_p90_m": [
+            0.013822338105084375,
+            0.021116552927990306,
+            0.00878642771118554
+          ],
+          "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+        },
+        "destination": {
+          "visible_pixels": 13070,
+          "valid_depth_pixels": 12784,
+          "valid_depth_fraction": 0.9781178270849273,
+          "segmentation_source": "simulation_segmentation",
+          "position_source": "noisy_depth_backprojection",
+          "status": "visible_surface",
+          "surface_centroid_world_m": [
+            1.494855468915705,
+            0.9666651404958295,
+            0.8260456314068867
+          ],
+          "surface_spread_p10_p90_m": [
+            0.2823315647481641,
+            0.15311619107459395,
+            0.1413182843448355
+          ],
+          "interpretation": "Visible surface statistic, not object body center or calibrated confidence"
+        }
+      },
+      "acquisition": "fresh_rgbd_render_paused_state",
+      "perception": "simulation_assisted_segmentation_noisy_depth_surface_statistics"
+    }
+  ],
+  "private": [
+    {
+      "stats": {
+        "valid_pixels": 409600,
+        "dropped_pixels": 8141,
+        "dropout_fraction": 0.01987548828125,
+        "noise_rmse_m": 0.002994297770783305
+      },
+      "seed_components": [
+        963800,
+        962201,
+        1,
+        0
+      ],
+      "state_unchanged": true,
+      "state_sha256": "a1a3e7d8e7e9d9904454da2ec1e982938685c04b091977140211e00e5ae81956",
+      "clean_sha256": "41fa0b87a7c431d9718e9895dd128da64cc9fcefadadbb2a293c0db0ef642463",
+      "noisy_sha256": "90c0a9e52e7ef0764f0bf00a4400d2d453540e217b8e313132e6658b782ef8d2",
+      "rgb_sha256": "52f5990e6bc8e2020412153f56f533aba2e0e189cd066eada87acdacf7d13fd2",
+      "sensor_sha256": "3ff0819379adb6401b1c1481bd394234888acdd362764e4fe928f6941b275fae",
+      "transform": [
+        [
+          -0.4361589105164219,
+          -0.8548090315953116,
+          0.28118841419982665,
+          0.9734347939363168
+        ],
+        [
+          -0.8998696598825453,
+          0.4143184202575208,
+          -0.1362895515371022,
+          0.7450678987028889
+        ],
+        [
+          5.551115123125783e-17,
+          -0.31247682496210455,
+          -0.9499253833126065,
+          1.86187625242103
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        711.1436236899523,
+        711.1436236899523,
+        320.0,
+        320.0
+      ]
+    },
+    {
+      "stats": {
+        "valid_pixels": 409600,
+        "dropped_pixels": 8149,
+        "dropout_fraction": 0.01989501953125,
+        "noise_rmse_m": 0.002999238669872284
+      },
+      "seed_components": [
+        963800,
+        962201,
+        1,
+        1
+      ],
+      "state_unchanged": true,
+      "state_sha256": "a1a3e7d8e7e9d9904454da2ec1e982938685c04b091977140211e00e5ae81956",
+      "clean_sha256": "41fa0b87a7c431d9718e9895dd128da64cc9fcefadadbb2a293c0db0ef642463",
+      "noisy_sha256": "c504d427271158fd8c7d92c47ad3d98ed2899057282c6f8e0b7d32595b126859",
+      "rgb_sha256": "2835c218792e214110290e439670bbf7f56855b4023a23035a6853b595c475fb",
+      "sensor_sha256": "83c0a716d5df505ccded85bb4eba946a53485d59e3fef0e6bec902f001fd3c82",
+      "transform": [
+        [
+          -0.4361589105164219,
+          -0.8548090315953116,
+          0.28118841419982665,
+          0.9734347939363168
+        ],
+        [
+          -0.8998696598825453,
+          0.4143184202575208,
+          -0.1362895515371022,
+          0.7450678987028889
+        ],
+        [
+          5.551115123125783e-17,
+          -0.31247682496210455,
+          -0.9499253833126065,
+          1.86187625242103
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "intrinsics": [
+        711.1436236899523,
+        711.1436236899523,
+        320.0,
+        320.0
+      ]
+    }
+  ],
+  "additional_observations": 1,
+  "remaining": 1
+}

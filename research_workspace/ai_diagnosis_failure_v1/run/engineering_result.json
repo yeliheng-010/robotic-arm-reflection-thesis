@@ -1,0 +1,33 @@
+{
+  "success": false,
+  "records": [
+    {
+      "parameters": {
+        "replan": false,
+        "reground": false,
+        "lift_height": 0.35,
+        "time_scale": 1.5,
+        "grasp_offset": [
+          0.005,
+          0.0,
+          0.0
+        ],
+        "place_offset": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "candidate_index": 0
+      },
+      "diagnostics": {
+        "action": "move_to_point"
+      },
+      "physical_success": null,
+      "accepted": false,
+      "status": "engineering_interrupted"
+    }
+  ],
+  "outcome_class": "engineered_abort",
+  "physical_success_evaluated": false,
+  "natural_failure": false
+}

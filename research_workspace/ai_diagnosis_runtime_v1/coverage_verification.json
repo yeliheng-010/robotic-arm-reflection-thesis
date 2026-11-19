@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "tests": 38,
+  "coverage": {
+    "motion_wiring_verified": true,
+    "failure_state_resampling_verified": false,
+    "noisy_failure_resampling_verified": false,
+    "nonterminal_model_input_available": false,
+    "model_smoke_gate": false,
+    "failed_cases": 0,
+    "additional_live_observations": 0
+  },
+  "tamper_checks": [
+    {
+      "kind": "surface",
+      "rejected": true,
+      "source_modified": false
+    },
+    {
+      "kind": "noise",
+      "rejected": true,
+      "source_modified": false
+    },
+    {
+      "kind": "telemetry_stride",
+      "rejected": true,
+      "source_modified": false
+    }
+  ],
+  "authoritative_model_smoke_gate": false,
+  "supersedes": "verification.json:model_smoke_gate (motion-only check omitted failed-branch coverage)",
+  "model_calls": 0,
+  "training_runs": 0,
+  "actual_new_attempts": 2,
+  "execution_sha256": "44493e862487c41194cfa634dade6158d7707f74a0159df900e9dd03e84b397d",
+  "revision_sha256": "d6ce93d0d26df1eb7f6db1ae5981ce66e71fa72978022e0c834d7ccd6631d621",
+  "audit_sha256": "1d6366d6fda5a6b4b6f9c0785fbc8f78ef5a29111060dfd9e200eeaa9374d632",
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/coverage_gate.py": "cd638e501b4f43d18a2db262543e2beadf4b5173cc1ddbc511a0edd12d02a481",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/test_coverage.py": "aa6d6e12b4db413d8c1badb957ecc92370f0704d46dad9cd7b4518b7045ffd94",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/audit_coverage.py": "b5a820de1e5005783b69a752370e2864964fa45e369e9e1df7d3354a3919c83a",
+    "/home/yeliheng/grasp_server/ai_diagnosis_runtime_v1/coverage.sbatch": "d5d7d378dbb2ee6816dd12fc8f5481dc5eaf377591605d9469a2cc5dc3f71ce0"
+  }
+}
