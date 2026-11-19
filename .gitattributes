@@ -1,3 +1,6 @@
 * text=auto eol=lf
 evidence/** -text
 assets/** -text
+# 研究快照保留原始字节，避免换行转换破坏来源指纹。
+research_workspace/** -text
+server_source/** -text

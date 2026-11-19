@@ -1,0 +1,10 @@
+{
+  "selected_for_budget": [],
+  "checked": [],
+  "ready": false,
+  "physical_attempts": 0,
+  "model_calls": 0,
+  "independent": false,
+  "full_task_success": null,
+  "private_engineering_only": true
+}
