@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "legal_actions": 738,
+  "generated_poses": 558,
+  "geometry_rejections": 180,
+  "endpoint_checks": 4464,
+  "new_endpoint_checks": 4448,
+  "reused_endpoint_checks": 16,
+  "safe_grasp_endpoints": 0,
+  "complete_discrete_space_covered": true,
+  "independent_endpoint_replay_identical": true,
+  "local_catalogue_reconstruction": true,
+  "max_pose_delta": 3.3306690738754696e-16,
+  "full_path_attempts": 0,
+  "physical_attempts": 0,
+  "model_calls": 0,
+  "training_runs": 0,
+  "files": 23,
+  "source_files": 12,
+  "limitations": "Applies only to frozen discrete action family, current solver and safety checks; not proof of physical impossibility"
+}

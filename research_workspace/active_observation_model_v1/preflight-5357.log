@@ -1,0 +1,22 @@
+test_invalid_output_has_no_rule_fallback (test_decision.DecisionTests.test_invalid_output_has_no_rule_fallback) ... ok
+test_new_design_and_shards (test_decision.DecisionTests.test_new_design_and_shards) ... ok
+test_repeated_observe_exhausts_budget_then_fails (test_decision.DecisionTests.test_repeated_observe_exhausts_budget_then_fails) ... ok
+test_transport_failure_is_not_format_failure (test_decision.DecisionTests.test_transport_failure_is_not_format_failure) ... ok
+test_all_pair_directions_and_skips (test_metrics.MetricsTests.test_all_pair_directions_and_skips) ... ok
+test_failed_early_stop_not_padded_with_attempts (test_metrics.MetricsTests.test_failed_early_stop_not_padded_with_attempts) ... ok
+test_initial_success_is_not_recovery (test_metrics.MetricsTests.test_initial_success_is_not_recovery) ... ok
+test_budget_exhausted_rejects_observe (test_policy.PolicyTests.test_budget_exhausted_rejects_observe) ... ok
+test_cross_state_rejected (test_policy.PolicyTests.test_cross_state_rejected) ... ok
+test_duplicate_keys_and_extra_fields_rejected (test_policy.PolicyTests.test_duplicate_keys_and_extra_fields_rejected) ... ok
+test_hidden_truth_cannot_reach_prompt (test_policy.PolicyTests.test_hidden_truth_cannot_reach_prompt) ... ok
+test_history_is_only_prompt_difference (test_policy.PolicyTests.test_history_is_only_prompt_difference) ... ok
+test_history_only_actions_and_visible_outcomes (test_policy.PolicyTests.test_history_only_actions_and_visible_outcomes) ... ok
+test_observe_legal_with_budget (test_policy.PolicyTests.test_observe_legal_with_budget) ... ok
+test_rule_fixed_only_first_failure (test_policy.PolicyTests.test_rule_fixed_only_first_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.023s
+
+OK
+{'frozen_conditions': 24}
+FROZEN 24
