@@ -1,7 +1,0 @@
-{
-  "model_calls": 4,
-  "physical_attempts": 0,
-  "training_ready": false,
-  "valid": 4,
-  "causal_correctness_not_established": true
-}

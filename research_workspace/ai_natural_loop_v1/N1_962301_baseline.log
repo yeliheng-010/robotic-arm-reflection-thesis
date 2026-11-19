@@ -1,6 +1,0 @@
-[task] 紫色胶囊 -> 红色箱子 parser=explicit
-[INFO] 点云采样: 目标原始=1484, 场景原始=245512, 网络输入=20000 (目标占比=65%)
-[retry] attempt=1 accepted=True error=none
-N1_962301_baseline fixed_rule {'success': True, 'new_attempts': 0, 'model_calls': 0, 'extra_observations': 0, 'status': 'success'}
-N1_962301_baseline direct {'success': True, 'new_attempts': 0, 'model_calls': 0, 'extra_observations': 0, 'status': 'success'}
-N1_962301_baseline diagnostic {'success': True, 'new_attempts': 0, 'model_calls': 0, 'extra_observations': 0, 'status': 'success'}

@@ -1,0 +1,100 @@
+<mujocoinclude>
+    <!--
+      Modular props for a cluttered semantic-sorting benchmark.
+      The tabletop surface is z=0.74 m. Fixed receptacles use separate floor/wall
+      geoms so released objects can physically fall into them.
+    -->
+
+    <!-- Shallow tray and blue bin: front side of the work area. -->
+    <body name="SortingTray" pos="1.02 0.16 0.74">
+        <geom name="sorting_tray_floor" type="box" pos="0 0 0.008"
+              size="0.16 0.11 0.008" rgba="0.92 0.72 0.18 1"
+              friction="1.1 0.02 0.001"/>
+        <geom name="sorting_tray_left_wall" type="box" pos="-0.16 0 0.03"
+              size="0.008 0.11 0.03" rgba="1.0 0.82 0.28 1"/>
+        <geom name="sorting_tray_right_wall" type="box" pos="0.16 0 0.03"
+              size="0.008 0.11 0.03" rgba="1.0 0.82 0.28 1"/>
+        <geom name="sorting_tray_front_wall" type="box" pos="0 -0.11 0.03"
+              size="0.16 0.008 0.03" rgba="1.0 0.82 0.28 1"/>
+        <geom name="sorting_tray_back_wall" type="box" pos="0 0.11 0.03"
+              size="0.16 0.008 0.03" rgba="1.0 0.82 0.28 1"/>
+        <site name="sorting_tray_center" type="sphere" pos="0 0 0.018"
+              size="0.003" rgba="0 0 0 0" group="5"/>
+    </body>
+
+    <body name="BlueBin" pos="1.42 0.16 0.74">
+        <geom name="blue_bin_floor" type="box" pos="0 0 0.01"
+              size="0.14 0.12 0.01" rgba="0.08 0.30 0.82 1"
+              friction="1.1 0.02 0.001"/>
+        <geom name="blue_bin_left_wall" type="box" pos="-0.14 0 0.08"
+              size="0.012 0.132 0.08" rgba="0.10 0.42 0.98 1"/>
+        <geom name="blue_bin_right_wall" type="box" pos="0.14 0 0.08"
+              size="0.012 0.132 0.08" rgba="0.10 0.42 0.98 1"/>
+        <geom name="blue_bin_front_wall" type="box" pos="0 -0.12 0.08"
+              size="0.14 0.012 0.08" rgba="0.10 0.42 0.98 1"/>
+        <geom name="blue_bin_back_wall" type="box" pos="0 0.12 0.08"
+              size="0.14 0.012 0.08" rgba="0.10 0.42 0.98 1"/>
+        <site name="blue_bin_center" type="sphere" pos="0 0 0.022"
+              size="0.003" rgba="0 0 0 0" group="5"/>
+    </body>
+
+    <!-- Red bin: rear side, creating a longer and more occluded placement path. -->
+    <body name="RedBin" pos="1.42 1.03 0.74">
+        <geom name="red_bin_floor" type="box" pos="0 0 0.01"
+              size="0.14 0.12 0.01" rgba="0.76 0.08 0.08 1"
+              friction="1.1 0.02 0.001"/>
+        <geom name="red_bin_left_wall" type="box" pos="-0.14 0 0.08"
+              size="0.012 0.132 0.08" rgba="0.96 0.12 0.12 1"/>
+        <geom name="red_bin_right_wall" type="box" pos="0.14 0 0.08"
+              size="0.012 0.132 0.08" rgba="0.96 0.12 0.12 1"/>
+        <geom name="red_bin_front_wall" type="box" pos="0 -0.12 0.08"
+              size="0.14 0.012 0.08" rgba="0.96 0.12 0.12 1"/>
+        <geom name="red_bin_back_wall" type="box" pos="0 0.12 0.08"
+              size="0.14 0.012 0.08" rgba="0.96 0.12 0.12 1"/>
+        <site name="red_bin_center" type="sphere" pos="0 0 0.022"
+              size="0.003" rgba="0 0 0 0" group="5"/>
+    </body>
+
+    <!-- Low fixed obstacle between the clutter and the front receptacles. -->
+    <body name="SafetyDivider" pos="1.20 0.355 0.74">
+        <geom name="safety_divider" type="box" pos="0 0 0.06"
+              size="0.34 0.012 0.06" rgba="0.96 0.62 0.05 1"
+              friction="0.9 0.02 0.001"/>
+        <geom name="safety_divider_marker_left" type="box" pos="-0.23 -0.013 0.06"
+              size="0.045 0.002 0.061" rgba="0.12 0.12 0.12 1"
+              contype="0" conaffinity="0"/>
+        <geom name="safety_divider_marker_right" type="box" pos="0.23 -0.013 0.06"
+              size="0.045 0.002 0.061" rgba="0.12 0.12 0.12 1"
+              contype="0" conaffinity="0"/>
+    </body>
+
+    <!-- Primitive movable distractors: varied scale, silhouette and grasp axis. -->
+    <body name="RedBlock" pos="1.08 0.50 0.79" euler="0 0 0.22">
+        <joint name="RedBlock_joint" type="free" damping="0.12"/>
+        <geom name="red_block" type="box" size="0.038 0.031 0.038"
+              density="450" rgba="0.92 0.08 0.08 1" condim="4"
+              friction="1.0 0.03 0.002"/>
+    </body>
+
+    <body name="GreenCylinder" pos="1.08 0.72 0.80">
+        <joint name="GreenCylinder_joint" type="free" damping="0.12"/>
+        <geom name="green_cylinder" type="cylinder" size="0.030 0.050"
+              density="450" rgba="0.08 0.78 0.20 1" condim="4"
+              friction="1.0 0.03 0.002"/>
+    </body>
+
+    <!-- Horizontal capsule makes the short-axis grasp test visually unambiguous. -->
+    <body name="PurpleCapsule" pos="1.25 0.46 0.78" euler="0 1.5707963 0.18">
+        <joint name="PurpleCapsule_joint" type="free" damping="0.12"/>
+        <geom name="purple_capsule" type="capsule" size="0.025 0.055"
+              density="450" rgba="0.62 0.16 0.88 1" condim="4"
+              friction="1.0 0.03 0.002"/>
+    </body>
+
+    <body name="OrangeSphere" pos="1.47 0.45 0.78">
+        <joint name="OrangeSphere_joint" type="free" damping="0.12"/>
+        <geom name="orange_sphere" type="sphere" size="0.032"
+              density="400" rgba="1.0 0.38 0.04 1" condim="4"
+              friction="0.9 0.03 0.002"/>
+    </body>
+</mujocoinclude>

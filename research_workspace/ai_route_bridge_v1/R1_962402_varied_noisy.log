@@ -1,9 +1,0 @@
-[task] 紫色胶囊 -> 红色箱子 parser=explicit
-[retry] attempt=1 accepted=False error=grounding_out_of_image
-R1_962402_varied_noisy 1 False
-[task] 紫色胶囊 -> 红色箱子 parser=explicit
-[retry] attempt=1 accepted=False error=grounding_out_of_image
-R1_962402_varied_noisy 2 False
-[task] 紫色胶囊 -> 红色箱子 parser=explicit
-[retry] attempt=1 accepted=False error=grounding_out_of_image
-R1_962402_varied_noisy 3 False

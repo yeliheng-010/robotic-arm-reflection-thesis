@@ -1,0 +1,13 @@
+#!/bin/bash
+#SBATCH --job-name=guard-regression
+#SBATCH --partition=batch
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=6G
+#SBATCH --time=00:15:00
+#SBATCH --gres=gpu:1
+#SBATCH --output=/home/yeliheng/grasp_server/scene_pair_guard_v1/run-%j.log
+set -euo pipefail
+source /home/yeliheng/grasp_server/scene_pair_candidates_v1/environment.sh
+export PYTHONPATH=/home/yeliheng/grasp_server/scene_pair_guard_v1:/home/yeliheng/grasp_server/scene_pair_contact_diagnostic_v1:$PYTHONPATH
+cd /home/yeliheng/grasp_server/scene_pair_guard_v1
+$SIM_PY guard_worker.py

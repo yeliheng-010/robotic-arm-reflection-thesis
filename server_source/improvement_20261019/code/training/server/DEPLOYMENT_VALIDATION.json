@@ -1,0 +1,74 @@
+{
+  "collection": {
+    "planned_tasks": 60,
+    "completed_tasks": 10,
+    "successful_tasks": 6,
+    "reflection_calls": 14,
+    "invalid_reflections": 0,
+    "unique_verified_samples": 5,
+    "verified_by_fault": {
+      "planning": 2,
+      "grounding": 2,
+      "collision": 1
+    },
+    "teacher_model": "/home/yeliheng/grasp_qlora/models/Qwen2.5-7B-Instruct",
+    "mode": "teacher",
+    "updated": 1792345260.4353285,
+    "dataset_sha256": "c7f76e42b35c533a1752e9290b64e8346ae642ae58b4b30f8726386252be5292",
+    "limitation": "Pilot pool only, unsplit; repeated toy-scene evidence is not an independent efficacy evaluation."
+  },
+  "by_fault": {
+    "planning": {
+      "tasks": 2,
+      "successful": 2
+    },
+    "grounding": {
+      "tasks": 2,
+      "successful": 2
+    },
+    "calibration": {
+      "tasks": 2,
+      "successful": 0
+    },
+    "collision": {
+      "tasks": 2,
+      "successful": 2
+    },
+    "placement": {
+      "tasks": 2,
+      "successful": 0
+    }
+  },
+  "jobs": "3614 qwen35-retry PENDING gres/gpu:v100:1 0:00 (Dependency)\n3613 grasp-collect RUNNING gres/gpu:v100:1 6:34 gpu\n3609 grasp-teacher RUNNING gres/gpu:v100:1 18:06 gpu\n",
+  "gpus": "0, Tesla V100-SXM2-16GB, 14661 MiB, 1484 MiB\n1, Tesla V100-SXM2-16GB, 15569 MiB, 576 MiB\n2, Tesla V100-SXM2-16GB, 6131 MiB, 10014 MiB\n3, Tesla V100-SXM2-16GB, 960 MiB, 15185 MiB\n",
+  "preflight": {
+    "renderer": "EGL",
+    "frame_size": [
+      640,
+      640,
+      3
+    ],
+    "mujoco": "3.3.7",
+    "physical_task": {
+      "success": true,
+      "attempts": 2,
+      "elapsed_s": 38.27141207293607
+    },
+    "slurm_job_id": "3612"
+  },
+  "recorded_at": "2026-10-19T01:43:34.208226+08:00",
+  "scope": "Partial deployment/collection snapshot; check live status before continuing.",
+  "qwen35": {
+    "first_job": "3611",
+    "status": "failed_gradient_check",
+    "retry_job": "3614",
+    "retry_status": "pending_after_collection",
+    "training_effectiveness_verified": false
+  },
+  "local_checks": {
+    "qlora_data_unittest": "3 passed",
+    "shell_syntax": "passed",
+    "python_syntax": "passed",
+    "prior_reflection_regression": "24 passed with MUJOCO_GL=egl"
+  }
+}

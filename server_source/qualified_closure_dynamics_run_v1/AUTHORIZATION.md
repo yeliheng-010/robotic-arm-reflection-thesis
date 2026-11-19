@@ -1,0 +1,11 @@
+# 单次受控闭合诊断执行记录
+
+用户在上一轮明确建议“授权并执行一次隔离闭合诊断：最多500步初始化＋1000步闭合，禁碰即停、失败不重试，随后做零积分审计”后回复“采取你的建议”。据此本轮执行该有限预算，不重复询问。
+
+固定实现为qualified_closure_dynamics_v1，准备清单SHA256为65b6d59264682dcf9b7bdc87f18844926cdedaba94ea33d3a97ddb8c1b8ce9ae。不得修改其冻结源码或已消耗claim。此目录只新增执行包装、授权登记与归档。
+
+一次诊断：500初始化步、1000闭合任务步为上限；首次禁碰/异常/初态拒绝停止，工程失败也消耗claim，不重新提交execute.sbatch。完整抓放、模型调用与训练各0。执行与测试均通过Slurm，execute作业不自动requeue。
+
+若输出完整result/状态，则使用原零积分审计；若在状态采集前失败，则只审计已保存错误、claim、来源和计数，不为满足审计而重新初始化或积分。未运行的动力学分支明确标记未验证，审计失败保留原结果。
+
+本轮使用executing-plans和verification-before-completion；执行中若遇失败，用systematic-debugging先做只读定位。原生产rejected/gripper_closure不变；单次合成初态轨迹不能证明全任务安全或建立训练准入。

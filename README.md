@@ -1,6 +1,6 @@
 # 基于机械臂的错误反馈于智能反思系统
 
-> 最新更新：2026-11-19。[当前进度](docs/CURRENT_PROGRESS.md) · [代码与全部资料](docs/CODE_AND_DATA.md) · [原始资料Release](https://github.com/yeliheng-010/robotic-arm-reflection-thesis/releases/tag/research-archive-20261119)
+> 最新更新：2026-11-19。[当前进度](docs/CURRENT_PROGRESS.md) · [代码与文档](docs/CODE_AND_DATA.md)
 
 **完整抓放已经成功执行；200条件批量评估因工程异常提前停止。** 单次作业6891成功1/1；后续批量实际尝试4次，成功3次、工程异常1次，剩余196条件未执行。3/4（75%）仅描述这四次尝试，不能当作200条件或跨场景成功率。
 
@@ -11,12 +11,12 @@
 |失败入口|夹持确认后的持物路径检查，SE3.Rt拒绝旋转矩阵|
 |尚未完成|数值根因调查、工程修复、剩余196条件执行|
 
-仓库现提供本地研究工作区、服务器源码和场景资产；大型原始轨迹、图像、状态、数据及训练产物通过Release分卷发布。下载的基础模型、运行环境、缓存和凭证不放入仓库，范围以清单为准。代码和资料公开不代表已完成便携安装或端到端复现实验。
+本次只上传代码、配置和文档，覆盖本地研究工作区与服务器源码。原始图像、轨迹、状态、训练数据和模型权重保留在原实验环境；大文件上传已取消。代码公开不代表已完成便携安装或端到端复现实验。
 
 - [当前进度与问题](docs/CURRENT_PROGRESS.md)
-- [代码与资料目录](docs/CODE_AND_DATA.md)
-- [本地研究工作区](research_workspace/) / [服务器源码与场景资产](server_source/)
-- [批量报告](research_workspace/qualified_grasp_batch_v1/REPORT.md) / [原始结果](research_workspace/qualified_grasp_batch_v1/evidence/remote/summary.json)
+- [代码与文档目录](docs/CODE_AND_DATA.md)
+- [本地研究工作区](research_workspace/) / [服务器源码与配置](server_source/)
+- [批量报告](research_workspace/qualified_grasp_batch_v1/REPORT.md) / [结果摘要](docs/GRASP_BATCH_20261119.md)
 
 ## 历史开发与实验记录
 

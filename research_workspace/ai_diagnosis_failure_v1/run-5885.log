@@ -1,3 +1,0 @@
-[task] 红色方块 -> 绿色箱子 parser=explicit
-[INFO] 点云采样: 目标原始=2452, 场景原始=299968, 网络输入=20000 (目标占比=65%)
-{'id': '962201_varied_noisy_engineering_stop', 'attempts': 1, 'outcome_class': 'engineered_abort', 'natural_failures': 0, 'model_calls': 0, 'training_runs': 0, 'exception_cleanup_verified': True}

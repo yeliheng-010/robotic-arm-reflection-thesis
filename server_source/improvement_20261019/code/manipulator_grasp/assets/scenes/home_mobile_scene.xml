@@ -1,0 +1,138 @@
+<mujoco model="future embodied home">
+  <include file="../universal_robots_ur5e/ur5e.xml"/>
+  <include file="../robotiq_2f85/2f85.xml"/>
+
+  <compiler angle="radian" autolimits="true"/>
+  <option timestep="0.002" integrator="implicitfast" solver="PGS" gravity="0 0 -9.82"/>
+  <statistic center="3 2 0.8" extent="3.5"/>
+
+  <visual>
+    <headlight diffuse="0.65 0.65 0.65" ambient="0.25 0.25 0.25" specular="0.1 0.1 0.1"/>
+    <global azimuth="140" elevation="-45" offwidth="960" offheight="640"/>
+  </visual>
+
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.78 0.86 0.96" rgb2="0.25 0.35 0.48"
+             width="512" height="3072"/>
+    <texture type="2d" name="home_floor" builtin="checker" mark="edge"
+             rgb1="0.72 0.68 0.58" rgb2="0.62 0.58 0.50" markrgb="0.82 0.78 0.68"
+             width="300" height="300"/>
+    <material name="home_floor" texture="home_floor" texuniform="true" texrepeat="6 4" reflectance="0.08"/>
+  </asset>
+
+  <worldbody>
+    <light pos="3 2 5" dir="0 0 -1" directional="true" diffuse="0.8 0.8 0.8"/>
+    <light pos="1 1 2.5" dir="0.5 0.4 -1" directional="true" diffuse="0.35 0.35 0.35"/>
+    <geom name="floor" type="plane" size="6 4 0.05" material="home_floor"/>
+
+    <camera name="cam" pos="3 2 6.2" xyaxes="1 0 0 0 1 0" fovy="50" mode="fixed"/>
+    <camera name="room_camera" pos="2.7 -1.2 3.6" xyaxes="1 0.3 0 -0.18 0.58 0.8"
+            fovy="55" mode="fixed"/>
+
+    <!-- Kinematic mobile chassis.  The simulator updates this mocap body and
+         the UR5 root together along a collision-checked continuous path. -->
+    <body name="mobile_chassis" mocap="true" pos="0.8 2.0 0.22">
+      <geom name="mobile_chassis_geom" type="box" size="0.32 0.27 0.18"
+            rgba="0.08 0.18 0.30 1" friction="1.0 0.02 0.001"/>
+      <geom name="chassis_status" type="box" pos="0 0 0.19" size="0.24 0.19 0.015"
+            rgba="0.08 0.75 0.90 1" contype="0" conaffinity="0"/>
+      <geom name="wheel_fl" type="cylinder" pos="0.23 0.29 -0.10" quat="0.7071 0.7071 0 0"
+            size="0.09 0.035" rgba="0.04 0.04 0.04 1"/>
+      <geom name="wheel_fr" type="cylinder" pos="0.23 -0.29 -0.10" quat="0.7071 0.7071 0 0"
+            size="0.09 0.035" rgba="0.04 0.04 0.04 1"/>
+      <geom name="wheel_rl" type="cylinder" pos="-0.23 0.29 -0.10" quat="0.7071 0.7071 0 0"
+            size="0.09 0.035" rgba="0.04 0.04 0.04 1"/>
+      <geom name="wheel_rr" type="cylinder" pos="-0.23 -0.29 -0.10" quat="0.7071 0.7071 0 0"
+            size="0.09 0.035" rgba="0.04 0.04 0.04 1"/>
+    </body>
+
+    <!-- Boundary walls and a central divider leave two independent routes. -->
+    <geom name="wall_south" type="box" pos="3 -0.05 0.45" size="3.1 0.05 0.45" rgba="0.88 0.88 0.84 1"/>
+    <geom name="wall_north" type="box" pos="3 4.05 0.45" size="3.1 0.05 0.45" rgba="0.88 0.88 0.84 1"/>
+    <geom name="wall_west" type="box" pos="-0.05 2 0.45" size="0.05 2.1 0.45" rgba="0.88 0.88 0.84 1"/>
+    <geom name="wall_east" type="box" pos="6.05 2 0.45" size="0.05 2.1 0.45" rgba="0.88 0.88 0.84 1"/>
+    <geom name="divider_low" type="box" pos="3.1 0.37 0.38" size="0.06 0.37 0.38" rgba="0.70 0.72 0.74 1"/>
+    <geom name="divider_mid" type="box" pos="3.1 2.0 0.38" size="0.06 0.55 0.38" rgba="0.70 0.72 0.74 1"/>
+    <geom name="divider_high" type="box" pos="3.1 3.63 0.38" size="0.06 0.37 0.38" rgba="0.70 0.72 0.74 1"/>
+
+    <!-- Left: living-room source table. -->
+    <body name="living_table" pos="1.55 0.85 0.61">
+      <geom name="living_table_top" type="box" size="0.68 0.48 0.055" rgba="0.46 0.25 0.12 1"/>
+      <geom type="box" pos="-0.55 -0.35 -0.32" size="0.06 0.06 0.32" rgba="0.25 0.12 0.06 1"/>
+      <geom type="box" pos="0.55 -0.35 -0.32" size="0.06 0.06 0.32" rgba="0.25 0.12 0.06 1"/>
+      <geom type="box" pos="-0.55 0.35 -0.32" size="0.06 0.06 0.32" rgba="0.25 0.12 0.06 1"/>
+      <geom type="box" pos="0.55 0.35 -0.32" size="0.06 0.06 0.32" rgba="0.25 0.12 0.06 1"/>
+      <site name="living_table_site" pos="0 0 0.08" size="0.025" rgba="0.1 0.8 1 0.5"/>
+    </body>
+
+    <body name="Cup" pos="1.37 0.72 0.755">
+      <joint name="cup_free" type="free" damping="0.12"/>
+      <geom name="cup" type="cylinder" size="0.045 0.075" rgba="0.15 0.62 0.95 1"
+            density="420" friction="0.9 0.02 0.001"/>
+      <geom type="capsule" fromto="0.045 0 -0.025 0.082 0 0.025"
+            size="0.007" rgba="0.15 0.62 0.95 1" contype="0" conaffinity="0"/>
+    </body>
+    <body name="MedicineBox" pos="1.67 0.91 0.725">
+      <joint name="medicine_box_free" type="free" damping="0.12"/>
+      <geom name="medicine_box" type="box" size="0.075 0.045 0.045" rgba="0.94 0.94 0.90 1"
+            density="300" friction="0.9 0.02 0.001"/>
+      <geom type="box" pos="0 -0.046 0" size="0.018 0.002 0.018" rgba="0.85 0.08 0.08 1" contype="0" conaffinity="0"/>
+      <geom type="box" pos="0 -0.048 0" size="0.006 0.003 0.032" rgba="0.85 0.08 0.08 1" contype="0" conaffinity="0"/>
+    </body>
+    <body name="Toy" pos="1.90 0.70 0.725" euler="0 0 0.25">
+      <joint name="toy_free" type="free" damping="0.12"/>
+      <geom name="toy" type="box" size="0.065 0.055 0.045" rgba="0.95 0.58 0.08 1"
+            density="250" friction="0.9 0.02 0.001"/>
+    </body>
+    <body name="Remote" pos="1.80 1.02 0.695" euler="0 0 -0.2">
+      <joint name="remote_free" type="free" damping="0.12"/>
+      <geom name="remote" type="box" size="0.09 0.028 0.015" rgba="0.12 0.12 0.14 1"
+            density="350" friction="0.9 0.02 0.001"/>
+    </body>
+
+    <!-- Right upper: care station with two placement slots. -->
+    <body name="care_station" pos="5.05 3.15 0.61">
+      <geom name="care_station_top" type="box" size="0.58 0.42 0.055" rgba="0.88 0.88 0.82 1"/>
+      <geom type="box" pos="0 0 -0.32" size="0.50 0.34 0.32" rgba="0.72 0.73 0.70 1"/>
+      <site name="care_station_site" pos="0 0 0.08" size="0.025" rgba="0.1 1 0.35 0.6"/>
+      <site name="care_cup_slot" pos="-0.18 0 0.08" size="0.03" rgba="0.1 0.7 1 0.5"/>
+      <site name="care_medicine_slot" pos="0.18 0 0.08" size="0.03" rgba="1 0.3 0.3 0.5"/>
+    </body>
+
+    <!-- Right lower: open toy storage bin. -->
+    <body name="storage_bin" pos="5.05 0.78 0.08">
+      <geom name="storage_floor" type="box" size="0.40 0.32 0.035" rgba="0.18 0.65 0.34 1"/>
+      <geom type="box" pos="-0.40 0 0.20" size="0.025 0.34 0.20" rgba="0.20 0.78 0.40 1"/>
+      <geom type="box" pos="0.40 0 0.20" size="0.025 0.34 0.20" rgba="0.20 0.78 0.40 1"/>
+      <geom type="box" pos="0 -0.32 0.20" size="0.40 0.025 0.20" rgba="0.20 0.78 0.40 1"/>
+      <geom type="box" pos="0 0.32 0.20" size="0.40 0.025 0.20" rgba="0.20 0.78 0.40 1"/>
+      <site name="storage_bin_site" pos="0 0 0.22" size="0.03" rgba="0.1 1 0.35 0.6"/>
+    </body>
+
+    <body name="buffer_tray" pos="3.85 3.55 0.48">
+      <geom name="buffer_floor" type="box" size="0.32 0.22 0.025" rgba="0.92 0.72 0.12 1"/>
+      <site name="buffer_tray_site" pos="0 0 0.05" size="0.025" rgba="1 0.8 0.1 0.6"/>
+    </body>
+
+    <!-- Hidden until injected by the dashboard. -->
+    <body name="dynamic_obstacle" mocap="true" pos="-2 -2 0.35">
+      <geom name="dynamic_obstacle_geom" type="box" size="0.34 0.30 0.35"
+            rgba="0.90 0.18 0.12 1"/>
+    </body>
+    <body name="TargetBlocker" pos="4.0 3.55 0.56">
+      <joint name="target_blocker_free" type="free" damping="0.15"/>
+      <geom name="target_blocker" type="box" size="0.08 0.07 0.055"
+            rgba="0.68 0.18 0.78 1" density="300"/>
+    </body>
+  </worldbody>
+
+  <contact>
+    <exclude body1="flange" body2="2f85_base"/>
+    <exclude body1="wrist_3_link" body2="2f85_base"/>
+    <exclude body1="wrist_2_link" body2="2f85_base"/>
+  </contact>
+
+  <equality>
+    <weld name="attach" body1="flange" body2="2f85_base" active="false"/>
+  </equality>
+</mujoco>

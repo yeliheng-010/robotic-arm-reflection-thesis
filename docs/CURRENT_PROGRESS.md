@@ -28,15 +28,14 @@
 
 这是固定动作的位置扰动评估，尚未完成五档扫描，更不是200个随机场景或模型在线决策评估。新增模型调用0、训练0、独立事后审计0。运行时路径、碰撞、掉落与释放保护保留；历史静态闭合拒绝与观察资格拒绝没有改写为通过。
 
-## 代码、资料和证据
+## 代码与文档
 
-- [批量原始汇总](../research_workspace/qualified_grasp_batch_v1/evidence/remote/summary.json)
-- [全部200项去向](../research_workspace/qualified_grasp_batch_v1/evidence/remote/all_results.json)
-- [停止原因与完整堆栈](../research_workspace/qualified_grasp_batch_v1/evidence/remote/STOP.json)
-- [Slurm作业记录](../research_workspace/qualified_grasp_batch_v1/evidence/remote/slurm_status_20261119.txt)
+- [本批结果摘要](GRASP_BATCH_20261119.md)
 - [单次完整抓放报告](../research_workspace/qualified_full_task_trial_v1/REPORT.md)
 - [批量执行代码](../research_workspace/qualified_grasp_batch_v1/worker.py)与[汇总代码](../research_workspace/qualified_grasp_batch_v1/summarize.py)
-- [全部代码与资料入口](CODE_AND_DATA.md)
+- [代码与文档入口](CODE_AND_DATA.md)
 - [11月11日历史进展](CURRENT_PROGRESS_20261111.md)
+
+按作者最新要求，本轮只上传代码、配置和文档；原始图像、轨迹、日志、状态、训练产物及大型附件保留原实验环境。已取消大文件上传并撤回Release草稿。
 
 下一步技术工作应先解释并修复旋转矩阵检查异常，再在新版本中明确剩余196个未执行条件的续跑规则。本轮没有启动该修复或续跑；旧失败、claim和所有已完成实验保持。

@@ -1,4 +1,0 @@
-[task] 红色方块 -> 蓝色箱子 parser=explicit
-[INFO] 点云采样: 目标原始=1533, 场景原始=245512, 网络输入=20000 (目标占比=65%)
-[retry] attempt=1 accepted=True error=none
-R0_962402_baseline 1 True
