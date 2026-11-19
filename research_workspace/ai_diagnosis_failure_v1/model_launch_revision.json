@@ -1,0 +1,8 @@
+{
+  "failed_job": 5889,
+  "reason": "candidate_sft_v2 environment.sh expects PYTHONPATH to be defined under set -u",
+  "failed_before_python": true,
+  "model_calls_before_resubmission": 0,
+  "source_changed": false,
+  "submission_option": "--export=ALL,PYTHONPATH="
+}

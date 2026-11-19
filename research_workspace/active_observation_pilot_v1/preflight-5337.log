@@ -1,0 +1,22 @@
+test_both_directions_are_retained (test_metrics.MetricTests.test_both_directions_are_retained) ... ok
+test_budget_one_has_no_future_fee (test_metrics.MetricTests.test_budget_one_has_no_future_fee) ... ok
+test_skip_not_observed_failure (test_metrics.MetricTests.test_skip_not_observed_failure) ... ok
+test_all_missing_remains_missing (test_policy.PolicyTests.test_all_missing_remains_missing) ... ok
+test_audit_poison_does_not_change_quality_or_action (test_policy.PolicyTests.test_audit_poison_does_not_change_quality_or_action) ... ok
+test_conflict_uses_last_budget (test_policy.PolicyTests.test_conflict_uses_last_budget) ... ok
+test_consistent_pair_saves_one_observation (test_policy.PolicyTests.test_consistent_pair_saves_one_observation) ... ok
+test_design_and_smoke_distribution (test_policy.PolicyTests.test_design_and_smoke_distribution) ... ok
+test_majority_contamination_not_declared_true (test_policy.PolicyTests.test_majority_contamination_not_declared_true) ... ok
+test_missingness_reacquires_with_limit (test_policy.PolicyTests.test_missingness_reacquires_with_limit) ... ok
+test_no_cross_state_reuse (test_policy.PolicyTests.test_no_cross_state_reuse) ... ok
+test_remaining_budget_can_be_used_later (test_policy.PolicyTests.test_remaining_budget_can_be_used_later) ... ok
+test_sensor_reproducible_and_snapshot_immutable (test_policy.PolicyTests.test_sensor_reproducible_and_snapshot_immutable) ... ok
+test_empty_menu_does_not_execute (test_worker.WorkerTests.test_empty_menu_does_not_execute) ... ok
+test_initial_success_never_observes (test_worker.WorkerTests.test_initial_success_never_observes) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.013s
+
+OK
+{'frozen_conditions': 24}
+FROZEN 24

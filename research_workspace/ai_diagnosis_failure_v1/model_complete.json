@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "mode": "direct",
+      "calls": 1,
+      "valid": true,
+      "status": "generated",
+      "finish_reason": "stop",
+      "completion_tokens": 16
+    },
+    {
+      "mode": "diagnostic",
+      "calls": 1,
+      "valid": true,
+      "status": "generated",
+      "finish_reason": "stop",
+      "completion_tokens": 107
+    }
+  ],
+  "actual_calls": 2,
+  "physical_executions": 0,
+  "training_runs": 0,
+  "model_manifest_sha256": "51d26dee23d8bcf19b7730b3930c284c3f3b0160a2365e743ce5b05811dad83e"
+}

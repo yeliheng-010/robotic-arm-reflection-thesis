@@ -1,0 +1,3736 @@
+{
+  "passed": true,
+  "complete": true,
+  "expected": 24,
+  "accounted": 24,
+  "eligible": 24,
+  "rows": [
+    {
+      "id": "M0_940301_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 8,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M0_940301_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940301_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 8,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 2,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940301_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": true,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M0_940302_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": false,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M0_940302_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940302_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 6,
+      "trajectories": 4,
+      "extra_observations": 3,
+      "model_calls": 2,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940302_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": false,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M0_940303_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 6,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 2,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M0_940303_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": false,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M1_940303_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940303_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": true,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M0_940304_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 6,
+      "trajectories": 4,
+      "extra_observations": 3,
+      "model_calls": 2,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M0_940304_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": false,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M1_940304_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940304_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": false,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M0_940305_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 6,
+      "trajectories": 4,
+      "extra_observations": 3,
+      "model_calls": 2,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M0_940305_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940305_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940305_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": false,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M0_940306_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 8,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M0_940306_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": false,
+        "base_current": false,
+        "base_history": false
+      }
+    },
+    {
+      "id": "M1_940306_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "easy_control",
+      "physical_executions": 2,
+      "trajectories": 4,
+      "extra_observations": 0,
+      "model_calls": 0,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true,
+        "base_current": true,
+        "base_history": true
+      }
+    },
+    {
+      "id": "M1_940306_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 10,
+      "trajectories": 4,
+      "extra_observations": 4,
+      "model_calls": 4,
+      "invalid": 0,
+      "successes": {
+        "fixed_first": false,
+        "adaptive": true,
+        "base_current": false,
+        "base_history": false
+      }
+    }
+  ],
+  "analysis": {
+    "rows": [
+      {
+        "id": "M0_940301_grasp_bias",
+        "seed": 940301,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 1
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 1
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6333,
+            "completion_tokens": 43,
+            "model_seconds": 5.108056413009763,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6617,
+            "completion_tokens": 43,
+            "model_seconds": 5.178611328999978,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940301_grasp_place",
+        "seed": 940301,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6763,
+            "completion_tokens": 41,
+            "model_seconds": 5.005376322020311,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7076,
+            "completion_tokens": 41,
+            "model_seconds": 4.9594191840151325,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940301_grasp_bias",
+        "seed": 940301,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 2963,
+            "completion_tokens": 21,
+            "model_seconds": 2.4382002780330367,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 2963,
+            "completion_tokens": 21,
+            "model_seconds": 2.473911558976397,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940301_grasp_place",
+        "seed": 940301,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 1,
+            "missing": 1,
+            "visibility_recovered": 1
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6196,
+            "completion_tokens": 41,
+            "model_seconds": 4.767197264009155,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6508,
+            "completion_tokens": 41,
+            "model_seconds": 4.8317710980190895,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940302_grasp_bias",
+        "seed": 940302,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6550,
+            "completion_tokens": 42,
+            "model_seconds": 4.9393309080041945,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6860,
+            "completion_tokens": 42,
+            "model_seconds": 5.120661241991911,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940302_grasp_place",
+        "seed": 940302,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 1,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6731,
+            "completion_tokens": 42,
+            "model_seconds": 5.12943136197282,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7042,
+            "completion_tokens": 42,
+            "model_seconds": 5.188322177040391,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940302_grasp_bias",
+        "seed": 940302,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 1,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 3564,
+            "completion_tokens": 22,
+            "model_seconds": 2.657393544970546,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 3564,
+            "completion_tokens": 22,
+            "model_seconds": 2.7114685410051607,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940302_grasp_place",
+        "seed": 940302,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 9803,
+            "completion_tokens": 39,
+            "model_seconds": 5.585903616971336,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 10112,
+            "completion_tokens": 39,
+            "model_seconds": 5.6235683629638515,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940303_grasp_bias",
+        "seed": 940303,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 3377,
+            "completion_tokens": 19,
+            "model_seconds": 2.402658061007969,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 3377,
+            "completion_tokens": 19,
+            "model_seconds": 2.420037801959552,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940303_grasp_place",
+        "seed": 940303,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 1
+          },
+          "adaptive": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 1
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6140,
+            "completion_tokens": 42,
+            "model_seconds": 4.979373894049786,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6424,
+            "completion_tokens": 42,
+            "model_seconds": 5.060164063004777,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940303_grasp_bias",
+        "seed": 940303,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7227,
+            "completion_tokens": 39,
+            "model_seconds": 4.953065610025078,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7539,
+            "completion_tokens": 39,
+            "model_seconds": 5.012864604010247,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940303_grasp_place",
+        "seed": 940303,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 1,
+            "missing": 1,
+            "visibility_recovered": 1
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6107,
+            "completion_tokens": 39,
+            "model_seconds": 4.72605477302568,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6418,
+            "completion_tokens": 39,
+            "model_seconds": 4.80683911498636,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940304_grasp_bias",
+        "seed": 940304,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 1,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 3323,
+            "completion_tokens": 21,
+            "model_seconds": 2.5172525829984806,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 3323,
+            "completion_tokens": 21,
+            "model_seconds": 2.5322823759634048,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940304_grasp_place",
+        "seed": 940304,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 5904,
+            "completion_tokens": 44,
+            "model_seconds": 5.090590431995224,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6218,
+            "completion_tokens": 44,
+            "model_seconds": 5.15648551704362,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940304_grasp_bias",
+        "seed": 940304,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7235,
+            "completion_tokens": 38,
+            "model_seconds": 4.909466954995878,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7547,
+            "completion_tokens": 38,
+            "model_seconds": 5.011865500011481,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940304_grasp_place",
+        "seed": 940304,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 1
+          },
+          "adaptive": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 1
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 5884,
+            "completion_tokens": 41,
+            "model_seconds": 4.827547179011162,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6167,
+            "completion_tokens": 41,
+            "model_seconds": 4.9134811769472435,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940305_grasp_bias",
+        "seed": 940305,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 1,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 3548,
+            "completion_tokens": 20,
+            "model_seconds": 2.4872021059854887,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 0,
+            "model_calls": 1,
+            "invalid": 0,
+            "prompt_tokens": 3548,
+            "completion_tokens": 20,
+            "model_seconds": 2.5075568460160866,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940305_grasp_place",
+        "seed": 940305,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7152,
+            "completion_tokens": 39,
+            "model_seconds": 4.939818425977137,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7464,
+            "completion_tokens": 39,
+            "model_seconds": 5.024405228963587,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940305_grasp_bias",
+        "seed": 940305,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7241,
+            "completion_tokens": 40,
+            "model_seconds": 5.074317947030067,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7556,
+            "completion_tokens": 40,
+            "model_seconds": 5.118077822029591,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940305_grasp_place",
+        "seed": 940305,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7241,
+            "completion_tokens": 42,
+            "model_seconds": 5.0999386250041425,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7554,
+            "completion_tokens": 42,
+            "model_seconds": 5.153996742039453,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940306_grasp_bias",
+        "seed": 940306,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 1
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 2,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 1
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6138,
+            "completion_tokens": 42,
+            "model_seconds": 4.993082360015251,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6422,
+            "completion_tokens": 42,
+            "model_seconds": 5.050956474035047,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M0_940306_grasp_place",
+        "seed": 940306,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6998,
+            "completion_tokens": 38,
+            "model_seconds": 4.8512477449839935,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 7307,
+            "completion_tokens": 38,
+            "model_seconds": 4.895611546002328,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940306_grasp_bias",
+        "seed": 940306,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": true,
+            "attempts": 1,
+            "extra_observations": 0,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": false,
+            "recovered": false,
+            "cumulative_success": [
+              true,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 1,
+            "extra_observations": 0,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": false,
+            "recovered": false,
+            "cumulative_success": [
+              true,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_current": {
+            "success": true,
+            "attempts": 1,
+            "extra_observations": 0,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": false,
+            "recovered": false,
+            "cumulative_success": [
+              true,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": true,
+            "attempts": 1,
+            "extra_observations": 0,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": false,
+            "recovered": false,
+            "cumulative_success": [
+              true,
+              true,
+              true
+            ],
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0
+          }
+        }
+      },
+      {
+        "id": "M1_940306_grasp_place",
+        "seed": 940306,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "adaptive": {
+            "success": true,
+            "attempts": 3,
+            "extra_observations": 2,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": true,
+            "recovered": true,
+            "cumulative_success": [
+              false,
+              false,
+              true
+            ],
+            "later_observation": 1,
+            "missing": 1,
+            "visibility_recovered": 1
+          },
+          "base_current": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6138,
+            "completion_tokens": 38,
+            "model_seconds": 4.523355198034551,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          },
+          "base_history": {
+            "success": false,
+            "attempts": 3,
+            "extra_observations": 0,
+            "model_calls": 2,
+            "invalid": 0,
+            "prompt_tokens": 6448,
+            "completion_tokens": 38,
+            "model_seconds": 4.555225518008228,
+            "initially_failed": true,
+            "recovered": false,
+            "cumulative_success": [
+              false,
+              false,
+              false
+            ],
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0
+          }
+        }
+      }
+    ],
+    "overall": {
+      "planned": 24,
+      "eligible": 24,
+      "skipped": 0,
+      "methods": {
+        "fixed_first": {
+          "executed": 24,
+          "success": 14,
+          "attempts": 64,
+          "extra_observations": 46,
+          "model_calls": 0,
+          "invalid": 0,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "model_seconds": 0,
+          "initially_failed": 23,
+          "recovered": 13,
+          "later_observation": 0,
+          "missing": 14,
+          "visibility_recovered": 4,
+          "cumulative_success": [
+            1,
+            7,
+            14
+          ]
+        },
+        "adaptive": {
+          "executed": 24,
+          "success": 17,
+          "attempts": 64,
+          "extra_observations": 43,
+          "model_calls": 0,
+          "invalid": 0,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "model_seconds": 0,
+          "initially_failed": 23,
+          "recovered": 16,
+          "later_observation": 4,
+          "missing": 14,
+          "visibility_recovered": 7,
+          "cumulative_success": [
+            1,
+            7,
+            17
+          ]
+        },
+        "base_current": {
+          "executed": 24,
+          "success": 14,
+          "attempts": 65,
+          "extra_observations": 0,
+          "model_calls": 41,
+          "invalid": 0,
+          "prompt_tokens": 138556,
+          "completion_tokens": 833,
+          "model_seconds": 102.00586160313105,
+          "initially_failed": 23,
+          "recovered": 13,
+          "later_observation": 0,
+          "missing": 11,
+          "visibility_recovered": 0,
+          "cumulative_success": [
+            1,
+            6,
+            14
+          ]
+        },
+        "base_history": {
+          "executed": 24,
+          "success": 14,
+          "attempts": 65,
+          "extra_observations": 0,
+          "model_calls": 41,
+          "invalid": 0,
+          "prompt_tokens": 144054,
+          "completion_tokens": 833,
+          "model_seconds": 103.30758382403292,
+          "initially_failed": 23,
+          "recovered": 13,
+          "later_observation": 0,
+          "missing": 11,
+          "visibility_recovered": 0,
+          "cumulative_success": [
+            1,
+            6,
+            14
+          ]
+        }
+      },
+      "paired": {
+        "fixed_first__adaptive": {
+          "both_success": 14,
+          "b_only": 3,
+          "both_fail": 7
+        },
+        "fixed_first__base_current": {
+          "both_success": 14,
+          "both_fail": 10
+        },
+        "fixed_first__base_history": {
+          "both_success": 14,
+          "both_fail": 10
+        },
+        "adaptive__base_current": {
+          "both_success": 14,
+          "a_only": 3,
+          "both_fail": 7
+        },
+        "adaptive__base_history": {
+          "both_success": 14,
+          "a_only": 3,
+          "both_fail": 7
+        },
+        "base_current__base_history": {
+          "both_success": 14,
+          "both_fail": 10
+        }
+      }
+    },
+    "seed_groups": 6,
+    "by_seed": {
+      "940301": {
+        "planned": 4,
+        "eligible": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 11,
+            "extra_observations": 8,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 3,
+            "visibility_recovered": 1,
+            "cumulative_success": [
+              0,
+              1,
+              3
+            ]
+          },
+          "adaptive": {
+            "executed": 4,
+            "success": 4,
+            "attempts": 11,
+            "extra_observations": 8,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 4,
+            "later_observation": 1,
+            "missing": 3,
+            "visibility_recovered": 2,
+            "cumulative_success": [
+              0,
+              1,
+              4
+            ]
+          },
+          "base_current": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 22255,
+            "completion_tokens": 146,
+            "model_seconds": 17.318830277072266,
+            "initially_failed": 4,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 3,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              3
+            ]
+          },
+          "base_history": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 23164,
+            "completion_tokens": 146,
+            "model_seconds": 17.443713170010597,
+            "initially_failed": 4,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 3,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              3
+            ]
+          }
+        },
+        "paired": {
+          "fixed_first__adaptive": {
+            "both_success": 3,
+            "b_only": 1
+          },
+          "fixed_first__base_current": {
+            "both_success": 3,
+            "both_fail": 1
+          },
+          "fixed_first__base_history": {
+            "both_success": 3,
+            "both_fail": 1
+          },
+          "adaptive__base_current": {
+            "both_success": 3,
+            "a_only": 1
+          },
+          "adaptive__base_history": {
+            "both_success": 3,
+            "a_only": 1
+          },
+          "base_current__base_history": {
+            "both_success": 3,
+            "both_fail": 1
+          }
+        }
+      },
+      "940302": {
+        "planned": 4,
+        "eligible": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 8,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          },
+          "adaptive": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 7,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 1,
+            "missing": 2,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          },
+          "base_current": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 26648,
+            "completion_tokens": 145,
+            "model_seconds": 18.312059431918897,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          },
+          "base_history": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 27578,
+            "completion_tokens": 145,
+            "model_seconds": 18.644020323001314,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          }
+        },
+        "paired": {
+          "fixed_first__adaptive": {
+            "both_fail": 2,
+            "both_success": 2
+          },
+          "fixed_first__base_current": {
+            "both_fail": 2,
+            "both_success": 2
+          },
+          "fixed_first__base_history": {
+            "both_fail": 2,
+            "both_success": 2
+          },
+          "adaptive__base_current": {
+            "both_fail": 2,
+            "both_success": 2
+          },
+          "adaptive__base_history": {
+            "both_fail": 2,
+            "both_success": 2
+          },
+          "base_current__base_history": {
+            "both_fail": 2,
+            "both_success": 2
+          }
+        }
+      },
+      "940303": {
+        "planned": 4,
+        "eligible": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 8,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 3,
+            "visibility_recovered": 1,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          },
+          "adaptive": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 11,
+            "extra_observations": 8,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 3,
+            "later_observation": 1,
+            "missing": 3,
+            "visibility_recovered": 2,
+            "cumulative_success": [
+              0,
+              1,
+              3
+            ]
+          },
+          "base_current": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 22851,
+            "completion_tokens": 139,
+            "model_seconds": 17.061152338108514,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          },
+          "base_history": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 23758,
+            "completion_tokens": 139,
+            "model_seconds": 17.299905583960935,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          }
+        },
+        "paired": {
+          "fixed_first__adaptive": {
+            "both_success": 2,
+            "both_fail": 1,
+            "b_only": 1
+          },
+          "fixed_first__base_current": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "fixed_first__base_history": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "adaptive__base_current": {
+            "both_success": 2,
+            "both_fail": 1,
+            "a_only": 1
+          },
+          "adaptive__base_history": {
+            "both_success": 2,
+            "both_fail": 1,
+            "a_only": 1
+          },
+          "base_current__base_history": {
+            "both_success": 2,
+            "both_fail": 2
+          }
+        }
+      },
+      "940304": {
+        "planned": 4,
+        "eligible": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 8,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 3,
+            "visibility_recovered": 1,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          },
+          "adaptive": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 7,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 3,
+            "visibility_recovered": 1,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          },
+          "base_current": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 22346,
+            "completion_tokens": 144,
+            "model_seconds": 17.344857149000745,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 3,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          },
+          "base_history": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 23255,
+            "completion_tokens": 144,
+            "model_seconds": 17.61411456996575,
+            "initially_failed": 4,
+            "recovered": 2,
+            "later_observation": 0,
+            "missing": 3,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              2
+            ]
+          }
+        },
+        "paired": {
+          "fixed_first__adaptive": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "fixed_first__base_current": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "fixed_first__base_history": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "adaptive__base_current": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "adaptive__base_history": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "base_current__base_history": {
+            "both_success": 2,
+            "both_fail": 2
+          }
+        }
+      },
+      "940305": {
+        "planned": 4,
+        "eligible": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 11,
+            "extra_observations": 8,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              3
+            ]
+          },
+          "adaptive": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 11,
+            "extra_observations": 7,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 4,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 1,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              3
+            ]
+          },
+          "base_current": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 25182,
+            "completion_tokens": 141,
+            "model_seconds": 17.601277103996836,
+            "initially_failed": 4,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              3
+            ]
+          },
+          "base_history": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 11,
+            "extra_observations": 0,
+            "model_calls": 7,
+            "invalid": 0,
+            "prompt_tokens": 26122,
+            "completion_tokens": 141,
+            "model_seconds": 17.804036639048718,
+            "initially_failed": 4,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 0,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              1,
+              3
+            ]
+          }
+        },
+        "paired": {
+          "fixed_first__adaptive": {
+            "both_success": 3,
+            "both_fail": 1
+          },
+          "fixed_first__base_current": {
+            "both_success": 3,
+            "both_fail": 1
+          },
+          "fixed_first__base_history": {
+            "both_success": 3,
+            "both_fail": 1
+          },
+          "adaptive__base_current": {
+            "both_success": 3,
+            "both_fail": 1
+          },
+          "adaptive__base_history": {
+            "both_success": 3,
+            "both_fail": 1
+          },
+          "base_current__base_history": {
+            "both_success": 3,
+            "both_fail": 1
+          }
+        }
+      },
+      "940306": {
+        "planned": 4,
+        "eligible": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 9,
+            "extra_observations": 6,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 3,
+            "recovered": 1,
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 1,
+            "cumulative_success": [
+              1,
+              2,
+              2
+            ]
+          },
+          "adaptive": {
+            "executed": 4,
+            "success": 3,
+            "attempts": 9,
+            "extra_observations": 6,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 3,
+            "recovered": 2,
+            "later_observation": 1,
+            "missing": 2,
+            "visibility_recovered": 2,
+            "cumulative_success": [
+              1,
+              2,
+              3
+            ]
+          },
+          "base_current": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 10,
+            "extra_observations": 0,
+            "model_calls": 6,
+            "invalid": 0,
+            "prompt_tokens": 19274,
+            "completion_tokens": 118,
+            "model_seconds": 14.367685303033795,
+            "initially_failed": 3,
+            "recovered": 1,
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              1,
+              1,
+              2
+            ]
+          },
+          "base_history": {
+            "executed": 4,
+            "success": 2,
+            "attempts": 10,
+            "extra_observations": 0,
+            "model_calls": 6,
+            "invalid": 0,
+            "prompt_tokens": 20177,
+            "completion_tokens": 118,
+            "model_seconds": 14.501793538045604,
+            "initially_failed": 3,
+            "recovered": 1,
+            "later_observation": 0,
+            "missing": 2,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              1,
+              1,
+              2
+            ]
+          }
+        },
+        "paired": {
+          "fixed_first__adaptive": {
+            "both_success": 2,
+            "both_fail": 1,
+            "b_only": 1
+          },
+          "fixed_first__base_current": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "fixed_first__base_history": {
+            "both_success": 2,
+            "both_fail": 2
+          },
+          "adaptive__base_current": {
+            "both_success": 2,
+            "both_fail": 1,
+            "a_only": 1
+          },
+          "adaptive__base_history": {
+            "both_success": 2,
+            "both_fail": 1,
+            "a_only": 1
+          },
+          "base_current__base_history": {
+            "both_success": 2,
+            "both_fail": 2
+          }
+        }
+      }
+    },
+    "by_factor": {
+      "grasp_bias": {
+        "planned": 12,
+        "eligible": 12,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 12,
+            "success": 11,
+            "attempts": 28,
+            "extra_observations": 22,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 11,
+            "recovered": 10,
+            "later_observation": 0,
+            "missing": 4,
+            "visibility_recovered": 2,
+            "cumulative_success": [
+              1,
+              7,
+              11
+            ]
+          },
+          "adaptive": {
+            "executed": 12,
+            "success": 11,
+            "attempts": 28,
+            "extra_observations": 19,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 11,
+            "recovered": 10,
+            "later_observation": 0,
+            "missing": 4,
+            "visibility_recovered": 2,
+            "cumulative_success": [
+              1,
+              7,
+              11
+            ]
+          },
+          "base_current": {
+            "executed": 12,
+            "success": 11,
+            "attempts": 29,
+            "extra_observations": 0,
+            "model_calls": 17,
+            "invalid": 0,
+            "prompt_tokens": 57499,
+            "completion_tokens": 347,
+            "model_seconds": 42.48002676607575,
+            "initially_failed": 11,
+            "recovered": 10,
+            "later_observation": 0,
+            "missing": 4,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              1,
+              6,
+              11
+            ]
+          },
+          "base_history": {
+            "executed": 12,
+            "success": 11,
+            "attempts": 29,
+            "extra_observations": 0,
+            "model_calls": 17,
+            "invalid": 0,
+            "prompt_tokens": 59316,
+            "completion_tokens": 347,
+            "model_seconds": 43.138294094998855,
+            "initially_failed": 11,
+            "recovered": 10,
+            "later_observation": 0,
+            "missing": 4,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              1,
+              6,
+              11
+            ]
+          }
+        },
+        "paired": {
+          "fixed_first__adaptive": {
+            "both_success": 11,
+            "both_fail": 1
+          },
+          "fixed_first__base_current": {
+            "both_success": 11,
+            "both_fail": 1
+          },
+          "fixed_first__base_history": {
+            "both_success": 11,
+            "both_fail": 1
+          },
+          "adaptive__base_current": {
+            "both_success": 11,
+            "both_fail": 1
+          },
+          "adaptive__base_history": {
+            "both_success": 11,
+            "both_fail": 1
+          },
+          "base_current__base_history": {
+            "both_success": 11,
+            "both_fail": 1
+          }
+        }
+      },
+      "grasp_place": {
+        "planned": 12,
+        "eligible": 12,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 12,
+            "success": 3,
+            "attempts": 36,
+            "extra_observations": 24,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 12,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 10,
+            "visibility_recovered": 2,
+            "cumulative_success": [
+              0,
+              0,
+              3
+            ]
+          },
+          "adaptive": {
+            "executed": 12,
+            "success": 6,
+            "attempts": 36,
+            "extra_observations": 24,
+            "model_calls": 0,
+            "invalid": 0,
+            "prompt_tokens": 0,
+            "completion_tokens": 0,
+            "model_seconds": 0,
+            "initially_failed": 12,
+            "recovered": 6,
+            "later_observation": 4,
+            "missing": 10,
+            "visibility_recovered": 5,
+            "cumulative_success": [
+              0,
+              0,
+              6
+            ]
+          },
+          "base_current": {
+            "executed": 12,
+            "success": 3,
+            "attempts": 36,
+            "extra_observations": 0,
+            "model_calls": 24,
+            "invalid": 0,
+            "prompt_tokens": 81057,
+            "completion_tokens": 486,
+            "model_seconds": 59.5258348370553,
+            "initially_failed": 12,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 7,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              0,
+              3
+            ]
+          },
+          "base_history": {
+            "executed": 12,
+            "success": 3,
+            "attempts": 36,
+            "extra_observations": 0,
+            "model_calls": 24,
+            "invalid": 0,
+            "prompt_tokens": 84738,
+            "completion_tokens": 486,
+            "model_seconds": 60.16928972903406,
+            "initially_failed": 12,
+            "recovered": 3,
+            "later_observation": 0,
+            "missing": 7,
+            "visibility_recovered": 0,
+            "cumulative_success": [
+              0,
+              0,
+              3
+            ]
+          }
+        },
+        "paired": {
+          "fixed_first__adaptive": {
+            "both_success": 3,
+            "b_only": 3,
+            "both_fail": 6
+          },
+          "fixed_first__base_current": {
+            "both_success": 3,
+            "both_fail": 9
+          },
+          "fixed_first__base_history": {
+            "both_success": 3,
+            "both_fail": 9
+          },
+          "adaptive__base_current": {
+            "both_success": 3,
+            "a_only": 3,
+            "both_fail": 6
+          },
+          "adaptive__base_history": {
+            "both_success": 3,
+            "a_only": 3,
+            "both_fail": 6
+          },
+          "base_current__base_history": {
+            "both_success": 3,
+            "both_fail": 9
+          }
+        }
+      }
+    },
+    "primary_execution_budget": 3,
+    "prefixes_are_counterfactual_budgets": false
+  },
+  "tamper": {
+    "passed": true,
+    "count": 28,
+    "rejections": [
+      {
+        "method": "fixed_first",
+        "kind": "physical_hash"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "budget"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "success"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "truth"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "allocation"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "state"
+      },
+      {
+        "method": "adaptive",
+        "kind": "physical_hash"
+      },
+      {
+        "method": "adaptive",
+        "kind": "budget"
+      },
+      {
+        "method": "adaptive",
+        "kind": "success"
+      },
+      {
+        "method": "adaptive",
+        "kind": "truth"
+      },
+      {
+        "method": "adaptive",
+        "kind": "allocation"
+      },
+      {
+        "method": "adaptive",
+        "kind": "state"
+      },
+      {
+        "method": "base_current",
+        "kind": "physical_hash"
+      },
+      {
+        "method": "base_current",
+        "kind": "budget"
+      },
+      {
+        "method": "base_current",
+        "kind": "success"
+      },
+      {
+        "method": "base_current",
+        "kind": "truth"
+      },
+      {
+        "method": "base_current",
+        "kind": "allocation"
+      },
+      {
+        "method": "base_current",
+        "kind": "state"
+      },
+      {
+        "method": "base_current",
+        "kind": "prompt_history"
+      },
+      {
+        "method": "base_current",
+        "kind": "model_identity"
+      },
+      {
+        "method": "base_history",
+        "kind": "physical_hash"
+      },
+      {
+        "method": "base_history",
+        "kind": "budget"
+      },
+      {
+        "method": "base_history",
+        "kind": "success"
+      },
+      {
+        "method": "base_history",
+        "kind": "truth"
+      },
+      {
+        "method": "base_history",
+        "kind": "allocation"
+      },
+      {
+        "method": "base_history",
+        "kind": "state"
+      },
+      {
+        "method": "base_history",
+        "kind": "prompt_history"
+      },
+      {
+        "method": "base_history",
+        "kind": "model_identity"
+      }
+    ]
+  },
+  "ledger": {
+    "task_calls": 82,
+    "startup_calls": 2,
+    "all_calls": 84
+  },
+  "manifest_sha256": "c73f5aee51e0a4e986f0c1d888874e2e6894273fdec44459c07f2070fbedf8b7",
+  "test_used": false,
+  "training_approved": false,
+  "trajectories": 96,
+  "physical_executions": 210,
+  "extra_observations": 89,
+  "model_calls": 82,
+  "invalid": 0
+}

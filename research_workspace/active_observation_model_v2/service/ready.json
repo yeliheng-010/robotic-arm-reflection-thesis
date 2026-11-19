@@ -1,0 +1,34 @@
+{
+  "status": "ready",
+  "identity": {
+    "experiment_sha256": "c73f5aee51e0a4e986f0c1d888874e2e6894273fdec44459c07f2070fbedf8b7",
+    "runtime_manifest_sha256": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa",
+    "base": "Qwen3.5-4B",
+    "adapter_enabled": false
+  },
+  "replay_passed": true,
+  "replay": [
+    {
+      "index": 0,
+      "request_id": "ea90c985c41b4b5d88878d2d3990060a"
+    },
+    {
+      "index": 52,
+      "request_id": "2f463972d5624ce889d3a317b9931922"
+    }
+  ],
+  "environment": {
+    "job": "5364",
+    "cuda_visible_devices": "0",
+    "device": "Tesla V100-SXM2-16GB",
+    "versions": {
+      "torch": "2.6.0+cu124",
+      "transformers": "5.20.1",
+      "peft": "0.21.2",
+      "accelerate": "1.12.0",
+      "bitsandbytes": "0.49.2"
+    },
+    "delta_precision": "fp32_reference_without_autocast",
+    "full_attention": "EFFICIENT_ATTENTION SDPA with explicit repeated KV; math/flash disabled"
+  }
+}

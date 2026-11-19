@@ -1,0 +1,84 @@
+{
+  "status": "completed",
+  "manifest_sha256": "e4cca681dd3af251cf428c6ccf5c9b72ced8cec3ad617f5c1220327ceb5f3dec",
+  "started_at": 1793184873.807644,
+  "stage": "finished",
+  "active_job": null,
+  "completed_stages": [
+    {
+      "stage": "smoke",
+      "job": "5339",
+      "accounting": [
+        [
+          "5340",
+          "COMPLETED",
+          "0:0"
+        ],
+        [
+          "5341",
+          "COMPLETED",
+          "0:0"
+        ],
+        [
+          "5342",
+          "COMPLETED",
+          "0:0"
+        ],
+        [
+          "5339",
+          "COMPLETED",
+          "0:0"
+        ]
+      ]
+    },
+    {
+      "stage": "gate",
+      "job": "5343",
+      "accounting": [
+        [
+          "5343",
+          "COMPLETED",
+          "0:0"
+        ]
+      ]
+    },
+    {
+      "stage": "batch",
+      "job": "5344",
+      "accounting": [
+        [
+          "5345",
+          "COMPLETED",
+          "0:0"
+        ],
+        [
+          "5346",
+          "COMPLETED",
+          "0:0"
+        ],
+        [
+          "5347",
+          "COMPLETED",
+          "0:0"
+        ],
+        [
+          "5344",
+          "COMPLETED",
+          "0:0"
+        ]
+      ]
+    },
+    {
+      "stage": "audit",
+      "job": "5348",
+      "accounting": [
+        [
+          "5348",
+          "COMPLETED",
+          "0:0"
+        ]
+      ]
+    }
+  ],
+  "ended_at": 1793185964.5653982
+}

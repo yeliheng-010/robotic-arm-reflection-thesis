@@ -1,0 +1,896 @@
+{
+  "passed": true,
+  "complete": true,
+  "expected": 4,
+  "accounted": 4,
+  "eligible": 4,
+  "rows": [
+    {
+      "id": "A0_940201_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 4,
+      "trajectories": 2,
+      "extra_observations": 4,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true
+      },
+      "model_calls": 0
+    },
+    {
+      "id": "A0_940201_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 6,
+      "trajectories": 2,
+      "extra_observations": 4,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true
+      },
+      "model_calls": 0
+    },
+    {
+      "id": "A1_940201_grasp_bias",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 4,
+      "trajectories": 2,
+      "extra_observations": 4,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true
+      },
+      "model_calls": 0
+    },
+    {
+      "id": "A1_940201_grasp_place",
+      "passed": true,
+      "eligible": true,
+      "qualification": "challenge",
+      "physical_executions": 6,
+      "trajectories": 2,
+      "extra_observations": 4,
+      "successes": {
+        "fixed_first": true,
+        "adaptive": true
+      },
+      "model_calls": 0
+    }
+  ],
+  "budget_analysis": {
+    "budgets": [
+      1,
+      2,
+      3
+    ],
+    "shared_prefixes": true,
+    "post_hoc": false,
+    "seed_groups": 1,
+    "rows": [
+      {
+        "id": "A0_940201_grasp_bias",
+        "seed": 940201,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "1": {
+              "success": false,
+              "first_success": false,
+              "attempts": 1,
+              "extra_observations": 0
+            },
+            "2": {
+              "success": true,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            },
+            "3": {
+              "success": true,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            }
+          },
+          "adaptive": {
+            "1": {
+              "success": false,
+              "first_success": false,
+              "attempts": 1,
+              "extra_observations": 0
+            },
+            "2": {
+              "success": true,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            },
+            "3": {
+              "success": true,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            }
+          }
+        }
+      },
+      {
+        "id": "A0_940201_grasp_place",
+        "seed": 940201,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "1": {
+              "success": false,
+              "first_success": false,
+              "attempts": 1,
+              "extra_observations": 0
+            },
+            "2": {
+              "success": false,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            },
+            "3": {
+              "success": true,
+              "first_success": false,
+              "attempts": 3,
+              "extra_observations": 2
+            }
+          },
+          "adaptive": {
+            "1": {
+              "success": false,
+              "first_success": false,
+              "attempts": 1,
+              "extra_observations": 0
+            },
+            "2": {
+              "success": false,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            },
+            "3": {
+              "success": true,
+              "first_success": false,
+              "attempts": 3,
+              "extra_observations": 2
+            }
+          }
+        }
+      },
+      {
+        "id": "A1_940201_grasp_bias",
+        "seed": 940201,
+        "factor": "grasp_bias",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "1": {
+              "success": false,
+              "first_success": false,
+              "attempts": 1,
+              "extra_observations": 0
+            },
+            "2": {
+              "success": true,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            },
+            "3": {
+              "success": true,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            }
+          },
+          "adaptive": {
+            "1": {
+              "success": false,
+              "first_success": false,
+              "attempts": 1,
+              "extra_observations": 0
+            },
+            "2": {
+              "success": true,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            },
+            "3": {
+              "success": true,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            }
+          }
+        }
+      },
+      {
+        "id": "A1_940201_grasp_place",
+        "seed": 940201,
+        "factor": "grasp_place",
+        "eligible": true,
+        "methods": {
+          "fixed_first": {
+            "1": {
+              "success": false,
+              "first_success": false,
+              "attempts": 1,
+              "extra_observations": 0
+            },
+            "2": {
+              "success": false,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            },
+            "3": {
+              "success": true,
+              "first_success": false,
+              "attempts": 3,
+              "extra_observations": 2
+            }
+          },
+          "adaptive": {
+            "1": {
+              "success": false,
+              "first_success": false,
+              "attempts": 1,
+              "extra_observations": 0
+            },
+            "2": {
+              "success": false,
+              "first_success": false,
+              "attempts": 2,
+              "extra_observations": 2
+            },
+            "3": {
+              "success": true,
+              "first_success": false,
+              "attempts": 3,
+              "extra_observations": 2
+            }
+          }
+        }
+      }
+    ],
+    "curves": [
+      {
+        "budget": 1,
+        "planned": 4,
+        "executed": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "successes": 0,
+            "attempts": 4,
+            "extra_observations": 0,
+            "initially_failed": 4,
+            "recovered": 0
+          },
+          "adaptive": {
+            "executed": 4,
+            "successes": 0,
+            "attempts": 4,
+            "extra_observations": 0,
+            "initially_failed": 4,
+            "recovered": 0
+          }
+        },
+        "paired": {
+          "both_fail": 4
+        }
+      },
+      {
+        "budget": 2,
+        "planned": 4,
+        "executed": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "successes": 2,
+            "attempts": 8,
+            "extra_observations": 8,
+            "initially_failed": 4,
+            "recovered": 2
+          },
+          "adaptive": {
+            "executed": 4,
+            "successes": 2,
+            "attempts": 8,
+            "extra_observations": 8,
+            "initially_failed": 4,
+            "recovered": 2
+          }
+        },
+        "paired": {
+          "both_success": 2,
+          "both_fail": 2
+        }
+      },
+      {
+        "budget": 3,
+        "planned": 4,
+        "executed": 4,
+        "skipped": 0,
+        "methods": {
+          "fixed_first": {
+            "executed": 4,
+            "successes": 4,
+            "attempts": 10,
+            "extra_observations": 8,
+            "initially_failed": 4,
+            "recovered": 4
+          },
+          "adaptive": {
+            "executed": 4,
+            "successes": 4,
+            "attempts": 10,
+            "extra_observations": 8,
+            "initially_failed": 4,
+            "recovered": 4
+          }
+        },
+        "paired": {
+          "both_success": 4
+        }
+      }
+    ],
+    "by_seed": {
+      "940201": [
+        {
+          "budget": 1,
+          "planned": 4,
+          "executed": 4,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 4,
+              "successes": 0,
+              "attempts": 4,
+              "extra_observations": 0,
+              "initially_failed": 4,
+              "recovered": 0
+            },
+            "adaptive": {
+              "executed": 4,
+              "successes": 0,
+              "attempts": 4,
+              "extra_observations": 0,
+              "initially_failed": 4,
+              "recovered": 0
+            }
+          },
+          "paired": {
+            "both_fail": 4
+          }
+        },
+        {
+          "budget": 2,
+          "planned": 4,
+          "executed": 4,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 4,
+              "successes": 2,
+              "attempts": 8,
+              "extra_observations": 8,
+              "initially_failed": 4,
+              "recovered": 2
+            },
+            "adaptive": {
+              "executed": 4,
+              "successes": 2,
+              "attempts": 8,
+              "extra_observations": 8,
+              "initially_failed": 4,
+              "recovered": 2
+            }
+          },
+          "paired": {
+            "both_success": 2,
+            "both_fail": 2
+          }
+        },
+        {
+          "budget": 3,
+          "planned": 4,
+          "executed": 4,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 4,
+              "successes": 4,
+              "attempts": 10,
+              "extra_observations": 8,
+              "initially_failed": 4,
+              "recovered": 4
+            },
+            "adaptive": {
+              "executed": 4,
+              "successes": 4,
+              "attempts": 10,
+              "extra_observations": 8,
+              "initially_failed": 4,
+              "recovered": 4
+            }
+          },
+          "paired": {
+            "both_success": 4
+          }
+        }
+      ]
+    },
+    "by_factor": {
+      "grasp_bias": [
+        {
+          "budget": 1,
+          "planned": 2,
+          "executed": 2,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 2,
+              "successes": 0,
+              "attempts": 2,
+              "extra_observations": 0,
+              "initially_failed": 2,
+              "recovered": 0
+            },
+            "adaptive": {
+              "executed": 2,
+              "successes": 0,
+              "attempts": 2,
+              "extra_observations": 0,
+              "initially_failed": 2,
+              "recovered": 0
+            }
+          },
+          "paired": {
+            "both_fail": 2
+          }
+        },
+        {
+          "budget": 2,
+          "planned": 2,
+          "executed": 2,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 2,
+              "successes": 2,
+              "attempts": 4,
+              "extra_observations": 4,
+              "initially_failed": 2,
+              "recovered": 2
+            },
+            "adaptive": {
+              "executed": 2,
+              "successes": 2,
+              "attempts": 4,
+              "extra_observations": 4,
+              "initially_failed": 2,
+              "recovered": 2
+            }
+          },
+          "paired": {
+            "both_success": 2
+          }
+        },
+        {
+          "budget": 3,
+          "planned": 2,
+          "executed": 2,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 2,
+              "successes": 2,
+              "attempts": 4,
+              "extra_observations": 4,
+              "initially_failed": 2,
+              "recovered": 2
+            },
+            "adaptive": {
+              "executed": 2,
+              "successes": 2,
+              "attempts": 4,
+              "extra_observations": 4,
+              "initially_failed": 2,
+              "recovered": 2
+            }
+          },
+          "paired": {
+            "both_success": 2
+          }
+        }
+      ],
+      "grasp_place": [
+        {
+          "budget": 1,
+          "planned": 2,
+          "executed": 2,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 2,
+              "successes": 0,
+              "attempts": 2,
+              "extra_observations": 0,
+              "initially_failed": 2,
+              "recovered": 0
+            },
+            "adaptive": {
+              "executed": 2,
+              "successes": 0,
+              "attempts": 2,
+              "extra_observations": 0,
+              "initially_failed": 2,
+              "recovered": 0
+            }
+          },
+          "paired": {
+            "both_fail": 2
+          }
+        },
+        {
+          "budget": 2,
+          "planned": 2,
+          "executed": 2,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 2,
+              "successes": 0,
+              "attempts": 4,
+              "extra_observations": 4,
+              "initially_failed": 2,
+              "recovered": 0
+            },
+            "adaptive": {
+              "executed": 2,
+              "successes": 0,
+              "attempts": 4,
+              "extra_observations": 4,
+              "initially_failed": 2,
+              "recovered": 0
+            }
+          },
+          "paired": {
+            "both_fail": 2
+          }
+        },
+        {
+          "budget": 3,
+          "planned": 2,
+          "executed": 2,
+          "skipped": 0,
+          "methods": {
+            "fixed_first": {
+              "executed": 2,
+              "successes": 2,
+              "attempts": 6,
+              "extra_observations": 4,
+              "initially_failed": 2,
+              "recovered": 2
+            },
+            "adaptive": {
+              "executed": 2,
+              "successes": 2,
+              "attempts": 6,
+              "extra_observations": 4,
+              "initially_failed": 2,
+              "recovered": 2
+            }
+          },
+          "paired": {
+            "both_success": 2
+          }
+        }
+      ]
+    },
+    "exposure": [
+      {
+        "id": "A0_940201_grasp_bias",
+        "method": "fixed_first",
+        "success": true,
+        "attempts": 2,
+        "rows": [
+          {
+            "after_attempt": 1,
+            "extra": 2,
+            "missing": false,
+            "conflict": true,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_grasp",
+            "phase": "carry_lift"
+          }
+        ]
+      },
+      {
+        "id": "A0_940201_grasp_bias",
+        "method": "adaptive",
+        "success": true,
+        "attempts": 2,
+        "rows": [
+          {
+            "after_attempt": 1,
+            "extra": 2,
+            "missing": false,
+            "conflict": true,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_grasp",
+            "phase": "carry_lift"
+          }
+        ]
+      },
+      {
+        "id": "A0_940201_grasp_place",
+        "method": "fixed_first",
+        "success": true,
+        "attempts": 3,
+        "rows": [
+          {
+            "after_attempt": 1,
+            "extra": 2,
+            "missing": false,
+            "conflict": false,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_grasp",
+            "phase": "carry_lift"
+          },
+          {
+            "after_attempt": 2,
+            "extra": 0,
+            "missing": false,
+            "conflict": false,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_place",
+            "phase": "unknown"
+          }
+        ]
+      },
+      {
+        "id": "A0_940201_grasp_place",
+        "method": "adaptive",
+        "success": true,
+        "attempts": 3,
+        "rows": [
+          {
+            "after_attempt": 1,
+            "extra": 2,
+            "missing": false,
+            "conflict": false,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_grasp",
+            "phase": "carry_lift"
+          },
+          {
+            "after_attempt": 2,
+            "extra": 0,
+            "missing": false,
+            "conflict": false,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_place",
+            "phase": "unknown"
+          }
+        ]
+      },
+      {
+        "id": "A1_940201_grasp_bias",
+        "method": "fixed_first",
+        "success": true,
+        "attempts": 2,
+        "rows": [
+          {
+            "after_attempt": 1,
+            "extra": 2,
+            "missing": true,
+            "conflict": false,
+            "visibility_recovered": true,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_grasp",
+            "phase": "grasp_pose"
+          }
+        ]
+      },
+      {
+        "id": "A1_940201_grasp_bias",
+        "method": "adaptive",
+        "success": true,
+        "attempts": 2,
+        "rows": [
+          {
+            "after_attempt": 1,
+            "extra": 2,
+            "missing": true,
+            "conflict": false,
+            "visibility_recovered": true,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_grasp",
+            "phase": "grasp_pose"
+          }
+        ]
+      },
+      {
+        "id": "A1_940201_grasp_place",
+        "method": "fixed_first",
+        "success": true,
+        "attempts": 3,
+        "rows": [
+          {
+            "after_attempt": 1,
+            "extra": 2,
+            "missing": false,
+            "conflict": false,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": false,
+            "selected_kind": "measured_grasp",
+            "phase": "grasp_pose"
+          },
+          {
+            "after_attempt": 2,
+            "extra": 0,
+            "missing": false,
+            "conflict": false,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_place",
+            "phase": "unknown"
+          }
+        ]
+      },
+      {
+        "id": "A1_940201_grasp_place",
+        "method": "adaptive",
+        "success": true,
+        "attempts": 3,
+        "rows": [
+          {
+            "after_attempt": 1,
+            "extra": 2,
+            "missing": false,
+            "conflict": false,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": false,
+            "selected_kind": "measured_grasp",
+            "phase": "grasp_pose"
+          },
+          {
+            "after_attempt": 2,
+            "extra": 0,
+            "missing": false,
+            "conflict": false,
+            "visibility_recovered": false,
+            "later_observation": false,
+            "unresolved": true,
+            "selected_kind": "measured_place",
+            "phase": "unknown"
+          }
+        ]
+      }
+    ]
+  },
+  "tamper": {
+    "passed": true,
+    "count": 12,
+    "rejections": [
+      {
+        "method": "fixed_first",
+        "kind": "physical_hash"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "state"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "truth"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "budget"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "allocation"
+      },
+      {
+        "method": "fixed_first",
+        "kind": "success"
+      },
+      {
+        "method": "adaptive",
+        "kind": "physical_hash"
+      },
+      {
+        "method": "adaptive",
+        "kind": "state"
+      },
+      {
+        "method": "adaptive",
+        "kind": "truth"
+      },
+      {
+        "method": "adaptive",
+        "kind": "budget"
+      },
+      {
+        "method": "adaptive",
+        "kind": "allocation"
+      },
+      {
+        "method": "adaptive",
+        "kind": "success"
+      }
+    ]
+  },
+  "manifest_sha256": "e4cca681dd3af251cf428c6ccf5c9b72ced8cec3ad617f5c1220327ceb5f3dec",
+  "mechanism_exposure": {
+    "fixed_first": {
+      "decisions": 6,
+      "missing": 1,
+      "conflict": 1,
+      "visibility_recovered": 1,
+      "later_observation": 0,
+      "unresolved": 5,
+      "phases": {
+        "carry_lift": 2,
+        "unknown": 2,
+        "grasp_pose": 2
+      },
+      "multi_stage_conditions": 2
+    },
+    "adaptive": {
+      "decisions": 6,
+      "missing": 1,
+      "conflict": 1,
+      "visibility_recovered": 1,
+      "later_observation": 0,
+      "unresolved": 5,
+      "phases": {
+        "carry_lift": 2,
+        "unknown": 2,
+        "grasp_pose": 2
+      },
+      "multi_stage_conditions": 2
+    }
+  },
+  "test_used": false,
+  "training_approved": false,
+  "model_calls": 0,
+  "trajectories": 8,
+  "physical_executions": 20,
+  "extra_observations": 16
+}

@@ -1,0 +1,27 @@
+{
+  "modes": [
+    "direct",
+    "diagnostic"
+  ],
+  "max_calls": 2,
+  "seed": 42,
+  "max_tokens": 2048,
+  "temperature": 0,
+  "enable_thinking": false,
+  "adapter_enabled": false,
+  "physical_execution_authorized": false,
+  "snapshot_observation_index": 0,
+  "tests": 3,
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/f_response.py": "10c61713f58eb49d2c3750f4fb69cdc8ed5cff38c03703df436c5614ea59d196",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/test_f_response.py": "23813ecda591e6de0f114c06c03157286b85a665b41b2b65e29aa08a2663a1ea",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/f_generator.py": "da646590427543449fa433e2b3dfda871f227c6440026d88f8c10d9fcfde96a3",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/f_model.py": "fb33820660a28b76ff891d539488fd7fac9af04bd5607b9f74f7fcefb82796e5",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/f_model_audit.py": "fe0ea4e0d6fc0fcc3962a13435c272b4d6f3976b35170ca0547b26e3b42c8895",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model.sbatch": "5a78823d82f869ca16080bc13603a5e580a6ed8983ed1a90bf2823134124500e",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model_audit.sbatch": "13f127f13f40d24277f6b18bd3948ce69b730489cb915e09409e09cc60469bac",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/verification.json": "04e742e2d7e78ff1392e67d1003e07c0cf77fc4e871bf03810169ccf8292d824",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/run/model_input_0.json": "66d4c46696bae8377f3fde68e6af811ee26c8dbdb91b2fb7e8ef9cf7c3e6e5f4",
+    "/home/yeliheng/grasp_server/candidate_sft_v2/manifest.json": "f6e1c8345e55c964c179534ae929274b6a2d842f81f59e49632d814bd0cfe0fa"
+  }
+}

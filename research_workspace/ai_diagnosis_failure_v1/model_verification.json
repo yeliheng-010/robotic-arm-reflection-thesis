@@ -1,0 +1,75 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "mode": "direct",
+      "calls": 1,
+      "valid": true,
+      "parsed": {
+        "action": {
+          "id": "OBSERVE",
+          "args": {}
+        }
+      },
+      "error": null,
+      "finish_reason": "stop",
+      "prompt_tokens": 5451,
+      "completion_tokens": 16,
+      "elapsed_s": 2.7797506119823083
+    },
+    {
+      "mode": "diagnostic",
+      "calls": 1,
+      "valid": true,
+      "parsed": {
+        "action": {
+          "id": "OBSERVE",
+          "args": {}
+        },
+        "assessment": {
+          "hypotheses": [
+            {
+              "claim": "当前抓取姿态可能导致抓取失败",
+              "evidence_ids": [
+                "e4"
+              ]
+            },
+            {
+              "claim": "表面统计显示目标区域可见性良好",
+              "evidence_ids": [
+                "e3"
+              ]
+            }
+          ],
+          "uncertainty": "未实测TCP与目标相对位置，无法排除抓取偏移风险"
+        },
+        "expected_observation": "获取新的RGBD观测数据以更新表面统计"
+      },
+      "error": null,
+      "finish_reason": "stop",
+      "prompt_tokens": 5553,
+      "completion_tokens": 107,
+      "elapsed_s": 10.157450963044539
+    }
+  ],
+  "calls": 2,
+  "valid_proposals": 2,
+  "same_visible_input": true,
+  "future_observations_excluded": true,
+  "proposal_executions": 0,
+  "training_runs": 0,
+  "natural_failure_samples": 0,
+  "cause_correctness_validated": false,
+  "model_manifest_sha256": "51d26dee23d8bcf19b7730b3930c284c3f3b0160a2365e743ce5b05811dad83e",
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/environment.json": "71535c6eb525ca644e0dbfa0ca2eec69a9c86fa4bf63728916792777c055d5ec",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/direct_request.json": "8b4689046986666761414280336c6ffa88e05e3d6bd96a735d96b63bce10494d",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/direct_started.json": "22555ff6dbef3714a1146536514953bfee9a3541d555899a7bdd91ed32456512",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/direct_response.json": "f02c38523b1fb0294bafe9c454b09e4e39bf6cd16ae1bdf653eef9baa186d84b",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/direct_validation.json": "f2345d04d53021cd879f7b42d1f3c99fd746dadde097093101181759a08756ba",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/diagnostic_request.json": "e70f12ee2a64de2cd0a01ca2e062f7ec735af9e6c73f466972670d48a0a305a6",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/diagnostic_started.json": "22555ff6dbef3714a1146536514953bfee9a3541d555899a7bdd91ed32456512",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/diagnostic_response.json": "3df227ec9bf43e3daec9e87b7398fa0f88d642402d5f233f48593e5a1588f811",
+    "/home/yeliheng/grasp_server/ai_diagnosis_failure_v1/model/diagnostic_validation.json": "e1dbe789d2f7013d685d065021c8cab2e8da34b40fcc0283034e748371cf8f62"
+  }
+}
