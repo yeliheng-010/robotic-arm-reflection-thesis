@@ -1,0 +1,79 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "mode": "direct",
+      "action": {
+        "id": "STOP",
+        "args": {}
+      },
+      "encoding": {
+        "pixel_values_shape": [
+          1568,
+          1536
+        ],
+        "image_grid_thw": [
+          [
+            1,
+            28,
+            28
+          ],
+          [
+            1,
+            28,
+            28
+          ]
+        ],
+        "input_tokens": 6133
+      },
+      "valid": true
+    },
+    {
+      "mode": "diagnostic",
+      "action": {
+        "id": "OBSERVE",
+        "args": {}
+      },
+      "encoding": {
+        "pixel_values_shape": [
+          1568,
+          1536
+        ],
+        "image_grid_thw": [
+          [
+            1,
+            28,
+            28
+          ],
+          [
+            1,
+            28,
+            28
+          ]
+        ],
+        "input_tokens": 6235
+      },
+      "valid": true
+    }
+  ],
+  "model_calls": 0,
+  "source_model_calls": 2,
+  "physical_attempts": 0,
+  "training_ready": false,
+  "causal_correctness_not_established": true,
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/input.json": "a171d6dacc6984863ea986764dc58620dcbdd7906455af057755eb532ad3589a",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/manifest.json": "9a3973a63e10ad49495fe764259519df322903093b8707e7427386a8d6c9c328",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/environment.json": "e2dbbc6110005c07673c0bbf553b8634c23f8f6fb621b68d4a0daab2ed7859e3",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/direct_started.json": "fd3bb1ba8d5c1e54e0307d8af01fe509da236a54763b9793e6449fb7155776c5",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/direct_generation_started.json": "a979194ceb7f6c2a8b4b74ddee470ec7a316165cdda606e6d2283612a323b36a",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/direct_response.json": "05576cb5fffead03fc4c906911e5ef38825602990eb69f485ad9af9fbde29615",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/diagnostic_started.json": "4ef538ee8a9c4caf73f86314c5ad6b547b1937fe9b8833009f730dffa07b364f",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/diagnostic_generation_started.json": "471068e3534cb7013a6eaec97f735979e837ac0b51def0a7c100411f3f995a39",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/diagnostic_response.json": "514731c4a603acd49710dfd1fd423266bf1c7960dbd2ce86311ece3c8998f0e3",
+    "/home/yeliheng/grasp_server/ai_visual_input_v1/temporal_v3/complete.json": "aca67db6ecf0afba90a759eb3832a01f91c4240b21f523c671d5da4939a53790",
+    "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962501_varied_noisy/attempt_1/execution/attempt_1/before.png": "4dc284cb6d155135fd974f3319209283269cbbfb10eb487de00b5c2beb522f0b",
+    "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962501_varied_noisy/attempt_1/observations/observation_0/rgb.png": "adc50d9000b9d732dea7daa872a9c7ff052e9ad94558d5b79a5cbc33a67640bd",
+    "/home/yeliheng/grasp_server/ai_visual_audit_v1/audit.py": "dc85b0a7b1b0a3b5f9f0efa7c6c245b13c4e31e9fe1e83891c54b280d46fcbf4"
+  }
+}

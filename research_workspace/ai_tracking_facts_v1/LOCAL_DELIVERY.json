@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "path": "natural_self_guard_v1/manifest.json",
+      "sha256": "5b89866a8da9e29ef16a09d668e0d3a8f72a85acebd85c7d1a2144b3124d86dc"
+    },
+    {
+      "path": "natural_self_guard_v1/result.json",
+      "sha256": "8e81cc79c4dbab3ae9f94c053bfde600d0348d807957322489bc07113d6cacbd"
+    },
+    {
+      "path": "natural_self_guard_v1/probe-5923.log",
+      "sha256": "f17ff0ac75b940c41bf196e9bfa420d790fd45aa28826393e1f54a60abc68d70"
+    },
+    {
+      "path": "ai_visual_audit_v1/result.json",
+      "sha256": "4c0df0a171d3fa6b0f52badc0960f2400e14a19f5c20fec5ef277723772fe174"
+    },
+    {
+      "path": "ai_visual_audit_v1/audit-5924.log",
+      "sha256": "717f5852d61a5bffdd435fe33b886de69e52c6c0d8bc02e4465b7b764f33ff59"
+    },
+    {
+      "path": "ai_tracking_facts_v1/verification.json",
+      "sha256": "783acc2e087d89b8f864e83338df87ffdec974737d3ea5bae7031496d1193d37"
+    },
+    {
+      "path": "ai_tracking_facts_v1/check-5927.log",
+      "sha256": "1f25698e80567542a7116cfca0179173b78c8c70a272ab92d4a99fbe03ce0603"
+    },
+    {
+      "path": "ai_self_route_v1/manifest.json",
+      "sha256": "a56f76d5b64440e2eab2afa25ff717780a285792391014fa69d64b10ebdf1808"
+    },
+    {
+      "path": "ai_self_route_v1/prepare-5925.log",
+      "sha256": "091f080bec7ee91aeda7195d015e1a32d8b7cc1e02e28ecd4b22685bada4426a"
+    }
+  ]
+}

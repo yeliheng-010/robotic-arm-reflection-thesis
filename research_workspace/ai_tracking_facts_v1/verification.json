@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "tests": 4,
+  "physical_attempts": 0,
+  "model_calls": 0,
+  "training_ready": false,
+  "summary": {
+    "source": "simulated_joint_encoders_forward_kinematics_and_commanded_tcp",
+    "actions": [
+      {
+        "action": "move_to_grasp_pose",
+        "sampled_count": 150,
+        "first": {
+          "time_s": 1.0200000000000007,
+          "commanded_tcp_xyz_m": [
+            0.800017655184869,
+            0.9639999934688362,
+            1.8250000052255886
+          ],
+          "encoder_fk_tcp_xyz_m": [
+            0.800000125982775,
+            0.9639999999951081,
+            1.8250000000057751
+          ],
+          "actual_minus_command_m": [
+            -1.75292020939688e-05,
+            6.526271856266419e-09,
+            -5.21981347034739e-09
+          ],
+          "position_error_m": 1.7529204086035314e-05,
+          "gripper_joint_rad": 0.0026024902878421787
+        },
+        "last": {
+          "time_s": 3.999999999999781,
+          "commanded_tcp_xyz_m": [
+            0.8647603199814934,
+            0.45557072236606744,
+            0.8102491499612275
+          ],
+          "encoder_fk_tcp_xyz_m": [
+            0.7879292338981435,
+            0.7144219273260769,
+            1.1177766752165958
+          ],
+          "actual_minus_command_m": [
+            -0.07683108608334988,
+            0.25885120496000946,
+            0.3075275252553683
+          ],
+          "position_error_m": 0.40924337610728306,
+          "gripper_joint_rad": 0.00250084210748215
+        },
+        "max_sampled_position_error_m": 0.40924337610728306,
+        "gripper_joint_change_rad": -0.00010164818036002875
+      },
+      {
+        "action": "close_gripper",
+        "sampled_count": 100,
+        "first": {
+          "time_s": 4.019999999999779,
+          "commanded_tcp_xyz_m": [
+            0.8647603199814934,
+            0.45557072236606744,
+            0.8102491499612275
+          ],
+          "encoder_fk_tcp_xyz_m": [
+            0.7838030638664785,
+            0.7166547862005708,
+            1.1163992102033715
+          ],
+          "actual_minus_command_m": [
+            -0.08095725611501492,
+            0.26108406383450333,
+            0.306150060242144
+          ],
+          "position_error_m": 0.41042273949219665,
+          "gripper_joint_rad": 0.0031131985200854107
+        },
+        "last": {
+          "time_s": 5.999999999999561,
+          "commanded_tcp_xyz_m": [
+            0.8647603199814934,
+            0.45557072236606744,
+            0.8102491499612275
+          ],
+          "encoder_fk_tcp_xyz_m": [
+            0.7368283375377496,
+            0.7236978191504962,
+            1.1131368923846692
+          ],
+          "actual_minus_command_m": [
+            -0.12793198244374382,
+            0.2681270967844288,
+            0.30288774242344163
+          ],
+          "position_error_m": 0.4242637348070206,
+          "gripper_joint_rad": 0.5955267809704732
+        },
+        "max_sampled_position_error_m": 0.4242637348070206,
+        "gripper_joint_change_rad": 0.5924135824503878
+      }
+    ],
+    "interpretation": "Samples show commanded versus measured position; gripper angle is not proof of holding an object.",
+    "limitation": "End means last recorded sample in an action, including an aborted action; no cause label is supplied."
+  },
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962501_varied_noisy/attempt_1/telemetry.json": "3641535895ed299a92028e912e928fba1ef74b42317f71b27ad41b9f16ff2ccc",
+    "/home/yeliheng/grasp_server/ai_tracking_facts_v1/tracking_facts.py": "d502fe44379f0fac82099745d5f1b48795a881eec8ffdf8cd61e9558e35d1ad6"
+  }
+}

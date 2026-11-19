@@ -1,0 +1,10 @@
+test_empty_is_missing_not_success (test_tracking.TrackingTests.test_empty_is_missing_not_success) ... ok
+test_invalid_or_out_of_order_rejected (test_tracking.TrackingTests.test_invalid_or_out_of_order_rejected) ... ok
+test_physical_units_and_measured_closure (test_tracking.TrackingTests.test_physical_units_and_measured_closure) ... ok
+test_private_fields_never_copied (test_tracking.TrackingTests.test_private_fields_never_copied) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
+{'passed': True, 'tests': 4, 'last_error_m': 0.4242637348070206}

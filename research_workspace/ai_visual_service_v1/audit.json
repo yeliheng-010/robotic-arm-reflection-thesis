@@ -1,0 +1,198 @@
+{
+  "passed": true,
+  "rows": [
+    {
+      "condition": "C0_962703_varied_noisy",
+      "mode": "direct",
+      "validation": {
+        "valid": true,
+        "error": null,
+        "parsed": {
+          "action": {
+            "id": "OBSERVE",
+            "args": {}
+          }
+        }
+      },
+      "encoding": {
+        "pixel_values_shape": [
+          1568,
+          1536
+        ],
+        "image_grid_thw": [
+          [
+            1,
+            28,
+            28
+          ],
+          [
+            1,
+            28,
+            28
+          ]
+        ],
+        "input_tokens": 4321
+      }
+    },
+    {
+      "condition": "C0_962703_varied_noisy",
+      "mode": "diagnostic",
+      "validation": {
+        "valid": true,
+        "error": null,
+        "parsed": {
+          "action": {
+            "id": "OBSERVE",
+            "args": {}
+          },
+          "assessment": {
+            "hypotheses": [
+              {
+                "claim": "抓取姿态调整可改善抓取稳定性",
+                "evidence_ids": [
+                  "e7"
+                ]
+              },
+              {
+                "claim": "当前抓取高度0.15m可能过低",
+                "evidence_ids": [
+                  "e1"
+                ]
+              }
+            ],
+            "uncertainty": "未观测到实际抓取结果，无法确认当前参数有效性"
+          },
+          "expected_observation": "获取最新暂停帧，显示机械臂当前TCP位置及抓取状态"
+        }
+      },
+      "encoding": {
+        "pixel_values_shape": [
+          1568,
+          1536
+        ],
+        "image_grid_thw": [
+          [
+            1,
+            28,
+            28
+          ],
+          [
+            1,
+            28,
+            28
+          ]
+        ],
+        "input_tokens": 4423
+      }
+    },
+    {
+      "condition": "C1_962708_varied_noisy",
+      "mode": "direct",
+      "validation": {
+        "valid": true,
+        "error": null,
+        "parsed": {
+          "action": {
+            "id": "OBSERVE",
+            "args": {}
+          }
+        }
+      },
+      "encoding": {
+        "pixel_values_shape": [
+          1568,
+          1536
+        ],
+        "image_grid_thw": [
+          [
+            1,
+            28,
+            28
+          ],
+          [
+            1,
+            28,
+            28
+          ]
+        ],
+        "input_tokens": 4330
+      }
+    },
+    {
+      "condition": "C1_962708_varied_noisy",
+      "mode": "diagnostic",
+      "validation": {
+        "valid": true,
+        "error": null,
+        "parsed": {
+          "action": {
+            "id": "OBSERVE",
+            "args": {}
+          },
+          "assessment": {
+            "hypotheses": [
+              {
+                "claim": "抓取姿态调整可改善抓取稳定性",
+                "evidence_ids": [
+                  "e7"
+                ]
+              },
+              {
+                "claim": "当前抓取高度0.15m可能过低导致不稳定",
+                "evidence_ids": [
+                  "e1"
+                ]
+              }
+            ],
+            "uncertainty": "未观测到实际抓取结果，无法确认是否成功或失败"
+          },
+          "expected_observation": "获取最新暂停帧，显示机械臂当前状态及抓取点附近物体位置"
+        }
+      },
+      "encoding": {
+        "pixel_values_shape": [
+          1568,
+          1536
+        ],
+        "image_grid_thw": [
+          [
+            1,
+            28,
+            28
+          ],
+          [
+            1,
+            28,
+            28
+          ]
+        ],
+        "input_tokens": 4432
+      }
+    }
+  ],
+  "model_calls": 4,
+  "physical_attempts": 0,
+  "training_ready": false,
+  "causal_correctness_not_established": true,
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C0_962703_varied_noisy_direct_1_request.json": "297e0fbf2539e6760d57039b0ed5c6eeb8a1cfce421b5eac3cd3e9916140252e",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C0_962703_varied_noisy_direct_1_generation_started.json": "4386735b2907584368307e7ad3aa4fbb26546f7159a1ebf7f1cad32e190c61a2",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C0_962703_varied_noisy_direct_1_response.json": "e24e053a68acbd6b568c2bfea8740db63a32752d8623158b02112d5edf4b7c77",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C0_962703_varied_noisy_diagnostic_1_request.json": "b51156b5a5e5dd16553df516e79fd96afd0130d88d1752819d6e255dcf4af2a4",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C0_962703_varied_noisy_diagnostic_1_generation_started.json": "646400a1fadb1a237e66b98f9411fe5537e6e0f8a5e2a9d48402c3872adf7628",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C0_962703_varied_noisy_diagnostic_1_response.json": "6c98e5d69a5cab7cffc7e3cf8003a82d7d90f814c467daa0ae6fc82d73180feb",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C1_962708_varied_noisy_direct_1_request.json": "26ef8023bcac60cd99ba8b5182aa0ae288e60dc451762dd751b6e62cadf92e81",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C1_962708_varied_noisy_direct_1_generation_started.json": "0c4bc104d96e3c29f9790f640b1cd3f5547b7bc0f4619b18a84338b4481238ec",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C1_962708_varied_noisy_direct_1_response.json": "d6acb09f343ccc299f351db8819b6b6f55a8c80d615ff392b33d177a3479e44b",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C1_962708_varied_noisy_diagnostic_1_request.json": "41abf25e45921325171823dc4749d0dd4063c17fe50eb4028f9eca7e0df52625",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C1_962708_varied_noisy_diagnostic_1_generation_started.json": "8e3c22b7d23a5337b5644492f0aae0482421f324b5210b79f7db407f3463fe92",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/service/requests/C1_962708_varied_noisy_diagnostic_1_response.json": "7c8bde34432b5754f946ca0d63ea806bca02ad6cc73236ce0f85b53700296522",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/results/C0_962703_varied_noisy_direct_1.json": "58ec3636809d7077717ace4022967907fb925a4f79153ca46fbd718466b70b67",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/results/C0_962703_varied_noisy_diagnostic_1.json": "8e64d5098d20a3a4857f44a0452e8c7200897e66531a53163fa7e20d9e6f9200",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/results/C1_962708_varied_noisy_direct_1.json": "e36ee7e6387397713c3e310907e165705736064407a2520260a4015d9f9cd22c",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/results/C1_962708_varied_noisy_diagnostic_1.json": "1332600bb86e14d8152a5c3f417f3a5022a303b1e259f04a6cbc675bf313170e",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/audit.py": "260c481d21f5702fa46e72f6b7450c65cb34868a0a463a5e08d1486dbff5211a",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/complete.json": "ce84578a9ab40767b49d60ffe6f67811650ffe4c15fc4a5eeb8fd414b758612a",
+    "/home/yeliheng/grasp_server/ai_visual_service_v1/manifest.json": "3401e12c43638caf8d451cebf5708e1e8a772c2f8bffa0025dca9ce68259249d"
+  }
+}
