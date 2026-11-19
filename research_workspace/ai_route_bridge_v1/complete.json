@@ -1,0 +1,272 @@
+{
+  "passed": true,
+  "attempts": 16,
+  "rows": [
+    {
+      "id": "R0_962401_baseline",
+      "attempts": 1,
+      "success": true,
+      "rows": [
+        {
+          "index": 1,
+          "success": true,
+          "route": {
+            "active": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "R1_962401_baseline",
+      "attempts": 1,
+      "success": true,
+      "rows": [
+        {
+          "index": 1,
+          "success": true,
+          "route": {
+            "active": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "R0_962401_varied_noisy",
+      "attempts": 3,
+      "success": false,
+      "rows": [
+        {
+          "index": 1,
+          "success": false,
+          "route": {
+            "active": false
+          }
+        },
+        {
+          "index": 2,
+          "success": false,
+          "route": {
+            "active": true,
+            "entered_planner": false
+          }
+        },
+        {
+          "index": 3,
+          "success": false,
+          "route": {
+            "active": true,
+            "entered_planner": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "R1_962401_varied_noisy",
+      "attempts": 3,
+      "success": false,
+      "rows": [
+        {
+          "index": 1,
+          "success": false,
+          "route": {
+            "active": false
+          }
+        },
+        {
+          "index": 2,
+          "success": false,
+          "route": {
+            "active": true,
+            "geometry": {
+              "selected": true,
+              "endpoint": {
+                "ok": true,
+                "reason": null,
+                "fk_max_error": 3.0531133177191805e-16,
+                "contacts": [],
+                "distance_m": 0.01,
+                "closest_geoms": [
+                  "9",
+                  "red_bin_floor"
+                ],
+                "closest_bodies": [
+                  "shoulder_link",
+                  "RedBin"
+                ]
+              },
+              "path": {
+                "prefix_legs": 3,
+                "carry_legs": 3,
+                "passed": true
+              },
+              "reconstruction": {
+                "max_abs_m": 9.509127807394435e-08,
+                "fields_max_abs_m": {
+                  "source_center": 9.509127807394435e-08,
+                  "source_half": 0.0,
+                  "bin_center": 0.0,
+                  "interior_half": 0.0,
+                  "usable_half": 0.0,
+                  "wall_top": 0.0
+                },
+                "reconstruction_atol_m": 1e-06,
+                "static_fields_exact": true,
+                "placement": {
+                  "edge_margin_m": [
+                    0.062163680003891275,
+                    0.024368234354894616
+                  ],
+                  "bottom_gap_m": 0.010000000000000009,
+                  "strictly_inside_bin": true
+                }
+              }
+            }
+          }
+        },
+        {
+          "index": 3,
+          "success": false,
+          "route": {
+            "active": true,
+            "geometry": {
+              "selected": true,
+              "endpoint": {
+                "ok": true,
+                "reason": null,
+                "fk_max_error": 2.220446049250313e-16,
+                "contacts": [],
+                "distance_m": 0.01,
+                "closest_geoms": [
+                  "9",
+                  "red_bin_floor"
+                ],
+                "closest_bodies": [
+                  "shoulder_link",
+                  "RedBin"
+                ]
+              },
+              "path": {
+                "prefix_legs": 3,
+                "carry_legs": 3,
+                "passed": true
+              },
+              "reconstruction": {
+                "max_abs_m": 9.509127807394435e-08,
+                "fields_max_abs_m": {
+                  "source_center": 9.509127807394435e-08,
+                  "source_half": 0.0,
+                  "bin_center": 0.0,
+                  "interior_half": 0.0,
+                  "usable_half": 0.0,
+                  "wall_top": 0.0
+                },
+                "reconstruction_atol_m": 1e-06,
+                "static_fields_exact": true,
+                "placement": {
+                  "edge_margin_m": [
+                    0.0621636800038915,
+                    0.024368234354894616
+                  ],
+                  "bottom_gap_m": 0.010000000000000009,
+                  "strictly_inside_bin": true
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "R0_962402_baseline",
+      "attempts": 1,
+      "success": true,
+      "rows": [
+        {
+          "index": 1,
+          "success": true,
+          "route": {
+            "active": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "R1_962402_baseline",
+      "attempts": 1,
+      "success": true,
+      "rows": [
+        {
+          "index": 1,
+          "success": true,
+          "route": {
+            "active": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "R0_962402_varied_noisy",
+      "attempts": 3,
+      "success": false,
+      "rows": [
+        {
+          "index": 1,
+          "success": false,
+          "route": {
+            "active": false
+          }
+        },
+        {
+          "index": 2,
+          "success": false,
+          "route": {
+            "active": true,
+            "entered_planner": false
+          }
+        },
+        {
+          "index": 3,
+          "success": false,
+          "route": {
+            "active": true,
+            "entered_planner": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "R1_962402_varied_noisy",
+      "attempts": 3,
+      "success": false,
+      "rows": [
+        {
+          "index": 1,
+          "success": false,
+          "route": {
+            "active": false
+          }
+        },
+        {
+          "index": 2,
+          "success": false,
+          "route": {
+            "active": true,
+            "entered_planner": false
+          }
+        },
+        {
+          "index": 3,
+          "success": false,
+          "route": {
+            "active": true,
+            "entered_planner": false
+          }
+        }
+      ]
+    }
+  ],
+  "model_calls": 0,
+  "training_ready": false,
+  "audit_entry_revision": 2,
+  "first_stage_rerun": false
+}

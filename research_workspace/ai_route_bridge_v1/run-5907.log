@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/yeliheng/grasp_server/ai_route_bridge_v1/rb_controller.py", line 40, in <module>
+    main()
+  File "/home/yeliheng/grasp_server/ai_route_bridge_v1/rb_controller.py", line 28, in main
+    run('rb_audit.py', ['--seed', str(seed)], name=f'audit_{seed}', timeout=AUDIT_SECONDS)
+  File "/home/yeliheng/grasp_server/ai_route_bridge_v1/rb_controller.py", line 15, in run
+    subprocess.run([sys.executable, '-B', str(ROOT/script), *args], stdout=log,
+  File "/home/yeliheng/grasp_qlora/env/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yeliheng/grasp_server/env_sim/bin/python', '-B', '/home/yeliheng/grasp_server/ai_route_bridge_v1/rb_audit.py', '--seed', '962401']' returned non-zero exit status 1.

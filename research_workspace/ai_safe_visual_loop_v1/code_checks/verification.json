@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "tests": 4,
+  "identities": {
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/audit.py": "3457c3f94784380e1dd211484b66d84d758938746c7829ef0ae768184491bbda",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/check_input.py": "444dea2179f2aa1e3f826646094bdfd8027e098c176d064235f491d963441aba",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/controller.py": "bca53b25e7cb034fcdd7bf2521b4e1651fe9a104183ea0b7d72d29aae82bc3b0",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/environment.sh": "ebaa94988d3668574129165e2cb2cb1195a90dd7cea5cec3f6006a0002eacb98",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/model_environment.sh": "29ee9217d3823ac28b2824841425a84ee45ac8476a9aff5bc03a843596e1fd7d",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/PLAN.md": "4aa29ac470f290a57e3877f87e6d4d2745bd12d8646ee16a0f56463591aeaf4b",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/prepare.py": "ea2e1b06680ae9607e3172ec38cdcf9620b70d2ce5d4babacd6f0508ab19543e",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/run.sbatch": "216f49eec270f3dd42445bae66d701b240267d8049e899390f8bc2bc47e799ca",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/service.py": "2ba4e8a80224468008cb45d37054647e60564bccce91afe5fcefe1fa312422dc",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/sv_actions.py": "30283d1d72f509b702d0718e7ce664e5e7fc1e2b8a4fa6a156d3763138f79d99",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/sv_audit_attempt.py": "622319919952d5792f7ad1a9debcb86ffd1c7801048cb4e3b84341d68bbb4abd",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/sv_audit_proposal.py": "a5cb1eb6014c785a7f75a5a03f6021d1bd5799e118e3eaf3c9c9c81580a1baa6",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/sv_audit_replay.py": "663a668c1395497df054cf0cb7e63e39cd9efe493694b75b9d9dcc09dc5bb5a7",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/sv_client.py": "df27c6c69fb4730c85dee7e215dc4968eec0733c128a7e493bfd7d3cc24ddc66",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/sv_common.py": "a798a0c3ae25222899b3ea780e04316e38cb4cba0aec97258db52e3f2610889e",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/sv_requests.py": "c034e1b10055e7b58618e4e7131ebb8481e3861542147c9076a22b5f615586c1",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/test_actions.py": "f412dd4bbfb3e23ea976089204dbd650d51433f3c3b0a8caa1d216a6dbb7d4bd",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/verify_code.py": "4f2e2de9b17354963d0317d48ba1b894887a60ee7b55ede638481bd1de1aa6ec",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/verify.sbatch": "76eb48c1fcc689b0dcae85e59e99b90c9316b4c73c0f57bcfe29085bedf9b0a0",
+    "/home/yeliheng/grasp_server/ai_safe_visual_loop_v1/worker.py": "8a77de2a3a1ec13febb65517aa8c2aaeb866cad07580d8c0cabab693499039da"
+  },
+  "physical_attempts": 0,
+  "model_calls": 0
+}

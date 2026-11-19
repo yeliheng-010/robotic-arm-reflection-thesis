@@ -1,0 +1,15 @@
+test_control_does_not_silently_change_engine_parameters (test_rv.VerticalTests.test_control_does_not_silently_change_engine_parameters) ... ok
+test_runtime_and_audit_order_share_scope_and_restore (test_rv.VerticalTests.test_runtime_and_audit_order_share_scope_and_restore) ... ok
+test_sort_preserves_all_poses_and_prioritizes_world_down (test_rv.VerticalTests.test_sort_preserves_all_poses_and_prioritizes_world_down) ... ok
+test_unknown_control_rejected (test_rv.VerticalTests.test_unknown_control_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.005s
+
+OK
+usage: rv_audit.py [-h] --seed SEED
+
+options:
+  -h, --help   show this help message and exit
+  --seed SEED
+{'tests': 4, 'conditions': 8, 'frozen': 'b204d2d552f59f2152891c403fd1a58adf38c0e1440f2dff6ccb7782b49db875'}

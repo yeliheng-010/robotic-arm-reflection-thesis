@@ -1,0 +1,122 @@
+{
+  "status": "completed",
+  "steps": [
+    {
+      "index": 1,
+      "state": {
+        "parameters": {
+          "replan": false,
+          "reground": false,
+          "lift_height": 0.35,
+          "time_scale": 1.0,
+          "grasp_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": false,
+      "result_path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_1/execution/result.json",
+      "result_sha256": "31cbfd7f32b488971d6238ef1068f57cf675d5fc508a084c70973ccd7f68b7d6",
+      "session_path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_1",
+      "control": {
+        "grasp_mode": "original"
+      }
+    },
+    {
+      "index": 2,
+      "state": {
+        "parameters": {
+          "replan": true,
+          "reground": false,
+          "lift_height": 0.15,
+          "time_scale": 1.0,
+          "grasp_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": false,
+      "result_path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_2/execution/result.json",
+      "result_sha256": "b8926a3c4798edd8c8e179e72a2168930257cca3e579e77ef7cbb1e27e7d284a",
+      "session_path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_2",
+      "control": {
+        "grasp_mode": "original"
+      }
+    },
+    {
+      "index": 3,
+      "state": {
+        "parameters": {
+          "replan": true,
+          "reground": false,
+          "lift_height": 0.15,
+          "time_scale": 1.0,
+          "grasp_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": false,
+      "result_path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_3/execution/result.json",
+      "result_sha256": "06c86a4e8ebf7aed805d7296fea34e734f9607f75211f66a9fb923162bf5f0ed",
+      "session_path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_3",
+      "control": {
+        "grasp_mode": "world_down"
+      }
+    }
+  ],
+  "actions": [
+    {
+      "after_attempt": 1,
+      "action": "SAFE_ROUTE"
+    },
+    {
+      "after_attempt": 2,
+      "action": "WORLD_DOWN_ROUTE"
+    }
+  ],
+  "observations": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_1/observation_summary.json",
+      "sha256": "e10eb33abbe6df4157288f2947bbd0cdc13412d7503c6422a493fba9d9a09163"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_2/observation_summary.json",
+      "sha256": "5e05b181ef8b1052163f69040e7376ff0cd87675b01fb34d0af48d905ff43442"
+    },
+    {
+      "path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V0_962502_varied_noisy/attempt_3/observation_summary.json",
+      "sha256": "0cb2cc12ac31d72e6ed3a57808db1d09267ad4eb7439fd9c58100d17f5cf4434"
+    }
+  ],
+  "success": false,
+  "manifest_sha256": "b204d2d552f59f2152891c403fd1a58adf38c0e1440f2dff6ccb7782b49db875",
+  "model_calls": 0
+}

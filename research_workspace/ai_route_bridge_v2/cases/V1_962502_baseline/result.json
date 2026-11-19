@@ -1,0 +1,45 @@
+{
+  "status": "completed",
+  "steps": [
+    {
+      "index": 1,
+      "state": {
+        "parameters": {
+          "replan": false,
+          "reground": false,
+          "lift_height": 0.35,
+          "time_scale": 1.0,
+          "grasp_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "place_offset": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "candidate_index": 0
+        },
+        "profile": "original"
+      },
+      "success": true,
+      "result_path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V1_962502_baseline/attempt_1/execution/result.json",
+      "result_sha256": "b157cfa99b313f06bc8deeb2de0451617227fe1cbf2597c934347d9ceb8faba6",
+      "session_path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V1_962502_baseline/attempt_1",
+      "control": {
+        "grasp_mode": "original"
+      }
+    }
+  ],
+  "actions": [],
+  "observations": [
+    {
+      "path": "/home/yeliheng/grasp_server/ai_route_bridge_v2/cases/V1_962502_baseline/attempt_1/observation_summary.json",
+      "sha256": "e284bfc2e465fe7c24fc1d8b84c2ce46d52b78b5993687522e85f7b41e1a25fe"
+    }
+  ],
+  "success": true,
+  "manifest_sha256": "b204d2d552f59f2152891c403fd1a58adf38c0e1440f2dff6ccb7782b49db875",
+  "model_calls": 0
+}

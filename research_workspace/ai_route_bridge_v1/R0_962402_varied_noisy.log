@@ -1,0 +1,12 @@
+[task] 红色方块 -> 蓝色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=5784, 场景原始=333805, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=no_grasp_candidate
+R0_962402_varied_noisy 1 False
+[task] 红色方块 -> 蓝色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=5770, 场景原始=334001, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=no_grasp_candidate
+R0_962402_varied_noisy 2 False
+[task] 红色方块 -> 蓝色箱子 parser=explicit
+[INFO] 点云采样: 目标原始=5785, 场景原始=333903, 网络输入=20000 (目标占比=65%)
+[retry] attempt=1 accepted=False error=no_grasp_candidate
+R0_962402_varied_noisy 3 False

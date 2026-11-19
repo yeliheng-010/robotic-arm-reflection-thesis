@@ -1,0 +1,14 @@
+{
+  "verified_local_case_artifacts": 8,
+  "paths": [
+    "ai_route_bridge_v1/cases/R0_962401_baseline/result.json",
+    "ai_route_bridge_v1/cases/R1_962401_baseline/result.json",
+    "ai_route_bridge_v1/cases/R0_962401_varied_noisy/result.json",
+    "ai_route_bridge_v1/cases/R1_962401_varied_noisy/result.json",
+    "ai_route_bridge_v1/cases/R0_962402_baseline/result.json",
+    "ai_route_bridge_v1/cases/R1_962402_baseline/result.json",
+    "ai_route_bridge_v1/cases/R0_962402_varied_noisy/result.json",
+    "ai_route_bridge_v1/cases/R1_962402_varied_noisy/result.json"
+  ],
+  "server_raw_arrays_not_downloaded": true
+}
